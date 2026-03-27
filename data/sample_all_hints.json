@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-03-27T14:00:00Z",
+  "projects": [
+    {
+      "folder_name": "GPO Local Pages | ATI Physical Therapy | locations.atipt.com",
+      "domain": "locations.atipt.com",
+      "audit_date": "2026-03-11",
+      "hints": [
+        {
+          "section": "Accessibility",
+          "hint": "Images must have alternate text",
+          "description": "Sitebulb checks that all img elements carry a non-empty alt attribute. Screen readers and search engines use this text when the image cannot be rendered.",
+          "coverage": 100.0,
+          "urls": 2170,
+          "previous_urls": 2189,
+          "importance": "3 - High",
+          "warning_type": "4 - Issue",
+          "priority_score": 34,
+          "trend": "IMPROVING",
+          "learn_more": "https://dequeuniversity.com/rules/axe/4.4/image-alt",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/1abc123/edit#gid=0"
+        },
+        {
+          "section": "Links",
+          "hint": "Links must have discernible text",
+          "description": "Every hyperlink should contain text or an aria-label that meaningfully describes its destination. Empty or icon-only links are inaccessible and confuse search engine crawlers.",
+          "coverage": 99.16,
+          "urls": 2150,
+          "previous_urls": 2100,
+          "importance": "3 - High",
+          "warning_type": "4 - Issue",
+          "priority_score": 34,
+          "trend": "WORSENING",
+          "learn_more": "https://dequeuniversity.com/rules/axe/4.4/link-name",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/1abc456/edit#gid=0"
+        },
+        {
+          "section": "On Page",
+          "hint": "Page has no title tag",
+          "description": "The title element is one of the most important on-page SEO signals. Pages missing a title tag receive no title in SERPs and may be treated as thin content.",
+          "coverage": 12.4,
+          "urls": 268,
+          "previous_urls": 310,
+          "importance": "3 - High",
+          "warning_type": "4 - Issue",
+          "priority_score": 34,
+          "trend": "IMPROVING",
+          "learn_more": "https://sitebulb.com/hints/on-page/page-has-no-title-tag/",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/1abc789/edit#gid=0"
+        }
+      ]
+    },
+    {
+      "folder_name": "GPO Local Pages | The Nashville Radon Guys | thenashvilleradonguys.com",
+      "domain": "thenashvilleradonguys.com",
+      "audit_date": "2026-03-15",
+      "hints": [
+        {
+          "section": "Accessibility",
+          "hint": "Links must have discernible text",
+          "description": "Every hyperlink should contain text or an aria-label that meaningfully describes its destination. Empty or icon-only links are inaccessible and confuse search engine crawlers.",
+          "coverage": 99.16,
+          "urls": 12,
+          "previous_urls": null,
+          "importance": "3 - High",
+          "warning_type": "4 - Issue",
+          "priority_score": 34,
+          "trend": "NEW",
+          "learn_more": "https://dequeuniversity.com/rules/axe/4.4/link-name",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/19ope-TrCg1GYnyGci6r_YI5yg6rb8_MRWeqqTZwTjHM/edit#gid=0"
+        },
+        {
+          "section": "Indexability",
+          "hint": "Page is blocked by robots.txt",
+          "description": "URLs disallowed in robots.txt cannot be crawled by search engines. If these pages should be indexed, the robots.txt directive must be updated.",
+          "coverage": 8.3,
+          "urls": 4,
+          "previous_urls": null,
+          "importance": "3 - High",
+          "warning_type": "4 - Issue",
+          "priority_score": 34,
+          "trend": "NEW",
+          "learn_more": "https://sitebulb.com/hints/indexability/page-is-blocked-by-robots-txt/",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/1def123/edit#gid=0"
+        }
+      ]
+    },
+    {
+      "folder_name": "GPO Local Pages | Acima | locations.acima.com",
+      "domain": "locations.acima.com",
+      "audit_date": "2026-03-10",
+      "hints": [
+        {
+          "section": "On Page",
+          "hint": "Meta description is missing",
+          "description": "The meta description tag provides a brief summary displayed in search results. Missing meta descriptions reduce click-through rates and forfeit a key SERP branding opportunity.",
+          "coverage": 45.2,
+          "urls": 892,
+          "previous_urls": 750,
+          "importance": "3 - High",
+          "warning_type": "3 - Warning",
+          "priority_score": 33,
+          "trend": "WORSENING",
+          "learn_more": "https://sitebulb.com/hints/on-page/meta-description-missing/",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/1ghi123/edit#gid=0"
+        },
+        {
+          "section": "Duplicate Content",
+          "hint": "Pages have duplicate title tags",
+          "description": "Multiple pages sharing identical title tags reduce each page's relevance signal and can cause search engines to de-prioritize or consolidate them in results.",
+          "coverage": 31.0,
+          "urls": 612,
+          "previous_urls": 598,
+          "importance": "3 - High",
+          "warning_type": "4 - Issue",
+          "priority_score": 34,
+          "trend": "WORSENING",
+          "learn_more": "https://sitebulb.com/hints/duplicate-content/pages-have-duplicate-title-tags/",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/1ghi456/edit#gid=0"
+        },
+        {
+          "section": "Security",
+          "hint": "HTTPS page contains HTTP resources",
+          "description": "Mixed content occurs when a secure HTTPS page loads resources over insecure HTTP. Browsers block or warn about these, degrading user experience and trust signals.",
+          "coverage": 22.1,
+          "urls": 437,
+          "previous_urls": 437,
+          "importance": "3 - High",
+          "warning_type": "4 - Issue",
+          "priority_score": 34,
+          "trend": "STABLE",
+          "learn_more": "https://sitebulb.com/hints/security/https-page-contains-http-resources/",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/1ghi789/edit#gid=0"
+        }
+      ]
+    },
+    {
+      "folder_name": "GPO Dealer Pages | AutoNation | dealer.autonation.com",
+      "domain": "dealer.autonation.com",
+      "audit_date": "2026-03-12",
+      "hints": [
+        {
+          "section": "On Page",
+          "hint": "H1 tag is missing",
+          "description": "The H1 heading is a primary relevance signal for search engines. Pages without an H1 are harder to rank for target keywords and present an unclear content hierarchy.",
+          "coverage": 67.8,
+          "urls": 3412,
+          "previous_urls": 3100,
+          "importance": "3 - High",
+          "warning_type": "4 - Issue",
+          "priority_score": 34,
+          "trend": "WORSENING",
+          "learn_more": "https://sitebulb.com/hints/on-page/h1-tag-is-missing/",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/1jkl123/edit#gid=0"
+        },
+        {
+          "section": "Internal URLs",
+          "hint": "Internal link points to a redirect",
+          "description": "Links that point to URLs which then redirect waste crawl budget and dilute link equity. Each redirect adds latency and a potential failure point.",
+          "coverage": 15.3,
+          "urls": 770,
+          "previous_urls": 820,
+          "importance": "3 - High",
+          "warning_type": "3 - Warning",
+          "priority_score": 33,
+          "trend": "IMPROVING",
+          "learn_more": "https://sitebulb.com/hints/internal-urls/internal-link-points-to-redirect/",
+          "sheet_url": "https://docs.google.com/spreadsheets/d/1jkl456/edit#gid=0"
+        }
+      ]
+    }
+  ]
+}
