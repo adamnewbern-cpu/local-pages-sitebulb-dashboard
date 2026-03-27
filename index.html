@@ -1,71 +1,397 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.2">
-  <style type="text/css">
-    body {background-color: #f2f2f2}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Helvetica; color: #141322; -webkit-text-stroke: #141322}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Helvetica; color: #434343; -webkit-text-stroke: #434343}
-    p.p6 {margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Helvetica; color: #757575; -webkit-text-stroke: #757575}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 26.0px Helvetica; color: #be0004; -webkit-text-stroke: #be0004}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Helvetica; color: #757575; -webkit-text-stroke: #757575}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 26.0px Helvetica; color: #bf5105; -webkit-text-stroke: #bf5105}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 26.0px Helvetica; color: #094ec0; -webkit-text-stroke: #094ec0}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 26.0px Helvetica; color: #0b5601; -webkit-text-stroke: #0b5601}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; -webkit-text-stroke: #000000; background-color: #ffffff; min-height: 16.0px}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Times; -webkit-text-stroke: #000000; background-color: #ffffff}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; -webkit-text-stroke: #000000; background-color: #ffffff}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #757575; -webkit-text-stroke: #757575; min-height: 14.0px}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; color: #9a9a9a; -webkit-text-stroke: #9a9a9a}
-    span.s1 {font-kerning: none; background-color: #141322}
-    span.s2 {font: 13.0px 'Apple Color Emoji'; font-kerning: none; background-color: #ffffff}
-    span.s3 {font-kerning: none; background-color: #ffffff}
-    span.s4 {font-kerning: none}
-    span.s5 {font: 13.0px 'Helvetica Neue'; font-kerning: none}
-    span.s6 {font: 13.0px Times; font-kerning: none}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPO SEO Dashboard</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+    header { background: #1a1a2e; color: #fff; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { margin: 0; font-size: 16px; }
+    header small { font-size: 11px; opacity: 0.6; }
+    nav { background: #fff; border-bottom: 2px solid #ddd; padding: 0 20px; display: flex; gap: 0; overflow-x: auto; }
+    nav a { display: inline-block; padding: 12px 16px; font-size: 13px; text-decoration: none; color: #555; border-bottom: 3px solid transparent; cursor: pointer; white-space: nowrap; }
+    nav a.active { color: #1a1a2e; border-bottom-color: #e94560; font-weight: 600; }
+    nav a.disabled { opacity: 0.35; cursor: default; pointer-events: none; }
+    .content { padding: 20px; max-width: 1400px; margin: 0 auto; }
+    .stats { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+    .stat { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 12px 16px; min-width: 110px; }
+    .stat .num { font-size: 26px; font-weight: 700; }
+    .stat .lbl { font-size: 11px; color: #888; margin-top: 2px; }
+    .stat.red .num { color: #c00; }
+    .stat.orange .num { color: #c60; }
+    .stat.blue .num { color: #06c; }
+    .stat.green .num { color: #060; }
+    .toolbar { background: #fff; border: 1px solid #ddd; border-bottom: none; border-radius: 6px 6px 0 0; padding: 10px 14px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .toolbar input, .toolbar select { padding: 6px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 13px; }
+    .toolbar input { width: 220px; }
+    .count { margin-left: auto; font-size: 12px; color: #888; }
+    .table-wrap { background: #fff; border: 1px solid #ddd; border-radius: 0 0 6px 6px; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { text-align: left; padding: 9px 12px; background: #f9f9f9; border-bottom: 1px solid #ddd; font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; color: #666; cursor: pointer; white-space: nowrap; }
+    th:hover { background: #f0f0f0; }
+    th.asc::after { content: ' ▲'; }
+    th.desc::after { content: ' ▼'; }
+    th.score-col { cursor: default; }
+    td { padding: 10px 12px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fafafa; }
+    .hint-name { font-weight: 500; }
+    .hint-desc { font-size: 11px; color: #888; margin-top: 3px; max-width: 360px; }
+    .learn-more { font-size: 11px; color: #0066cc; text-decoration: none; }
+    .learn-more:hover { text-decoration: underline; }
+    .badge { display: inline-block; padding: 2px 7px; border-radius: 3px; font-size: 11px; font-weight: 500; }
+    .trend-NEW { background: #e8f0fe; color: #1a5cb8; }
+    .trend-WORSENING { background: #fde8e8; color: #b81a1a; }
+    .trend-IMPROVING { background: #e8fde8; color: #1a7a1a; }
+    .trend-STABLE { background: #f0f0f0; color: #555; }
+    .trend-RESOLVED { background: #e8fde8; color: #1a7a1a; }
+    .type-issue { background: #fde8e8; color: #b81a1a; }
+    .type-warning { background: #fff3e0; color: #a05000; }
+    .type-hint { background: #e8fde8; color: #1a7a1a; }
+    .score { font-weight: 700; }
+    .score-high { color: #c00; }
+    .score-med { color: #c60; }
+    .score-low { color: #070; }
+    .url-count { text-align: right; font-weight: 500; }
+    .url-diff { font-size: 11px; display: block; }
+    .url-diff.up { color: #c00; }
+    .url-diff.down { color: #070; }
+    .url-diff.none { color: #888; }
+
+    /* ── Action buttons ── */
+    .actions-cell { white-space: nowrap; }
+    .action-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      width: 100%;
+      padding: 6px 10px;
+      margin-bottom: 5px;
+      border: none;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      opacity: 0.72;
+      transition: opacity 0.15s, background 0.15s, transform 0.1s;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+    .action-btn:last-child { margin-bottom: 0; }
+    .action-btn:hover { opacity: 1; transform: translateY(-1px); }
+    .action-btn:active { transform: translateY(0); }
+
+    /* Suppress button */
+    .btn-suppress { background: #fff0f0; color: #b81a1a; border: 1px solid #f5c0c0; }
+    .btn-suppress:hover { background: #ffe0e0; border-color: #e08080; }
+    .btn-suppress.suppressed { background: #fde8e8; color: #b81a1a; opacity: 1; border-color: #d09090; }
+
+    /* Trello button */
+    .btn-trello { background: #f0f4ff; color: #1055cc; border: 1px solid #c0d0f5; }
+    .btn-trello:hover { background: #e0ecff; border-color: #80a8e8; }
+
+    /* View URLs button */
+    .btn-urls { background: #f5f5f5; color: #333; border: 1px solid #ddd; }
+    .btn-urls:hover { background: #e8e8e8; border-color: #bbb; }
+
+    .action-icon { font-size: 14px; line-height: 1; }
+
+    .empty { padding: 40px; text-align: center; color: #aaa; }
+    .coming-soon { padding: 60px; text-align: center; color: #aaa; }
+
+    /* ── Suppress modal ── */
+    .overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 50; align-items: center; justify-content: center; }
+    .overlay.open { display: flex; }
+    .modal { background: #fff; border-radius: 8px; padding: 24px; width: 400px; max-width: 90vw; box-shadow: 0 8px 40px rgba(0,0,0,0.18); }
+    .modal h3 { margin: 0 0 10px; font-size: 15px; }
+    .modal .hint-box { background: #f5f5f5; border-left: 3px solid #b81a1a; padding: 8px 12px; font-size: 12px; color: #444; margin-bottom: 12px; border-radius: 0 4px 4px 0; }
+    .modal p { font-size: 12px; color: #888; margin: 0 0 18px; }
+    .modal-btns { display: flex; gap: 10px; justify-content: flex-end; }
+    .btn { padding: 7px 16px; border-radius: 4px; font-size: 13px; cursor: pointer; border: none; }
+    .btn-cancel { background: #eee; color: #333; }
+    .btn-cancel:hover { background: #ddd; }
+    .btn-confirm { background: #b81a1a; color: #fff; }
+    .btn-confirm:hover { background: #8c1010; }
+
+    /* Score header tooltip */
+    .score-header-wrap { display: inline-flex; align-items: center; gap: 4px; }
+    .score-info { display: inline-block; width: 14px; height: 14px; background: #ccc; color: #fff; border-radius: 50%; font-size: 9px; font-weight: 700; text-align: center; line-height: 14px; cursor: help; }
   </style>
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1"><b>GPO SEO Monitoring Dashboard</b><b></b></span></h1>
-<p class="p2"><span class="s1">Loading...</span></p>
-<p class="p3"><span class="s2">🚨</span><span class="s3"><b> High Priority</b><b></b></span></p>
-<p class="p4"><span class="s3">Internal URLs</span></p>
-<p class="p4"><span class="s3">Links</span></p>
-<p class="p4"><span class="s3">On Page</span></p>
-<p class="p4"><span class="s3">Duplicate Content</span></p>
-<p class="p4"><span class="s3">Rendered</span></p>
-<p class="p4"><span class="s3">Accessibility</span></p>
-<p class="p4"><span class="s3">Security</span></p>
-<p class="p4"><span class="s3">Organic Search</span></p>
-<p class="p4"><span class="s3">Indexability</span></p>
-<p class="p4"><span class="s3">Redirects</span></p>
-<h2 style="margin: 0.0px 0.0px 4.0px 0.0px; font: 16.0px Helvetica; -webkit-text-stroke: #000000"><span class="s4"><b>High Priority Issues — All Sites</b></span></h2>
-<p class="p6"><span class="s4">Showing <b>3 - High</b> importance hints across all projects. Sorted by priority score descending.</span></p>
-<p class="p7"><span class="s3"><b>—</b><b></b></span></p>
-<p class="p8"><span class="s3">High Issues</span></p>
-<p class="p9"><span class="s3"><b>—</b><b></b></span></p>
-<p class="p8"><span class="s3">Sites Affected</span></p>
-<p class="p10"><span class="s3"><b>—</b><b></b></span></p>
-<p class="p8"><span class="s3">New This Crawl</span></p>
-<p class="p7"><span class="s3"><b>—</b><b></b></span></p>
-<p class="p8"><span class="s3">Worsening</span></p>
-<p class="p11"><span class="s3"><b>—</b><b></b></span></p>
-<p class="p8"><span class="s3">Improving</span></p>
-<p class="p12"><span class="s4"></span><br></p>
-<p class="p13"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s4">All Sections</span></p>
-<p class="p12"><span class="s4"><span class="Apple-converted-space">      </span></span></p>
-<p class="p13"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s4">All Trends</span></p>
-<p class="p14"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s6">New</span></p>
-<p class="p13"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s4">Worsening</span></p>
-<p class="p13"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s4">Improving</span></p>
-<p class="p14"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s6">Stable</span></p>
-<p class="p12"><span class="s4"><span class="Apple-converted-space">      </span></span></p>
-<p class="p15"><span class="s4"></span><br></p>
-<p class="p16"><span class="s3">Loading…</span></p>
+
+<header>
+  <h1>GPO SEO Monitoring Dashboard</h1>
+  <small id="header-meta">Loading...</small>
+</header>
+
+<nav>
+  <a class="active" onclick="showTab('overview', this)">&#128680; High Priority</a>
+  <a class="disabled">Internal URLs</a>
+  <a class="disabled">Links</a>
+  <a class="disabled">On Page</a>
+  <a class="disabled">Duplicate Content</a>
+  <a class="disabled">Rendered</a>
+  <a class="disabled">Accessibility</a>
+  <a class="disabled">Security</a>
+  <a class="disabled">Organic Search</a>
+  <a class="disabled">Indexability</a>
+  <a class="disabled">Redirects</a>
+</nav>
+
+<div class="content">
+
+  <!-- ── LANDING TAB ── -->
+  <div id="tab-overview">
+    <h2 style="font-size:16px;margin:0 0 4px">High Priority Issues &mdash; All Sites</h2>
+    <p style="font-size:12px;color:#888;margin:0 0 16px">Showing <strong>3 - High</strong> importance hints across all projects. Sorted by priority score descending.</p>
+
+    <div class="stats" id="stats-bar">
+      <div class="stat red"><div class="num" id="stat-total">&mdash;</div><div class="lbl">High Issues</div></div>
+      <div class="stat orange"><div class="num" id="stat-sites">&mdash;</div><div class="lbl">Sites Affected</div></div>
+      <div class="stat blue"><div class="num" id="stat-new">&mdash;</div><div class="lbl">New This Crawl</div></div>
+      <div class="stat red"><div class="num" id="stat-worse">&mdash;</div><div class="lbl">Worsening</div></div>
+      <div class="stat green"><div class="num" id="stat-better">&mdash;</div><div class="lbl">Improving</div></div>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" id="search" placeholder="Search issues, domains&hellip;" oninput="render()">
+      <select id="section-filter" onchange="render()">
+        <option value="">All Sections</option>
+      </select>
+      <select id="trend-filter" onchange="render()">
+        <option value="">All Trends</option>
+        <option value="NEW">New</option>
+        <option value="WORSENING">Worsening</option>
+        <option value="IMPROVING">Improving</option>
+        <option value="STABLE">Stable</option>
+      </select>
+      <span class="count" id="count"></span>
+    </div>
+
+    <div class="table-wrap">
+      <div id="table-container"><div class="empty">Loading&hellip;</div></div>
+    </div>
+  </div>
+
+  <!-- ── OTHER TABS ── -->
+  <div id="tab-other" style="display:none">
+    <div class="coming-soon">
+      <strong style="font-size:16px">Coming in v2</strong><br><br>
+      This tab will show per-category data with a site selector dropdown.<br>
+      Use <strong>High Priority</strong> for now to see critical issues at a glance.
+    </div>
+  </div>
+
+</div>
+
+<!-- ── SUPPRESS MODAL ── -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <h3>&#128683; Remove from Reports?</h3>
+    <div class="hint-box" id="modal-text"></div>
+    <p>This hint will be suppressed in all future audit reports across every site. You can reverse this by editing the ignore list in the repo.</p>
+    <div class="modal-btns">
+      <button class="btn btn-cancel" onclick="closeModal(false)">Cancel</button>
+      <button class="btn btn-confirm" onclick="closeModal(true)">Yes, Remove from Reports</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA_URL = 'data/all_hints.json';
+const FALLBACK_URL = 'data/sample_all_hints.json';
+
+let highHints = [], sortCol = 'priority_score', sortDir = 'desc';
+let pendingHint = null, pendingBtn = null;
+let ignored = JSON.parse(localStorage.getItem('gpo_ignored') || '[]');
+
+async function boot() {
+  let data = null;
+  for (const url of [DATA_URL, FALLBACK_URL]) {
+    try { const r = await fetch(url); if (r.ok) { data = await r.json(); break; } } catch (_) {}
+  }
+  if (!data) {
+    document.getElementById('table-container').innerHTML = '<div class="empty">Could not load audit data. Make sure data/all_hints.json exists.</div>';
+    return;
+  }
+  const ts = data.generated_at ? new Date(data.generated_at).toLocaleString() : '\u2014';
+  document.getElementById('header-meta').textContent = 'Last updated: ' + ts + ' \u00b7 ' + (data.projects||[]).length + ' projects';
+  highHints = [];
+  (data.projects||[]).forEach(function(p) {
+    (p.hints||[]).forEach(function(h) {
+      const imp = String(h.importance||'').toLowerCase();
+      if (imp.includes('high') || /^3\b/.test(imp))
+        highHints.push(Object.assign({}, h, {_domain: p.domain, _folder: p.folder_name, _date: p.audit_date}));
+    });
+  });
+  const sections = Array.from(new Set(highHints.map(function(h){return h.section;}).filter(Boolean))).sort();
+  const sel = document.getElementById('section-filter');
+  sections.forEach(function(s) { const o=document.createElement('option'); o.value=s; o.textContent=s; sel.appendChild(o); });
+  document.getElementById('stat-total').textContent = highHints.length;
+  document.getElementById('stat-sites').textContent = new Set(highHints.map(function(h){return h._domain;})).size;
+  document.getElementById('stat-new').textContent = highHints.filter(function(h){return h.trend==='NEW';}).length;
+  document.getElementById('stat-worse').textContent = highHints.filter(function(h){return h.trend==='WORSENING';}).length;
+  document.getElementById('stat-better').textContent = highHints.filter(function(h){return h.trend==='IMPROVING';}).length;
+  render();
+}
+
+function showTab(tab, el) {
+  document.querySelectorAll('nav a').forEach(function(a){a.classList.remove('active');});
+  if (el) el.classList.add('active');
+  document.getElementById('tab-overview').style.display = tab==='overview' ? '' : 'none';
+  document.getElementById('tab-other').style.display = tab!=='overview' ? '' : 'none';
+}
+
+function filtered() {
+  const q = (document.getElementById('search').value||'').toLowerCase();
+  const sec = document.getElementById('section-filter').value;
+  const tr = document.getElementById('trend-filter').value;
+  return highHints.filter(function(h) {
+    if (sec && h.section!==sec) return false;
+    if (tr && h.trend!==tr) return false;
+    if (q && !(h._domain+' '+h.hint+' '+h.section).toLowerCase().includes(q)) return false;
+    return true;
+  });
+}
+
+function sorted(arr) {
+  return arr.slice().sort(function(a,b) {
+    let av=a[sortCol], bv=b[sortCol];
+    if (av==null) av=typeof bv==='number'?-Infinity:'';
+    if (bv==null) bv=typeof av==='number'?-Infinity:'';
+    if (typeof av==='string') av=av.toLowerCase();
+    if (typeof bv==='string') bv=bv.toLowerCase();
+    if (av<bv) return sortDir==='asc'?-1:1;
+    if (av>bv) return sortDir==='asc'?1:-1;
+    return 0;
+  });
+}
+
+function setSort(c) {
+  if (sortCol===c) { sortDir=sortDir==='asc'?'desc':'asc'; }
+  else { sortCol=c; sortDir=(c==='priority_score'||c==='urls')?'desc':'asc'; }
+  render();
+}
+
+function col(c) { return sortCol===c ? sortDir : ''; }
+
+function render() {
+  const rows = sorted(filtered());
+  document.getElementById('count').textContent = rows.length + ' issue' + (rows.length!==1?'s':'');
+  if (!rows.length) {
+    document.getElementById('table-container').innerHTML = '<div class="empty">No issues match the current filters.</div>';
+    return;
+  }
+  let html = '<table><thead><tr>';
+  html += '<th onclick="setSort(\'_domain\')" class="'+col('_domain')+'">Domain</th>';
+  html += '<th onclick="setSort(\'section\')" class="'+col('section')+'">Section</th>';
+  html += '<th onclick="setSort(\'hint\')" class="'+col('hint')+'">Issue</th>';
+  html += '<th onclick="setSort(\'urls\')" class="'+col('urls')+'" style="text-align:right">URLs</th>';
+  html += '<th onclick="setSort(\'trend\')" class="'+col('trend')+'">Trend</th>';
+  html += '<th onclick="setSort(\'warning_type\')" class="'+col('warning_type')+'">Type</th>';
+  html += '<th onclick="setSort(\'priority_score\')" class="'+col('priority_score')+'" title="Priority Score = (Importance x 10) + Warning Type. Max 34 (High + Issue), min 0. Higher = more urgent.">';
+  html += 'Score <span style="display:inline-block;width:13px;height:13px;background:#bbb;color:#fff;border-radius:50%;font-size:9px;font-weight:700;text-align:center;line-height:13px;cursor:help">?</span></th>';
+  html += '<th>Actions</th>';
+  html += '</tr></thead><tbody>';
+  rows.forEach(function(h,i){ html += rowHtml(h,i); });
+  html += '</tbody></table>';
+  document.getElementById('table-container').innerHTML = html;
+}
+
+function rowHtml(h, i) {
+  const trend = h.trend||'STABLE';
+  const trendLabels = {NEW:'&#128195; New', WORSENING:'&#8595; Worsening', IMPROVING:'&#8593; Improving', STABLE:'&mdash; Stable', RESOLVED:'&#10003; Resolved'};
+  const trendLabel = trendLabels[trend]||trend;
+  const wtRaw = String(h.warning_type||'');
+  const wtLabel = esc(wtRaw.replace(/^\d+ - /,''));
+  const wtClass = 'badge '+(wtRaw.toLowerCase().includes('issue')?'type-issue':wtRaw.toLowerCase().includes('warning')?'type-warning':'type-hint');
+  const score = h.priority_score||0;
+  const scoreClass = score>=30?'score-high':score>=20?'score-med':'score-low';
+  const prev = h.previous_urls;
+  const diff = (prev!==null&&prev!==undefined) ? (h.urls-prev) : null;
+  const diffHtml = diff!==null
+    ? '<span class="url-diff '+(diff>0?'up':diff<0?'down':'none')+'">'+(diff>0?'+':'')+diff.toLocaleString()+'</span>'
+    : '';
+  const isSuppressed = ignored.some(function(x){return x.hint===h.hint&&x.global;});
+
+  const suppressBtn = '<button'
+    +' class="action-btn btn-suppress'+(isSuppressed?' suppressed':'')+'"'
+    +' title="Remove from Reports \u2014 suppresses this hint across all future audits"'
+    +' onclick="openModal('+i+',this)">'
+    +'<span class="action-icon">&#128683;</span> '+(isSuppressed?'Suppressed':'Remove from Reports')
+    +'</button>';
+
+  const trelloBtn = '<button'
+    +' class="action-btn btn-trello"'
+    +' title="Add to Trello \u2014 creates an action card on the team board (requires approval)"'
+    +' onclick="addToTrello('+i+')">'
+    +'<span class="action-icon">&#128204;</span> Add to Trello'
+    +'</button>';
+
+  const urlsBtn = h.sheet_url
+    ? '<a href="'+esc(h.sheet_url)+'" target="_blank"'
+      +' class="action-btn btn-urls"'
+      +' title="View all URLs affected by this issue in the Sitebulb detail sheet">'
+      +'<span class="action-icon">&#128203;</span> View Affected URLs'
+      +'</a>'
+    : '';
+
+  return '<tr>'
+    +'<td><strong>'+esc(h._domain)+'</strong><br><span style="font-size:11px;color:#aaa">'+esc(h._date||'')+'</span></td>'
+    +'<td><span style="background:#eee;padding:2px 6px;border-radius:3px;font-size:11px">'+esc(h.section||'\u2014')+'</span></td>'
+    +'<td>'
+      +'<div class="hint-name">'+esc(h.hint||'\u2014')+'</div>'
+      +(h.description?'<div class="hint-desc">'+esc(h.description)+'</div>':'')
+      +(h.learn_more?'<a href="'+esc(h.learn_more)+'" target="_blank" class="learn-more">&#8599; Learn more</a>':'')
+    +'</td>'
+    +'<td class="url-count">'+((h.urls||0).toLocaleString())+diffHtml+'</td>'
+    +'<td><span class="badge trend-'+trend+'">'+trendLabel+'</span></td>'
+    +'<td><span class="'+wtClass+'">'+wtLabel+'</span></td>'
+    +'<td class="score '+scoreClass+'">'+score+'</td>'
+    +'<td class="actions-cell">'+suppressBtn+trelloBtn+urlsBtn+'</td>'
+    +'</tr>';
+}
+
+function openModal(idx, btn) {
+  const rows = sorted(filtered());
+  pendingHint = rows[idx];
+  pendingBtn = btn;
+  document.getElementById('modal-text').textContent = '"' + pendingHint.hint + '" \u00b7 ' + pendingHint.section + ' \u00b7 ' + pendingHint._domain;
+  document.getElementById('overlay').classList.add('open');
+}
+
+function closeModal(confirm) {
+  document.getElementById('overlay').classList.remove('open');
+  if (confirm && pendingHint) {
+    ignored.push({hint:pendingHint.hint, section:pendingHint.section, global:true, added:new Date().toISOString()});
+    localStorage.setItem('gpo_ignored', JSON.stringify(ignored));
+    if (pendingBtn) {
+      pendingBtn.classList.add('suppressed');
+      pendingBtn.innerHTML = '<span class="action-icon">&#128683;</span> Suppressed';
+    }
+    // TODO v2: write to suppression_config.json via GitHub Contents API + PAT
+  }
+  pendingHint = null; pendingBtn = null;
+}
+
+function addToTrello(idx) {
+  const rows = sorted(filtered());
+  const h = rows[idx];
+  // TODO: wire to Trello publisher once PAT + board config is set up
+  alert('Trello integration coming soon.\n\nThis will create a card for:\n"' + h.hint + '"\non ' + h._domain);
+}
+
+document.getElementById('overlay').addEventListener('click', function(e) {
+  if (e.target===document.getElementById('overlay')) closeModal(false);
+});
+
+function esc(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+boot();
+</script>
 </body>
 </html>
