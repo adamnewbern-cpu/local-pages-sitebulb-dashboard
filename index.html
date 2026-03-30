@@ -116,14 +116,37 @@
     .smodal .snote { font-size: 11px; color: #aaa; margin-top: 14px; line-height: 1.5; }
 
     /* Toast notification */
-    .toast { position: fixed; bottom: 24px; right: 24px; background: #1a1a2e; color: #fff; padding: 12px 18px; border-radius: 6px; font-size: 13px; z-index: 100; opacity: 0; transform: translateY(8px); transition: opacity 0.2s, transform 0.2s; pointer-events: none; max-width: 320px; }
-    .toast.show { opacity: 1; transform: translateY(0); }
+    .toast { position: fixed; bottom: 24px; right: 24px; background: #1a1a2e; color: #fff; padding: 12px 18px; border-radius: 6px; font-size: 13px; z-index: 200; opacity: 0; transform: translateY(8px); transition: opacity 0.2s, transform 0.2s; pointer-events: none; max-width: 320px; }
+    .toast.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
     .toast.error { background: #b81a1a; }
+
+    /* ── Success modal (Trello card created) ── */
+    .success-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 150; align-items: center; justify-content: center; }
+    .success-overlay.open { display: flex; }
+    .success-modal { background: #fff; border-radius: 10px; padding: 30px 28px 24px; width: 380px; max-width: 92vw; box-shadow: 0 8px 40px rgba(0,0,0,0.25); text-align: center; }
+    .success-modal .sm-icon { font-size: 42px; margin-bottom: 12px; line-height: 1; }
+    .success-modal h3 { margin: 0 0 8px; font-size: 17px; color: #1a7a1a; }
+    .success-modal p { margin: 0 0 22px; font-size: 13px; color: #666; line-height: 1.6; }
+    .success-modal-btns { display: flex; gap: 10px; justify-content: center; }
+    .sm-view { padding: 9px 22px; background: #1055cc; color: #fff; border: none; border-radius: 5px; font-size: 13px; font-weight: 600; cursor: pointer; text-decoration: none; display: inline-block; }
+    .sm-view:hover { background: #0d44a8; }
+    .sm-dismiss { padding: 9px 18px; background: #eee; color: #333; border: none; border-radius: 5px; font-size: 13px; cursor: pointer; }
+    .sm-dismiss:hover { background: #ddd; }
+
+    /* ── Confirm re-send modal ── */
+    .confirm-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 150; align-items: center; justify-content: center; }
+    .confirm-overlay.open { display: flex; }
+    .confirm-modal { background: #fff; border-radius: 10px; padding: 24px 28px 20px; width: 360px; max-width: 92vw; box-shadow: 0 8px 40px rgba(0,0,0,0.25); }
+    .confirm-modal h3 { margin: 0 0 10px; font-size: 15px; }
+    .confirm-modal p { margin: 0 0 20px; font-size: 13px; color: #555; line-height: 1.6; }
+    .confirm-modal-btns { display: flex; gap: 10px; justify-content: flex-end; }
+    .cm-confirm { padding: 7px 18px; background: #1055cc; color: #fff; border: none; border-radius: 5px; font-size: 13px; font-weight: 600; cursor: pointer; }
+    .cm-confirm:hover { background: #0d44a8; }
+    .cm-cancel { padding: 7px 16px; background: #eee; color: #333; border: none; border-radius: 5px; font-size: 13px; cursor: pointer; }
+    .cm-cancel:hover { background: #ddd; }
 
     .empty { padding: 40px; text-align: center; color: #aaa; }
     .coming-soon { padding: 60px; text-align: center; color: #aaa; }
-
-    /* Score header tooltip */
 
     /* Score header tooltip */
     .score-header-wrap { display: inline-flex; align-items: center; gap: 4px; }
@@ -231,6 +254,31 @@
 
 <!-- ── TOAST ── -->
 <div class="toast" id="toast"></div>
+
+<!-- ── SUCCESS MODAL ── -->
+<div class="success-overlay" id="success-overlay" onclick="if(event.target===this)closeSuccessModal()">
+  <div class="success-modal">
+    <div class="sm-icon">&#9989;</div>
+    <h3>Card Added to Trello!</h3>
+    <p>This issue has been added to <strong>New Request</strong> on<br><strong>All Team GPO Product Backlog</strong>.</p>
+    <div class="success-modal-btns">
+      <a id="sm-view-link" href="#" target="_blank" class="sm-view">View in Trello</a>
+      <button class="sm-dismiss" onclick="closeSuccessModal()">Dismiss</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── CONFIRM RE-SEND MODAL ── -->
+<div class="confirm-overlay" id="confirm-overlay" onclick="if(event.target===this)closeConfirmModal()">
+  <div class="confirm-modal">
+    <h3>&#128204; Already in Backlog</h3>
+    <p>This issue has already been sent to the Backlog board. Add it again?</p>
+    <div class="confirm-modal-btns">
+      <button class="cm-cancel" onclick="closeConfirmModal()">Dismiss</button>
+      <button class="cm-confirm" onclick="confirmResend()">Add Again</button>
+    </div>
+  </div>
+</div>
 
 <script>
 const DATA_URL = 'data/all_hints.json';
@@ -346,11 +394,14 @@ function rowHtml(h, i) {
     ? '<span class="url-diff '+(diff>0?'up':diff<0?'down':'none')+'">'+(diff>0?'+':'')+diff.toLocaleString()+'</span>'
     : '';
 
+  const alreadySent = !!getSentUrl(h);
   const trelloBtn = '<button'
-    +' class="action-btn btn-trello"'
+    +' class="action-btn btn-trello' + (alreadySent ? ' sent' : '') + '"'
     +' title="Add to Trello \u2014 creates a card in New Request on All Team GPO Product Backlog"'
     +' onclick="addToTrello('+i+',this)">'
-    +'<span class="action-icon">&#128204;</span> Add to Trello'
+    +(alreadySent
+      ? '<span class="action-icon">&#10003;</span> Added to Trello'
+      : '<span class="action-icon">&#128204;</span> Add to Trello')
     +'</button>';
 
   const urlsBtn = h.sheet_url
@@ -416,6 +467,51 @@ function showToast(msg, isError) {
   setTimeout(function() { t.classList.remove('show'); }, 3500);
 }
 
+// ── Trello sent-state helpers ─────────────────────────────────────────────
+function trelloSentKey(h) {
+  return 'trello_sent:' + (h._domain || '') + '::' + (h.hint || '');
+}
+
+function getSentUrl(h) {
+  return localStorage.getItem(trelloSentKey(h)) || null;
+}
+
+function setSentUrl(h, shortUrl) {
+  localStorage.setItem(trelloSentKey(h), shortUrl || '1');
+}
+
+// ── Success modal ─────────────────────────────────────────────────────────
+function openSuccessModal(shortUrl) {
+  const link = document.getElementById('sm-view-link');
+  link.href = shortUrl || '#';
+  document.getElementById('success-overlay').classList.add('open');
+}
+
+function closeSuccessModal() {
+  document.getElementById('success-overlay').classList.remove('open');
+}
+
+// ── Confirm re-send modal ─────────────────────────────────────────────────
+var _pendingResend = null;
+
+function openConfirmModal(idx, btn) {
+  _pendingResend = { idx: idx, btn: btn };
+  document.getElementById('confirm-overlay').classList.add('open');
+}
+
+function closeConfirmModal() {
+  document.getElementById('confirm-overlay').classList.remove('open');
+  _pendingResend = null;
+}
+
+function confirmResend() {
+  closeConfirmModal();
+  if (_pendingResend) {
+    doSendToTrello(_pendingResend.idx, _pendingResend.btn);
+  }
+}
+
+// ── Trello actions ────────────────────────────────────────────────────────
 function addToTrello(idx, btn) {
   const creds = getTrelloCreds();
   if (!creds.key || !creds.token) {
@@ -426,6 +522,21 @@ function addToTrello(idx, btn) {
   const rows = sorted(filtered());
   const h = rows[idx];
 
+  // If already sent, ask for confirmation before re-sending
+  if (getSentUrl(h)) {
+    openConfirmModal(idx, btn);
+    return;
+  }
+
+  doSendToTrello(idx, btn);
+}
+
+function doSendToTrello(idx, btn) {
+  const creds = getTrelloCreds();
+  const rows = sorted(filtered());
+  const h = rows[idx];
+
+  btn.classList.remove('sent');
   btn.classList.add('sending');
   btn.innerHTML = '<span class="action-icon">&#8987;</span> Sending...';
 
@@ -466,7 +577,8 @@ function addToTrello(idx, btn) {
         btn.classList.remove('sending');
         btn.classList.add('sent');
         btn.innerHTML = '<span class="action-icon">&#10003;</span> Added to Trello';
-        showToast('&#10003; Card created: <a href="' + card.shortUrl + '" target="_blank" style="color:#90d090">View in Trello</a>');
+        setSentUrl(h, card.shortUrl);
+        openSuccessModal(card.shortUrl);
       } else {
         throw new Error(card.message || 'Unknown error');
       }
