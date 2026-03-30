@@ -152,6 +152,32 @@
     /* Score header tooltip */
     .score-header-wrap { display: inline-flex; align-items: center; gap: 4px; }
     .score-info { display: inline-block; width: 14px; height: 14px; background: #ccc; color: #fff; border-radius: 50%; font-size: 9px; font-weight: 700; text-align: center; line-height: 14px; cursor: help; }
+
+    /* ── GSC Recommendations ── */
+    .rec-card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 16px 18px; }
+    .rec-card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+    .rec-card-icon { font-size: 18px; line-height: 1; }
+    .rec-card-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+    .rec-card.quick-wins { border-top: 3px solid #1a7a1a; }
+    .rec-card.quick-wins .rec-card-title { color: #1a7a1a; }
+    .rec-card.warnings { border-top: 3px solid #c60; }
+    .rec-card.warnings .rec-card-title { color: #a05000; }
+    .rec-card.opportunities { border-top: 3px solid #1055cc; }
+    .rec-card.opportunities .rec-card-title { color: #1055cc; }
+    .rec-item { padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+    .rec-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .rec-item-title { font-size: 13px; font-weight: 600; margin-bottom: 3px; }
+    .rec-item-detail { font-size: 12px; color: #666; line-height: 1.5; }
+    .rec-pill { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 10px; font-weight: 600; margin-left: 6px; vertical-align: middle; }
+    .pill-high { background: #fde8e8; color: #b81a1a; }
+    .pill-medium { background: #fff3e0; color: #a05000; }
+    .pill-low { background: #e8fde8; color: #1a7a1a; }
+    .gsc-summary { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 14px 18px; margin-bottom: 16px; font-size: 13px; color: #444; line-height: 1.6; border-left: 4px solid #6c7ae0; }
+    .chg-up { color: #c00; font-size: 11px; }
+    .chg-down { color: #070; font-size: 11px; }
+    .chg-neutral { color: #888; font-size: 11px; }
+    .pos-up { color: #c00; }
+    .pos-down { color: #070; }
   </style>
 </head>
 <body>
@@ -166,7 +192,7 @@
 
 <nav>
   <a class="active" onclick="showTab('overview', this)">&#128680; High Priority</a>
-  <a class="disabled">Organic Search</a>
+  <a onclick="showTab('gsc', this)">&#128200; Search Console</a>
 </nav>
 
 <div class="content">
@@ -204,12 +230,47 @@
     </div>
   </div>
 
-  <!-- ── OTHER TABS ── -->
-  <div id="tab-other" style="display:none">
-    <div class="coming-soon">
-      <strong style="font-size:16px">Coming in v2</strong><br><br>
-      This tab will show per-category data with a site selector dropdown.<br>
-      Use <strong>High Priority</strong> for now to see critical issues at a glance.
+  <!-- ── ORGANIC SEARCH TAB ── -->
+  <div id="tab-gsc" style="display:none">
+
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px">
+      <div>
+        <h2 style="font-size:16px;margin:0 0 3px">Organic Search &mdash; GSC Analysis</h2>
+        <p style="font-size:12px;color:#888;margin:0" id="gsc-meta">Loading data&hellip;</p>
+      </div>
+      <select id="gsc-site-select" onchange="renderGsc()" style="padding:7px 12px;border:1px solid #ccc;border-radius:5px;font-size:13px;min-width:220px">
+        <option value="">Select a site&hellip;</option>
+      </select>
+    </div>
+
+    <!-- No data / loading states -->
+    <div id="gsc-no-data" class="coming-soon" style="display:none">
+      <strong style="font-size:15px">&#128200; GSC data not yet loaded</strong><br><br>
+      Run <code>gsc_analyzer.py</code> then <code>gsc_recommendations.py</code>,<br>
+      then push <code>data/gsc_recommendations.json</code> to GitHub.
+    </div>
+
+    <!-- Main GSC content (hidden until a site is selected) -->
+    <div id="gsc-content" style="display:none">
+
+      <!-- Stat bar -->
+      <div class="stats" id="gsc-stats" style="margin-bottom:16px"></div>
+
+      <!-- Recommendations -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:20px" id="gsc-recs-grid"></div>
+
+      <!-- Top queries table -->
+      <div style="margin-bottom:20px">
+        <h3 style="font-size:13px;font-weight:600;color:#444;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.4px">Top Queries (last 30 days)</h3>
+        <div class="table-wrap"><div id="gsc-queries-table"></div></div>
+      </div>
+
+      <!-- Top pages table -->
+      <div>
+        <h3 style="font-size:13px;font-weight:600;color:#444;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.4px">Top Pages (last 30 days)</h3>
+        <div class="table-wrap"><div id="gsc-pages-table"></div></div>
+      </div>
+
     </div>
   </div>
 
@@ -308,11 +369,16 @@ async function boot() {
   render();
 }
 
+var _gscInitialized = false;
 function showTab(tab, el) {
   document.querySelectorAll('nav a').forEach(function(a){a.classList.remove('active');});
   if (el) el.classList.add('active');
   document.getElementById('tab-overview').style.display = tab==='overview' ? '' : 'none';
-  document.getElementById('tab-other').style.display = tab!=='overview' ? '' : 'none';
+  document.getElementById('tab-gsc').style.display = tab==='gsc' ? '' : 'none';
+  if (tab === 'gsc' && !_gscInitialized) {
+    _gscInitialized = true;
+    initGscTab();
+  }
 }
 
 function filtered() {
@@ -588,6 +654,234 @@ document.getElementById('soverlay').addEventListener('click', function(e) {
 
 function esc(s) {
   return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── GSC / Organic Search tab ──────────────────────────────────────────────────
+
+const GSC_DATA_URL = 'data/gsc_recommendations.json';
+let gscData = null;
+
+async function loadGscData() {
+  if (gscData) return gscData;
+  try {
+    const r = await fetch(GSC_DATA_URL);
+    if (r.ok) {
+      gscData = await r.json();
+      return gscData;
+    }
+  } catch (_) {}
+  return null;
+}
+
+async function initGscTab() {
+  const data = await loadGscData();
+  const select = document.getElementById('gsc-site-select');
+
+  if (!data || !data.sites || !data.sites.length) {
+    document.getElementById('gsc-no-data').style.display = '';
+    document.getElementById('gsc-content').style.display = 'none';
+    document.getElementById('gsc-meta').textContent = 'No GSC data found.';
+    return;
+  }
+
+  const ts = data.generated_at ? new Date(data.generated_at).toLocaleString() : '—';
+  document.getElementById('gsc-meta').textContent =
+    'Last updated: ' + ts + ' · ' + data.sites.length + ' sites · Model: ' + (data.model || '—');
+
+  // Populate site selector
+  select.innerHTML = '<option value="">Select a site…</option>';
+  data.sites.forEach(function(s, i) {
+    const o = document.createElement('option');
+    o.value = i;
+    o.textContent = s.display_name;
+    select.appendChild(o);
+  });
+
+  // Auto-select first site
+  if (data.sites.length) {
+    select.value = '0';
+    renderGsc();
+  }
+}
+
+function renderGsc() {
+  const data = gscData;
+  if (!data) return;
+  const idx = document.getElementById('gsc-site-select').value;
+  if (idx === '') {
+    document.getElementById('gsc-content').style.display = 'none';
+    return;
+  }
+  const site = data.sites[parseInt(idx)];
+  if (!site) return;
+
+  document.getElementById('gsc-content').style.display = '';
+  document.getElementById('gsc-no-data').style.display = 'none';
+
+  renderGscStats(site);
+  renderGscRecs(site);
+  renderGscQueriesTable(site);
+  renderGscPagesTable(site);
+}
+
+function fmtPct(val) {
+  if (val === null || val === undefined) return '<span class="chg-neutral">—</span>';
+  const cls = val > 0 ? 'chg-up' : val < 0 ? 'chg-down' : 'chg-neutral';
+  return '<span class="' + cls + '">' + (val > 0 ? '+' : '') + val + '%</span>';
+}
+
+function fmtPosDelta(val, inverted) {
+  // For position: lower is better, so going down (negative delta) = good
+  if (val === null || val === undefined) return '<span class="chg-neutral">—</span>';
+  const good = inverted ? val < 0 : val > 0;
+  const bad = inverted ? val > 0 : val < 0;
+  const cls = good ? 'chg-down' : bad ? 'chg-up' : 'chg-neutral';
+  return '<span class="' + cls + '">' + (val > 0 ? '+' : '') + val + '</span>';
+}
+
+function renderGscStats(site) {
+  const t = site.totals;
+  const cur = t.current;
+  const prev = t.previous;
+  const b = site.position_buckets;
+
+  const stats = [
+    { num: cur.clicks.toLocaleString(), lbl: 'Clicks (30d)', sub: fmtPct(t.clicks_change_pct), cls: 'blue' },
+    { num: cur.impressions.toLocaleString(), lbl: 'Impressions (30d)', sub: fmtPct(t.impressions_change_pct), cls: 'blue' },
+    { num: cur.position, lbl: 'Avg Position', sub: fmtPosDelta(t.position_change, true) + ' vs prev', cls: cur.position <= 10 ? 'green' : cur.position <= 20 ? 'orange' : 'red' },
+    { num: cur.ctr + '%', lbl: 'Avg CTR', sub: '', cls: cur.ctr >= 5 ? 'green' : cur.ctr >= 2 ? 'orange' : 'red' },
+    { num: b.top_3.count, lbl: 'Top 3 Keywords', sub: '', cls: 'green' },
+    { num: b.pos_4_10.count, lbl: 'Pos 4–10 Keywords', sub: '', cls: 'orange' },
+    { num: b.pos_11_20.count, lbl: 'Page-2 Keywords', sub: '', cls: 'red' },
+  ];
+
+  document.getElementById('gsc-stats').innerHTML = stats.map(function(s) {
+    return '<div class="stat ' + s.cls + '">'
+      + '<div class="num">' + s.num + '</div>'
+      + '<div class="lbl">' + s.lbl + '</div>'
+      + (s.sub ? '<div style="font-size:11px;margin-top:2px">' + s.sub + '</div>' : '')
+      + '</div>';
+  }).join('');
+}
+
+function renderGscRecs(site) {
+  const recs = site.recommendations || {};
+  const summary = recs.summary || '';
+
+  let html = '';
+  if (summary) {
+    html += '<div class="gsc-summary">&#128203; ' + esc(summary) + '</div>';
+  }
+
+  document.getElementById('gsc-stats').insertAdjacentHTML('afterend',
+    '<div id="gsc-summary-box">' + (summary ? '<div class="gsc-summary">&#128203; ' + esc(summary) + '</div>' : '') + '</div>');
+
+  // Remove previous summary box if re-rendering
+  const existingBox = document.getElementById('gsc-summary-box');
+  if (existingBox) existingBox.remove();
+  document.getElementById('gsc-stats').insertAdjacentHTML('afterend',
+    '<div id="gsc-summary-box" style="margin-bottom:16px">'
+    + (summary ? '<div class="gsc-summary">&#128203; ' + esc(summary) + '</div>' : '')
+    + '</div>');
+
+  function pillHtml(val, type) {
+    if (!val) return '';
+    const cls = val === 'high' ? 'pill-high' : val === 'medium' ? 'pill-medium' : 'pill-low';
+    const label = type === 'impact' ? '⚡ ' + val + ' impact' : type === 'effort' ? '🔧 ' + val + ' effort' : '⚠️ ' + val;
+    return '<span class="rec-pill ' + cls + '">' + label + '</span>';
+  }
+
+  function cardHtml(cssClass, icon, title, items, itemType) {
+    if (!items || !items.length) return '';
+    const itemsHtml = items.map(function(item) {
+      let pills = '';
+      if (itemType === 'rec') pills = pillHtml(item.impact, 'impact') + pillHtml(item.effort, 'effort');
+      if (itemType === 'warn') pills = pillHtml(item.severity, 'severity');
+      return '<div class="rec-item">'
+        + '<div class="rec-item-title">' + esc(item.title || '') + pills + '</div>'
+        + '<div class="rec-item-detail">' + esc(item.detail || '') + '</div>'
+        + '</div>';
+    }).join('');
+    return '<div class="rec-card ' + cssClass + '">'
+      + '<div class="rec-card-header"><span class="rec-card-icon">' + icon + '</span>'
+      + '<span class="rec-card-title">' + title + '</span></div>'
+      + itemsHtml
+      + '</div>';
+  }
+
+  const grid = cardHtml('quick-wins', '⚡', 'Quick Wins', recs.quick_wins, 'rec')
+    + cardHtml('warnings', '⚠️', 'Potential Warnings', recs.potential_warnings, 'warn')
+    + cardHtml('opportunities', '🚀', 'Biggest Opportunities', recs.biggest_opportunities, 'rec');
+
+  document.getElementById('gsc-recs-grid').innerHTML = grid || '<p style="color:#aaa;font-size:13px">No recommendations generated.</p>';
+}
+
+function renderGscQueriesTable(site) {
+  const queries = (site.top_queries || []).slice(0, 20);
+  if (!queries.length) {
+    document.getElementById('gsc-queries-table').innerHTML = '<div class="empty">No query data.</div>';
+    return;
+  }
+  let html = '<table><thead><tr>'
+    + '<th>Query</th>'
+    + '<th style="text-align:right">Clicks</th>'
+    + '<th style="text-align:right">Impressions</th>'
+    + '<th style="text-align:right">CTR</th>'
+    + '<th style="text-align:right">Position</th>'
+    + '<th style="text-align:right">Pos Change</th>'
+    + '<th>Trend</th>'
+    + '</tr></thead><tbody>';
+
+  queries.forEach(function(q) {
+    const trendClass = q.trend === 'IMPROVING' ? 'trend-IMPROVING' : q.trend === 'WORSENING' ? 'trend-WORSENING' : q.trend === 'NEW' ? 'trend-NEW' : 'trend-STABLE';
+    const trendLabel = q.trend === 'IMPROVING' ? '↑ Improving' : q.trend === 'WORSENING' ? '↓ Worsening' : q.trend === 'NEW' ? '● New' : '— Stable';
+    const posChgHtml = q.position_change !== null && q.position_change !== undefined
+      ? fmtPosDelta(q.position_change, true)
+      : '<span class="chg-neutral">—</span>';
+    html += '<tr>'
+      + '<td style="max-width:260px;word-break:break-word">' + esc(q.query) + '</td>'
+      + '<td style="text-align:right;font-weight:500">' + q.clicks.toLocaleString() + '</td>'
+      + '<td style="text-align:right">' + q.impressions.toLocaleString() + '</td>'
+      + '<td style="text-align:right">' + q.ctr + '%</td>'
+      + '<td style="text-align:right">' + q.position + '</td>'
+      + '<td style="text-align:right">' + posChgHtml + '</td>'
+      + '<td><span class="badge ' + trendClass + '">' + trendLabel + '</span></td>'
+      + '</tr>';
+  });
+  html += '</tbody></table>';
+  document.getElementById('gsc-queries-table').innerHTML = html;
+}
+
+function renderGscPagesTable(site) {
+  const pages = (site.top_pages || []).slice(0, 10);
+  if (!pages.length) {
+    document.getElementById('gsc-pages-table').innerHTML = '<div class="empty">No page data.</div>';
+    return;
+  }
+  let html = '<table><thead><tr>'
+    + '<th>Page</th>'
+    + '<th style="text-align:right">Clicks</th>'
+    + '<th style="text-align:right">Impressions</th>'
+    + '<th style="text-align:right">CTR</th>'
+    + '<th style="text-align:right">Position</th>'
+    + '<th>Trend</th>'
+    + '</tr></thead><tbody>';
+
+  pages.forEach(function(p) {
+    const trendClass = p.trend === 'IMPROVING' ? 'trend-IMPROVING' : p.trend === 'WORSENING' ? 'trend-WORSENING' : p.trend === 'NEW' ? 'trend-NEW' : 'trend-STABLE';
+    const trendLabel = p.trend === 'IMPROVING' ? '↑ Improving' : p.trend === 'WORSENING' ? '↓ Worsening' : p.trend === 'NEW' ? '● New' : '— Stable';
+    const displayPage = p.page.length > 60 ? '…' + p.page.slice(-57) : p.page;
+    html += '<tr>'
+      + '<td style="max-width:300px;word-break:break-all;font-size:11px"><a href="' + esc(p.page) + '" target="_blank" style="color:#0066cc">' + esc(displayPage) + '</a></td>'
+      + '<td style="text-align:right;font-weight:500">' + p.clicks.toLocaleString() + '</td>'
+      + '<td style="text-align:right">' + p.impressions.toLocaleString() + '</td>'
+      + '<td style="text-align:right">' + p.ctr + '%</td>'
+      + '<td style="text-align:right">' + p.position + '</td>'
+      + '<td><span class="badge ' + trendClass + '">' + trendLabel + '</span></td>'
+      + '</tr>';
+  });
+  html += '</tbody></table>';
+  document.getElementById('gsc-pages-table').innerHTML = html;
 }
 
 boot();
