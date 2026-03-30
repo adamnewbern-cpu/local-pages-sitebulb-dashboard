@@ -82,11 +82,6 @@
     .action-btn:hover { opacity: 1; transform: translateY(-1px); }
     .action-btn:active { transform: translateY(0); }
 
-    /* Suppress button */
-    .btn-suppress { background: #fff0f0; color: #b81a1a; border: 1px solid #f5c0c0; }
-    .btn-suppress:hover { background: #ffe0e0; border-color: #e08080; }
-    .btn-suppress.suppressed { background: #fde8e8; color: #b81a1a; opacity: 1; border-color: #d09090; }
-
     /* Trello button */
     .btn-trello { background: #f0f4ff; color: #1055cc; border: 1px solid #c0d0f5; }
     .btn-trello:hover { background: #e0ecff; border-color: #80a8e8; }
@@ -100,19 +95,7 @@
     .empty { padding: 40px; text-align: center; color: #aaa; }
     .coming-soon { padding: 60px; text-align: center; color: #aaa; }
 
-    /* ── Suppress modal ── */
-    .overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 50; align-items: center; justify-content: center; }
-    .overlay.open { display: flex; }
-    .modal { background: #fff; border-radius: 8px; padding: 24px; width: 400px; max-width: 90vw; box-shadow: 0 8px 40px rgba(0,0,0,0.18); }
-    .modal h3 { margin: 0 0 10px; font-size: 15px; }
-    .modal .hint-box { background: #f5f5f5; border-left: 3px solid #b81a1a; padding: 8px 12px; font-size: 12px; color: #444; margin-bottom: 12px; border-radius: 0 4px 4px 0; }
-    .modal p { font-size: 12px; color: #888; margin: 0 0 18px; }
-    .modal-btns { display: flex; gap: 10px; justify-content: flex-end; }
-    .btn { padding: 7px 16px; border-radius: 4px; font-size: 13px; cursor: pointer; border: none; }
-    .btn-cancel { background: #eee; color: #333; }
-    .btn-cancel:hover { background: #ddd; }
-    .btn-confirm { background: #b81a1a; color: #fff; }
-    .btn-confirm:hover { background: #8c1010; }
+    /* Score header tooltip */
 
     /* Score header tooltip */
     .score-header-wrap { display: inline-flex; align-items: center; gap: 4px; }
@@ -186,26 +169,12 @@
 
 </div>
 
-<!-- ── SUPPRESS MODAL ── -->
-<div class="overlay" id="overlay">
-  <div class="modal">
-    <h3>&#128683; Remove from Reports?</h3>
-    <div class="hint-box" id="modal-text"></div>
-    <p>This hint will be suppressed in all future audit reports across every site. You can reverse this by editing the ignore list in the repo.</p>
-    <div class="modal-btns">
-      <button class="btn btn-cancel" onclick="closeModal(false)">Cancel</button>
-      <button class="btn btn-confirm" onclick="closeModal(true)">Yes, Remove from Reports</button>
-    </div>
-  </div>
-</div>
 
 <script>
 const DATA_URL = 'data/all_hints.json';
 const FALLBACK_URL = 'data/sample_all_hints.json';
 
 let highHints = [], sortCol = 'priority_score', sortDir = 'desc';
-let pendingHint = null, pendingBtn = null;
-let ignored = JSON.parse(localStorage.getItem('gpo_ignored') || '[]');
 
 async function boot() {
   let data = null;
@@ -314,14 +283,6 @@ function rowHtml(h, i) {
   const diffHtml = diff!==null
     ? '<span class="url-diff '+(diff>0?'up':diff<0?'down':'none')+'">'+(diff>0?'+':'')+diff.toLocaleString()+'</span>'
     : '';
-  const isSuppressed = ignored.some(function(x){return x.hint===h.hint&&x.global;});
-
-  const suppressBtn = '<button'
-    +' class="action-btn btn-suppress'+(isSuppressed?' suppressed':'')+'"'
-    +' title="Remove from Reports \u2014 suppresses this hint across all future audits"'
-    +' onclick="openModal('+i+',this)">'
-    +'<span class="action-icon">&#128683;</span> '+(isSuppressed?'Suppressed':'Remove from Reports')
-    +'</button>';
 
   const trelloBtn = '<button'
     +' class="action-btn btn-trello"'
@@ -350,30 +311,8 @@ function rowHtml(h, i) {
     +'<td><span class="badge trend-'+trend+'">'+trendLabel+'</span></td>'
     +'<td><span class="'+wtClass+'">'+wtLabel+'</span></td>'
     +'<td class="score '+scoreClass+'">'+score+'</td>'
-    +'<td class="actions-cell">'+suppressBtn+trelloBtn+urlsBtn+'</td>'
+    +'<td class="actions-cell">'+trelloBtn+urlsBtn+'</td>'
     +'</tr>';
-}
-
-function openModal(idx, btn) {
-  const rows = sorted(filtered());
-  pendingHint = rows[idx];
-  pendingBtn = btn;
-  document.getElementById('modal-text').textContent = '"' + pendingHint.hint + '" \u00b7 ' + pendingHint.section + ' \u00b7 ' + pendingHint._domain;
-  document.getElementById('overlay').classList.add('open');
-}
-
-function closeModal(confirm) {
-  document.getElementById('overlay').classList.remove('open');
-  if (confirm && pendingHint) {
-    ignored.push({hint:pendingHint.hint, section:pendingHint.section, global:true, added:new Date().toISOString()});
-    localStorage.setItem('gpo_ignored', JSON.stringify(ignored));
-    if (pendingBtn) {
-      pendingBtn.classList.add('suppressed');
-      pendingBtn.innerHTML = '<span class="action-icon">&#128683;</span> Suppressed';
-    }
-    // TODO v2: write to suppression_config.json via GitHub Contents API + PAT
-  }
-  pendingHint = null; pendingBtn = null;
 }
 
 function addToTrello(idx) {
@@ -382,10 +321,6 @@ function addToTrello(idx) {
   // TODO: wire to Trello publisher once PAT + board config is set up
   alert('Trello integration coming soon.\n\nThis will create a card for:\n"' + h.hint + '"\non ' + h._domain);
 }
-
-document.getElementById('overlay').addEventListener('click', function(e) {
-  if (e.target===document.getElementById('overlay')) closeModal(false);
-});
 
 function esc(s) {
   return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
