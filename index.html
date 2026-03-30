@@ -85,12 +85,40 @@
     /* Trello button */
     .btn-trello { background: #f0f4ff; color: #1055cc; border: 1px solid #c0d0f5; }
     .btn-trello:hover { background: #e0ecff; border-color: #80a8e8; }
+    .btn-trello.sending { opacity: 0.6; cursor: not-allowed; }
+    .btn-trello.sent { background: #e8fde8; color: #1a7a1a; border-color: #90d090; opacity: 1; }
 
     /* View URLs button */
     .btn-urls { background: #f5f5f5; color: #333; border: 1px solid #ddd; }
     .btn-urls:hover { background: #e8e8e8; border-color: #bbb; }
 
     .action-icon { font-size: 14px; line-height: 1; }
+
+    /* ── Settings modal ── */
+    .settings-btn { background: none; border: none; color: rgba(255,255,255,0.6); font-size: 18px; cursor: pointer; padding: 4px 8px; line-height: 1; }
+    .settings-btn:hover { color: #fff; }
+    .soverlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 50; align-items: center; justify-content: center; }
+    .soverlay.open { display: flex; }
+    .smodal { background: #fff; border-radius: 8px; padding: 24px; width: 440px; max-width: 92vw; box-shadow: 0 8px 40px rgba(0,0,0,0.2); }
+    .smodal h3 { margin: 0 0 6px; font-size: 15px; }
+    .smodal .ssubtitle { font-size: 12px; color: #888; margin: 0 0 18px; }
+    .sfield { margin-bottom: 14px; }
+    .sfield label { display: block; font-size: 11px; font-weight: 600; color: #555; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.4px; }
+    .sfield input { width: 100%; padding: 7px 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 13px; font-family: monospace; box-sizing: border-box; }
+    .sfield input:focus { outline: none; border-color: #1055cc; }
+    .sfield .sreadonly { background: #f5f5f5; color: #666; padding: 7px 10px; border: 1px solid #e0e0e0; border-radius: 4px; font-size: 13px; }
+    .smodal-btns { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+    .sbtn { padding: 7px 16px; border-radius: 4px; font-size: 13px; cursor: pointer; border: none; }
+    .sbtn-cancel { background: #eee; color: #333; }
+    .sbtn-cancel:hover { background: #ddd; }
+    .sbtn-save { background: #1055cc; color: #fff; }
+    .sbtn-save:hover { background: #0d44a8; }
+    .smodal .snote { font-size: 11px; color: #aaa; margin-top: 14px; line-height: 1.5; }
+
+    /* Toast notification */
+    .toast { position: fixed; bottom: 24px; right: 24px; background: #1a1a2e; color: #fff; padding: 12px 18px; border-radius: 6px; font-size: 13px; z-index: 100; opacity: 0; transform: translateY(8px); transition: opacity 0.2s, transform 0.2s; pointer-events: none; max-width: 320px; }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    .toast.error { background: #b81a1a; }
 
     .empty { padding: 40px; text-align: center; color: #aaa; }
     .coming-soon { padding: 60px; text-align: center; color: #aaa; }
@@ -106,7 +134,10 @@
 
 <header>
   <h1>GPO SEO Monitoring Dashboard</h1>
-  <small id="header-meta">Loading...</small>
+  <div style="display:flex;align-items:center;gap:12px">
+    <small id="header-meta">Loading...</small>
+    <button class="settings-btn" onclick="openSettings()" title="Configure Trello credentials">&#9881;</button>
+  </div>
 </header>
 
 <nav>
@@ -169,6 +200,37 @@
 
 </div>
 
+<!-- ── SETTINGS MODAL ── -->
+<div class="soverlay" id="soverlay">
+  <div class="smodal">
+    <h3>&#9881; Trello Settings</h3>
+    <p class="ssubtitle">Your credentials are stored locally in this browser only &mdash; never in the repo.</p>
+    <div class="sfield">
+      <label>Trello API Key</label>
+      <input type="text" id="s-key" placeholder="Your Trello API key" autocomplete="off">
+    </div>
+    <div class="sfield">
+      <label>Trello Token</label>
+      <input type="text" id="s-token" placeholder="Your Trello token" autocomplete="off">
+    </div>
+    <div class="sfield">
+      <label>Board</label>
+      <div class="sreadonly">All Team GPO Product Backlog</div>
+    </div>
+    <div class="sfield">
+      <label>List</label>
+      <div class="sreadonly">New Request</div>
+    </div>
+    <p class="snote">Get your API key and token at <strong>trello.com/app-key</strong>. Token must have read+write scope.</p>
+    <div class="smodal-btns">
+      <button class="sbtn sbtn-cancel" onclick="closeSettings()">Cancel</button>
+      <button class="sbtn sbtn-save" onclick="saveSettings()">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── TOAST ── -->
+<div class="toast" id="toast"></div>
 
 <script>
 const DATA_URL = 'data/all_hints.json';
@@ -286,8 +348,8 @@ function rowHtml(h, i) {
 
   const trelloBtn = '<button'
     +' class="action-btn btn-trello"'
-    +' title="Add to Trello \u2014 creates an action card on the team board (requires approval)"'
-    +' onclick="addToTrello('+i+')">'
+    +' title="Add to Trello \u2014 creates a card in New Request on All Team GPO Product Backlog"'
+    +' onclick="addToTrello('+i+',this)">'
     +'<span class="action-icon">&#128204;</span> Add to Trello'
     +'</button>';
 
@@ -315,12 +377,110 @@ function rowHtml(h, i) {
     +'</tr>';
 }
 
-function addToTrello(idx) {
+// ── Trello config ──────────────────────────────────────────────────────────
+const TRELLO_LIST_ID = '5b21848c642a017f709515de'; // New Request — All Team GPO Product Backlog
+
+function getTrelloCreds() {
+  return {
+    key: localStorage.getItem('trello_key') || '',
+    token: localStorage.getItem('trello_token') || ''
+  };
+}
+
+function openSettings() {
+  const c = getTrelloCreds();
+  document.getElementById('s-key').value = c.key;
+  document.getElementById('s-token').value = c.token;
+  document.getElementById('soverlay').classList.add('open');
+}
+
+function closeSettings() {
+  document.getElementById('soverlay').classList.remove('open');
+}
+
+function saveSettings() {
+  const key = document.getElementById('s-key').value.trim();
+  const token = document.getElementById('s-token').value.trim();
+  if (!key || !token) { showToast('Please enter both API Key and Token.', true); return; }
+  localStorage.setItem('trello_key', key);
+  localStorage.setItem('trello_token', token);
+  closeSettings();
+  showToast('&#10003; Trello credentials saved.');
+}
+
+function showToast(msg, isError) {
+  const t = document.getElementById('toast');
+  t.innerHTML = msg;
+  t.className = 'toast' + (isError ? ' error' : '');
+  t.classList.add('show');
+  setTimeout(function() { t.classList.remove('show'); }, 3500);
+}
+
+function addToTrello(idx, btn) {
+  const creds = getTrelloCreds();
+  if (!creds.key || !creds.token) {
+    openSettings();
+    showToast('Enter your Trello credentials first.', true);
+    return;
+  }
   const rows = sorted(filtered());
   const h = rows[idx];
-  // TODO: wire to Trello publisher once PAT + board config is set up
-  alert('Trello integration coming soon.\n\nThis will create a card for:\n"' + h.hint + '"\non ' + h._domain);
+
+  btn.classList.add('sending');
+  btn.innerHTML = '<span class="action-icon">&#8987;</span> Sending...';
+
+  const trendLabels = {NEW:'New', WORSENING:'Worsening', IMPROVING:'Improving', STABLE:'Stable', RESOLVED:'Resolved'};
+  const cardName = '[' + h._domain + '] ' + h.hint;
+  const cardDesc = [
+    '## SEO Audit Issue',
+    '',
+    '**Site:** ' + h._domain,
+    '**Audit Date:** ' + (h._date || 'Unknown'),
+    '**Section:** ' + (h.section || '—'),
+    '**Priority Score:** ' + (h.priority_score || 0) + ' / 34',
+    '**Importance:** ' + (h.importance || '—'),
+    '**Warning Type:** ' + (h.warning_type || '—'),
+    '**Trend:** ' + (trendLabels[h.trend] || h.trend || '—'),
+    '**Affected URLs:** ' + ((h.urls || 0).toLocaleString()),
+    '',
+    '---',
+    (h.description ? '**Description:** ' + h.description + '\n' : ''),
+    (h.learn_more ? '**Learn More:** ' + h.learn_more + '\n' : ''),
+    (h.sheet_url ? '**Affected URLs List:** ' + h.sheet_url + '\n' : ''),
+    '---',
+    '*Generated by GPO SEO Dashboard*'
+  ].join('\n');
+
+  const url = 'https://api.trello.com/1/cards'
+    + '?key=' + encodeURIComponent(creds.key)
+    + '&token=' + encodeURIComponent(creds.token)
+    + '&idList=' + encodeURIComponent(TRELLO_LIST_ID)
+    + '&name=' + encodeURIComponent(cardName)
+    + '&desc=' + encodeURIComponent(cardDesc)
+    + '&pos=top';
+
+  fetch(url, { method: 'POST' })
+    .then(function(r) { return r.json(); })
+    .then(function(card) {
+      if (card.id) {
+        btn.classList.remove('sending');
+        btn.classList.add('sent');
+        btn.innerHTML = '<span class="action-icon">&#10003;</span> Added to Trello';
+        showToast('&#10003; Card created: <a href="' + card.shortUrl + '" target="_blank" style="color:#90d090">View in Trello</a>');
+      } else {
+        throw new Error(card.message || 'Unknown error');
+      }
+    })
+    .catch(function(err) {
+      btn.classList.remove('sending');
+      btn.innerHTML = '<span class="action-icon">&#128204;</span> Add to Trello';
+      showToast('Failed to create card: ' + err.message, true);
+    });
 }
+
+document.getElementById('soverlay').addEventListener('click', function(e) {
+  if (e.target === document.getElementById('soverlay')) closeSettings();
+});
 
 function esc(s) {
   return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
