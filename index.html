@@ -172,7 +172,7 @@
     .pill-high { background: #fde8e8; color: #b81a1a; }
     .pill-medium { background: #fff3e0; color: #a05000; }
     .pill-low { background: #e8fde8; color: #1a7a1a; }
-    .gsc-summary { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 14px 18px; margin-bottom: 16px; font-size: 13px; color: #444; line-height: 1.6; border-left: 4px solid #6c7ae0; }
+    .gsc-summary { background: #f5f6ff; border: 1px solid #d0d4f5; border-radius: 8px; padding: 14px 18px; font-size: 13px; color: #333; line-height: 1.6; border-left: 4px solid #6c7ae0; }
     .chg-up { color: #c00; font-size: 11px; }
     .chg-down { color: #070; font-size: 11px; }
     .chg-neutral { color: #888; font-size: 11px; }
@@ -192,7 +192,7 @@
 
 <nav>
   <a class="active" onclick="showTab('overview', this)">&#128680; High Priority</a>
-  <a onclick="showTab('gsc', this)">&#128200; Search Console</a>
+  <a onclick="showTab('gsc', this)">&#128200; Organic Search</a>
 </nav>
 
 <div class="content">
@@ -255,6 +255,9 @@
 
       <!-- Stat bar -->
       <div class="stats" id="gsc-stats" style="margin-bottom:16px"></div>
+
+      <!-- AI Summary -->
+      <div id="gsc-ai-summary" style="margin-bottom:16px"></div>
 
       <!-- Recommendations -->
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:20px" id="gsc-recs-grid"></div>
@@ -739,23 +742,40 @@ function fmtPosDelta(val, inverted) {
   return '<span class="' + cls + '">' + (val > 0 ? '+' : '') + val + '</span>';
 }
 
+function fmtDateShort(iso) {
+  // "2026-02-26" → "Feb 26"
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+}
+
 function renderGscStats(site) {
   const t = site.totals;
   const cur = t.current;
   const prev = t.previous;
   const b = site.position_buckets;
+  const w = site.window;
+
+  const curLabel = fmtDateShort(w.current.start) + ' – ' + fmtDateShort(w.current.end);
+  const prevLabel = fmtDateShort(w.previous.start) + ' – ' + fmtDateShort(w.previous.end);
+  const vsNote = '<span class="chg-neutral">vs ' + prevLabel + '</span>';
 
   const stats = [
-    { num: cur.clicks.toLocaleString(), lbl: 'Clicks (30d)', sub: fmtPct(t.clicks_change_pct), cls: 'blue' },
-    { num: cur.impressions.toLocaleString(), lbl: 'Impressions (30d)', sub: fmtPct(t.impressions_change_pct), cls: 'blue' },
-    { num: cur.position, lbl: 'Avg Position', sub: fmtPosDelta(t.position_change, true) + ' vs prev', cls: cur.position <= 10 ? 'green' : cur.position <= 20 ? 'orange' : 'red' },
-    { num: cur.ctr + '%', lbl: 'Avg CTR', sub: '', cls: cur.ctr >= 5 ? 'green' : cur.ctr >= 2 ? 'orange' : 'red' },
-    { num: b.top_3.count, lbl: 'Top 3 Keywords', sub: '', cls: 'green' },
-    { num: b.pos_4_10.count, lbl: 'Pos 4–10 Keywords', sub: '', cls: 'orange' },
-    { num: b.pos_11_20.count, lbl: 'Page-2 Keywords', sub: '', cls: 'red' },
+    { num: cur.clicks.toLocaleString(), lbl: 'Clicks', sub: fmtPct(t.clicks_change_pct) + ' ' + vsNote, cls: 'blue' },
+    { num: cur.impressions.toLocaleString(), lbl: 'Impressions', sub: fmtPct(t.impressions_change_pct) + ' ' + vsNote, cls: 'blue' },
+    { num: cur.position, lbl: 'Avg Position', sub: fmtPosDelta(t.position_change, true) + ' ' + vsNote, cls: cur.position <= 10 ? 'green' : cur.position <= 20 ? 'orange' : 'red' },
+    { num: cur.ctr + '%', lbl: 'CTR', sub: (t.ctr_change !== null ? (t.ctr_change >= 0 ? '+' : '') + t.ctr_change + '% ' : '') + vsNote, cls: cur.ctr >= 5 ? 'green' : cur.ctr >= 2 ? 'orange' : 'red' },
+    { num: b.top_3.count, lbl: 'Top 3 Keywords', sub: b.top_3.clicks.toLocaleString() + ' clicks', cls: 'green' },
+    { num: b.pos_4_10.count, lbl: 'Pos 4–10 Keywords', sub: b.pos_4_10.clicks.toLocaleString() + ' clicks', cls: 'orange' },
+    { num: b.pos_11_20.count, lbl: 'Page-2 Keywords', sub: b.pos_11_20.impressions.toLocaleString() + ' impr', cls: 'red' },
   ];
 
-  document.getElementById('gsc-stats').innerHTML = stats.map(function(s) {
+  // Date range header above stats
+  const rangeHtml = '<div style="font-size:11px;color:#888;margin-bottom:8px">'
+    + '&#128197; Showing <strong>' + curLabel + '</strong>'
+    + ' &nbsp;|&nbsp; Comparing to <strong>' + prevLabel + '</strong>'
+    + '</div>';
+
+  document.getElementById('gsc-stats').innerHTML = rangeHtml + stats.map(function(s) {
     return '<div class="stat ' + s.cls + '">'
       + '<div class="num">' + s.num + '</div>'
       + '<div class="lbl">' + s.lbl + '</div>'
@@ -768,21 +788,10 @@ function renderGscRecs(site) {
   const recs = site.recommendations || {};
   const summary = recs.summary || '';
 
-  let html = '';
-  if (summary) {
-    html += '<div class="gsc-summary">&#128203; ' + esc(summary) + '</div>';
-  }
-
-  document.getElementById('gsc-stats').insertAdjacentHTML('afterend',
-    '<div id="gsc-summary-box">' + (summary ? '<div class="gsc-summary">&#128203; ' + esc(summary) + '</div>' : '') + '</div>');
-
-  // Remove previous summary box if re-rendering
-  const existingBox = document.getElementById('gsc-summary-box');
-  if (existingBox) existingBox.remove();
-  document.getElementById('gsc-stats').insertAdjacentHTML('afterend',
-    '<div id="gsc-summary-box" style="margin-bottom:16px">'
-    + (summary ? '<div class="gsc-summary">&#128203; ' + esc(summary) + '</div>' : '')
-    + '</div>');
+  // Summary card — clean innerHTML replace, no stacking
+  document.getElementById('gsc-ai-summary').innerHTML = summary
+    ? '<div class="gsc-summary">&#129302; <strong>' + esc(site.display_name) + ' &mdash; AI Summary:</strong> ' + esc(summary) + '</div>'
+    : '';
 
   function pillHtml(val, type) {
     if (!val) return '';
@@ -809,6 +818,7 @@ function renderGscRecs(site) {
       + '</div>';
   }
 
+  // Recs grid — clean innerHTML replace, no stacking
   const grid = cardHtml('quick-wins', '⚡', 'Quick Wins', recs.quick_wins, 'rec')
     + cardHtml('warnings', '⚠️', 'Potential Warnings', recs.potential_warnings, 'warn')
     + cardHtml('opportunities', '🚀', 'Biggest Opportunities', recs.biggest_opportunities, 'rec');
