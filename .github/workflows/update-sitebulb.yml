@@ -1,0 +1,60 @@
+name: Monthly Sitebulb Update
+
+# Runs on the 3rd of every month at 6:00 AM ET (11:00 UTC)
+# Crawls finish by the 2nd, so the 3rd gives a safe buffer.
+# Can also be triggered manually from the Actions tab.
+on:
+  schedule:
+    - cron: '0 11 3 * *'
+  workflow_dispatch:
+    inputs:
+      project:
+        description: 'Single project name to test (leave blank for all)'
+        required: false
+        default: ''
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install \
+            google-auth \
+            google-auth-httplib2 \
+            google-api-python-client \
+            gspread
+
+      - name: Write service account credentials
+        env:
+          SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: |
+          mkdir -p credentials
+          printf '%s' "$SERVICE_ACCOUNT_JSON" > credentials/google_service_account.json
+
+      - name: Run Sitebulb analyzer
+        run: |
+          if [ -n "${{ github.event.inputs.project }}" ]; then
+            python sitebulb_analyzer.py --dry-run --project "${{ github.event.inputs.project }}"
+          else
+            python sitebulb_analyzer.py --dry-run
+          fi
+
+      - name: Commit updated all_hints.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/all_hints.json
+          git diff --cached --quiet || git commit -m "chore: monthly Sitebulb update $(date +'%Y-%m-%d')"
+          git push

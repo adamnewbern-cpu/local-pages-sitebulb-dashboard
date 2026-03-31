@@ -193,7 +193,7 @@
 
 <nav>
   <a class="active" onclick="showTab('overview', this)">&#128680; High Priority</a>
-  <a onclick="showTab('gsc', this)">&#128200; Organic Search</a>
+  <a onclick="showTab('gsc', this)">&#128200; Organic Search Monitoring</a>
 </nav>
 
 <div class="content">
@@ -791,7 +791,7 @@ function renderGscRecs(site) {
 
   // Summary card — clean innerHTML replace, no stacking
   document.getElementById('gsc-ai-summary').innerHTML = summary
-    ? '<div class="gsc-summary">&#129302; <strong>' + esc(site.display_name) + ' &mdash; AI Summary:</strong> ' + esc(summary) + '</div>'
+    ? '<div class="gsc-summary"> <strong>' + esc(site.display_name) + ' &mdash; AI Summary:</strong> ' + esc(summary) + '</div>'
     : '';
 
   function pillHtml(val, type) {
