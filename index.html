@@ -15,7 +15,8 @@
     nav a.active { color: #1a1a2e; border-bottom-color: #e94560; font-weight: 600; }
     nav a.disabled { opacity: 0.35; cursor: default; pointer-events: none; }
     .content { padding: 20px; max-width: 1400px; margin: 0 auto; }
-    .stats { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+    .stats-date { flex-basis: 100%; font-size: 11px; color: #888; margin-bottom: 8px; }
+    .stats { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; align-items: flex-start; }
     .stat { background: #fff; border: 1px solid #ddd; border-radius: 6px; padding: 12px 16px; min-width: 110px; }
     .stat .num { font-size: 26px; font-weight: 700; }
     .stat .lbl { font-size: 11px; color: #888; margin-top: 2px; }
@@ -770,7 +771,7 @@ function renderGscStats(site) {
   ];
 
   // Date range header above stats
-  const rangeHtml = '<div style="font-size:11px;color:#888;margin-bottom:8px">'
+  const rangeHtml = '<div class="stats-date">'
     + '&#128197; Showing <strong>' + curLabel + '</strong>'
     + ' &nbsp;|&nbsp; Comparing to <strong>' + prevLabel + '</strong>'
     + '</div>';
