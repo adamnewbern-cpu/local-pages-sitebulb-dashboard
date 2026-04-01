@@ -1,13 +1,815 @@
 {
-  "generated_at": "2026-03-31T20:09:41.738240Z",
+  "generated_at": "2026-04-01T14:23:05.121402Z",
   "model": "claude-haiku-4-5-20251001",
-  "gsc_generated_at": "2026-03-30T21:45:47.540627Z",
-  "sites": [],
-  "errors": [
+  "gsc_generated_at": "2026-03-31T20:12:59.599799Z",
+  "sites": [
     {
       "site_url": "https://locations.atipt.com/",
       "display_name": "ATI Physical Therapy",
-      "error": "'label'"
+      "analysis_date": "2026-04-01T14:23:05.121317Z",
+      "model": "claude-haiku-4-5-20251001",
+      "totals": {
+        "current": {
+          "clicks": 41786,
+          "impressions": 1778565,
+          "ctr": 2.35,
+          "position": 10.0
+        },
+        "mom": {
+          "clicks": 44395,
+          "impressions": 2033615,
+          "ctr": 2.18,
+          "position": 14.4
+        },
+        "yoy": {
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": 0.0,
+          "position": 0.0
+        },
+        "mom_clicks_change_pct": -5.9,
+        "mom_impressions_change_pct": -12.5,
+        "mom_position_change": -4.4,
+        "mom_ctr_change": 0.17,
+        "yoy_clicks_change_pct": null,
+        "yoy_impressions_change_pct": null,
+        "yoy_position_change": null,
+        "yoy_ctr_change": null,
+        "clicks_trend": "WORSENING",
+        "position_trend": "IMPROVING"
+      },
+      "window": {
+        "current": {
+          "start": "2026-02-01",
+          "end": "2026-02-28",
+          "label": "February 2026"
+        },
+        "mom": {
+          "start": "2026-01-01",
+          "end": "2026-01-31",
+          "label": "January 2026"
+        },
+        "yoy": {
+          "start": "2025-02-01",
+          "end": "2025-02-28",
+          "label": "February 2025"
+        }
+      },
+      "position_buckets": {
+        "top_3": {
+          "count": 287,
+          "clicks": 11500,
+          "impressions": 318905,
+          "yoy_count": 0
+        },
+        "pos_4_10": {
+          "count": 176,
+          "clicks": 2653,
+          "impressions": 88223,
+          "yoy_count": 0
+        },
+        "pos_11_20": {
+          "count": 37,
+          "clicks": 1030,
+          "impressions": 90607,
+          "yoy_count": 0
+        },
+        "pos_21_50": {
+          "count": 0,
+          "clicks": 0,
+          "impressions": 0
+        }
+      },
+      "top_queries": [
+        {
+          "query": "ati physical therapy",
+          "clicks": 6011,
+          "impressions": 54776,
+          "ctr": 10.97,
+          "position": 1.1,
+          "mom_clicks": 6404,
+          "mom_position": 1.3,
+          "mom_clicks_change_pct": -6.1,
+          "mom_position_change": -0.2,
+          "trend": "WORSENING",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "physical therapy near me",
+          "clicks": 652,
+          "impressions": 81107,
+          "ctr": 0.8,
+          "position": 10.6,
+          "mom_clicks": 732,
+          "mom_position": 12.9,
+          "mom_clicks_change_pct": -10.9,
+          "mom_position_change": -2.3,
+          "trend": "WORSENING",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati",
+          "clicks": 532,
+          "impressions": 229020,
+          "ctr": 0.23,
+          "position": 2.6,
+          "mom_clicks": 503,
+          "mom_position": 2.9,
+          "mom_clicks_change_pct": 5.8,
+          "mom_position_change": -0.3,
+          "trend": "IMPROVING",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati therapy",
+          "clicks": 309,
+          "impressions": 2599,
+          "ctr": 11.89,
+          "position": 1.1,
+          "mom_clicks": 286,
+          "mom_position": 1.2,
+          "mom_clicks_change_pct": 8.0,
+          "mom_position_change": -0.1,
+          "trend": "IMPROVING",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati physical therapy near me",
+          "clicks": 200,
+          "impressions": 1999,
+          "ctr": 10.01,
+          "position": 1.1,
+          "mom_clicks": 232,
+          "mom_position": 1.6,
+          "mom_clicks_change_pct": -13.8,
+          "mom_position_change": -0.5,
+          "trend": "WORSENING",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "physical therapy",
+          "clicks": 180,
+          "impressions": 24429,
+          "ctr": 0.74,
+          "position": 3.5,
+          "mom_clicks": 192,
+          "mom_position": 6.7,
+          "mom_clicks_change_pct": -6.2,
+          "mom_position_change": -3.2,
+          "trend": "WORSENING",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati pt",
+          "clicks": 160,
+          "impressions": 1302,
+          "ctr": 12.29,
+          "position": 1.1,
+          "mom_clicks": 173,
+          "mom_position": 1.1,
+          "mom_clicks_change_pct": -7.5,
+          "mom_position_change": 0.0,
+          "trend": "WORSENING",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati physical therapy las vegas",
+          "clicks": 146,
+          "impressions": 628,
+          "ctr": 23.25,
+          "position": 1.1,
+          "mom_clicks": 121,
+          "mom_position": 1.9,
+          "mom_clicks_change_pct": 20.7,
+          "mom_position_change": -0.8,
+          "trend": "IMPROVING",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati physical therapy locations",
+          "clicks": 99,
+          "impressions": 561,
+          "ctr": 17.65,
+          "position": 1.1,
+          "mom_clicks": 98,
+          "mom_position": 1.1,
+          "mom_clicks_change_pct": 1.0,
+          "mom_position_change": 0.0,
+          "trend": "STABLE",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati locations",
+          "clicks": 93,
+          "impressions": 463,
+          "ctr": 20.09,
+          "position": 1.3,
+          "mom_clicks": 97,
+          "mom_position": 1.3,
+          "mom_clicks_change_pct": -4.1,
+          "mom_position_change": 0.0,
+          "trend": "STABLE",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati physical therapy tucson",
+          "clicks": 86,
+          "impressions": 541,
+          "ctr": 15.9,
+          "position": 1.9,
+          "mom_clicks": 90,
+          "mom_position": 1.6,
+          "mom_clicks_change_pct": -4.4,
+          "mom_position_change": 0.3,
+          "trend": "STABLE",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati physical therapy greenville sc",
+          "clicks": 71,
+          "impressions": 407,
+          "ctr": 17.44,
+          "position": 1.1,
+          "mom_clicks": 74,
+          "mom_position": 2.6,
+          "mom_clicks_change_pct": -4.1,
+          "mom_position_change": -1.5,
+          "trend": "STABLE",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati physical therapy seattle",
+          "clicks": 68,
+          "impressions": 322,
+          "ctr": 21.12,
+          "position": 1.3,
+          "mom_clicks": 56,
+          "mom_position": 3.6,
+          "mom_clicks_change_pct": 21.4,
+          "mom_position_change": -2.3,
+          "trend": "IMPROVING",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati physical",
+          "clicks": 65,
+          "impressions": 631,
+          "ctr": 10.3,
+          "position": 1.2,
+          "mom_clicks": 67,
+          "mom_position": 1.1,
+          "mom_clicks_change_pct": -3.0,
+          "mom_position_change": 0.1,
+          "trend": "STABLE",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati physical therapy tacoma",
+          "clicks": 56,
+          "impressions": 232,
+          "ctr": 24.14,
+          "position": 2.7,
+          "mom_clicks": 47,
+          "mom_position": 1.1,
+          "mom_clicks_change_pct": 19.1,
+          "mom_position_change": 1.6,
+          "trend": "IMPROVING",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati near me",
+          "clicks": 51,
+          "impressions": 596,
+          "ctr": 8.56,
+          "position": 1.2,
+          "mom_clicks": 65,
+          "mom_position": 1.3,
+          "mom_clicks_change_pct": -21.5,
+          "mom_position_change": -0.1,
+          "trend": "WORSENING",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati physical therapy dallas",
+          "clicks": 49,
+          "impressions": 316,
+          "ctr": 15.51,
+          "position": 1.4,
+          "mom_clicks": 55,
+          "mom_position": 3.0,
+          "mom_clicks_change_pct": -10.9,
+          "mom_position_change": -1.6,
+          "trend": "WORSENING",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "physical therapist near me",
+          "clicks": 49,
+          "impressions": 17905,
+          "ctr": 0.27,
+          "position": 9.1,
+          "mom_clicks": 47,
+          "mom_position": 10.8,
+          "mom_clicks_change_pct": 4.3,
+          "mom_position_change": -1.7,
+          "trend": "STABLE",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati physical therapy albuquerque",
+          "clicks": 46,
+          "impressions": 213,
+          "ctr": 21.6,
+          "position": 2.9,
+          "mom_clicks": 45,
+          "mom_position": 1.5,
+          "mom_clicks_change_pct": 2.2,
+          "mom_position_change": 1.4,
+          "trend": "STABLE",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        },
+        {
+          "query": "ati physical therapy san antonio",
+          "clicks": 42,
+          "impressions": 256,
+          "ctr": 16.41,
+          "position": 2.5,
+          "mom_clicks": 41,
+          "mom_position": 1.3,
+          "mom_clicks_change_pct": 2.4,
+          "mom_position_change": 1.2,
+          "trend": "STABLE",
+          "yoy_clicks": null,
+          "yoy_position": null,
+          "yoy_clicks_change_pct": null,
+          "yoy_position_change": null
+        }
+      ],
+      "top_pages": [
+        {
+          "page": "https://locations.atipt.com/",
+          "clicks": 1529,
+          "impressions": 192114,
+          "ctr": 0.8,
+          "position": 9.3,
+          "mom_clicks": 1686,
+          "mom_clicks_change_pct": -9.3,
+          "mom_position_change": -15.7,
+          "yoy_clicks": null,
+          "yoy_clicks_change_pct": null,
+          "trend": "WORSENING"
+        },
+        {
+          "page": "https://locations.atipt.com/massachusetts/east-longmeadow/168-denslow-rd/",
+          "clicks": 170,
+          "impressions": 6284,
+          "ctr": 2.71,
+          "position": 5.6,
+          "mom_clicks": 204,
+          "mom_clicks_change_pct": -16.7,
+          "mom_position_change": -1.9,
+          "yoy_clicks": null,
+          "yoy_clicks_change_pct": null,
+          "trend": "WORSENING"
+        },
+        {
+          "page": "https://locations.atipt.com/washington/tacoma/3315-s-23rd-st/",
+          "clicks": 148,
+          "impressions": 6021,
+          "ctr": 2.46,
+          "position": 6.3,
+          "mom_clicks": 185,
+          "mom_clicks_change_pct": -20.0,
+          "mom_position_change": 0.1,
+          "yoy_clicks": null,
+          "yoy_clicks_change_pct": null,
+          "trend": "WORSENING"
+        },
+        {
+          "page": "https://locations.atipt.com/delaware/newark/4051-ogletown-stanton-rd/",
+          "clicks": 147,
+          "impressions": 5822,
+          "ctr": 2.52,
+          "position": 7.4,
+          "mom_clicks": 159,
+          "mom_clicks_change_pct": -7.5,
+          "mom_position_change": -0.3,
+          "yoy_clicks": null,
+          "yoy_clicks_change_pct": null,
+          "trend": "WORSENING"
+        },
+        {
+          "page": "https://locations.atipt.com/illinois/tinley-park/16651-s-harlem-ave/",
+          "clicks": 147,
+          "impressions": 6090,
+          "ctr": 2.41,
+          "position": 7.3,
+          "mom_clicks": 173,
+          "mom_clicks_change_pct": -15.0,
+          "mom_position_change": -2.6,
+          "yoy_clicks": null,
+          "yoy_clicks_change_pct": null,
+          "trend": "WORSENING"
+        },
+        {
+          "page": "https://locations.atipt.com/washington/lacey/130-marvin-rd-se/",
+          "clicks": 144,
+          "impressions": 3215,
+          "ctr": 4.48,
+          "position": 5.5,
+          "mom_clicks": 167,
+          "mom_clicks_change_pct": -13.8,
+          "mom_position_change": -2.0,
+          "yoy_clicks": null,
+          "yoy_clicks_change_pct": null,
+          "trend": "WORSENING"
+        },
+        {
+          "page": "https://locations.atipt.com/washington/mill-creek/16310-bothell-everett-hwy/",
+          "clicks": 144,
+          "impressions": 3870,
+          "ctr": 3.72,
+          "position": 5.9,
+          "mom_clicks": 152,
+          "mom_clicks_change_pct": -5.3,
+          "mom_position_change": -0.9,
+          "yoy_clicks": null,
+          "yoy_clicks_change_pct": null,
+          "trend": "WORSENING"
+        },
+        {
+          "page": "https://locations.atipt.com/washington/seattle/2600-sw-barton-st/",
+          "clicks": 140,
+          "impressions": 3793,
+          "ctr": 3.69,
+          "position": 7.0,
+          "mom_clicks": 119,
+          "mom_clicks_change_pct": 17.6,
+          "mom_position_change": -0.2,
+          "yoy_clicks": null,
+          "yoy_clicks_change_pct": null,
+          "trend": "IMPROVING"
+        },
+        {
+          "page": "https://locations.atipt.com/washington/lynnwood/3105-alderwood-mall-blvd/",
+          "clicks": 139,
+          "impressions": 3902,
+          "ctr": 3.56,
+          "position": 6.4,
+          "mom_clicks": 163,
+          "mom_clicks_change_pct": -14.7,
+          "mom_position_change": -0.7,
+          "yoy_clicks": null,
+          "yoy_clicks_change_pct": null,
+          "trend": "WORSENING"
+        },
+        {
+          "page": "https://locations.atipt.com/washington/federal-way/32030-23rd-ave-s/",
+          "clicks": 138,
+          "impressions": 4483,
+          "ctr": 3.08,
+          "position": 9.2,
+          "mom_clicks": 165,
+          "mom_clicks_change_pct": -16.4,
+          "mom_position_change": -0.2,
+          "yoy_clicks": null,
+          "yoy_clicks_change_pct": null,
+          "trend": "WORSENING"
+        }
+      ],
+      "daily": [
+        {
+          "date": "2026-02-01",
+          "clicks": 527,
+          "impressions": 57689,
+          "ctr": 0.91,
+          "position": 13.1
+        },
+        {
+          "date": "2026-02-02",
+          "clicks": 2122,
+          "impressions": 75429,
+          "ctr": 2.81,
+          "position": 9.3
+        },
+        {
+          "date": "2026-02-03",
+          "clicks": 1880,
+          "impressions": 72659,
+          "ctr": 2.59,
+          "position": 8.4
+        },
+        {
+          "date": "2026-02-04",
+          "clicks": 1932,
+          "impressions": 72349,
+          "ctr": 2.67,
+          "position": 10.3
+        },
+        {
+          "date": "2026-02-05",
+          "clicks": 1806,
+          "impressions": 70958,
+          "ctr": 2.55,
+          "position": 10.6
+        },
+        {
+          "date": "2026-02-06",
+          "clicks": 1489,
+          "impressions": 60187,
+          "ctr": 2.47,
+          "position": 10.0
+        },
+        {
+          "date": "2026-02-07",
+          "clicks": 509,
+          "impressions": 35991,
+          "ctr": 1.41,
+          "position": 12.3
+        },
+        {
+          "date": "2026-02-08",
+          "clicks": 440,
+          "impressions": 55033,
+          "ctr": 0.8,
+          "position": 11.7
+        },
+        {
+          "date": "2026-02-09",
+          "clicks": 2078,
+          "impressions": 74121,
+          "ctr": 2.8,
+          "position": 9.2
+        },
+        {
+          "date": "2026-02-10",
+          "clicks": 1990,
+          "impressions": 73158,
+          "ctr": 2.72,
+          "position": 8.9
+        },
+        {
+          "date": "2026-02-11",
+          "clicks": 1910,
+          "impressions": 70207,
+          "ctr": 2.72,
+          "position": 10.5
+        },
+        {
+          "date": "2026-02-12",
+          "clicks": 1937,
+          "impressions": 68408,
+          "ctr": 2.83,
+          "position": 9.9
+        },
+        {
+          "date": "2026-02-13",
+          "clicks": 1617,
+          "impressions": 63739,
+          "ctr": 2.54,
+          "position": 9.3
+        },
+        {
+          "date": "2026-02-14",
+          "clicks": 451,
+          "impressions": 36112,
+          "ctr": 1.25,
+          "position": 13.6
+        },
+        {
+          "date": "2026-02-15",
+          "clicks": 502,
+          "impressions": 54377,
+          "ctr": 0.92,
+          "position": 11.1
+        },
+        {
+          "date": "2026-02-16",
+          "clicks": 1882,
+          "impressions": 67537,
+          "ctr": 2.79,
+          "position": 9.5
+        },
+        {
+          "date": "2026-02-17",
+          "clicks": 1956,
+          "impressions": 70928,
+          "ctr": 2.76,
+          "position": 8.2
+        },
+        {
+          "date": "2026-02-18",
+          "clicks": 1944,
+          "impressions": 71211,
+          "ctr": 2.73,
+          "position": 10.1
+        },
+        {
+          "date": "2026-02-19",
+          "clicks": 1980,
+          "impressions": 71581,
+          "ctr": 2.77,
+          "position": 9.4
+        },
+        {
+          "date": "2026-02-20",
+          "clicks": 1623,
+          "impressions": 60455,
+          "ctr": 2.68,
+          "position": 8.8
+        },
+        {
+          "date": "2026-02-21",
+          "clicks": 520,
+          "impressions": 47319,
+          "ctr": 1.1,
+          "position": 15.2
+        },
+        {
+          "date": "2026-02-22",
+          "clicks": 514,
+          "impressions": 59809,
+          "ctr": 0.86,
+          "position": 10.7
+        },
+        {
+          "date": "2026-02-23",
+          "clicks": 2031,
+          "impressions": 71932,
+          "ctr": 2.82,
+          "position": 8.9
+        },
+        {
+          "date": "2026-02-24",
+          "clicks": 2077,
+          "impressions": 68026,
+          "ctr": 3.05,
+          "position": 8.2
+        },
+        {
+          "date": "2026-02-25",
+          "clicks": 1974,
+          "impressions": 69377,
+          "ctr": 2.85,
+          "position": 9.7
+        },
+        {
+          "date": "2026-02-26",
+          "clicks": 1967,
+          "impressions": 69005,
+          "ctr": 2.85,
+          "position": 9.5
+        },
+        {
+          "date": "2026-02-27",
+          "clicks": 1629,
+          "impressions": 66628,
+          "ctr": 2.44,
+          "position": 9.2
+        },
+        {
+          "date": "2026-02-28",
+          "clicks": 499,
+          "impressions": 44340,
+          "ctr": 1.13,
+          "position": 12.0
+        }
+      ],
+      "recommendations": {
+        "summary": "ATI Physical Therapy experienced a challenging February 2026, with clicks declining 5.9% MoM to 41,786 and impressions dropping 12.5% MoM to 1.78M. However, average position improved by 4.4 positions (now 10.0), and CTR increased slightly by +0.17% to 2.35%, suggesting better ranking quality offsetting volume losses. Brand-heavy queries dominate performance, with \"ati physical therapy\" (6,011 clicks) accounting for 14% of total clicks, while geographic variants like \"ati physical therapy las vegas\" (+21% MoM) and \"ati physical therapy seattle\" (+21% MoM) are emerging as growth drivers. The primary concern is softening demand in core queries like \"ati physical therapy\" (-6% MoM) and \"physical therapy near me\" (-11% MoM), indicating either seasonal decline or competitive pressure.",
+        "quick_wins": [
+          {
+            "title": "Optimize \"ati\" meta description for CTR lift",
+            "detail": "\"ati\" ranks at position 2.6 with 229,020 impressions but only 0.23% CTR\u2014among the lowest on-page CTR for such high volume. Rewrite the meta description to clarify ATI's value proposition (locations, services, or \"Find ATI Physical Therapy Near You\") to capture more clicks from this high-intent, high-volume query.",
+            "impact": "high",
+            "effort": "low"
+          },
+          {
+            "title": "Refine \"physical therapy near me\" title and meta for position 10 query",
+            "detail": "Ranking at position 10.6 with 81,107 impressions but only 0.8% CTR, this query is being outcompeted. Update the title tag to lead with \"ATI Physical Therapy Near Me\" and emphasize multi-location availability in the meta description to push past position 10.",
+            "impact": "high",
+            "effort": "low"
+          },
+          {
+            "title": "Capitalize on geographic winner: Las Vegas and Seattle momentum",
+            "detail": "\"ati physical therapy las vegas\" (+21% MoM, 23.25% CTR at position 1.1) and \"ati physical therapy seattle\" (+21% MoM, 21.12% CTR at position 1.3) are both accelerating. Ensure landing pages for these locations are fully optimized with local reviews, hours, photos, and service details to maintain and grow this momentum.",
+            "impact": "medium",
+            "effort": "low"
+          },
+          {
+            "title": "Improve \"physical therapist near me\" CTR from position 9",
+            "detail": "This query has 17,905 impressions but only 0.27% CTR at position 9.1. Update the title and description to prominently feature \"Licensed Physical Therapists Near Me\" and ATI's clinic count/locations to improve click-through before pushing for a better ranking.",
+            "impact": "medium",
+            "effort": "low"
+          }
+        ],
+        "potential_warnings": [
+          {
+            "title": "Core brand query declining: \"ati physical therapy\" down 6% MoM",
+            "detail": "Your strongest performing query dropped from 6,404 to 6,011 clicks (\u2212393 clicks). While position remains at 1.1 and CTR is strong at 10.97%, this 6% decline warrants investigation into potential seasonal factors, increased SERP competition, or reduced search volume.",
+            "severity": "medium"
+          },
+          {
+            "title": "Overall click decline of 5.9% MoM amid impression drop of 12.5%",
+            "detail": "Impressions fell much faster than clicks (\u221212.5% vs \u22125.9%), which initially suggests improved ranking quality, but the absolute click loss of ~2,400 clicks is material. Monitor whether this is seasonal (February is short) or signals broader competitive or content issues.",
+            "severity": "medium"
+          },
+          {
+            "title": "\"Physical therapy near me\" losing ground: \u221211% MoM clicks despite high volume",
+            "detail": "Dropped from 732 to 652 clicks at position 10.6 with only 0.8% CTR. This high-volume, high-intent query is underperforming and ranking worse than competitors, making it a priority for content and title tag overhaul.",
+            "severity": "medium"
+          },
+          {
+            "title": "Local-intent queries showing pockets of weakness",
+            "detail": "\"ati physical therapy austin\" (\u221230% MoM, pos 2.8) and \"ati near me\" (\u221222% MoM, pos 1.2) both declined significantly. Geographic targeting may need review or local landing page content may need strengthening.",
+            "severity": "low"
+          }
+        ],
+        "biggest_opportunities": [
+          {
+            "title": "Push \"physical therapy near me\" from position 10.6 to top 3",
+            "detail": "This query has 81,107 impressions with only 0.8% CTR at position 10.6\u2014moving to position 3\u20135 could yield 5,000+ additional clicks monthly. Requires competitive content audit, link building, and on-page optimization to beat local and national PT directories.",
+            "impact": "high",
+            "effort": "high"
+          },
+          {
+            "title": "Expand geographic landing pages for high-CTR location keywords",
+            "detail": "\"ati physical therapy las vegas\" (23.25% CTR), \"ati physical therapy seattle\" (21.12% CTR), and \"ati physical therapy tacoma\" (24.14% CTR) are all top-3 ranked with excellent CTR. Create or expand dedicated city pages for Austin, Tucson, Greenville SC, Albuquerque, and Rockville to capture similar momentum at scale.",
+            "impact": "high",
+            "effort": "medium"
+          },
+          {
+            "title": "Target page-2 keywords: \"physical therapy clinics near me\" and \"dry needling near me\"",
+            "detail": "\"physical therapy clinics near me\" (pos 11, 1,250 impr, 0.88% CTR) and \"dry needling near me\" (pos 11.2, 785 impr, 1.91% CTR) are one rank away from breakthrough positions. Optimize existing or create targeted landing pages for these queries with local clinic information and service-specific content.",
+            "impact": "medium",
+            "effort": "medium"
+          },
+          {
+            "title": "Create hybrid content targeting \"physical therapy\" + location combinations",
+            "detail": "Generic \"physical therapy\" (pos 3.5, 24,429 impr, 0.74% CTR) and \"physical therapist\" (pos 4, 8,159 impr, 0.17% CTR) have high impressions but low CTR. Develop location-specific service pages that answer both queries to improve relevance and CTR, feeding authority into local rankings.",
+            "impact": "medium",
+            "effort": "medium"
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "errors": []
 }
