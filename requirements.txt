@@ -1,0 +1,9 @@
+# Sitebulb SEO Audit Pipeline — Python Dependencies
+# Install with: pip install -r requirements.txt --break-system-packages
+
+# Google Sheets & Drive API
+google-auth>=2.28.0
+google-auth-oauthlib>=1.2.0
+google-auth-httplib2>=0.2.0
+google-api-python-client>=2.122.0
+gspread>=6.1.0

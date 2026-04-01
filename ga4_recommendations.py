@@ -100,7 +100,7 @@ def build_prompt(site: dict) -> str:
             f"| {fmt_pts(t.get('mom_engagement_rate_change_pts'))} "
             f"| {fmt_pts(t.get('yoy_engagement_rate_change_pts'))} |"
         )
-        yoy_note    = f"- **Year-over-Year comparison:** vs. {yoy_label}"
+        yoy_note    = f"- **YoY comparison:** vs. {yoy_label}"
         yoy_warning = ""
     else:
         perf_header  = f"| Metric | {cur_label} | MoM Change |"
@@ -215,10 +215,19 @@ def build_prompt(site: dict) -> str:
     prompt = f"""You are an expert SEO and digital analytics analyst writing a monthly GA4 performance summary for {site['display_name']}.
 
 Analyze the Google Analytics 4 data below and produce a concise monthly insights report covering traffic trends, engagement quality, conversion events, channel performance, and year-to-date trajectory. Focus on what changed, why it matters, and what actions to take.
+
+## Event Glossary (apply this context when interpreting all event data)
+- **navigational_clicks**: Internal clicks within the local pages site (page-to-page navigation) — low conversion value, indicates browsing behavior
+- **outbound_clicks**: Any click that takes the user off-site to an external URL — moderate value, shows interest but not direct conversion
+- **mainsite_clicks**: Clicks specifically to the client's main website — high value, indicates the user is moving deeper into the client's funnel
+- **calls**: Phone call initiations — high-value conversion
+- **book_now** / **schedule_** / **appointment_**: Booking or scheduling actions — high-value conversion
+- **store_locate** / **find_location**: Location finder interactions — high intent, moderate-to-high value
+- Any other custom events not in the above list should be interpreted based on their name and weighted accordingly.
 {yoy_warning}
 ## Reporting Period
 - **Current Month:** {cur_label}
-- **Month-over-Month comparison:** vs. {mom_label}
+- **MoM comparison:** vs. {mom_label}
 {yoy_note}
 
 ## Traffic & Engagement KPIs
@@ -244,7 +253,7 @@ Note: Standard GA4 auto-collected events have been filtered out. All events belo
 Please provide your analysis in the following JSON structure ONLY — no markdown, no extra text, just valid JSON:
 
 {{
-  "summary": "A narrative summary of this site's GA4 performance in {cur_label}. Cover traffic trends, engagement quality, and the most notable event/conversion movements. Reference specific MoM changes{' and YoY changes' if yoy_available else ''}. Also briefly note the YTD trajectory if it tells a meaningful story. Write as many sentences as the data warrants. Do not pad with filler.",
+  "summary": "A narrative summary of this site's GA4 performance in {cur_label}. Cover traffic trends, engagement quality, and the most notable event/conversion movements. Reference specific MoM changes{' and YoY changes' if yoy_available else ''}. Use MoM and YoY shorthands throughout. Also briefly note the YTD trajectory if it tells a meaningful story. Write as many sentences as the data warrants. Do not pad with filler.",
   "quick_wins": [
     {{
       "title": "Short action title",
@@ -271,12 +280,13 @@ Please provide your analysis in the following JSON structure ONLY — no markdow
 }}
 
 Rules:
-- Summary: write naturally — as few or as many sentences as the data warrants. Mention {cur_label}. Do not invent YoY comparisons if no YoY data was provided.
-- When interpreting custom events: infer business intent from event names (e.g. "calls", "book_now", "store_locate" = high-value conversions; "navigational_clicks" = lower value). Weight warnings and opportunities accordingly.
+- Summary: write naturally — as few or as many sentences as the data warrants. Mention {cur_label}. Always use "MoM" and "YoY" shorthands (never spell out "month-over-month" or "year-over-year"). Do not invent YoY comparisons if no YoY data was provided.
+- Apply the Event Glossary above when assessing event value. Weight mainsite_clicks, calls, book_now, and scheduling events as high-value conversions. Weight navigational_clicks as low-value. Weight outbound_clicks as moderate.
 - Quick wins: near-term, low-effort actions (e.g. improve landing pages with high traffic but low engagement, investigate traffic channel shifts)
-- Potential warnings: MoM session drops, engagement rate declines, conversion event decreases, channel shifts away from organic{' or YoY regressions' if yoy_available else ''}
-- Biggest opportunities: higher-effort, high-reward moves (e.g. capitalize on growing channels, fix high-traffic low-engagement pages, push underperforming conversion events)
+- Potential warnings: MoM session drops, engagement rate declines, high-value conversion event decreases, channel shifts away from organic{', or YoY regressions' if yoy_available else ''}
+- Biggest opportunities: higher-effort, high-reward moves (e.g. capitalize on growing channels, fix high-traffic low-engagement pages, push underperforming high-value conversion events)
 - Be specific — name actual pages, channels, and events from the data above
+- Always use "MoM" and "YoY" shorthands in all output fields
 - 3–5 items per category max; omit a category entirely if there is genuinely nothing to flag
 - Keep detail fields to 1–2 sentences
 """

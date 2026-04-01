@@ -76,6 +76,7 @@ def build_prompt(site: dict) -> str:
     cur_label = site["window"]["current"]["label"]
     mom_label = site["window"].get("mom", {}).get("label", "Prior Month")
     yoy_label = site["window"].get("yoy", {}).get("label", "Same Month LY")
+    # Always use MoM/YoY shorthands — never spell out month-over-month or year-over-year
 
     def fmt_pct(val):
         if val is None:
@@ -138,7 +139,7 @@ def build_prompt(site: dict) -> str:
             f"| Avg Position | {cur.get('position', 'N/A')} | {fmt_pos_change(t.get('mom_position_change'))} | {fmt_pos_change(t.get('yoy_position_change'))} |\n"
             f"| CTR | {cur.get('ctr', 'N/A')}% | {fmt_pct(t.get('mom_ctr_change'))} | {fmt_pct(t.get('yoy_ctr_change'))} |"
         )
-        yoy_note = f"- **Year-over-Year comparison:** vs. {yoy_label}"
+        yoy_note = f"- **YoY comparison:** vs. {yoy_label}"
         yoy_warning = ""
     else:
         perf_header = f"| Metric | {cur_label} | MoM Change |"
@@ -158,7 +159,7 @@ Analyze the Google Search Console data below and produce a concise monthly insig
 {yoy_warning}
 ## Reporting Period
 - **Current Month:** {cur_label}
-- **Month-over-Month comparison:** vs. {mom_label}
+- **MoM comparison:** vs. {mom_label}
 {yoy_note}
 
 ## Monthly Performance Summary
@@ -219,7 +220,7 @@ Please provide your analysis in the following JSON structure ONLY — no markdow
 }}
 
 Rules:
-- Summary: write naturally — as few or as many sentences as the data warrants. Mention {cur_label} and reference MoM context{' and YoY context' if yoy_available else ''}. Do not invent YoY comparisons if no YoY data was provided.
+- Summary: write naturally — as few or as many sentences as the data warrants. Mention {cur_label} and reference MoM context{' and YoY context' if yoy_available else ''}. Always use "MoM" and "YoY" shorthands throughout — never spell out "month-over-month" or "year-over-year". Do not invent YoY comparisons if no YoY data was provided.
 - Quick wins: low-effort, near-term actions (title tag fixes, meta descriptions for low-CTR queries, internal linking)
 - Potential warnings: MoM declines in clicks, impressions, or rankings that need attention{' or YoY regressions' if yoy_available else ''}
 - Biggest opportunities: higher-effort, high-reward moves (content creation, page-2 pushes, new keyword targets)
