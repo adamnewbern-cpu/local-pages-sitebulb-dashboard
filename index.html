@@ -884,6 +884,64 @@ function renderGscRecs(site) {
   document.getElementById('gsc-recs-grid').innerHTML = grid || '<p style="color:#aaa;font-size:13px">No recommendations generated.</p>';
 }
 
+// ── GSC table sort state ──────────────────────────────────────────────────────
+let gscQSort = { col: 'clicks', dir: 'desc' };
+let gscPSort = { col: 'clicks', dir: 'desc' };
+
+// Trend sort order: WORSENING (worst) → STABLE → NEW → IMPROVING (best)
+const TREND_ORDER = { WORSENING: 0, STABLE: 1, NEW: 2, IMPROVING: 3 };
+
+function gscSortRows(rows, state, isMom) {
+  return rows.slice().sort(function(a, b) {
+    var col = state.col, dir = state.dir;
+    var av, bv;
+    if (col === 'clicks_chg') {
+      av = isMom ? a.mom_clicks_change_pct : a.yoy_clicks_change_pct;
+      bv = isMom ? b.mom_clicks_change_pct : b.yoy_clicks_change_pct;
+    } else if (col === 'pos_chg') {
+      av = isMom ? a.mom_position_change : a.yoy_position_change;
+      bv = isMom ? b.mom_position_change : b.yoy_position_change;
+    } else if (col === 'trend') {
+      var at = isMom ? (a.trend || 'STABLE') : (a.yoy_trend || 'STABLE');
+      var bt = isMom ? (b.trend || 'STABLE') : (b.yoy_trend || 'STABLE');
+      av = TREND_ORDER[at] !== undefined ? TREND_ORDER[at] : 1;
+      bv = TREND_ORDER[bt] !== undefined ? TREND_ORDER[bt] : 1;
+    } else {
+      av = a[col]; bv = b[col];
+    }
+    if (av == null) av = typeof bv === 'number' ? -Infinity : '';
+    if (bv == null) bv = typeof av === 'number' ? -Infinity : '';
+    if (typeof av === 'string') av = av.toLowerCase();
+    if (typeof bv === 'string') bv = bv.toLowerCase();
+    if (av < bv) return dir === 'asc' ? -1 : 1;
+    if (av > bv) return dir === 'asc' ? 1 : -1;
+    return 0;
+  });
+}
+
+function setGscQSort(col) {
+  if (gscQSort.col === col) { gscQSort.dir = gscQSort.dir === 'asc' ? 'desc' : 'asc'; }
+  else { gscQSort.col = col; gscQSort.dir = 'desc'; }
+  if (!gscData) return;
+  const idx = document.getElementById('gsc-site-select').value;
+  if (idx === '') return;
+  const site = gscData.sites[parseInt(idx)];
+  if (site) renderGscQueriesTable(site);
+}
+
+function setGscPSort(col) {
+  if (gscPSort.col === col) { gscPSort.dir = gscPSort.dir === 'asc' ? 'desc' : 'asc'; }
+  else { gscPSort.col = col; gscPSort.dir = 'desc'; }
+  if (!gscData) return;
+  const idx = document.getElementById('gsc-site-select').value;
+  if (idx === '') return;
+  const site = gscData.sites[parseInt(idx)];
+  if (site) renderGscPagesTable(site);
+}
+
+function qCol(c) { return gscQSort.col === c ? gscQSort.dir : ''; }
+function pCol(c) { return gscPSort.col === c ? gscPSort.dir : ''; }
+
 function trendBadge(trendVal) {
   const cls = trendVal === 'IMPROVING' ? 'trend-IMPROVING'
             : trendVal === 'WORSENING' ? 'trend-WORSENING'
@@ -897,39 +955,45 @@ function trendBadge(trendVal) {
 }
 
 function renderGscQueriesTable(site) {
-  const queries = (site.top_queries || []).slice(0, 20);
   const isMom = gscView !== 'yoy';
   const viewLabel = isMom ? 'MoM' : 'YoY';
-
-  // Update section heading
   const w = site.window || {};
   const compareLabel = isMom
     ? (w.mom && w.mom.label ? 'vs ' + w.mom.label : 'MoM')
     : (w.yoy && w.yoy.label ? 'vs ' + w.yoy.label : 'YoY');
+
   const heading = document.getElementById('gsc-queries-heading');
   if (heading) heading.textContent = 'Top Queries (' + compareLabel + ')';
 
-  if (!queries.length) {
+  const raw = (site.top_queries || []).slice(0, 20);
+  if (!raw.length) {
     document.getElementById('gsc-queries-table').innerHTML = '<div class="empty">No query data.</div>';
     return;
   }
+  const queries = gscSortRows(raw, gscQSort, isMom);
+
+  function th(label, col, align) {
+    var a = align ? ' style="text-align:' + align + '"' : '';
+    return '<th' + a + ' class="' + qCol(col) + '" onclick="setGscQSort(\'' + col + '\')">' + label + '</th>';
+  }
+
   let html = '<table><thead><tr>'
-    + '<th>Query</th>'
-    + '<th style="text-align:right">Clicks</th>'
-    + '<th style="text-align:right">Impressions</th>'
-    + '<th style="text-align:right">CTR</th>'
-    + '<th style="text-align:right">Position</th>'
-    + '<th style="text-align:right">Clicks Δ ' + viewLabel + '</th>'
-    + '<th style="text-align:right">Pos Δ ' + viewLabel + '</th>'
-    + '<th>Trend (' + viewLabel + ' clicks)</th>'
+    + '<th onclick="setGscQSort(\'query\')" class="' + qCol('query') + '">Query</th>'
+    + th('Clicks', 'clicks', 'right')
+    + th('Impressions', 'impressions', 'right')
+    + th('CTR', 'ctr', 'right')
+    + th('Avg. Pos.', 'position', 'right')
+    + th('Clicks Δ ' + viewLabel, 'clicks_chg', 'right')
+    + th('Pos Δ ' + viewLabel, 'pos_chg', 'right')
+    + th('Trend (' + viewLabel + ' clicks)', 'trend', null)
     + '</tr></thead><tbody>';
 
   queries.forEach(function(q) {
     const posChg   = isMom ? q.mom_position_change   : q.yoy_position_change;
     const clksChg  = isMom ? q.mom_clicks_change_pct : q.yoy_clicks_change_pct;
     const trend    = isMom ? q.trend                  : (q.yoy_trend || 'STABLE');
-    const posHtml  = posChg  != null ? fmtPosDelta(posChg, true)  : '<span class="chg-neutral">—</span>';
-    const clksHtml = clksChg != null ? fmtPct(clksChg)            : '<span class="chg-neutral">—</span>';
+    const posHtml  = posChg  != null ? fmtPosDelta(posChg, true) : '<span class="chg-neutral">—</span>';
+    const clksHtml = clksChg != null ? fmtPct(clksChg)           : '<span class="chg-neutral">—</span>';
     html += '<tr>'
       + '<td style="max-width:240px;word-break:break-word">' + esc(q.query) + '</td>'
       + '<td style="text-align:right;font-weight:500">' + q.clicks.toLocaleString() + '</td>'
@@ -946,31 +1010,37 @@ function renderGscQueriesTable(site) {
 }
 
 function renderGscPagesTable(site) {
-  const pages = (site.top_pages || []).slice(0, 10);
   const isMom = gscView !== 'yoy';
   const viewLabel = isMom ? 'MoM' : 'YoY';
-
-  // Update section heading
   const w = site.window || {};
   const compareLabel = isMom
     ? (w.mom && w.mom.label ? 'vs ' + w.mom.label : 'MoM')
     : (w.yoy && w.yoy.label ? 'vs ' + w.yoy.label : 'YoY');
+
   const heading = document.getElementById('gsc-pages-heading');
   if (heading) heading.textContent = 'Top Pages (' + compareLabel + ')';
 
-  if (!pages.length) {
+  const raw = (site.top_pages || []).slice(0, 10);
+  if (!raw.length) {
     document.getElementById('gsc-pages-table').innerHTML = '<div class="empty">No page data.</div>';
     return;
   }
+  const pages = gscSortRows(raw, gscPSort, isMom);
+
+  function th(label, col, align) {
+    var a = align ? ' style="text-align:' + align + '"' : '';
+    return '<th' + a + ' class="' + pCol(col) + '" onclick="setGscPSort(\'' + col + '\')">' + label + '</th>';
+  }
+
   let html = '<table><thead><tr>'
-    + '<th>Page</th>'
-    + '<th style="text-align:right">Clicks</th>'
-    + '<th style="text-align:right">Impressions</th>'
-    + '<th style="text-align:right">CTR</th>'
-    + '<th style="text-align:right">Position</th>'
-    + '<th style="text-align:right">Clicks Δ ' + viewLabel + '</th>'
-    + '<th style="text-align:right">Pos Δ ' + viewLabel + '</th>'
-    + '<th>Trend (' + viewLabel + ' clicks)</th>'
+    + '<th onclick="setGscPSort(\'page\')" class="' + pCol('page') + '">Page</th>'
+    + th('Clicks', 'clicks', 'right')
+    + th('Impressions', 'impressions', 'right')
+    + th('CTR', 'ctr', 'right')
+    + th('Avg. Pos.', 'position', 'right')
+    + th('Clicks Δ ' + viewLabel, 'clicks_chg', 'right')
+    + th('Pos Δ ' + viewLabel, 'pos_chg', 'right')
+    + th('Trend (' + viewLabel + ' clicks)', 'trend', null)
     + '</tr></thead><tbody>';
 
   pages.forEach(function(p) {
