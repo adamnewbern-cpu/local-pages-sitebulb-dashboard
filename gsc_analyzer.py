@@ -269,6 +269,7 @@ def analyze_site(service, site_url: str, display_name: str) -> dict:
             "yoy_position": yoy["position"] if yoy else None,
             "yoy_clicks_change_pct": pct_change(cur["clicks"], yoy["clicks"] if yoy else None),
             "yoy_position_change": round(cur["position"] - yoy["position"], 1) if yoy else None,
+            "yoy_trend": trend_label(cur["clicks"], yoy["clicks"] if yoy else None),
         })
 
     # ── Top pages (all 3 periods) ─────────────────────────────────────────────
@@ -299,7 +300,10 @@ def analyze_site(service, site_url: str, display_name: str) -> dict:
             "mom_position_change": round(cur["position"] - mom["position"], 1) if mom else None,
             "yoy_clicks": yoy["clicks"] if yoy else None,
             "yoy_clicks_change_pct": pct_change(cur["clicks"], yoy["clicks"] if yoy else None),
+            "mom_position_change": round(cur["position"] - mom["position"], 1) if mom else None,
+            "yoy_position_change": round(cur["position"] - yoy["position"], 1) if yoy else None,
             "trend": trend_label(cur["clicks"], mom["clicks"] if mom else None),
+            "yoy_trend": trend_label(cur["clicks"], yoy["clicks"] if yoy else None),
         })
 
     # ── Device breakdown (current month only) ────────────────────────────────
