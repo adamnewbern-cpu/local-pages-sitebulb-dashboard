@@ -194,6 +194,7 @@
 <nav>
   <a class="active" onclick="showTab('overview', this)">&#128680; High Priority</a>
   <a onclick="showTab('gsc', this)">&#128200; Search Console Monitoring</a>
+  <a onclick="showTab('ga4', this)">&#128202; Google Analytics</a>
 </nav>
 
 <div class="content">
@@ -280,6 +281,75 @@
       <div>
         <h3 style="font-size:13px;font-weight:600;color:#444;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.4px" id="gsc-pages-heading">Top Pages</h3>
         <div class="table-wrap"><div id="gsc-pages-table"></div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── GOOGLE ANALYTICS TAB ── -->
+  <div id="tab-ga4" style="display:none">
+
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px">
+      <div>
+        <h2 style="font-size:16px;margin:0 0 3px">Google Analytics &mdash; GA4 Analysis</h2>
+        <p style="font-size:12px;color:#888;margin:0" id="ga4-meta">Loading data&hellip;</p>
+      </div>
+      <select id="ga4-site-select" onchange="renderGa4()" style="padding:7px 12px;border:1px solid #ccc;border-radius:5px;font-size:13px;min-width:220px">
+        <option value="">Select a site&hellip;</option>
+      </select>
+    </div>
+
+    <div id="ga4-no-data" class="coming-soon" style="display:none">
+      <strong style="font-size:15px">&#128202; GA4 data not yet loaded</strong><br><br>
+      Run <code>ga4_analyzer.py</code> then <code>ga4_recommendations.py</code>,<br>
+      then push <code>data/ga4_recommendations.json</code> to GitHub.
+    </div>
+
+    <div id="ga4-content" style="display:none">
+
+      <!-- KPI stat bar -->
+      <div class="stats" id="ga4-stats" style="margin-bottom:16px"></div>
+
+      <!-- AI Summary -->
+      <div id="ga4-ai-summary" style="margin-bottom:16px"></div>
+
+      <!-- Recommendations grid -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:20px" id="ga4-recs-grid"></div>
+
+      <!-- MoM / YoY toggle -->
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px">
+        <span style="font-size:12px;font-weight:600;color:#666;text-transform:uppercase;letter-spacing:0.4px">Comparison:</span>
+        <button id="ga4-toggle-mom" onclick="setGa4View('mom')" style="padding:4px 14px;border-radius:4px;border:1px solid #2E75B6;background:#2E75B6;color:#fff;font-size:12px;font-weight:600;cursor:pointer">MoM</button>
+        <button id="ga4-toggle-yoy" onclick="setGa4View('yoy')" style="padding:4px 14px;border-radius:4px;border:1px solid #ccc;background:#fff;color:#555;font-size:12px;font-weight:600;cursor:pointer">YoY</button>
+      </div>
+
+      <!-- Custom Events table -->
+      <div style="margin-bottom:20px">
+        <h3 style="font-size:13px;font-weight:600;color:#444;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.4px" id="ga4-events-heading">Conversion &amp; Custom Events</h3>
+        <div class="table-wrap"><div id="ga4-events-table"></div></div>
+      </div>
+
+      <!-- Two-column layout: Channels + Top Pages -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px">
+
+        <!-- Traffic Channels -->
+        <div>
+          <h3 style="font-size:13px;font-weight:600;color:#444;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.4px" id="ga4-channels-heading">Traffic Channels</h3>
+          <div class="table-wrap"><div id="ga4-channels-table"></div></div>
+        </div>
+
+        <!-- Top Landing Pages -->
+        <div>
+          <h3 style="font-size:13px;font-weight:600;color:#444;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.4px" id="ga4-pages-heading">Top Landing Pages</h3>
+          <div class="table-wrap"><div id="ga4-pages-table"></div></div>
+        </div>
+
+      </div>
+
+      <!-- YTD section -->
+      <div style="margin-bottom:20px">
+        <h3 style="font-size:13px;font-weight:600;color:#444;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.4px" id="ga4-ytd-heading">Year-to-Date Traffic</h3>
+        <div class="table-wrap"><div id="ga4-ytd-table"></div></div>
       </div>
 
     </div>
@@ -381,14 +451,20 @@ async function boot() {
 }
 
 var _gscInitialized = false;
+var _ga4Initialized = false;
 function showTab(tab, el) {
   document.querySelectorAll('nav a').forEach(function(a){a.classList.remove('active');});
   if (el) el.classList.add('active');
   document.getElementById('tab-overview').style.display = tab==='overview' ? '' : 'none';
   document.getElementById('tab-gsc').style.display = tab==='gsc' ? '' : 'none';
+  document.getElementById('tab-ga4').style.display = tab==='ga4' ? '' : 'none';
   if (tab === 'gsc' && !_gscInitialized) {
     _gscInitialized = true;
     initGscTab();
+  }
+  if (tab === 'ga4' && !_ga4Initialized) {
+    _ga4Initialized = true;
+    initGa4Tab();
   }
 }
 
@@ -1066,6 +1142,465 @@ function renderGscPagesTable(site) {
 }
 
 boot();
+
+// ── GA4 / Google Analytics tab ────────────────────────────────────────────────
+
+const GA4_DATA_URL = 'data/ga4_recommendations.json';
+let ga4Data = null;
+let ga4View = 'mom'; // 'mom' or 'yoy'
+
+// Sort state for each GA4 table
+let ga4ESort = { col: 'current', dir: 'desc' };   // events
+let ga4ChSort = { col: 'current_sessions', dir: 'desc' }; // channels
+let ga4PSort  = { col: 'current_sessions', dir: 'desc' }; // pages
+
+function fmtRate(val) {
+  // val is stored as decimal (0–1), display as %
+  if (val === null || val === undefined) return '—';
+  return (val * 100).toFixed(1) + '%';
+}
+
+function fmtRatePts(val) {
+  // engagement rate delta in percentage points
+  if (val === null || val === undefined) return '<span class="chg-neutral">—</span>';
+  var pts = val * 100;
+  var cls = pts > 0 ? 'chg-down' : pts < 0 ? 'chg-up' : 'chg-neutral';
+  return '<span class="' + cls + '">' + (pts > 0 ? '+' : '') + pts.toFixed(1) + ' pp</span>';
+}
+
+function setGa4View(view) {
+  ga4View = view;
+  var active = '#2E75B6', inactive = '#fff';
+  document.getElementById('ga4-toggle-mom').style.background = view === 'mom' ? active : inactive;
+  document.getElementById('ga4-toggle-mom').style.color = view === 'mom' ? '#fff' : '#555';
+  document.getElementById('ga4-toggle-mom').style.borderColor = view === 'mom' ? active : '#ccc';
+  document.getElementById('ga4-toggle-yoy').style.background = view === 'yoy' ? active : inactive;
+  document.getElementById('ga4-toggle-yoy').style.color = view === 'yoy' ? '#fff' : '#555';
+  document.getElementById('ga4-toggle-yoy').style.borderColor = view === 'yoy' ? active : '#ccc';
+  if (!ga4Data) return;
+  var idx = document.getElementById('ga4-site-select').value;
+  if (idx === '') return;
+  var site = ga4Data.sites[parseInt(idx)];
+  if (!site) return;
+  renderGa4EventsTable(site);
+  renderGa4ChannelsTable(site);
+  renderGa4PagesTable(site);
+}
+
+async function loadGa4Data() {
+  if (ga4Data) return ga4Data;
+  try {
+    var r = await fetch(GA4_DATA_URL);
+    if (r.ok) { ga4Data = await r.json(); return ga4Data; }
+  } catch (_) {}
+  return null;
+}
+
+async function initGa4Tab() {
+  var data = await loadGa4Data();
+  var select = document.getElementById('ga4-site-select');
+
+  if (!data || !data.sites || !data.sites.length) {
+    document.getElementById('ga4-no-data').style.display = '';
+    document.getElementById('ga4-content').style.display = 'none';
+    document.getElementById('ga4-meta').textContent = 'No GA4 data found.';
+    return;
+  }
+
+  var ts = data.generated_at ? new Date(data.generated_at).toLocaleString() : '—';
+  document.getElementById('ga4-meta').textContent =
+    'Last updated: ' + ts + ' · ' + data.sites.length + ' sites · Model: ' + (data.model || '—');
+
+  select.innerHTML = '<option value="">Select a site…</option>';
+  data.sites.forEach(function(s, i) {
+    var o = document.createElement('option');
+    o.value = i; o.textContent = s.display_name;
+    select.appendChild(o);
+  });
+
+  if (data.sites.length) { select.value = '0'; renderGa4(); }
+}
+
+function renderGa4() {
+  if (!ga4Data) return;
+  var idx = document.getElementById('ga4-site-select').value;
+  if (idx === '') { document.getElementById('ga4-content').style.display = 'none'; return; }
+  var site = ga4Data.sites[parseInt(idx)];
+  if (!site) return;
+
+  document.getElementById('ga4-content').style.display = '';
+  document.getElementById('ga4-no-data').style.display = 'none';
+
+  // Reset sort states on site change
+  ga4ESort  = { col: 'current', dir: 'desc' };
+  ga4ChSort = { col: 'current_sessions', dir: 'desc' };
+  ga4PSort  = { col: 'current_sessions', dir: 'desc' };
+
+  renderGa4Stats(site);
+  renderGa4Recs(site);
+  renderGa4EventsTable(site);
+  renderGa4ChannelsTable(site);
+  renderGa4PagesTable(site);
+  renderGa4Ytd(site);
+}
+
+function renderGa4Stats(site) {
+  var t = site.totals || {};
+  var cur = t.current || {};
+  var w = site.window || {};
+  var curLabel = (w.current && w.current.label) || 'Current Period';
+  var momLabel = (w.mom && w.mom.label) || 'Prior Period';
+  var yoyLabel = (w.yoy && w.yoy.label) || 'Same Period LY';
+
+  function dualDelta(momVal, yoyVal, isPts) {
+    var momHtml = isPts ? fmtRatePts(momVal) : fmtPct(momVal);
+    var yoyHtml = isPts ? fmtRatePts(yoyVal) : fmtPct(yoyVal);
+    return momHtml + ' <span class="chg-neutral">MoM</span>'
+      + ' &nbsp;&middot;&nbsp; '
+      + yoyHtml + ' <span class="chg-neutral">YoY</span>';
+  }
+
+  var engRate = cur.engagement_rate != null ? fmtRate(cur.engagement_rate) : '—';
+  var erColor = (cur.engagement_rate || 0) >= 0.5 ? 'green'
+              : (cur.engagement_rate || 0) >= 0.25 ? 'orange' : 'red';
+
+  var stats = [
+    {
+      num: (cur.sessions || 0).toLocaleString(),
+      lbl: 'Sessions',
+      sub: dualDelta(t.mom_sessions_change_pct, t.yoy_sessions_change_pct, false),
+      cls: 'blue'
+    },
+    {
+      num: (cur.engaged_sessions || 0).toLocaleString(),
+      lbl: 'Engaged Sessions',
+      sub: dualDelta(t.mom_engaged_sessions_change_pct, t.yoy_engaged_sessions_change_pct, false),
+      cls: 'blue'
+    },
+    {
+      num: engRate,
+      lbl: 'Engagement Rate',
+      sub: dualDelta(t.mom_engagement_rate_change_pts, t.yoy_engagement_rate_change_pts, true),
+      cls: erColor
+    }
+  ];
+
+  var rangeHtml = '<div class="stats-date">'
+    + '&#128197; <strong>' + curLabel + '</strong>'
+    + ' &nbsp;|&nbsp; MoM vs <strong>' + momLabel + '</strong>'
+    + ' &nbsp;&middot;&nbsp; YoY vs <strong>' + yoyLabel + '</strong>'
+    + '</div>';
+
+  document.getElementById('ga4-stats').innerHTML = rangeHtml + stats.map(function(s) {
+    return '<div class="stat ' + s.cls + '">'
+      + '<div class="num">' + s.num + '</div>'
+      + '<div class="lbl">' + s.lbl + '</div>'
+      + (s.sub ? '<div style="font-size:11px;margin-top:2px">' + s.sub + '</div>' : '')
+      + '</div>';
+  }).join('');
+}
+
+function renderGa4Recs(site) {
+  var recs = site.recommendations || {};
+  var summary = recs.summary || '';
+
+  document.getElementById('ga4-ai-summary').innerHTML = summary
+    ? '<div class="gsc-summary"><strong>' + esc(site.display_name) + ' &mdash; AI Summary:</strong> ' + esc(summary) + '</div>'
+    : '';
+
+  function pillHtml(val, type) {
+    if (!val) return '';
+    var cls = val === 'high' ? 'pill-high' : val === 'medium' ? 'pill-medium' : 'pill-low';
+    var label = type === 'impact' ? '⚡ ' + val + ' impact' : type === 'effort' ? '🔧 ' + val + ' effort' : '⚠️ ' + val;
+    return '<span class="rec-pill ' + cls + '">' + label + '</span>';
+  }
+
+  function cardHtml(cssClass, icon, title, items, itemType) {
+    if (!items || !items.length) return '';
+    var itemsHtml = items.map(function(item) {
+      var pills = '';
+      if (itemType === 'rec')  pills = pillHtml(item.impact, 'impact') + pillHtml(item.effort, 'effort');
+      if (itemType === 'warn') pills = pillHtml(item.severity, 'severity');
+      return '<div class="rec-item">'
+        + '<div class="rec-item-title">' + esc(item.title || '') + pills + '</div>'
+        + '<div class="rec-item-detail">' + esc(item.detail || '') + '</div>'
+        + '</div>';
+    }).join('');
+    return '<div class="rec-card ' + cssClass + '">'
+      + '<div class="rec-card-header"><span class="rec-card-icon">' + icon + '</span>'
+      + '<span class="rec-card-title">' + title + '</span></div>'
+      + itemsHtml + '</div>';
+  }
+
+  var grid = cardHtml('quick-wins', '⚡', 'Quick Wins', recs.quick_wins, 'rec')
+    + cardHtml('warnings', '⚠️', 'Potential Warnings', recs.potential_warnings, 'warn')
+    + cardHtml('opportunities', '🚀', 'Biggest Opportunities', recs.biggest_opportunities, 'rec');
+
+  document.getElementById('ga4-recs-grid').innerHTML = grid || '<p style="color:#aaa;font-size:13px">No recommendations generated.</p>';
+}
+
+// ── GA4 table sort helpers ─────────────────────────────────────────────────────
+
+function ga4SortRows(rows, state) {
+  return rows.slice().sort(function(a, b) {
+    var av = a[state.col], bv = b[state.col];
+    if (av == null) av = typeof bv === 'number' ? -Infinity : '';
+    if (bv == null) bv = typeof av === 'number' ? -Infinity : '';
+    if (typeof av === 'string') av = av.toLowerCase();
+    if (typeof bv === 'string') bv = bv.toLowerCase();
+    if (av < bv) return state.dir === 'asc' ? -1 : 1;
+    if (av > bv) return state.dir === 'asc' ? 1 : -1;
+    return 0;
+  });
+}
+
+function setGa4ESort(col) {
+  if (ga4ESort.col === col) { ga4ESort.dir = ga4ESort.dir === 'asc' ? 'desc' : 'asc'; }
+  else { ga4ESort.col = col; ga4ESort.dir = 'desc'; }
+  if (!ga4Data) return;
+  var idx = document.getElementById('ga4-site-select').value;
+  if (idx === '') return;
+  var site = ga4Data.sites[parseInt(idx)];
+  if (site) renderGa4EventsTable(site);
+}
+
+function setGa4ChSort(col) {
+  if (ga4ChSort.col === col) { ga4ChSort.dir = ga4ChSort.dir === 'asc' ? 'desc' : 'asc'; }
+  else { ga4ChSort.col = col; ga4ChSort.dir = 'desc'; }
+  if (!ga4Data) return;
+  var idx = document.getElementById('ga4-site-select').value;
+  if (idx === '') return;
+  var site = ga4Data.sites[parseInt(idx)];
+  if (site) renderGa4ChannelsTable(site);
+}
+
+function setGa4PSort(col) {
+  if (ga4PSort.col === col) { ga4PSort.dir = ga4PSort.dir === 'asc' ? 'desc' : 'asc'; }
+  else { ga4PSort.col = col; ga4PSort.dir = 'desc'; }
+  if (!ga4Data) return;
+  var idx = document.getElementById('ga4-site-select').value;
+  if (idx === '') return;
+  var site = ga4Data.sites[parseInt(idx)];
+  if (site) renderGa4PagesTable(site);
+}
+
+function eCol(c)  { return ga4ESort.col  === c ? ga4ESort.dir  : ''; }
+function chCol(c) { return ga4ChSort.col === c ? ga4ChSort.dir : ''; }
+function pgCol(c) { return ga4PSort.col  === c ? ga4PSort.dir  : ''; }
+
+// ── GA4 table renderers ────────────────────────────────────────────────────────
+
+function renderGa4EventsTable(site) {
+  var isMom = ga4View !== 'yoy';
+  var viewLabel = isMom ? 'MoM' : 'YoY';
+  var w = site.window || {};
+  var compareLabel = isMom
+    ? (w.mom && w.mom.label ? 'vs ' + w.mom.label : 'MoM')
+    : (w.yoy && w.yoy.label ? 'vs ' + w.yoy.label : 'YoY');
+
+  var heading = document.getElementById('ga4-events-heading');
+  if (heading) heading.textContent = 'Conversion & Custom Events (' + compareLabel + ')';
+
+  var raw = (site.events || []).slice();
+  if (!raw.length) {
+    document.getElementById('ga4-events-table').innerHTML = '<div class="empty">No custom events recorded.</div>';
+    return;
+  }
+
+  // Map sort col to field name based on current view
+  var sortState = { col: ga4ESort.col, dir: ga4ESort.dir };
+  if (sortState.col === 'chg') sortState.col = isMom ? 'mom_change_pct' : 'yoy_change_pct';
+
+  var events = ga4SortRows(raw, sortState);
+
+  function th(label, col, align) {
+    var a = align ? ' style="text-align:' + align + '"' : '';
+    // For the chg column we pass 'chg' as the logical col
+    var eSortCol = col;
+    return '<th' + a + ' class="' + eCol(eSortCol) + '" onclick="setGa4ESort(\'' + eSortCol + '\')">' + label + '</th>';
+  }
+
+  var html = '<table><thead><tr>'
+    + '<th onclick="setGa4ESort(\'event_name\')" class="' + eCol('event_name') + '">Event</th>'
+    + th('Count', 'current', 'right')
+    + th('Δ ' + viewLabel, 'chg', 'right')
+    + '</tr></thead><tbody>';
+
+  events.forEach(function(e) {
+    var chg = isMom ? e.mom_change_pct : e.yoy_change_pct;
+    html += '<tr>'
+      + '<td style="font-weight:500">' + esc(e.event_name) + '</td>'
+      + '<td style="text-align:right">' + (e.current || 0).toLocaleString() + '</td>'
+      + '<td style="text-align:right">' + fmtPct(chg) + '</td>'
+      + '</tr>';
+  });
+  html += '</tbody></table>';
+  document.getElementById('ga4-events-table').innerHTML = html;
+}
+
+function renderGa4ChannelsTable(site) {
+  var isMom = ga4View !== 'yoy';
+  var viewLabel = isMom ? 'MoM' : 'YoY';
+  var w = site.window || {};
+  var compareLabel = isMom
+    ? (w.mom && w.mom.label ? 'vs ' + w.mom.label : 'MoM')
+    : (w.yoy && w.yoy.label ? 'vs ' + w.yoy.label : 'YoY');
+
+  var heading = document.getElementById('ga4-channels-heading');
+  if (heading) heading.textContent = 'Traffic Channels (' + compareLabel + ')';
+
+  var raw = (site.channels || []).slice();
+  if (!raw.length) {
+    document.getElementById('ga4-channels-table').innerHTML = '<div class="empty">No channel data.</div>';
+    return;
+  }
+
+  var sortState = { col: ga4ChSort.col, dir: ga4ChSort.dir };
+  if (sortState.col === 'chg') sortState.col = isMom ? 'mom_sessions_change_pct' : 'yoy_sessions_change_pct';
+  var channels = ga4SortRows(raw, sortState);
+
+  function th(label, col, align) {
+    var a = align ? ' style="text-align:' + align + '"' : '';
+    return '<th' + a + ' class="' + chCol(col) + '" onclick="setGa4ChSort(\'' + col + '\')">' + label + '</th>';
+  }
+
+  var html = '<table><thead><tr>'
+    + '<th onclick="setGa4ChSort(\'channel\')" class="' + chCol('channel') + '">Channel</th>'
+    + th('Sessions', 'current_sessions', 'right')
+    + th('%', 'current_pct', 'right')
+    + th('Δ ' + viewLabel, 'chg', 'right')
+    + '</tr></thead><tbody>';
+
+  channels.forEach(function(ch) {
+    var chg = isMom ? ch.mom_sessions_change_pct : ch.yoy_sessions_change_pct;
+    html += '<tr>'
+      + '<td style="font-weight:500">' + esc(ch.channel || '(none)') + '</td>'
+      + '<td style="text-align:right">' + (ch.current_sessions || 0).toLocaleString() + '</td>'
+      + '<td style="text-align:right;color:#888">' + (ch.current_pct || 0) + '%</td>'
+      + '<td style="text-align:right">' + fmtPct(chg) + '</td>'
+      + '</tr>';
+  });
+  html += '</tbody></table>';
+  document.getElementById('ga4-channels-table').innerHTML = html;
+}
+
+function renderGa4PagesTable(site) {
+  var isMom = ga4View !== 'yoy';
+  var viewLabel = isMom ? 'MoM' : 'YoY';
+  var w = site.window || {};
+  var compareLabel = isMom
+    ? (w.mom && w.mom.label ? 'vs ' + w.mom.label : 'MoM')
+    : (w.yoy && w.yoy.label ? 'vs ' + w.yoy.label : 'YoY');
+
+  var heading = document.getElementById('ga4-pages-heading');
+  if (heading) heading.textContent = 'Top Landing Pages (' + compareLabel + ')';
+
+  var raw = (site.top_pages || []).slice(0, 10);
+  if (!raw.length) {
+    document.getElementById('ga4-pages-table').innerHTML = '<div class="empty">No landing page data.</div>';
+    return;
+  }
+
+  var sortState = { col: ga4PSort.col, dir: ga4PSort.dir };
+  if (sortState.col === 'chg') sortState.col = isMom ? 'mom_sessions_change_pct' : 'yoy_sessions_change_pct';
+  var pages = ga4SortRows(raw, sortState);
+
+  function th(label, col, align) {
+    var a = align ? ' style="text-align:' + align + '"' : '';
+    return '<th' + a + ' class="' + pgCol(col) + '" onclick="setGa4PSort(\'' + col + '\')">' + label + '</th>';
+  }
+
+  var html = '<table><thead><tr>'
+    + '<th onclick="setGa4PSort(\'landing_page\')" class="' + pgCol('landing_page') + '">Page</th>'
+    + th('Sessions', 'current_sessions', 'right')
+    + th('Eng. Rate', 'current_engagement_rate', 'right')
+    + th('Δ ' + viewLabel, 'chg', 'right')
+    + '</tr></thead><tbody>';
+
+  pages.forEach(function(p) {
+    var chg = isMom ? p.mom_sessions_change_pct : p.yoy_sessions_change_pct;
+    var displayPage = (p.landing_page || '/').length > 40 ? '…' + (p.landing_page || '/').slice(-37) : (p.landing_page || '/');
+    html += '<tr>'
+      + '<td style="font-size:11px;word-break:break-all" title="' + esc(p.landing_page || '') + '">' + esc(displayPage) + '</td>'
+      + '<td style="text-align:right;font-weight:500">' + (p.current_sessions || 0).toLocaleString() + '</td>'
+      + '<td style="text-align:right">' + fmtRate(p.current_engagement_rate) + '</td>'
+      + '<td style="text-align:right">' + fmtPct(chg) + '</td>'
+      + '</tr>';
+  });
+  html += '</tbody></table>';
+  document.getElementById('ga4-pages-table').innerHTML = html;
+}
+
+function renderGa4Ytd(site) {
+  var ytd = site.ytd || {};
+  var months = ytd.months || [];
+  var curYear = ytd.current_year || '';
+  var priYear = ytd.prior_year || '';
+
+  var heading = document.getElementById('ga4-ytd-heading');
+  if (heading) heading.textContent = 'Year-to-Date Traffic — ' + curYear + ' vs ' + priYear;
+
+  if (!months.length) {
+    document.getElementById('ga4-ytd-table').innerHTML = '<div class="empty">No YTD data available.</div>';
+    return;
+  }
+
+  // Build quarterly subtotals
+  var qtrs = {};
+  months.forEach(function(m) {
+    var mNum = parseInt(m.month.split('-')[1]);
+    var q = Math.ceil(mNum / 3);
+    if (!qtrs[q]) qtrs[q] = { cur: 0, pri: 0 };
+    qtrs[q].cur += (m.sessions || 0);
+    qtrs[q].pri += (m.prior_year_sessions || 0);
+  });
+
+  var html = '<table><thead><tr>'
+    + '<th>Period</th>'
+    + '<th style="text-align:right">' + curYear + ' Sessions</th>'
+    + '<th style="text-align:right">' + priYear + ' Sessions</th>'
+    + '<th style="text-align:right">YoY Change</th>'
+    + '</tr></thead><tbody>';
+
+  // Monthly rows
+  months.forEach(function(m) {
+    var cur = m.sessions || 0;
+    var pri = m.prior_year_sessions || 0;
+    var chg = pri > 0 ? Math.round((cur - pri) / Math.abs(pri) * 1000) / 10 : null;
+    html += '<tr>'
+      + '<td>' + esc(m.label) + '</td>'
+      + '<td style="text-align:right;font-weight:500">' + cur.toLocaleString() + '</td>'
+      + '<td style="text-align:right;color:#888">' + pri.toLocaleString() + '</td>'
+      + '<td style="text-align:right">' + fmtPct(chg) + '</td>'
+      + '</tr>';
+  });
+
+  // Quarterly subtotal rows
+  Object.keys(qtrs).sort().forEach(function(q) {
+    var d = qtrs[q];
+    var chg = d.pri > 0 ? Math.round((d.cur - d.pri) / Math.abs(d.pri) * 1000) / 10 : null;
+    html += '<tr style="background:#f9f9f9;font-weight:600">'
+      + '<td>Q' + q + ' ' + curYear + ' Total</td>'
+      + '<td style="text-align:right">' + d.cur.toLocaleString() + '</td>'
+      + '<td style="text-align:right;color:#888">' + d.pri.toLocaleString() + '</td>'
+      + '<td style="text-align:right">' + fmtPct(chg) + '</td>'
+      + '</tr>';
+  });
+
+  // YTD grand total
+  var ytdCur = ytd.ytd_current || 0;
+  var ytdPri = ytd.ytd_prior || 0;
+  html += '<tr style="background:#f0f4ff;font-weight:700;border-top:2px solid #ddd">'
+    + '<td>YTD Total</td>'
+    + '<td style="text-align:right">' + ytdCur.toLocaleString() + '</td>'
+    + '<td style="text-align:right;color:#888">' + ytdPri.toLocaleString() + '</td>'
+    + '<td style="text-align:right">' + fmtPct(ytd.ytd_change_pct) + '</td>'
+    + '</tr>';
+
+  html += '</tbody></table>';
+  document.getElementById('ga4-ytd-table').innerHTML = html;
+}
+
 </script>
 </body>
 </html>
