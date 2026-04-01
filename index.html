@@ -752,28 +752,57 @@ function fmtDateShort(iso) {
 function renderGscStats(site) {
   const t = site.totals;
   const cur = t.current;
-  const prev = t.previous;
   const b = site.position_buckets;
   const w = site.window;
 
-  const curLabel = fmtDateShort(w.current.start) + ' – ' + fmtDateShort(w.current.end);
-  const prevLabel = fmtDateShort(w.previous.start) + ' – ' + fmtDateShort(w.previous.end);
-  const vsNote = '<span class="chg-neutral">vs ' + prevLabel + '</span>';
+  const curLabel = (w.current && w.current.label) || 'Current Month';
+  const momLabel = (w.mom && w.mom.label) || 'Prior Month';
+  const yoyLabel = (w.yoy && w.yoy.label) || 'Same Month LY';
+
+  // Build a sub-line showing MoM and YoY deltas
+  function dualDelta(momVal, yoyVal, isPos) {
+    const momHtml = isPos ? fmtPosDelta(momVal, true) : fmtPct(momVal);
+    const yoyHtml = isPos ? fmtPosDelta(yoyVal, true) : fmtPct(yoyVal);
+    return momHtml + ' <span class="chg-neutral">MoM</span>'
+      + ' &nbsp;&middot;&nbsp; '
+      + yoyHtml + ' <span class="chg-neutral">YoY</span>';
+  }
 
   const stats = [
-    { num: cur.clicks.toLocaleString(), lbl: 'Clicks', sub: fmtPct(t.clicks_change_pct) + ' ' + vsNote, cls: 'blue' },
-    { num: cur.impressions.toLocaleString(), lbl: 'Impressions', sub: fmtPct(t.impressions_change_pct) + ' ' + vsNote, cls: 'blue' },
-    { num: cur.position, lbl: 'Avg Position', sub: fmtPosDelta(t.position_change, true) + ' ' + vsNote, cls: cur.position <= 10 ? 'green' : cur.position <= 20 ? 'orange' : 'red' },
-    { num: cur.ctr + '%', lbl: 'CTR', sub: (t.ctr_change !== null ? (t.ctr_change >= 0 ? '+' : '') + t.ctr_change + '% ' : '') + vsNote, cls: cur.ctr >= 5 ? 'green' : cur.ctr >= 2 ? 'orange' : 'red' },
+    {
+      num: (cur.clicks || 0).toLocaleString(),
+      lbl: 'Clicks',
+      sub: dualDelta(t.mom_clicks_change_pct, t.yoy_clicks_change_pct, false),
+      cls: 'blue'
+    },
+    {
+      num: (cur.impressions || 0).toLocaleString(),
+      lbl: 'Impressions',
+      sub: dualDelta(t.mom_impressions_change_pct, t.yoy_impressions_change_pct, false),
+      cls: 'blue'
+    },
+    {
+      num: cur.position,
+      lbl: 'Avg Position',
+      sub: dualDelta(t.mom_position_change, t.yoy_position_change, true),
+      cls: cur.position <= 10 ? 'green' : cur.position <= 20 ? 'orange' : 'red'
+    },
+    {
+      num: (cur.ctr || 0) + '%',
+      lbl: 'CTR',
+      sub: dualDelta(t.mom_ctr_change, t.yoy_ctr_change, false),
+      cls: (cur.ctr || 0) >= 5 ? 'green' : (cur.ctr || 0) >= 2 ? 'orange' : 'red'
+    },
     { num: b.top_3.count, lbl: 'Top 3 Keywords', sub: b.top_3.clicks.toLocaleString() + ' clicks', cls: 'green' },
     { num: b.pos_4_10.count, lbl: 'Pos 4–10 Keywords', sub: b.pos_4_10.clicks.toLocaleString() + ' clicks', cls: 'orange' },
     { num: b.pos_11_20.count, lbl: 'Page-2 Keywords', sub: b.pos_11_20.impressions.toLocaleString() + ' impr', cls: 'red' },
   ];
 
-  // Date range header above stats
+  // Month header above stats
   const rangeHtml = '<div class="stats-date">'
-    + '&#128197; Showing <strong>' + curLabel + '</strong>'
-    + ' &nbsp;|&nbsp; Comparing to <strong>' + prevLabel + '</strong>'
+    + '&#128197; <strong>' + curLabel + '</strong>'
+    + ' &nbsp;|&nbsp; MoM vs <strong>' + momLabel + '</strong>'
+    + ' &nbsp;&middot;&nbsp; YoY vs <strong>' + yoyLabel + '</strong>'
     + '</div>';
 
   document.getElementById('gsc-stats').innerHTML = rangeHtml + stats.map(function(s) {
@@ -839,15 +868,15 @@ function renderGscQueriesTable(site) {
     + '<th style="text-align:right">Impressions</th>'
     + '<th style="text-align:right">CTR</th>'
     + '<th style="text-align:right">Position</th>'
-    + '<th style="text-align:right">Pos Change</th>'
-    + '<th>Trend</th>'
+    + '<th style="text-align:right">Pos Δ MoM</th>'
+    + '<th>MoM Trend</th>'
     + '</tr></thead><tbody>';
 
   queries.forEach(function(q) {
     const trendClass = q.trend === 'IMPROVING' ? 'trend-IMPROVING' : q.trend === 'WORSENING' ? 'trend-WORSENING' : q.trend === 'NEW' ? 'trend-NEW' : 'trend-STABLE';
     const trendLabel = q.trend === 'IMPROVING' ? '↑ Improving' : q.trend === 'WORSENING' ? '↓ Worsening' : q.trend === 'NEW' ? '● New' : '— Stable';
-    const posChgHtml = q.position_change !== null && q.position_change !== undefined
-      ? fmtPosDelta(q.position_change, true)
+    const posChgHtml = q.mom_position_change !== null && q.mom_position_change !== undefined
+      ? fmtPosDelta(q.mom_position_change, true)
       : '<span class="chg-neutral">—</span>';
     html += '<tr>'
       + '<td style="max-width:260px;word-break:break-word">' + esc(q.query) + '</td>'

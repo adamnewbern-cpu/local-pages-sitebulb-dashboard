@@ -34,6 +34,7 @@ import os
 import json
 import argparse
 import time
+import calendar
 from datetime import datetime, timedelta, date
 from pathlib import Path
 
@@ -51,9 +52,6 @@ PROPERTIES_PATH = CREDENTIALS_DIR / "gsc_properties.json"
 OUTPUT_PATH = DATA_DIR / "gsc_data.json"
 
 SCOPES = ["https://www.googleapis.com/auth/webmasters.readonly"]
-
-# How many days in each analysis window
-WINDOW_DAYS = 30
 
 # Max rows to pull per dimension query (GSC API limit is 25000)
 MAX_ROWS = 500
@@ -82,25 +80,30 @@ def build_service():
 
 # ── Date helpers ───────────────────────────────────────────────────────────────
 
-def date_range(days_ago_end: int, days_ago_start: int):
-    """Returns (start_str, end_str) for a window ending `days_ago_end` days ago."""
+def last_full_month():
+    """Returns (start, end, label) for the most recently completed calendar month.
+    e.g. called in April 2026 → ('2026-03-01', '2026-03-31', 'March 2026')
+    """
     today = date.today()
-    end = today - timedelta(days=days_ago_end)
-    start = end - timedelta(days=days_ago_start - 1)
-    return start.isoformat(), end.isoformat()
+    last_day = today.replace(day=1) - timedelta(days=1)
+    first_day = last_day.replace(day=1)
+    return first_day.isoformat(), last_day.isoformat(), last_day.strftime("%B %Y")
 
 
-def current_window():
-    """Last 30 days (ending 3 days ago to allow GSC data to settle)."""
-    return date_range(3, WINDOW_DAYS)
-
-
-def previous_window():
-    """Prior 30 days (the window immediately before the current one)."""
-    today = date.today()
-    end = today - timedelta(days=3 + WINDOW_DAYS)
-    start = end - timedelta(days=WINDOW_DAYS - 1)
-    return start.isoformat(), end.isoformat()
+def month_ago(start_iso: str, months: int):
+    """Shift a month-start date back by N months.
+    Returns (start, end, label) for that full calendar month.
+    """
+    d = date.fromisoformat(start_iso)
+    month = d.month - months
+    year = d.year
+    while month <= 0:
+        month += 12
+        year -= 1
+    last_day_num = calendar.monthrange(year, month)[1]
+    start = date(year, month, 1)
+    end = date(year, month, last_day_num)
+    return start.isoformat(), end.isoformat(), end.strftime("%B %Y")
 
 
 # ── GSC API helpers ────────────────────────────────────────────────────────────
@@ -198,89 +201,114 @@ def pct_change(current, previous) -> float | None:
 # ── Per-site analysis ─────────────────────────────────────────────────────────
 
 def analyze_site(service, site_url: str, display_name: str) -> dict:
-    """Pull and analyze all GSC data for a single property."""
-    cur_start, cur_end = current_window()
-    prev_start, prev_end = previous_window()
+    """Pull and analyze monthly GSC data for a single property.
+
+    Pulls three periods:
+      - Current month  : last fully completed calendar month
+      - MoM            : the month immediately before (month-over-month)
+      - YoY            : same month one year prior (year-over-year)
+    """
+    cur_start, cur_end, cur_month   = last_full_month()
+    mom_start, mom_end, mom_month   = month_ago(cur_start, 1)
+    yoy_start, yoy_end, yoy_month   = month_ago(cur_start, 12)
 
     print(f"  📊 Pulling: {display_name}")
-    print(f"     Current:  {cur_start} → {cur_end}")
-    print(f"     Previous: {prev_start} → {prev_end}")
+    print(f"     Current : {cur_month}  ({cur_start} → {cur_end})")
+    print(f"     MoM     : {mom_month}  ({mom_start} → {mom_end})")
+    print(f"     YoY     : {yoy_month}  ({yoy_start} → {yoy_end})")
 
-    # ── Overall totals ────────────────────────────────────────────────────────
+    # ── Overall totals (all 3 periods) ────────────────────────────────────────
     print(f"     Fetching overall totals...")
     cur_date_rows = query_gsc(service, site_url, cur_start, cur_end, ["date"])
     time.sleep(API_DELAY)
-    prev_date_rows = query_gsc(service, site_url, prev_start, prev_end, ["date"])
+    mom_date_rows = query_gsc(service, site_url, mom_start, mom_end, ["date"])
+    time.sleep(API_DELAY)
+    yoy_date_rows = query_gsc(service, site_url, yoy_start, yoy_end, ["date"])
     time.sleep(API_DELAY)
 
     cur_totals = aggregate_totals(parse_rows(cur_date_rows, ["date"]))
-    prev_totals = aggregate_totals(parse_rows(prev_date_rows, ["date"]))
+    mom_totals = aggregate_totals(parse_rows(mom_date_rows, ["date"]))
+    yoy_totals = aggregate_totals(parse_rows(yoy_date_rows, ["date"]))
 
-    # Daily breakdown for sparkline/trend chart data
+    # Daily breakdown for the current month
     cur_by_date = sorted(parse_rows(cur_date_rows, ["date"]), key=lambda r: r["date"])
     daily = [{"date": r["date"], "clicks": r["clicks"], "impressions": r["impressions"],
                "ctr": r["ctr"], "position": r["position"]} for r in cur_by_date]
 
-    # ── Top queries (keywords) ────────────────────────────────────────────────
+    # ── Top queries (all 3 periods) ───────────────────────────────────────────
     print(f"     Fetching top queries...")
     cur_query_rows = query_gsc(service, site_url, cur_start, cur_end, ["query"])
     time.sleep(API_DELAY)
-    prev_query_rows = query_gsc(service, site_url, prev_start, prev_end, ["query"])
+    mom_query_rows = query_gsc(service, site_url, mom_start, mom_end, ["query"])
+    time.sleep(API_DELAY)
+    yoy_query_rows = query_gsc(service, site_url, yoy_start, yoy_end, ["query"])
     time.sleep(API_DELAY)
 
     cur_queries = {r["query"]: r for r in parse_rows(cur_query_rows, ["query"])}
-    prev_queries = {r["query"]: r for r in parse_rows(prev_query_rows, ["query"])}
+    mom_queries = {r["query"]: r for r in parse_rows(mom_query_rows, ["query"])}
+    yoy_queries = {r["query"]: r for r in parse_rows(yoy_query_rows, ["query"])}
 
     top_queries = []
     for q, cur in sorted(cur_queries.items(), key=lambda x: -x[1]["clicks"])[:50]:
-        prev = prev_queries.get(q)
+        mom = mom_queries.get(q)
+        yoy = yoy_queries.get(q)
         top_queries.append({
             "query": q,
             "clicks": cur["clicks"],
             "impressions": cur["impressions"],
             "ctr": cur["ctr"],
             "position": cur["position"],
-            "prev_clicks": prev["clicks"] if prev else None,
-            "prev_impressions": prev["impressions"] if prev else None,
-            "prev_position": prev["position"] if prev else None,
-            "clicks_change_pct": pct_change(cur["clicks"], prev["clicks"] if prev else None),
-            "position_change": round(cur["position"] - prev["position"], 1) if prev else None,
-            "trend": trend_label(cur["clicks"], prev["clicks"] if prev else None),
+            # MoM
+            "mom_clicks": mom["clicks"] if mom else None,
+            "mom_position": mom["position"] if mom else None,
+            "mom_clicks_change_pct": pct_change(cur["clicks"], mom["clicks"] if mom else None),
+            "mom_position_change": round(cur["position"] - mom["position"], 1) if mom else None,
+            "trend": trend_label(cur["clicks"], mom["clicks"] if mom else None),
+            # YoY
+            "yoy_clicks": yoy["clicks"] if yoy else None,
+            "yoy_position": yoy["position"] if yoy else None,
+            "yoy_clicks_change_pct": pct_change(cur["clicks"], yoy["clicks"] if yoy else None),
+            "yoy_position_change": round(cur["position"] - yoy["position"], 1) if yoy else None,
         })
 
-    # ── Top pages ─────────────────────────────────────────────────────────────
+    # ── Top pages (all 3 periods) ─────────────────────────────────────────────
     print(f"     Fetching top pages...")
     cur_page_rows = query_gsc(service, site_url, cur_start, cur_end, ["page"])
     time.sleep(API_DELAY)
-    prev_page_rows = query_gsc(service, site_url, prev_start, prev_end, ["page"])
+    mom_page_rows = query_gsc(service, site_url, mom_start, mom_end, ["page"])
+    time.sleep(API_DELAY)
+    yoy_page_rows = query_gsc(service, site_url, yoy_start, yoy_end, ["page"])
     time.sleep(API_DELAY)
 
     cur_pages = {r["page"]: r for r in parse_rows(cur_page_rows, ["page"])}
-    prev_pages = {r["page"]: r for r in parse_rows(prev_page_rows, ["page"])}
+    mom_pages = {r["page"]: r for r in parse_rows(mom_page_rows, ["page"])}
+    yoy_pages = {r["page"]: r for r in parse_rows(yoy_page_rows, ["page"])}
 
     top_pages = []
     for page, cur in sorted(cur_pages.items(), key=lambda x: -x[1]["clicks"])[:30]:
-        prev = prev_pages.get(page)
+        mom = mom_pages.get(page)
+        yoy = yoy_pages.get(page)
         top_pages.append({
             "page": page,
             "clicks": cur["clicks"],
             "impressions": cur["impressions"],
             "ctr": cur["ctr"],
             "position": cur["position"],
-            "prev_clicks": prev["clicks"] if prev else None,
-            "prev_position": prev["position"] if prev else None,
-            "clicks_change_pct": pct_change(cur["clicks"], prev["clicks"] if prev else None),
-            "position_change": round(cur["position"] - prev["position"], 1) if prev else None,
-            "trend": trend_label(cur["clicks"], prev["clicks"] if prev else None),
+            "mom_clicks": mom["clicks"] if mom else None,
+            "mom_clicks_change_pct": pct_change(cur["clicks"], mom["clicks"] if mom else None),
+            "mom_position_change": round(cur["position"] - mom["position"], 1) if mom else None,
+            "yoy_clicks": yoy["clicks"] if yoy else None,
+            "yoy_clicks_change_pct": pct_change(cur["clicks"], yoy["clicks"] if yoy else None),
+            "trend": trend_label(cur["clicks"], mom["clicks"] if mom else None),
         })
 
-    # ── Device breakdown ──────────────────────────────────────────────────────
+    # ── Device breakdown (current month only) ────────────────────────────────
     print(f"     Fetching device breakdown...")
     device_rows = query_gsc(service, site_url, cur_start, cur_end, ["device"])
     time.sleep(API_DELAY)
     devices = {r["device"]: r for r in parse_rows(device_rows, ["device"])}
 
-    # ── Country breakdown (top 10) ────────────────────────────────────────────
+    # ── Country breakdown (current month, top 10) ─────────────────────────────
     print(f"     Fetching country breakdown...")
     country_rows = query_gsc(service, site_url, cur_start, cur_end, ["country"],
                               row_limit=10)
@@ -288,28 +316,37 @@ def analyze_site(service, site_url: str, display_name: str) -> dict:
     countries = sorted(parse_rows(country_rows, ["country"]),
                        key=lambda r: -r["clicks"])[:10]
 
-    # ── Position buckets (for opportunity analysis) ───────────────────────────
+    # ── Position buckets (current month) ─────────────────────────────────────
     all_cur_queries = list(cur_queries.values())
     pos_1_3   = [q for q in all_cur_queries if q["position"] <= 3]
     pos_4_10  = [q for q in all_cur_queries if 3 < q["position"] <= 10]
     pos_11_20 = [q for q in all_cur_queries if 10 < q["position"] <= 20]
     pos_21_50 = [q for q in all_cur_queries if 20 < q["position"] <= 50]
 
+    # YoY position buckets for comparison
+    all_yoy_queries = list(yoy_queries.values())
+    yoy_pos_1_3   = [q for q in all_yoy_queries if q["position"] <= 3]
+    yoy_pos_4_10  = [q for q in all_yoy_queries if 3 < q["position"] <= 10]
+    yoy_pos_11_20 = [q for q in all_yoy_queries if 10 < q["position"] <= 20]
+
     position_buckets = {
         "top_3": {
             "count": len(pos_1_3),
             "clicks": sum(q["clicks"] for q in pos_1_3),
             "impressions": sum(q["impressions"] for q in pos_1_3),
+            "yoy_count": len(yoy_pos_1_3),
         },
         "pos_4_10": {
             "count": len(pos_4_10),
             "clicks": sum(q["clicks"] for q in pos_4_10),
             "impressions": sum(q["impressions"] for q in pos_4_10),
+            "yoy_count": len(yoy_pos_4_10),
         },
         "pos_11_20": {
             "count": len(pos_11_20),
             "clicks": sum(q["clicks"] for q in pos_11_20),
             "impressions": sum(q["impressions"] for q in pos_11_20),
+            "yoy_count": len(yoy_pos_11_20),
         },
         "pos_21_50": {
             "count": len(pos_21_50),
@@ -318,28 +355,25 @@ def analyze_site(service, site_url: str, display_name: str) -> dict:
         },
     }
 
-    # ── Declining queries (potential warnings) ────────────────────────────────
+    # ── Signals ───────────────────────────────────────────────────────────────
     declining_queries = sorted(
         [q for q in top_queries if q["trend"] == "WORSENING"],
-        key=lambda q: (q["prev_clicks"] or 0) - q["clicks"],
+        key=lambda q: (q["mom_clicks"] or 0) - q["clicks"],
         reverse=True
     )[:10]
 
-    # ── Rising queries (quick wins / opportunities) ───────────────────────────
     rising_queries = sorted(
         [q for q in top_queries if q["trend"] == "IMPROVING"],
         key=lambda q: q["clicks"],
         reverse=True
     )[:10]
 
-    # ── Page-2 keywords with high impressions (opportunity signals) ───────────
     page2_opportunities = sorted(
         [q for q in all_cur_queries
          if 10 < q["position"] <= 20 and q["impressions"] >= 100],
         key=lambda q: -q["impressions"]
     )[:15]
 
-    # ── Low CTR on high-impression queries ────────────────────────────────────
     low_ctr_queries = sorted(
         [q for q in all_cur_queries
          if q["impressions"] >= 200 and q["ctr"] < 2.0 and q["position"] <= 15],
@@ -349,22 +383,39 @@ def analyze_site(service, site_url: str, display_name: str) -> dict:
     return {
         "site_url": site_url,
         "display_name": display_name,
-        "analysis_date": datetime.utcnow().isoformat(),
+        "analysis_date": datetime.now(datetime.UTC).isoformat() if hasattr(datetime, 'UTC') else datetime.utcnow().isoformat(),
         "window": {
-            "current": {"start": cur_start, "end": cur_end},
-            "previous": {"start": prev_start, "end": prev_end},
+            "current": {"start": cur_start, "end": cur_end, "label": cur_month},
+            "mom":     {"start": mom_start, "end": mom_end, "label": mom_month},
+            "yoy":     {"start": yoy_start, "end": yoy_end, "label": yoy_month},
         },
         "totals": {
             "current": cur_totals,
-            "previous": prev_totals,
-            "clicks_change_pct": pct_change(cur_totals["clicks"], prev_totals["clicks"]),
-            "impressions_change_pct": pct_change(cur_totals["impressions"], prev_totals["impressions"]),
-            "position_change": round(cur_totals["position"] - prev_totals["position"], 1)
-                               if prev_totals["position"] else None,
-            "ctr_change": round(cur_totals["ctr"] - prev_totals["ctr"], 2)
-                          if prev_totals["ctr"] else None,
-            "clicks_trend": trend_label(cur_totals["clicks"], prev_totals["clicks"]),
-            "position_trend": trend_label(cur_totals["position"], prev_totals["position"],
+            "mom": mom_totals,
+            # YoY is None when the property has no data for that period (new site, new property, etc.)
+            "yoy": yoy_totals if (yoy_totals["clicks"] > 0 or yoy_totals["impressions"] > 0) else None,
+            "yoy_available": yoy_totals["clicks"] > 0 or yoy_totals["impressions"] > 0,
+            # MoM deltas
+            "mom_clicks_change_pct": pct_change(cur_totals["clicks"], mom_totals["clicks"]),
+            "mom_impressions_change_pct": pct_change(cur_totals["impressions"], mom_totals["impressions"]),
+            "mom_position_change": round(cur_totals["position"] - mom_totals["position"], 1)
+                                   if mom_totals["position"] else None,
+            "mom_ctr_change": round(cur_totals["ctr"] - mom_totals["ctr"], 2)
+                              if mom_totals["ctr"] else None,
+            # YoY deltas — all None when no YoY data exists
+            "yoy_clicks_change_pct": pct_change(cur_totals["clicks"], yoy_totals["clicks"])
+                                     if (yoy_totals["clicks"] > 0 or yoy_totals["impressions"] > 0) else None,
+            "yoy_impressions_change_pct": pct_change(cur_totals["impressions"], yoy_totals["impressions"])
+                                          if (yoy_totals["clicks"] > 0 or yoy_totals["impressions"] > 0) else None,
+            "yoy_position_change": round(cur_totals["position"] - yoy_totals["position"], 1)
+                                   if (yoy_totals["position"] and
+                                       (yoy_totals["clicks"] > 0 or yoy_totals["impressions"] > 0)) else None,
+            "yoy_ctr_change": round(cur_totals["ctr"] - yoy_totals["ctr"], 2)
+                              if (yoy_totals["ctr"] and
+                                  (yoy_totals["clicks"] > 0 or yoy_totals["impressions"] > 0)) else None,
+            # Trend flags
+            "clicks_trend": trend_label(cur_totals["clicks"], mom_totals["clicks"]),
+            "position_trend": trend_label(cur_totals["position"], mom_totals["position"],
                                           lower_is_better=True),
         },
         "daily": daily,
@@ -434,8 +485,8 @@ def main():
             data = analyze_site(service, site_url, display_name)
             results.append(data)
             clicks = data["totals"]["current"]["clicks"]
-            chg = data["totals"]["clicks_change_pct"]
-            chg_str = (f" ({'+' if chg >= 0 else ''}{chg}%)" if chg is not None else "")
+            chg = data["totals"]["mom_clicks_change_pct"]
+            chg_str = (f" ({'+' if chg >= 0 else ''}{chg}% MoM)" if chg is not None else "")
             print(f"  ✅ Done — {clicks:,} clicks{chg_str}\n")
         except Exception as e:
             print(f"  ❌ Failed: {e}\n")
@@ -446,7 +497,7 @@ def main():
     # Assemble output
     output = {
         "generated_at": datetime.utcnow().isoformat() + "Z",
-        "window_days": WINDOW_DAYS,
+        "window": "last_full_month",
         "sites": results,
         "errors": errors,
     }

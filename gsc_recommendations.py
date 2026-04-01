@@ -62,13 +62,20 @@ API_DELAY = 1.0
 def build_prompt(site: dict) -> str:
     """
     Build a structured analysis prompt from the site's GSC data.
+    Uses full calendar month windows with MoM and YoY comparisons.
     Keeps it concise to stay within context limits and control cost.
     """
     t = site["totals"]
     cur = t["current"]
-    prev = t["previous"]
+    mom = t.get("mom", {})
+    yoy = t.get("yoy") or {}          # None when no YoY data exists
+    yoy_available = t.get("yoy_available", bool(yoy))
     signals = site["signals"]
     buckets = site["position_buckets"]
+
+    cur_label = site["window"]["current"]["label"]
+    mom_label = site["window"].get("mom", {}).get("label", "Prior Month")
+    yoy_label = site["window"].get("yoy", {}).get("label", "Same Month LY")
 
     def fmt_pct(val):
         if val is None:
@@ -78,16 +85,17 @@ def build_prompt(site: dict) -> str:
     def fmt_pos_change(val):
         if val is None:
             return "N/A"
-        direction = "▲ worse" if val > 0 else "▼ better" if val < 0 else "no change"
+        direction = "↑ worse" if val > 0 else "↓ better" if val < 0 else "flat"
         return f"{val:+.1f} ({direction})"
 
-    # Top queries summary
+    # Top queries — include MoM and YoY click comparison
     top_q_lines = []
     for q in site["top_queries"][:15]:
-        pos_chg = f"{q['position_change']:+.1f}" if q["position_change"] is not None else "new"
+        mom_chg = f"{q['mom_clicks_change_pct']:+.0f}% MoM" if q.get("mom_clicks_change_pct") is not None else "new MoM"
+        yoy_chg = f"{q['yoy_clicks_change_pct']:+.0f}% YoY" if q.get("yoy_clicks_change_pct") is not None else "new YoY"
         top_q_lines.append(
-            f"  - \"{q['query']}\": {q['clicks']} clicks, pos {q['position']} "
-            f"({pos_chg}), {q['ctr']}% CTR, trend: {q['trend']}"
+            f"  - \"{q['query']}\": {q['clicks']} clicks, pos {q['position']}, "
+            f"{q['ctr']}% CTR | {mom_chg} | {yoy_chg}"
         )
 
     # Page-2 opportunities
@@ -97,12 +105,12 @@ def build_prompt(site: dict) -> str:
             f"  - \"{q['query']}\": pos {q['position']}, {q['impressions']:,} impressions, {q['ctr']}% CTR"
         )
 
-    # Declining queries
+    # Declining queries (MoM)
     dec_lines = []
     for q in signals["declining_queries"][:6]:
-        prev_c = q.get("prev_clicks", "?")
+        mom_c = q.get("mom_clicks", "?")
         dec_lines.append(
-            f"  - \"{q['query']}\": {prev_c} → {q['clicks']} clicks, pos {q['position']}"
+            f"  - \"{q['query']}\": {mom_c} → {q['clicks']} clicks MoM, pos {q['position']}"
         )
 
     # Low CTR signals
@@ -112,19 +120,51 @@ def build_prompt(site: dict) -> str:
             f"  - \"{q['query']}\": pos {q['position']}, {q['impressions']:,} impr, {q['ctr']}% CTR"
         )
 
-    prompt = f"""You are an expert SEO analyst. Analyze the following Google Search Console data for {site['display_name']} and provide concise, actionable recommendations.
+    # Rising queries (MoM gainers)
+    rising_lines = []
+    for q in signals.get("rising_queries", [])[:6]:
+        mom_c = q.get("mom_clicks", "?")
+        rising_lines.append(
+            f"  - \"{q['query']}\": {mom_c} → {q['clicks']} clicks MoM, pos {q['position']}"
+        )
 
-## Site Overview
-- **Site:** {site['display_name']}
-- **Analysis Period:** {site['window']['current']['start']} to {site['window']['current']['end']} vs. prior 30 days
+    # Build the performance table — include YoY column only if data exists
+    if yoy_available:
+        perf_header = f"| Metric | {cur_label} | MoM Change | YoY Change |"
+        perf_divider = "|--------|------------|------------|------------|"
+        perf_rows = (
+            f"| Clicks | {cur.get('clicks', 0):,} | {fmt_pct(t.get('mom_clicks_change_pct'))} | {fmt_pct(t.get('yoy_clicks_change_pct'))} |\n"
+            f"| Impressions | {cur.get('impressions', 0):,} | {fmt_pct(t.get('mom_impressions_change_pct'))} | {fmt_pct(t.get('yoy_impressions_change_pct'))} |\n"
+            f"| Avg Position | {cur.get('position', 'N/A')} | {fmt_pos_change(t.get('mom_position_change'))} | {fmt_pos_change(t.get('yoy_position_change'))} |\n"
+            f"| CTR | {cur.get('ctr', 'N/A')}% | {fmt_pct(t.get('mom_ctr_change'))} | {fmt_pct(t.get('yoy_ctr_change'))} |"
+        )
+        yoy_note = f"- **Year-over-Year comparison:** vs. {yoy_label}"
+        yoy_warning = ""
+    else:
+        perf_header = f"| Metric | {cur_label} | MoM Change |"
+        perf_divider = "|--------|------------|------------|"
+        perf_rows = (
+            f"| Clicks | {cur.get('clicks', 0):,} | {fmt_pct(t.get('mom_clicks_change_pct'))} |\n"
+            f"| Impressions | {cur.get('impressions', 0):,} | {fmt_pct(t.get('mom_impressions_change_pct'))} |\n"
+            f"| Avg Position | {cur.get('position', 'N/A')} | {fmt_pos_change(t.get('mom_position_change'))} |\n"
+            f"| CTR | {cur.get('ctr', 'N/A')}% | {fmt_pct(t.get('mom_ctr_change'))} |"
+        )
+        yoy_note = ""
+        yoy_warning = "\n⚠️ Note: YoY data is not available for this property (likely a new GSC property or insufficient historical data). Base your analysis on MoM trends only and do not reference year-over-year in the summary or recommendations."
 
-## Performance Summary
-| Metric | Current 30d | Prev 30d | Change |
-|--------|------------|----------|--------|
-| Clicks | {cur['clicks']:,} | {prev['clicks']:,} | {fmt_pct(t['clicks_change_pct'])} |
-| Impressions | {cur['impressions']:,} | {prev['impressions']:,} | {fmt_pct(t['impressions_change_pct'])} |
-| Avg Position | {cur['position']} | {prev['position']} | {fmt_pos_change(t['position_change'])} |
-| CTR | {cur['ctr']}% | {prev['ctr']}% | {'+' if t.get('ctr_change', 0) and t['ctr_change'] >= 0 else ''}{t.get('ctr_change', 'N/A')}% |
+    prompt = f"""You are an expert SEO analyst writing a monthly performance summary for {site['display_name']}.
+
+Analyze the Google Search Console data below and produce a concise monthly insights report covering what happened, what it means, and what actions to take.
+{yoy_warning}
+## Reporting Period
+- **Current Month:** {cur_label}
+- **Month-over-Month comparison:** vs. {mom_label}
+{yoy_note}
+
+## Monthly Performance Summary
+{perf_header}
+{perf_divider}
+{perf_rows}
 
 ## Keyword Position Distribution
 - Top 3 positions: {buckets['top_3']['count']} keywords, {buckets['top_3']['clicks']:,} clicks
@@ -132,16 +172,19 @@ def build_prompt(site: dict) -> str:
 - Positions 11–20: {buckets['pos_11_20']['count']} keywords, {buckets['pos_11_20']['impressions']:,} impressions
 - Positions 21–50: {buckets['pos_21_50']['count']} keywords, {buckets['pos_21_50']['impressions']:,} impressions
 
-## Top Performing Queries (Current Period)
+## Top Queries in {cur_label}
 {chr(10).join(top_q_lines) if top_q_lines else '  No query data available'}
 
-## Page-2 Keywords (Positions 11–20, High Impressions — Biggest Opportunities)
+## Rising Queries (MoM Gainers)
+{chr(10).join(rising_lines) if rising_lines else '  No significant gainers'}
+
+## Page-2 Keywords (Positions 11–20 — Biggest Opportunities)
 {chr(10).join(p2_lines) if p2_lines else '  None identified'}
 
-## Declining Queries (Potential Warnings)
+## Declining Queries (MoM Losers)
 {chr(10).join(dec_lines) if dec_lines else '  No significant declines'}
 
-## High-Impression, Low-CTR Queries (Quick Wins — better title/meta could unlock clicks)
+## High-Impression, Low-CTR Queries (Title/Meta Optimization Opportunities)
 {chr(10).join(low_ctr_lines) if low_ctr_lines else '  None identified'}
 
 ---
@@ -149,7 +192,7 @@ def build_prompt(site: dict) -> str:
 Please provide your analysis in the following JSON structure ONLY — no markdown, no extra text, just valid JSON:
 
 {{
-  "summary": "2-3 sentence overall performance summary for this site",
+  "summary": "A narrative summary of this site's organic search performance in {cur_label}. Write as many sentences as the data warrants — could be one sentence if performance was flat, or a short paragraph if there are notable trends. Reference specific MoM changes{' and YoY changes' if yoy_available else ''}. Do not pad with filler.",
   "quick_wins": [
     {{
       "title": "Short action title",
@@ -161,14 +204,14 @@ Please provide your analysis in the following JSON structure ONLY — no markdow
   "potential_warnings": [
     {{
       "title": "Short warning title",
-      "detail": "What is declining and why it matters",
+      "detail": "What is declining, how much, and why it matters",
       "severity": "low|medium|high"
     }}
   ],
   "biggest_opportunities": [
     {{
       "title": "Short opportunity title",
-      "detail": "Specific opportunity with keywords/pages named, expected impact",
+      "detail": "Specific opportunity with keywords/pages named and expected impact",
       "impact": "low|medium|high",
       "effort": "low|medium|high"
     }}
@@ -176,11 +219,12 @@ Please provide your analysis in the following JSON structure ONLY — no markdow
 }}
 
 Rules:
+- Summary: write naturally — as few or as many sentences as the data warrants. Mention {cur_label} and reference MoM context{' and YoY context' if yoy_available else ''}. Do not invent YoY comparisons if no YoY data was provided.
 - Quick wins: low-effort, near-term actions (title tag fixes, meta descriptions for low-CTR queries, internal linking)
-- Potential warnings: declining trends, drops in traffic or rankings that need monitoring or action
-- Biggest opportunities: higher-effort but high-reward moves (content creation, page-2 pushes, new keyword targets)
+- Potential warnings: MoM declines in clicks, impressions, or rankings that need attention{' or YoY regressions' if yoy_available else ''}
+- Biggest opportunities: higher-effort, high-reward moves (content creation, page-2 pushes, new keyword targets)
 - Be specific — name actual queries and pages from the data above
-- 3–6 items per category max
+- 3–6 items per category max; omit a category entirely if there is genuinely nothing to flag
 - Keep detail fields to 1–2 sentences
 """
     return prompt
