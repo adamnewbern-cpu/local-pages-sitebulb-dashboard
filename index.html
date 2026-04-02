@@ -179,6 +179,13 @@
     .chg-neutral { color: #888; font-size: 11px; }
     .pos-up { color: #c00; }
     .pos-down { color: #070; }
+    /* ── Date range toggle ── */
+    .date-range-toggle { display: flex; align-items: center; gap: 4px; }
+    .dr-btn { padding: 4px 14px; border-radius: 4px; border: 1px solid #ccc; background: #fff; color: #555; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+    .dr-btn.active { background: #1a5cb8; color: #fff; border-color: #1a5cb8; }
+    .dr-btn:hover:not(.active) { background: #f0f0f0; border-color: #bbb; }
+    .pending-state { padding: 40px; text-align: center; color: #aaa; }
+    .pending-state strong { color: #bbb; font-size: 15px; }
   </style>
 </head>
 <body>
@@ -240,16 +247,22 @@
         <h2 style="font-size:16px;margin:0 0 3px">Organic Search &mdash; GSC Analysis</h2>
         <p style="font-size:12px;color:#888;margin:0" id="gsc-meta">Loading data&hellip;</p>
       </div>
-      <select id="gsc-site-select" onchange="renderGsc()" style="padding:7px 12px;border:1px solid #ccc;border-radius:5px;font-size:13px;min-width:220px">
-        <option value="">Select a site&hellip;</option>
-      </select>
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+        <div class="date-range-toggle">
+          <button class="dr-btn active" data-range="rolling_30d" onclick="setDateRange('rolling_30d')">Last 30 Days</button>
+          <button class="dr-btn" data-range="last_calendar_month" onclick="setDateRange('last_calendar_month')">Last Month</button>
+        </div>
+        <select id="gsc-site-select" onchange="renderGsc()" style="padding:7px 12px;border:1px solid #ccc;border-radius:5px;font-size:13px;min-width:220px">
+          <option value="">Select a site&hellip;</option>
+        </select>
+      </div>
     </div>
 
     <!-- No data / loading states -->
     <div id="gsc-no-data" class="coming-soon" style="display:none">
       <strong style="font-size:15px">&#128200; GSC data not yet loaded</strong><br><br>
       Run <code>gsc_analyzer.py</code> then <code>gsc_recommendations.py</code>,<br>
-      then push <code>data/gsc_recommendations.json</code> to GitHub.
+      then push <code>data/sites/</code> to GitHub.
     </div>
 
     <!-- Main GSC content (hidden until a site is selected) -->
@@ -294,15 +307,21 @@
         <h2 style="font-size:16px;margin:0 0 3px">Google Analytics &mdash; GA4 Analysis</h2>
         <p style="font-size:12px;color:#888;margin:0" id="ga4-meta">Loading data&hellip;</p>
       </div>
-      <select id="ga4-site-select" onchange="renderGa4()" style="padding:7px 12px;border:1px solid #ccc;border-radius:5px;font-size:13px;min-width:220px">
-        <option value="">Select a site&hellip;</option>
-      </select>
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+        <div class="date-range-toggle">
+          <button class="dr-btn active" data-range="rolling_30d" onclick="setDateRange('rolling_30d')">Last 30 Days</button>
+          <button class="dr-btn" data-range="last_calendar_month" onclick="setDateRange('last_calendar_month')">Last Month</button>
+        </div>
+        <select id="ga4-site-select" onchange="renderGa4()" style="padding:7px 12px;border:1px solid #ccc;border-radius:5px;font-size:13px;min-width:220px">
+          <option value="">Select a site&hellip;</option>
+        </select>
+      </div>
     </div>
 
     <div id="ga4-no-data" class="coming-soon" style="display:none">
       <strong style="font-size:15px">&#128202; GA4 data not yet loaded</strong><br><br>
       Run <code>ga4_analyzer.py</code> then <code>ga4_recommendations.py</code>,<br>
-      then push <code>data/ga4_recommendations.json</code> to GitHub.
+      then push <code>data/sites/</code> to GitHub.
     </div>
 
     <div id="ga4-content" style="display:none">
@@ -745,86 +764,160 @@ function esc(s) {
 
 // ── GSC / Organic Search tab ──────────────────────────────────────────────────
 
-const GSC_DATA_URL = 'data/gsc_recommendations.json';
-let gscData = null;
+const MANIFEST_URL = 'data/sites/manifest.json';
+let manifest     = null;
+let gscSiteCache = {};   // slug → gsc_analysis JSON
+let ga4SiteCache = {};   // slug → ga4_analysis JSON
+let dateRange    = 'rolling_30d';  // 'rolling_30d' or 'last_calendar_month'
+
 let gscView = 'mom'; // 'mom' or 'yoy'
+
+function setDateRange(range) {
+  dateRange = range;
+  document.querySelectorAll('.dr-btn').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.range === range);
+  });
+  if (_gscInitialized) {
+    var gscSlug = document.getElementById('gsc-site-select').value;
+    if (gscSlug) renderGsc();
+  }
+  if (_ga4Initialized) {
+    var ga4Slug = document.getElementById('ga4-site-select').value;
+    if (ga4Slug) renderGa4();
+  }
+}
+
+async function loadManifest() {
+  if (manifest) return manifest;
+  try {
+    var r = await fetch(MANIFEST_URL);
+    if (r.ok) { manifest = await r.json(); return manifest; }
+  } catch (_) {}
+  return null;
+}
+
+async function loadGscSiteData(slug) {
+  if (gscSiteCache[slug]) return gscSiteCache[slug];
+  try {
+    var r = await fetch('data/sites/' + slug + '/gsc_analysis.json');
+    if (r.ok) { gscSiteCache[slug] = await r.json(); return gscSiteCache[slug]; }
+  } catch (_) {}
+  return null;
+}
+
+async function loadGa4SiteData(slug) {
+  if (ga4SiteCache[slug]) return ga4SiteCache[slug];
+  try {
+    var r = await fetch('data/sites/' + slug + '/ga4_analysis.json');
+    if (r.ok) { ga4SiteCache[slug] = await r.json(); return ga4SiteCache[slug]; }
+  } catch (_) {}
+  return null;
+}
+
+function normalizeGscSite(siteData) {
+  var w = siteData[dateRange] || siteData.rolling_30d || {};
+  return {
+    display_name:     siteData.display_name,
+    window:           w.window,
+    totals:           w.totals,
+    top_queries:      w.top_queries,
+    top_pages:        w.top_pages,
+    position_buckets: w.position_buckets,
+    recommendations:  Object.assign({}, w.recommendations || {}, { summary: w.summary }),
+  };
+}
+
+function normalizeGa4Site(siteData) {
+  var w = siteData[dateRange] || siteData.rolling_30d || {};
+  return {
+    display_name:    siteData.display_name,
+    window:          w.window,
+    totals:          w.totals,
+    events:          w.events,
+    channels:        w.channels,
+    top_pages:       w.top_pages,
+    ytd:             w.ytd,
+    recommendations: Object.assign({}, w.recommendations || {}, { summary: w.summary }),
+  };
+}
 
 function setGscView(view) {
   gscView = view;
-  // Update toggle button styles
   document.getElementById('gsc-toggle-mom').style.background = view === 'mom' ? '#2E75B6' : '#fff';
   document.getElementById('gsc-toggle-mom').style.color = view === 'mom' ? '#fff' : '#555';
   document.getElementById('gsc-toggle-mom').style.borderColor = view === 'mom' ? '#2E75B6' : '#ccc';
   document.getElementById('gsc-toggle-yoy').style.background = view === 'yoy' ? '#2E75B6' : '#fff';
   document.getElementById('gsc-toggle-yoy').style.color = view === 'yoy' ? '#fff' : '#555';
   document.getElementById('gsc-toggle-yoy').style.borderColor = view === 'yoy' ? '#2E75B6' : '#ccc';
-  // Re-render tables with new view
-  if (!gscData) return;
-  const idx = document.getElementById('gsc-site-select').value;
-  if (idx === '') return;
-  const site = gscData.sites[parseInt(idx)];
-  if (!site) return;
+  var slug = document.getElementById('gsc-site-select').value;
+  if (!slug || !gscSiteCache[slug]) return;
+  var site = normalizeGscSite(gscSiteCache[slug]);
   renderGscQueriesTable(site);
   renderGscPagesTable(site);
 }
 
-async function loadGscData() {
-  if (gscData) return gscData;
-  try {
-    const r = await fetch(GSC_DATA_URL);
-    if (r.ok) {
-      gscData = await r.json();
-      return gscData;
-    }
-  } catch (_) {}
-  return null;
-}
-
 async function initGscTab() {
-  const data = await loadGscData();
-  const select = document.getElementById('gsc-site-select');
+  var mf = await loadManifest();
+  var select = document.getElementById('gsc-site-select');
 
-  if (!data || !data.sites || !data.sites.length) {
+  if (!mf || !mf.sites || !mf.sites.length) {
     document.getElementById('gsc-no-data').style.display = '';
     document.getElementById('gsc-content').style.display = 'none';
     document.getElementById('gsc-meta').textContent = 'No GSC data found.';
     return;
   }
 
-  const ts = data.generated_at ? new Date(data.generated_at).toLocaleString() : '—';
+  var ts = mf.generated_at ? new Date(mf.generated_at).toLocaleString() : '\u2014';
   document.getElementById('gsc-meta').textContent =
-    'Last updated: ' + ts + ' · ' + data.sites.length + ' sites · Model: ' + (data.model || '—');
+    'As of ' + ts + ' \u00b7 ' + mf.sites.length + ' sites \u00b7 Next refresh: ' + (mf.next_refresh || '\u2014');
 
-  // Populate site selector
-  select.innerHTML = '<option value="">Select a site…</option>';
-  data.sites.forEach(function(s, i) {
-    const o = document.createElement('option');
-    o.value = i;
+  select.innerHTML = '<option value="">Select a site\u2026</option>';
+  mf.sites.forEach(function(s) {
+    var o = document.createElement('option');
+    o.value = s.slug;
     o.textContent = s.display_name;
     select.appendChild(o);
   });
 
-  // Auto-select first site
-  if (data.sites.length) {
-    select.value = '0';
+  if (mf.sites.length) {
+    select.value = mf.sites[0].slug;
     renderGsc();
   }
 }
 
-function renderGsc() {
-  const data = gscData;
-  if (!data) return;
-  const idx = document.getElementById('gsc-site-select').value;
-  if (idx === '') {
+async function renderGsc() {
+  var slug = document.getElementById('gsc-site-select').value;
+  if (!slug) {
     document.getElementById('gsc-content').style.display = 'none';
     return;
   }
-  const site = data.sites[parseInt(idx)];
-  if (!site) return;
 
   document.getElementById('gsc-content').style.display = '';
   document.getElementById('gsc-no-data').style.display = 'none';
+  document.getElementById('gsc-stats').innerHTML = '<div class="pending-state">Loading\u2026</div>';
+  document.getElementById('gsc-ai-summary').innerHTML = '';
+  document.getElementById('gsc-recs-grid').innerHTML = '';
+  document.getElementById('gsc-queries-table').innerHTML = '';
+  document.getElementById('gsc-pages-table').innerHTML = '';
 
+  var siteData = await loadGscSiteData(slug);
+  if (!siteData) {
+    document.getElementById('gsc-stats').innerHTML = '';
+    document.getElementById('gsc-ai-summary').innerHTML =
+      '<div class="pending-state"><strong>\u23f3 Data Pending</strong><br><br>'
+      + 'Run <code>gsc_analyzer.py</code> then <code>gsc_recommendations.py</code> and push <code>data/sites/</code> to GitHub.</div>';
+    return;
+  }
+
+  var snapshotDate = siteData.generated_at || '\u2014';
+  var manifestSite = manifest && manifest.sites
+    ? manifest.sites.find(function(s) { return s.slug === slug; })
+    : null;
+  var nextRefresh = (manifestSite && manifestSite.next_refresh) ? manifestSite.next_refresh : '\u2014';
+  document.getElementById('gsc-meta').textContent =
+    'As of ' + snapshotDate + ' \u00b7 Next refresh: ' + nextRefresh + ' \u00b7 Model: ' + (siteData.model || '\u2014');
+
+  var site = normalizeGscSite(siteData);
   renderGscStats(site);
   renderGscRecs(site);
   renderGscQueriesTable(site);
@@ -832,81 +925,65 @@ function renderGsc() {
 }
 
 function fmtPct(val) {
-  if (val === null || val === undefined) return '<span class="chg-neutral">—</span>';
-  // chg-down = green (positive = good), chg-up = red (negative = bad)
-  const cls = val > 0 ? 'chg-down' : val < 0 ? 'chg-up' : 'chg-neutral';
+  if (val === null || val === undefined) return '<span class="chg-neutral">\u2014</span>';
+  var cls = val > 0 ? 'chg-down' : val < 0 ? 'chg-up' : 'chg-neutral';
   return '<span class="' + cls + '">' + (val > 0 ? '+' : '') + val + '%</span>';
 }
 
 function fmtPosDelta(val, inverted) {
-  // For position: lower is better, so going down (negative delta) = good
-  if (val === null || val === undefined) return '<span class="chg-neutral">—</span>';
-  const good = inverted ? val < 0 : val > 0;
-  const bad = inverted ? val > 0 : val < 0;
-  const cls = good ? 'chg-down' : bad ? 'chg-up' : 'chg-neutral';
+  if (val === null || val === undefined) return '<span class="chg-neutral">\u2014</span>';
+  var good = inverted ? val < 0 : val > 0;
+  var bad  = inverted ? val > 0 : val < 0;
+  var cls  = good ? 'chg-down' : bad ? 'chg-up' : 'chg-neutral';
   return '<span class="' + cls + '">' + (val > 0 ? '+' : '') + val + '</span>';
 }
 
 function fmtDateShort(iso) {
-  // "2026-02-26" → "Feb 26"
-  const d = new Date(iso + 'T00:00:00');
+  var d = new Date(iso + 'T00:00:00');
   return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
 }
 
 function renderGscStats(site) {
-  const t = site.totals;
-  const cur = t.current;
-  const b = site.position_buckets;
-  const w = site.window;
+  var t = site.totals || {};
+  var cur = t.current || {};
+  var b = site.position_buckets || {};
+  var w = site.window || {};
 
-  const curLabel = (w.current && w.current.label) || 'Current Month';
-  const momLabel = (w.mom && w.mom.label) || 'Prior Month';
-  const yoyLabel = (w.yoy && w.yoy.label) || 'Same Month LY';
+  var curLabel = (w.current && w.current.label) || 'Current Period';
+  var momLabel = (w.mom && w.mom.label) || 'Prior Period';
+  var yoyLabel = (w.yoy && w.yoy.label) || 'Same Period LY';
 
-  // Build a sub-line showing MoM and YoY deltas
   function dualDelta(momVal, yoyVal, isPos) {
-    const momHtml = isPos ? fmtPosDelta(momVal, true) : fmtPct(momVal);
-    const yoyHtml = isPos ? fmtPosDelta(yoyVal, true) : fmtPct(yoyVal);
+    var momHtml = isPos ? fmtPosDelta(momVal, true) : fmtPct(momVal);
+    var yoyHtml = isPos ? fmtPosDelta(yoyVal, true) : fmtPct(yoyVal);
     return momHtml + ' <span class="chg-neutral">MoM</span>'
-      + ' &nbsp;&middot;&nbsp; '
+      + ' \u00a0\u00b7\u00a0 '
       + yoyHtml + ' <span class="chg-neutral">YoY</span>';
   }
 
-  const stats = [
-    {
-      num: (cur.clicks || 0).toLocaleString(),
-      lbl: 'Clicks',
-      sub: dualDelta(t.mom_clicks_change_pct, t.yoy_clicks_change_pct, false),
-      cls: 'blue'
-    },
-    {
-      num: (cur.impressions || 0).toLocaleString(),
-      lbl: 'Impressions',
-      sub: dualDelta(t.mom_impressions_change_pct, t.yoy_impressions_change_pct, false),
-      cls: 'blue'
-    },
-    {
-      num: cur.position,
-      lbl: 'Avg Position',
+  var stats = [
+    { num: (cur.clicks || 0).toLocaleString(), lbl: 'Clicks',
+      sub: dualDelta(t.mom_clicks_change_pct, t.yoy_clicks_change_pct, false), cls: 'blue' },
+    { num: (cur.impressions || 0).toLocaleString(), lbl: 'Impressions',
+      sub: dualDelta(t.mom_impressions_change_pct, t.yoy_impressions_change_pct, false), cls: 'blue' },
+    { num: cur.position, lbl: 'Avg Position',
       sub: dualDelta(t.mom_position_change, t.yoy_position_change, true),
-      cls: cur.position <= 10 ? 'green' : cur.position <= 20 ? 'orange' : 'red'
-    },
-    {
-      num: (cur.ctr || 0) + '%',
-      lbl: 'CTR',
+      cls: cur.position <= 10 ? 'green' : cur.position <= 20 ? 'orange' : 'red' },
+    { num: (cur.ctr || 0) + '%', lbl: 'CTR',
       sub: dualDelta(t.mom_ctr_change, t.yoy_ctr_change, false),
-      cls: (cur.ctr || 0) >= 5 ? 'green' : (cur.ctr || 0) >= 2 ? 'orange' : 'red'
-    },
-    { num: b.top_3.count, lbl: 'Top 3 Keywords', sub: b.top_3.clicks.toLocaleString() + ' clicks', cls: 'green' },
-    { num: b.pos_4_10.count, lbl: 'Pos 4–10 Keywords', sub: b.pos_4_10.clicks.toLocaleString() + ' clicks', cls: 'orange' },
-    { num: b.pos_11_20.count, lbl: 'Page-2 Keywords', sub: b.pos_11_20.impressions.toLocaleString() + ' impr', cls: 'red' },
+      cls: (cur.ctr || 0) >= 5 ? 'green' : (cur.ctr || 0) >= 2 ? 'orange' : 'red' },
+    { num: (b.top_3 || {}).count || 0, lbl: 'Top 3 Keywords',
+      sub: ((b.top_3 || {}).clicks || 0).toLocaleString() + ' clicks', cls: 'green' },
+    { num: (b.pos_4_10 || {}).count || 0, lbl: 'Pos 4\u201310 Keywords',
+      sub: ((b.pos_4_10 || {}).clicks || 0).toLocaleString() + ' clicks', cls: 'orange' },
+    { num: (b.pos_11_20 || {}).count || 0, lbl: 'Page-2 Keywords',
+      sub: ((b.pos_11_20 || {}).impressions || 0).toLocaleString() + ' impr', cls: 'red' },
   ];
 
-  // Month header above stats
-  const rangeHtml = '<div class="stats-date">'
+  var rangeHtml = '<div class="stats-date">'
     + '&#128197; <strong>' + curLabel + '</strong>'
-    + ' &nbsp;|&nbsp; MoM vs <strong>' + momLabel + '</strong>'
-    + ' &nbsp;&middot;&nbsp; YoY vs <strong>' + yoyLabel + '</strong>'
+    + ' \u00a0|\u00a0 MoM vs <strong>' + momLabel + '</strong>'
+    + ' \u00a0\u00b7\u00a0 YoY vs <strong>' + yoyLabel + '</strong>'
     + '</div>';
 
   document.getElementById('gsc-stats').innerHTML = rangeHtml + stats.map(function(s) {
@@ -919,26 +996,25 @@ function renderGscStats(site) {
 }
 
 function renderGscRecs(site) {
-  const recs = site.recommendations || {};
-  const summary = recs.summary || '';
+  var recs    = site.recommendations || {};
+  var summary = recs.summary || '';
 
-  // Summary card — clean innerHTML replace, no stacking
   document.getElementById('gsc-ai-summary').innerHTML = summary
-    ? '<div class="gsc-summary"> <strong>' + esc(site.display_name) + ' &mdash; AI Summary:</strong> ' + esc(summary) + '</div>'
+    ? '<div class="gsc-summary"><strong>' + esc(site.display_name) + ' \u2014 AI Summary:</strong> ' + esc(summary) + '</div>'
     : '';
 
   function pillHtml(val, type) {
     if (!val) return '';
-    const cls = val === 'high' ? 'pill-high' : val === 'medium' ? 'pill-medium' : 'pill-low';
-    const label = type === 'impact' ? '⚡ ' + val + ' impact' : type === 'effort' ? '🔧 ' + val + ' effort' : '⚠️ ' + val;
+    var cls   = val === 'high' ? 'pill-high' : val === 'medium' ? 'pill-medium' : 'pill-low';
+    var label = type === 'impact' ? '\u26a1 ' + val + ' impact' : type === 'effort' ? '\ud83d\udd27 ' + val + ' effort' : '\u26a0\ufe0f ' + val;
     return '<span class="rec-pill ' + cls + '">' + label + '</span>';
   }
 
   function cardHtml(cssClass, icon, title, items, itemType) {
     if (!items || !items.length) return '';
-    const itemsHtml = items.map(function(item) {
-      let pills = '';
-      if (itemType === 'rec') pills = pillHtml(item.impact, 'impact') + pillHtml(item.effort, 'effort');
+    var itemsHtml = items.map(function(item) {
+      var pills = '';
+      if (itemType === 'rec')  pills = pillHtml(item.impact, 'impact') + pillHtml(item.effort, 'effort');
       if (itemType === 'warn') pills = pillHtml(item.severity, 'severity');
       return '<div class="rec-item">'
         + '<div class="rec-item-title">' + esc(item.title || '') + pills + '</div>'
@@ -948,14 +1024,12 @@ function renderGscRecs(site) {
     return '<div class="rec-card ' + cssClass + '">'
       + '<div class="rec-card-header"><span class="rec-card-icon">' + icon + '</span>'
       + '<span class="rec-card-title">' + title + '</span></div>'
-      + itemsHtml
-      + '</div>';
+      + itemsHtml + '</div>';
   }
 
-  // Recs grid — clean innerHTML replace, no stacking
-  const grid = cardHtml('quick-wins', '⚡', 'Quick Wins', recs.quick_wins, 'rec')
-    + cardHtml('warnings', '⚠️', 'Potential Warnings', recs.potential_warnings, 'warn')
-    + cardHtml('opportunities', '🚀', 'Biggest Opportunities', recs.biggest_opportunities, 'rec');
+  var grid = cardHtml('quick-wins', '\u26a1', 'Quick Wins', recs.quick_wins, 'rec')
+    + cardHtml('warnings', '\u26a0\ufe0f', 'Potential Warnings', recs.potential_warnings, 'warn')
+    + cardHtml('opportunities', '\ud83d\ude80', 'Biggest Opportunities', recs.biggest_opportunities, 'rec');
 
   document.getElementById('gsc-recs-grid').innerHTML = grid || '<p style="color:#aaa;font-size:13px">No recommendations generated.</p>';
 }
@@ -964,7 +1038,6 @@ function renderGscRecs(site) {
 let gscQSort = { col: 'clicks', dir: 'desc' };
 let gscPSort = { col: 'clicks', dir: 'desc' };
 
-// Trend sort order: WORSENING (worst) → STABLE → NEW → IMPROVING (best)
 const TREND_ORDER = { WORSENING: 0, STABLE: 1, NEW: 2, IMPROVING: 3 };
 
 function gscSortRows(rows, state, isMom) {
@@ -998,78 +1071,75 @@ function gscSortRows(rows, state, isMom) {
 function setGscQSort(col) {
   if (gscQSort.col === col) { gscQSort.dir = gscQSort.dir === 'asc' ? 'desc' : 'asc'; }
   else { gscQSort.col = col; gscQSort.dir = 'desc'; }
-  if (!gscData) return;
-  const idx = document.getElementById('gsc-site-select').value;
-  if (idx === '') return;
-  const site = gscData.sites[parseInt(idx)];
-  if (site) renderGscQueriesTable(site);
+  var slug = document.getElementById('gsc-site-select').value;
+  if (!slug || !gscSiteCache[slug]) return;
+  renderGscQueriesTable(normalizeGscSite(gscSiteCache[slug]));
 }
 
 function setGscPSort(col) {
   if (gscPSort.col === col) { gscPSort.dir = gscPSort.dir === 'asc' ? 'desc' : 'asc'; }
   else { gscPSort.col = col; gscPSort.dir = 'desc'; }
-  if (!gscData) return;
-  const idx = document.getElementById('gsc-site-select').value;
-  if (idx === '') return;
-  const site = gscData.sites[parseInt(idx)];
-  if (site) renderGscPagesTable(site);
+  var slug = document.getElementById('gsc-site-select').value;
+  if (!slug || !gscSiteCache[slug]) return;
+  renderGscPagesTable(normalizeGscSite(gscSiteCache[slug]));
 }
 
 function qCol(c) { return gscQSort.col === c ? gscQSort.dir : ''; }
 function pCol(c) { return gscPSort.col === c ? gscPSort.dir : ''; }
 
 function trendBadge(trendVal) {
-  const cls = trendVal === 'IMPROVING' ? 'trend-IMPROVING'
-            : trendVal === 'WORSENING' ? 'trend-WORSENING'
-            : trendVal === 'NEW'       ? 'trend-NEW'
-            : 'trend-STABLE';
-  const lbl = trendVal === 'IMPROVING' ? '↑ Clicks up'
-            : trendVal === 'WORSENING' ? '↓ Clicks down'
-            : trendVal === 'NEW'       ? '● New'
-            : '— Stable';
-  return '<span class="badge ' + cls + '" title="Trend based on click change vs ' + (gscView === 'yoy' ? 'same month last year' : 'prior month') + '">' + lbl + '</span>';
+  var cls = trendVal === 'IMPROVING' ? 'trend-IMPROVING'
+          : trendVal === 'WORSENING' ? 'trend-WORSENING'
+          : trendVal === 'NEW'       ? 'trend-NEW'
+          : 'trend-STABLE';
+  var lbl = trendVal === 'IMPROVING' ? '\u2191 Clicks up'
+          : trendVal === 'WORSENING' ? '\u2193 Clicks down'
+          : trendVal === 'NEW'       ? '\u25cf New'
+          : '\u2014 Stable';
+  return '<span class="badge ' + cls + '" title="Trend based on click change vs '
+    + (gscView === 'yoy' ? 'same month last year' : 'prior month') + '">' + lbl + '</span>';
 }
 
 function renderGscQueriesTable(site) {
-  const isMom = gscView !== 'yoy';
-  const viewLabel = isMom ? 'MoM' : 'YoY';
-  const w = site.window || {};
-  const compareLabel = isMom
+  var isMom = gscView !== 'yoy';
+  var viewLabel = isMom ? 'MoM' : 'YoY';
+  var w = site.window || {};
+  var compareLabel = isMom
     ? (w.mom && w.mom.label ? 'vs ' + w.mom.label : 'MoM')
     : (w.yoy && w.yoy.label ? 'vs ' + w.yoy.label : 'YoY');
 
-  const heading = document.getElementById('gsc-queries-heading');
+  var heading = document.getElementById('gsc-queries-heading');
   if (heading) heading.textContent = 'Top Queries (' + compareLabel + ')';
 
-  const raw = (site.top_queries || []).slice(0, 20);
+  var raw = (site.top_queries || []).slice(0, 20);
   if (!raw.length) {
     document.getElementById('gsc-queries-table').innerHTML = '<div class="empty">No query data.</div>';
     return;
   }
-  const queries = gscSortRows(raw, gscQSort, isMom);
+  var queries = gscSortRows(raw, gscQSort, isMom);
 
   function th(label, col, align) {
     var a = align ? ' style="text-align:' + align + '"' : '';
     return '<th' + a + ' class="' + qCol(col) + '" onclick="setGscQSort(\'' + col + '\')">' + label + '</th>';
   }
 
-  let html = '<table><thead><tr>'
+  var html = '<table><thead><tr>'
     + '<th onclick="setGscQSort(\'query\')" class="' + qCol('query') + '">Query</th>'
     + th('Clicks', 'clicks', 'right')
     + th('Impressions', 'impressions', 'right')
     + th('CTR', 'ctr', 'right')
     + th('Avg. Pos.', 'position', 'right')
-    + th('Clicks Δ ' + viewLabel, 'clicks_chg', 'right')
-    + th('Pos Δ ' + viewLabel, 'pos_chg', 'right')
+    + th('Clicks \u0394 ' + viewLabel, 'clicks_chg', 'right')
+    + th('Pos \u0394 ' + viewLabel, 'pos_chg', 'right')
     + th('Trend (' + viewLabel + ' clicks)', 'trend', null)
     + '</tr></thead><tbody>';
 
   queries.forEach(function(q) {
-    const posChg   = isMom ? q.mom_position_change   : q.yoy_position_change;
-    const clksChg  = isMom ? q.mom_clicks_change_pct : q.yoy_clicks_change_pct;
-    const trend    = isMom ? q.trend                  : (q.yoy_trend || 'STABLE');
-    const posHtml  = posChg  != null ? fmtPosDelta(posChg, true) : '<span class="chg-neutral">—</span>';
-    const clksHtml = clksChg != null ? fmtPct(clksChg)           : '<span class="chg-neutral">—</span>';
+    var posChg   = isMom ? q.mom_position_change   : q.yoy_position_change;
+    var clksChg  = isMom ? q.mom_clicks_change_pct : q.yoy_clicks_change_pct;
+    var trend    = isMom ? q.trend                  : (q.yoy_trend || 'STABLE');
+    var posHtml  = posChg  != null ? fmtPosDelta(posChg, true) : '<span class="chg-neutral">\u2014</span>';
+    var clksHtml = clksChg != null ? fmtPct(clksChg)           : '<span class="chg-neutral">\u2014</span>';
     html += '<tr>'
       + '<td style="max-width:240px;word-break:break-word">' + esc(q.query) + '</td>'
       + '<td style="text-align:right;font-weight:500">' + q.clicks.toLocaleString() + '</td>'
@@ -1086,46 +1156,46 @@ function renderGscQueriesTable(site) {
 }
 
 function renderGscPagesTable(site) {
-  const isMom = gscView !== 'yoy';
-  const viewLabel = isMom ? 'MoM' : 'YoY';
-  const w = site.window || {};
-  const compareLabel = isMom
+  var isMom = gscView !== 'yoy';
+  var viewLabel = isMom ? 'MoM' : 'YoY';
+  var w = site.window || {};
+  var compareLabel = isMom
     ? (w.mom && w.mom.label ? 'vs ' + w.mom.label : 'MoM')
     : (w.yoy && w.yoy.label ? 'vs ' + w.yoy.label : 'YoY');
 
-  const heading = document.getElementById('gsc-pages-heading');
+  var heading = document.getElementById('gsc-pages-heading');
   if (heading) heading.textContent = 'Top Pages (' + compareLabel + ')';
 
-  const raw = (site.top_pages || []).slice(0, 10);
+  var raw = (site.top_pages || []).slice(0, 10);
   if (!raw.length) {
     document.getElementById('gsc-pages-table').innerHTML = '<div class="empty">No page data.</div>';
     return;
   }
-  const pages = gscSortRows(raw, gscPSort, isMom);
+  var pages = gscSortRows(raw, gscPSort, isMom);
 
   function th(label, col, align) {
     var a = align ? ' style="text-align:' + align + '"' : '';
     return '<th' + a + ' class="' + pCol(col) + '" onclick="setGscPSort(\'' + col + '\')">' + label + '</th>';
   }
 
-  let html = '<table><thead><tr>'
+  var html = '<table><thead><tr>'
     + '<th onclick="setGscPSort(\'page\')" class="' + pCol('page') + '">Page</th>'
     + th('Clicks', 'clicks', 'right')
     + th('Impressions', 'impressions', 'right')
     + th('CTR', 'ctr', 'right')
     + th('Avg. Pos.', 'position', 'right')
-    + th('Clicks Δ ' + viewLabel, 'clicks_chg', 'right')
-    + th('Pos Δ ' + viewLabel, 'pos_chg', 'right')
+    + th('Clicks \u0394 ' + viewLabel, 'clicks_chg', 'right')
+    + th('Pos \u0394 ' + viewLabel, 'pos_chg', 'right')
     + th('Trend (' + viewLabel + ' clicks)', 'trend', null)
     + '</tr></thead><tbody>';
 
   pages.forEach(function(p) {
-    const posChg   = isMom ? p.mom_position_change   : p.yoy_position_change;
-    const clksChg  = isMom ? p.mom_clicks_change_pct : p.yoy_clicks_change_pct;
-    const trend    = isMom ? p.trend                  : (p.yoy_trend || 'STABLE');
-    const posHtml  = posChg  != null ? fmtPosDelta(posChg, true) : '<span class="chg-neutral">—</span>';
-    const clksHtml = clksChg != null ? fmtPct(clksChg)           : '<span class="chg-neutral">—</span>';
-    const displayPage = p.page.length > 60 ? '…' + p.page.slice(-57) : p.page;
+    var posChg   = isMom ? p.mom_position_change   : p.yoy_position_change;
+    var clksChg  = isMom ? p.mom_clicks_change_pct : p.yoy_clicks_change_pct;
+    var trend    = isMom ? p.trend                  : (p.yoy_trend || 'STABLE');
+    var posHtml  = posChg  != null ? fmtPosDelta(posChg, true) : '<span class="chg-neutral">\u2014</span>';
+    var clksHtml = clksChg != null ? fmtPct(clksChg)           : '<span class="chg-neutral">\u2014</span>';
+    var displayPage = p.page.length > 60 ? '\u2026' + p.page.slice(-57) : p.page;
     html += '<tr>'
       + '<td style="max-width:300px;word-break:break-all;font-size:11px"><a href="' + esc(p.page) + '" target="_blank" style="color:#0066cc">' + esc(displayPage) + '</a></td>'
       + '<td style="text-align:right;font-weight:500">' + p.clicks.toLocaleString() + '</td>'
@@ -1145,24 +1215,20 @@ boot();
 
 // ── GA4 / Google Analytics tab ────────────────────────────────────────────────
 
-const GA4_DATA_URL = 'data/ga4_recommendations.json';
-let ga4Data = null;
 let ga4View = 'mom'; // 'mom' or 'yoy'
 
 // Sort state for each GA4 table
-let ga4ESort = { col: 'current', dir: 'desc' };   // events
-let ga4ChSort = { col: 'current_sessions', dir: 'desc' }; // channels
-let ga4PSort  = { col: 'current_sessions', dir: 'desc' }; // pages
+let ga4ESort  = { col: 'current',          dir: 'desc' };
+let ga4ChSort = { col: 'current_sessions', dir: 'desc' };
+let ga4PSort  = { col: 'current_sessions', dir: 'desc' };
 
 function fmtRate(val) {
-  // val is stored as decimal (0–1), display as %
-  if (val === null || val === undefined) return '—';
+  if (val === null || val === undefined) return '\u2014';
   return (val * 100).toFixed(1) + '%';
 }
 
 function fmtRatePts(val) {
-  // engagement rate delta in percentage points
-  if (val === null || val === undefined) return '<span class="chg-neutral">—</span>';
+  if (val === null || val === undefined) return '<span class="chg-neutral">\u2014</span>';
   var pts = val * 100;
   var cls = pts > 0 ? 'chg-down' : pts < 0 ? 'chg-up' : 'chg-neutral';
   return '<span class="' + cls + '">' + (pts > 0 ? '+' : '') + pts.toFixed(1) + ' pp</span>';
@@ -1171,71 +1237,83 @@ function fmtRatePts(val) {
 function setGa4View(view) {
   ga4View = view;
   var active = '#2E75B6', inactive = '#fff';
-  document.getElementById('ga4-toggle-mom').style.background = view === 'mom' ? active : inactive;
-  document.getElementById('ga4-toggle-mom').style.color = view === 'mom' ? '#fff' : '#555';
-  document.getElementById('ga4-toggle-mom').style.borderColor = view === 'mom' ? active : '#ccc';
-  document.getElementById('ga4-toggle-yoy').style.background = view === 'yoy' ? active : inactive;
-  document.getElementById('ga4-toggle-yoy').style.color = view === 'yoy' ? '#fff' : '#555';
-  document.getElementById('ga4-toggle-yoy').style.borderColor = view === 'yoy' ? active : '#ccc';
-  if (!ga4Data) return;
-  var idx = document.getElementById('ga4-site-select').value;
-  if (idx === '') return;
-  var site = ga4Data.sites[parseInt(idx)];
-  if (!site) return;
+  document.getElementById('ga4-toggle-mom').style.background    = view === 'mom' ? active : inactive;
+  document.getElementById('ga4-toggle-mom').style.color         = view === 'mom' ? '#fff' : '#555';
+  document.getElementById('ga4-toggle-mom').style.borderColor   = view === 'mom' ? active : '#ccc';
+  document.getElementById('ga4-toggle-yoy').style.background    = view === 'yoy' ? active : inactive;
+  document.getElementById('ga4-toggle-yoy').style.color         = view === 'yoy' ? '#fff' : '#555';
+  document.getElementById('ga4-toggle-yoy').style.borderColor   = view === 'yoy' ? active : '#ccc';
+  var slug = document.getElementById('ga4-site-select').value;
+  if (!slug || !ga4SiteCache[slug]) return;
+  var site = normalizeGa4Site(ga4SiteCache[slug]);
   renderGa4EventsTable(site);
   renderGa4ChannelsTable(site);
   renderGa4PagesTable(site);
 }
 
-async function loadGa4Data() {
-  if (ga4Data) return ga4Data;
-  try {
-    var r = await fetch(GA4_DATA_URL);
-    if (r.ok) { ga4Data = await r.json(); return ga4Data; }
-  } catch (_) {}
-  return null;
-}
-
 async function initGa4Tab() {
-  var data = await loadGa4Data();
+  var mf = await loadManifest();
   var select = document.getElementById('ga4-site-select');
 
-  if (!data || !data.sites || !data.sites.length) {
+  if (!mf || !mf.sites || !mf.sites.length) {
     document.getElementById('ga4-no-data').style.display = '';
     document.getElementById('ga4-content').style.display = 'none';
     document.getElementById('ga4-meta').textContent = 'No GA4 data found.';
     return;
   }
 
-  var ts = data.generated_at ? new Date(data.generated_at).toLocaleString() : '—';
+  var ts = mf.generated_at ? new Date(mf.generated_at).toLocaleString() : '\u2014';
   document.getElementById('ga4-meta').textContent =
-    'Last updated: ' + ts + ' · ' + data.sites.length + ' sites · Model: ' + (data.model || '—');
+    'As of ' + ts + ' \u00b7 ' + mf.sites.length + ' sites \u00b7 Next refresh: ' + (mf.next_refresh || '\u2014');
 
-  select.innerHTML = '<option value="">Select a site…</option>';
-  data.sites.forEach(function(s, i) {
+  select.innerHTML = '<option value="">Select a site\u2026</option>';
+  mf.sites.forEach(function(s) {
     var o = document.createElement('option');
-    o.value = i; o.textContent = s.display_name;
+    o.value = s.slug; o.textContent = s.display_name;
     select.appendChild(o);
   });
 
-  if (data.sites.length) { select.value = '0'; renderGa4(); }
+  if (mf.sites.length) { select.value = mf.sites[0].slug; renderGa4(); }
 }
 
-function renderGa4() {
-  if (!ga4Data) return;
-  var idx = document.getElementById('ga4-site-select').value;
-  if (idx === '') { document.getElementById('ga4-content').style.display = 'none'; return; }
-  var site = ga4Data.sites[parseInt(idx)];
-  if (!site) return;
+async function renderGa4() {
+  var slug = document.getElementById('ga4-site-select').value;
+  if (!slug) { document.getElementById('ga4-content').style.display = 'none'; return; }
 
   document.getElementById('ga4-content').style.display = '';
   document.getElementById('ga4-no-data').style.display = 'none';
+  document.getElementById('ga4-stats').innerHTML = '<div class="pending-state">Loading\u2026</div>';
+  document.getElementById('ga4-ai-summary').innerHTML = '';
+  document.getElementById('ga4-recs-grid').innerHTML = '';
+  document.getElementById('ga4-events-table').innerHTML = '';
+  document.getElementById('ga4-channels-table').innerHTML = '';
+  document.getElementById('ga4-pages-table').innerHTML = '';
+  document.getElementById('ga4-ytd-table').innerHTML = '';
+
+  var siteData = await loadGa4SiteData(slug);
+  if (!siteData) {
+    document.getElementById('ga4-stats').innerHTML = '';
+    document.getElementById('ga4-ai-summary').innerHTML =
+      '<div class="pending-state"><strong>\u23f3 Data Pending</strong><br><br>'
+      + 'Run <code>ga4_analyzer.py</code> then <code>ga4_recommendations.py</code> and push <code>data/sites/</code> to GitHub.'
+      + '<br><br>This site may not have GA4 configured.</div>';
+    return;
+  }
+
+  var snapshotDate = siteData.generated_at || '\u2014';
+  var manifestSite = manifest && manifest.sites
+    ? manifest.sites.find(function(s) { return s.slug === slug; })
+    : null;
+  var nextRefresh = (manifestSite && manifestSite.next_refresh) ? manifestSite.next_refresh : '\u2014';
+  document.getElementById('ga4-meta').textContent =
+    'As of ' + snapshotDate + ' \u00b7 Next refresh: ' + nextRefresh + ' \u00b7 Model: ' + (siteData.model || '\u2014');
 
   // Reset sort states on site change
-  ga4ESort  = { col: 'current', dir: 'desc' };
+  ga4ESort  = { col: 'current',          dir: 'desc' };
   ga4ChSort = { col: 'current_sessions', dir: 'desc' };
   ga4PSort  = { col: 'current_sessions', dir: 'desc' };
 
+  var site = normalizeGa4Site(siteData);
   renderGa4Stats(site);
   renderGa4Recs(site);
   renderGa4EventsTable(site);
@@ -1245,9 +1323,9 @@ function renderGa4() {
 }
 
 function renderGa4Stats(site) {
-  var t = site.totals || {};
+  var t   = site.totals || {};
   var cur = t.current || {};
-  var w = site.window || {};
+  var w   = site.window || {};
   var curLabel = (w.current && w.current.label) || 'Current Period';
   var momLabel = (w.mom && w.mom.label) || 'Prior Period';
   var yoyLabel = (w.yoy && w.yoy.label) || 'Same Period LY';
@@ -1256,39 +1334,27 @@ function renderGa4Stats(site) {
     var momHtml = isPts ? fmtRatePts(momVal) : fmtPct(momVal);
     var yoyHtml = isPts ? fmtRatePts(yoyVal) : fmtPct(yoyVal);
     return momHtml + ' <span class="chg-neutral">MoM</span>'
-      + ' &nbsp;&middot;&nbsp; '
+      + ' \u00a0\u00b7\u00a0 '
       + yoyHtml + ' <span class="chg-neutral">YoY</span>';
   }
 
-  var engRate = cur.engagement_rate != null ? fmtRate(cur.engagement_rate) : '—';
-  var erColor = (cur.engagement_rate || 0) >= 0.5 ? 'green'
-              : (cur.engagement_rate || 0) >= 0.25 ? 'orange' : 'red';
+  var engRate  = cur.engagement_rate != null ? fmtRate(cur.engagement_rate) : '\u2014';
+  var erColor  = (cur.engagement_rate || 0) >= 0.5 ? 'green'
+               : (cur.engagement_rate || 0) >= 0.25 ? 'orange' : 'red';
 
   var stats = [
-    {
-      num: (cur.sessions || 0).toLocaleString(),
-      lbl: 'Sessions',
-      sub: dualDelta(t.mom_sessions_change_pct, t.yoy_sessions_change_pct, false),
-      cls: 'blue'
-    },
-    {
-      num: (cur.engaged_sessions || 0).toLocaleString(),
-      lbl: 'Engaged Sessions',
-      sub: dualDelta(t.mom_engaged_sessions_change_pct, t.yoy_engaged_sessions_change_pct, false),
-      cls: 'blue'
-    },
-    {
-      num: engRate,
-      lbl: 'Engagement Rate',
-      sub: dualDelta(t.mom_engagement_rate_change_pts, t.yoy_engagement_rate_change_pts, true),
-      cls: erColor
-    }
+    { num: (cur.sessions || 0).toLocaleString(), lbl: 'Sessions',
+      sub: dualDelta(t.mom_sessions_change_pct, t.yoy_sessions_change_pct, false), cls: 'blue' },
+    { num: (cur.engaged_sessions || 0).toLocaleString(), lbl: 'Engaged Sessions',
+      sub: dualDelta(t.mom_engaged_sessions_change_pct, t.yoy_engaged_sessions_change_pct, false), cls: 'blue' },
+    { num: engRate, lbl: 'Engagement Rate',
+      sub: dualDelta(t.mom_engagement_rate_change_pts, t.yoy_engagement_rate_change_pts, true), cls: erColor },
   ];
 
   var rangeHtml = '<div class="stats-date">'
     + '&#128197; <strong>' + curLabel + '</strong>'
-    + ' &nbsp;|&nbsp; MoM vs <strong>' + momLabel + '</strong>'
-    + ' &nbsp;&middot;&nbsp; YoY vs <strong>' + yoyLabel + '</strong>'
+    + ' \u00a0|\u00a0 MoM vs <strong>' + momLabel + '</strong>'
+    + ' \u00a0\u00b7\u00a0 YoY vs <strong>' + yoyLabel + '</strong>'
     + '</div>';
 
   document.getElementById('ga4-stats').innerHTML = rangeHtml + stats.map(function(s) {
@@ -1301,17 +1367,17 @@ function renderGa4Stats(site) {
 }
 
 function renderGa4Recs(site) {
-  var recs = site.recommendations || {};
+  var recs    = site.recommendations || {};
   var summary = recs.summary || '';
 
   document.getElementById('ga4-ai-summary').innerHTML = summary
-    ? '<div class="gsc-summary"><strong>' + esc(site.display_name) + ' &mdash; AI Summary:</strong> ' + esc(summary) + '</div>'
+    ? '<div class="gsc-summary"><strong>' + esc(site.display_name) + ' \u2014 AI Summary:</strong> ' + esc(summary) + '</div>'
     : '';
 
   function pillHtml(val, type) {
     if (!val) return '';
-    var cls = val === 'high' ? 'pill-high' : val === 'medium' ? 'pill-medium' : 'pill-low';
-    var label = type === 'impact' ? '⚡ ' + val + ' impact' : type === 'effort' ? '🔧 ' + val + ' effort' : '⚠️ ' + val;
+    var cls   = val === 'high' ? 'pill-high' : val === 'medium' ? 'pill-medium' : 'pill-low';
+    var label = type === 'impact' ? '\u26a1 ' + val + ' impact' : type === 'effort' ? '\ud83d\udd27 ' + val + ' effort' : '\u26a0\ufe0f ' + val;
     return '<span class="rec-pill ' + cls + '">' + label + '</span>';
   }
 
@@ -1332,9 +1398,9 @@ function renderGa4Recs(site) {
       + itemsHtml + '</div>';
   }
 
-  var grid = cardHtml('quick-wins', '⚡', 'Quick Wins', recs.quick_wins, 'rec')
-    + cardHtml('warnings', '⚠️', 'Potential Warnings', recs.potential_warnings, 'warn')
-    + cardHtml('opportunities', '🚀', 'Biggest Opportunities', recs.biggest_opportunities, 'rec');
+  var grid = cardHtml('quick-wins', '\u26a1', 'Quick Wins', recs.quick_wins, 'rec')
+    + cardHtml('warnings', '\u26a0\ufe0f', 'Potential Warnings', recs.potential_warnings, 'warn')
+    + cardHtml('opportunities', '\ud83d\ude80', 'Biggest Opportunities', recs.biggest_opportunities, 'rec');
 
   document.getElementById('ga4-recs-grid').innerHTML = grid || '<p style="color:#aaa;font-size:13px">No recommendations generated.</p>';
 }
@@ -1357,31 +1423,25 @@ function ga4SortRows(rows, state) {
 function setGa4ESort(col) {
   if (ga4ESort.col === col) { ga4ESort.dir = ga4ESort.dir === 'asc' ? 'desc' : 'asc'; }
   else { ga4ESort.col = col; ga4ESort.dir = 'desc'; }
-  if (!ga4Data) return;
-  var idx = document.getElementById('ga4-site-select').value;
-  if (idx === '') return;
-  var site = ga4Data.sites[parseInt(idx)];
-  if (site) renderGa4EventsTable(site);
+  var slug = document.getElementById('ga4-site-select').value;
+  if (!slug || !ga4SiteCache[slug]) return;
+  renderGa4EventsTable(normalizeGa4Site(ga4SiteCache[slug]));
 }
 
 function setGa4ChSort(col) {
   if (ga4ChSort.col === col) { ga4ChSort.dir = ga4ChSort.dir === 'asc' ? 'desc' : 'asc'; }
   else { ga4ChSort.col = col; ga4ChSort.dir = 'desc'; }
-  if (!ga4Data) return;
-  var idx = document.getElementById('ga4-site-select').value;
-  if (idx === '') return;
-  var site = ga4Data.sites[parseInt(idx)];
-  if (site) renderGa4ChannelsTable(site);
+  var slug = document.getElementById('ga4-site-select').value;
+  if (!slug || !ga4SiteCache[slug]) return;
+  renderGa4ChannelsTable(normalizeGa4Site(ga4SiteCache[slug]));
 }
 
 function setGa4PSort(col) {
   if (ga4PSort.col === col) { ga4PSort.dir = ga4PSort.dir === 'asc' ? 'desc' : 'asc'; }
   else { ga4PSort.col = col; ga4PSort.dir = 'desc'; }
-  if (!ga4Data) return;
-  var idx = document.getElementById('ga4-site-select').value;
-  if (idx === '') return;
-  var site = ga4Data.sites[parseInt(idx)];
-  if (site) renderGa4PagesTable(site);
+  var slug = document.getElementById('ga4-site-select').value;
+  if (!slug || !ga4SiteCache[slug]) return;
+  renderGa4PagesTable(normalizeGa4Site(ga4SiteCache[slug]));
 }
 
 function eCol(c)  { return ga4ESort.col  === c ? ga4ESort.dir  : ''; }
@@ -1407,23 +1467,19 @@ function renderGa4EventsTable(site) {
     return;
   }
 
-  // Map sort col to field name based on current view
   var sortState = { col: ga4ESort.col, dir: ga4ESort.dir };
   if (sortState.col === 'chg') sortState.col = isMom ? 'mom_change_pct' : 'yoy_change_pct';
-
   var events = ga4SortRows(raw, sortState);
 
   function th(label, col, align) {
     var a = align ? ' style="text-align:' + align + '"' : '';
-    // For the chg column we pass 'chg' as the logical col
-    var eSortCol = col;
-    return '<th' + a + ' class="' + eCol(eSortCol) + '" onclick="setGa4ESort(\'' + eSortCol + '\')">' + label + '</th>';
+    return '<th' + a + ' class="' + eCol(col) + '" onclick="setGa4ESort(\'' + col + '\')">' + label + '</th>';
   }
 
   var html = '<table><thead><tr>'
     + '<th onclick="setGa4ESort(\'event_name\')" class="' + eCol('event_name') + '">Event</th>'
     + th('Count', 'current', 'right')
-    + th('Δ ' + viewLabel, 'chg', 'right')
+    + th('\u0394 ' + viewLabel, 'chg', 'right')
     + '</tr></thead><tbody>';
 
   events.forEach(function(e) {
@@ -1468,7 +1524,7 @@ function renderGa4ChannelsTable(site) {
     + '<th onclick="setGa4ChSort(\'channel\')" class="' + chCol('channel') + '">Channel</th>'
     + th('Sessions', 'current_sessions', 'right')
     + th('%', 'current_pct', 'right')
-    + th('Δ ' + viewLabel, 'chg', 'right')
+    + th('\u0394 ' + viewLabel, 'chg', 'right')
     + '</tr></thead><tbody>';
 
   channels.forEach(function(ch) {
@@ -1514,12 +1570,12 @@ function renderGa4PagesTable(site) {
     + '<th onclick="setGa4PSort(\'landing_page\')" class="' + pgCol('landing_page') + '">Page</th>'
     + th('Sessions', 'current_sessions', 'right')
     + th('Eng. Rate', 'current_engagement_rate', 'right')
-    + th('Δ ' + viewLabel, 'chg', 'right')
+    + th('\u0394 ' + viewLabel, 'chg', 'right')
     + '</tr></thead><tbody>';
 
   pages.forEach(function(p) {
     var chg = isMom ? p.mom_sessions_change_pct : p.yoy_sessions_change_pct;
-    var displayPage = (p.landing_page || '/').length > 40 ? '…' + (p.landing_page || '/').slice(-37) : (p.landing_page || '/');
+    var displayPage = (p.landing_page || '/').length > 40 ? '\u2026' + (p.landing_page || '/').slice(-37) : (p.landing_page || '/');
     html += '<tr>'
       + '<td style="font-size:11px;word-break:break-all" title="' + esc(p.landing_page || '') + '">' + esc(displayPage) + '</td>'
       + '<td style="text-align:right;font-weight:500">' + (p.current_sessions || 0).toLocaleString() + '</td>'
@@ -1532,24 +1588,23 @@ function renderGa4PagesTable(site) {
 }
 
 function renderGa4Ytd(site) {
-  var ytd = site.ytd || {};
-  var months = ytd.months || [];
+  var ytd     = site.ytd || {};
+  var months  = ytd.months || [];
   var curYear = ytd.current_year || '';
-  var priYear = ytd.prior_year || '';
+  var priYear = ytd.prior_year  || '';
 
   var heading = document.getElementById('ga4-ytd-heading');
-  if (heading) heading.textContent = 'Year-to-Date Traffic — ' + curYear + ' vs ' + priYear;
+  if (heading) heading.textContent = 'Year-to-Date Traffic \u2014 ' + curYear + ' vs ' + priYear;
 
   if (!months.length) {
     document.getElementById('ga4-ytd-table').innerHTML = '<div class="empty">No YTD data available.</div>';
     return;
   }
 
-  // Build quarterly subtotals
   var qtrs = {};
   months.forEach(function(m) {
     var mNum = parseInt(m.month.split('-')[1]);
-    var q = Math.ceil(mNum / 3);
+    var q    = Math.ceil(mNum / 3);
     if (!qtrs[q]) qtrs[q] = { cur: 0, pri: 0 };
     qtrs[q].cur += (m.sessions || 0);
     qtrs[q].pri += (m.prior_year_sessions || 0);
@@ -1562,7 +1617,6 @@ function renderGa4Ytd(site) {
     + '<th style="text-align:right">YoY Change</th>'
     + '</tr></thead><tbody>';
 
-  // Monthly rows
   months.forEach(function(m) {
     var cur = m.sessions || 0;
     var pri = m.prior_year_sessions || 0;
@@ -1575,9 +1629,8 @@ function renderGa4Ytd(site) {
       + '</tr>';
   });
 
-  // Quarterly subtotal rows
   Object.keys(qtrs).sort().forEach(function(q) {
-    var d = qtrs[q];
+    var d   = qtrs[q];
     var chg = d.pri > 0 ? Math.round((d.cur - d.pri) / Math.abs(d.pri) * 1000) / 10 : null;
     html += '<tr style="background:#f9f9f9;font-weight:600">'
       + '<td>Q' + q + ' ' + curYear + ' Total</td>'
@@ -1587,9 +1640,8 @@ function renderGa4Ytd(site) {
       + '</tr>';
   });
 
-  // YTD grand total
   var ytdCur = ytd.ytd_current || 0;
-  var ytdPri = ytd.ytd_prior || 0;
+  var ytdPri = ytd.ytd_prior   || 0;
   html += '<tr style="background:#f0f4ff;font-weight:700;border-top:2px solid #ddd">'
     + '<td>YTD Total</td>'
     + '<td style="text-align:right">' + ytdCur.toLocaleString() + '</td>'
@@ -1600,6 +1652,7 @@ function renderGa4Ytd(site) {
   html += '</tbody></table>';
   document.getElementById('ga4-ytd-table').innerHTML = html;
 }
+
 
 </script>
 </body>
