@@ -1,0 +1,670 @@
+{
+  "site_url": "https://dealer.hicksfamilynissan.com/",
+  "display_name": "Hicks Family Nissan - Dealer",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 647,
+        "engaged_sessions": 153,
+        "engagement_rate": 0.2365
+      },
+      "mom": {
+        "sessions": 642,
+        "engaged_sessions": 159,
+        "engagement_rate": 0.2477
+      },
+      "yoy": {
+        "sessions": 35,
+        "engaged_sessions": 21,
+        "engagement_rate": 0.6
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": 0.8,
+      "yoy_sessions_change_pct": 1748.6,
+      "mom_engaged_sessions_change_pct": -3.8,
+      "yoy_engaged_sessions_change_pct": 628.6,
+      "mom_engagement_rate_change_pts": -0.0112,
+      "yoy_engagement_rate_change_pts": -0.3635
+    },
+    "events": [
+      {
+        "event_name": "blog_views",
+        "current": 357,
+        "mom": 339,
+        "yoy": 29,
+        "mom_change_pct": 5.3,
+        "yoy_change_pct": 1131.0
+      },
+      {
+        "event_name": "dealer_site_clicks",
+        "current": 19,
+        "mom": 17,
+        "yoy": 6,
+        "mom_change_pct": 11.8,
+        "yoy_change_pct": 216.7
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 19,
+        "mom": 17,
+        "yoy": 6,
+        "mom_change_pct": 11.8,
+        "yoy_change_pct": 216.7
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 14,
+        "mom": 14,
+        "yoy": 11,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": 27.3
+      },
+      {
+        "event_name": "view_new_inventory",
+        "current": 2,
+        "mom": 5,
+        "yoy": 2,
+        "mom_change_pct": -60.0,
+        "yoy_change_pct": 0.0
+      },
+      {
+        "event_name": "schedule_service",
+        "current": 1,
+        "mom": 0,
+        "yoy": 0,
+        "mom_change_pct": null,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 340,
+        "current_pct": 52.6,
+        "mom_sessions": 356,
+        "yoy_sessions": 15,
+        "mom_sessions_change_pct": -4.5,
+        "yoy_sessions_change_pct": 2166.7
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 293,
+        "current_pct": 45.3,
+        "mom_sessions": 264,
+        "yoy_sessions": 18,
+        "mom_sessions_change_pct": 11.0,
+        "yoy_sessions_change_pct": 1527.8
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 8,
+        "current_pct": 1.2,
+        "mom_sessions": 4,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 100.0,
+        "yoy_sessions_change_pct": 300.0
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 6,
+        "current_pct": 0.9,
+        "mom_sessions": 15,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -60.0,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 139,
+        "current_engaged_sessions": 16,
+        "current_engagement_rate": 0.1151,
+        "mom_sessions": 170,
+        "yoy_sessions": 14,
+        "mom_sessions_change_pct": -18.2,
+        "yoy_sessions_change_pct": 892.9
+      },
+      {
+        "landing_page": "/maintenance-repair/check-engine-light-flashing",
+        "current_sessions": 59,
+        "current_engaged_sessions": 21,
+        "current_engagement_rate": 0.3559,
+        "mom_sessions": 77,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": -23.4,
+        "yoy_sessions_change_pct": 5800.0
+      },
+      {
+        "landing_page": "/driving/car-fog-lights",
+        "current_sessions": 57,
+        "current_engaged_sessions": 16,
+        "current_engagement_rate": 0.2807,
+        "mom_sessions": 30,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 90.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/nissan/nissan-armada",
+        "current_sessions": 39,
+        "current_engaged_sessions": 19,
+        "current_engagement_rate": 0.4872,
+        "mom_sessions": 25,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 56.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/vehicles/nissan-fuel-efficiency",
+        "current_sessions": 29,
+        "current_engaged_sessions": 9,
+        "current_engagement_rate": 0.3103,
+        "mom_sessions": 26,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": 11.5,
+        "yoy_sessions_change_pct": 2800.0
+      },
+      {
+        "landing_page": "/maintenance-repair/windshield-wiper-fluid-not-working",
+        "current_sessions": 26,
+        "current_engaged_sessions": 8,
+        "current_engagement_rate": 0.3077,
+        "mom_sessions": 22,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 18.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/financing/how-to-afford-a-car",
+        "current_sessions": 23,
+        "current_engaged_sessions": 16,
+        "current_engagement_rate": 0.6957,
+        "mom_sessions": 29,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -20.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/adventure/how-to-clean-car-after-dog",
+        "current_sessions": 17,
+        "current_engaged_sessions": 6,
+        "current_engagement_rate": 0.3529,
+        "mom_sessions": 17,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 0.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/nissan/nissan-frontier",
+        "current_sessions": 17,
+        "current_engaged_sessions": 7,
+        "current_engagement_rate": 0.4118,
+        "mom_sessions": 16,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 6.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/driving/how-long-test-drive-car",
+        "current_sessions": 16,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.1875,
+        "mom_sessions": 12,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 33.3,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 570,
+          "prior_year_sessions": 179
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 588,
+          "prior_year_sessions": 119
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 687,
+          "prior_year_sessions": 35
+        }
+      ],
+      "ytd_current": 1845,
+      "ytd_prior": 333,
+      "ytd_change_pct": 454.1
+    },
+    "summary": "Hicks Family Nissan's local pages site delivered explosive YoY growth, with 647 sessions (+1748.6% YoY) and 1,845 YTD sessions (+454.1% vs. 2025). However, engagement rate declined sharply to 23.6% (\u221236.4 pp YoY), signaling that while traffic volume is surging, content relevance and conversion intent may not be keeping pace. MoM, sessions grew modestly (+0.8%), but engaged sessions fell 3.8%, suggesting the site is attracting more casual visitors. Blog views dominate event activity at 357 events (+5.3% MoM, +1131.0% YoY), indicating strong content consumption, yet high-value conversion events remain minimal: only 1 schedule_service event and 2 view_new_inventory events recorded. Direct traffic leads at 52.6% of sessions (340), up massively YoY (+2166.7%), while Organic Search contributes 45.3% (293 sessions) with healthy MoM growth (+11.0%). Top-performing landing pages show mixed engagement\u2014/nissan/nissan-armada (48.7%) and /financing/how-to-afford-a-car (69.6%) drive strong intent, but homepage engagement is weak at 11.5%\u2014suggesting content depth outperforms broad entry points. The critical gap is conversion: blog and informational content consume traffic but dealer_site_clicks, outbound_clicks, and calls remain negligible, indicating limited funnel progression toward showroom visits or service bookings.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Expand High-Engagement Landing Pages",
+          "detail": "/financing/how-to-afford-a-car drives 69.6% engagement (16 engaged / 23 sessions) and /nissan/nissan-armada achieves 48.7% (19 engaged / 39 sessions). Replicate structure and messaging patterns to underperforming pages like the homepage (11.5%).",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Capitalize on Organic Search Growth",
+          "detail": "Organic Search is up 11.0% MoM (293 sessions) and +1527.8% YoY, now responsible for 45.3% of traffic. Double down on SERP-winning topics like check engine lights, fog lights, and fuel efficiency to sustain momentum.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Leverage Direct Traffic Volume",
+          "detail": "Direct traffic at 340 sessions (+2166.7% YoY) indicates strong brand recall. Add prominent CTAs and calls-to-action on high-traffic pages to convert this warm audience into dealer_site_clicks or service bookings.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Engagement Rate Collapse",
+          "detail": "Engagement rate plummeted 36.4 pp YoY to 23.6%, and engaged sessions fell 3.8% MoM despite traffic growth. High-volume, low-intent traffic is diluting quality metrics, and the funnel may be leaking visitors who don't convert.",
+          "severity": "high"
+        },
+        {
+          "title": "Minimal High-Value Conversion Activity",
+          "detail": "Only 1 schedule_service event and 2 view_new_inventory events in 30 days across 647 sessions represents a <0.5% conversion rate. Blog views (357 events) vastly outweigh dealer actions, suggesting informational content attracts readers but fails to guide them toward showroom or service intent.",
+          "severity": "high"
+        },
+        {
+          "title": "Homepage Underperforming",
+          "detail": "/: 139 sessions but only 11.5% engagement (16 engaged) and down 18.2% MoM. The primary entry point is not converting visitors to deeper funnel pages, risking bounce and lost showroom leads.",
+          "severity": "medium"
+        },
+        {
+          "title": "Inventory Interest Declining",
+          "detail": "view_new_inventory dropped 60.0% MoM (2 events) and has flat YoY growth, suggesting limited shopper intent on vehicle browsing despite homepage traffic.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Convert Blog Readers to Service/Sales Funnels",
+          "detail": "Blog views are 357 events (+1131.0% YoY) but only 1 schedule_service and 2 view_new_inventory events exist. Inject CTAs, forms, and internal links from blog content to /maintenance-repair and vehicle pages to funnel readers toward bookings and dealer interactions.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Rebuild Homepage Content and CTAs",
+          "detail": "Homepage engagement (11.5%) lags sub-pages by 2\u20136x; it is the first impression for 139 sessions but fails to guide visitors down-funnel. Redesign with clear dealer contact, appointment booking, and location finder above the fold.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Activate Location Finder Feature",
+          "detail": "No store_locate or find_location events are logged in the data, yet 52.6% of traffic is direct (local brand awareness). Implement or promote a location finder to capture local buyers ready to visit the showroom.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Expand Nissan Model Pages",
+          "detail": "/nissan/nissan-armada (48.7% engagement) and /nissan/nissan-frontier (41.2%) outperform category pages. Create more model-specific landing pages and drive organic/paid traffic to them to replicate high engagement and feed inventory interest.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 687,
+        "engaged_sessions": 161,
+        "engagement_rate": 0.2344
+      },
+      "mom": {
+        "sessions": 588,
+        "engaged_sessions": 147,
+        "engagement_rate": 0.25
+      },
+      "yoy": {
+        "sessions": 35,
+        "engaged_sessions": 21,
+        "engagement_rate": 0.6
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": 16.8,
+      "yoy_sessions_change_pct": 1862.9,
+      "mom_engaged_sessions_change_pct": 9.5,
+      "yoy_engaged_sessions_change_pct": 666.7,
+      "mom_engagement_rate_change_pts": -0.0156,
+      "yoy_engagement_rate_change_pts": -0.3656
+    },
+    "events": [
+      {
+        "event_name": "blog_views",
+        "current": 371,
+        "mom": 317,
+        "yoy": 29,
+        "mom_change_pct": 17.0,
+        "yoy_change_pct": 1179.3
+      },
+      {
+        "event_name": "dealer_site_clicks",
+        "current": 20,
+        "mom": 16,
+        "yoy": 7,
+        "mom_change_pct": 25.0,
+        "yoy_change_pct": 185.7
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 20,
+        "mom": 16,
+        "yoy": 7,
+        "mom_change_pct": 25.0,
+        "yoy_change_pct": 185.7
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 14,
+        "mom": 14,
+        "yoy": 11,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": 27.3
+      },
+      {
+        "event_name": "view_new_inventory",
+        "current": 2,
+        "mom": 5,
+        "yoy": 3,
+        "mom_change_pct": -60.0,
+        "yoy_change_pct": -33.3
+      },
+      {
+        "event_name": "schedule_service",
+        "current": 1,
+        "mom": 0,
+        "yoy": 0,
+        "mom_change_pct": null,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 361,
+        "current_pct": 52.5,
+        "mom_sessions": 327,
+        "yoy_sessions": 14,
+        "mom_sessions_change_pct": 10.4,
+        "yoy_sessions_change_pct": 2478.6
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 311,
+        "current_pct": 45.3,
+        "mom_sessions": 241,
+        "yoy_sessions": 19,
+        "mom_sessions_change_pct": 29.0,
+        "yoy_sessions_change_pct": 1536.8
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 8,
+        "current_pct": 1.2,
+        "mom_sessions": 13,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -38.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 7,
+        "current_pct": 1.0,
+        "mom_sessions": 4,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 75.0,
+        "yoy_sessions_change_pct": 250.0
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 148,
+        "current_engaged_sessions": 16,
+        "current_engagement_rate": 0.1081,
+        "mom_sessions": 157,
+        "yoy_sessions": 13,
+        "mom_sessions_change_pct": -5.7,
+        "yoy_sessions_change_pct": 1038.5
+      },
+      {
+        "landing_page": "/maintenance-repair/check-engine-light-flashing",
+        "current_sessions": 63,
+        "current_engaged_sessions": 23,
+        "current_engagement_rate": 0.3651,
+        "mom_sessions": 72,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": -12.5,
+        "yoy_sessions_change_pct": 6200.0
+      },
+      {
+        "landing_page": "/driving/car-fog-lights",
+        "current_sessions": 60,
+        "current_engaged_sessions": 16,
+        "current_engagement_rate": 0.2667,
+        "mom_sessions": 27,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 122.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/nissan/nissan-armada",
+        "current_sessions": 47,
+        "current_engaged_sessions": 20,
+        "current_engagement_rate": 0.4255,
+        "mom_sessions": 17,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 176.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/vehicles/nissan-fuel-efficiency",
+        "current_sessions": 29,
+        "current_engaged_sessions": 9,
+        "current_engagement_rate": 0.3103,
+        "mom_sessions": 26,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": 11.5,
+        "yoy_sessions_change_pct": 2800.0
+      },
+      {
+        "landing_page": "/maintenance-repair/windshield-wiper-fluid-not-working",
+        "current_sessions": 27,
+        "current_engaged_sessions": 8,
+        "current_engagement_rate": 0.2963,
+        "mom_sessions": 21,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 28.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/financing/how-to-afford-a-car",
+        "current_sessions": 24,
+        "current_engaged_sessions": 16,
+        "current_engagement_rate": 0.6667,
+        "mom_sessions": 27,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -11.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/nissan/nissan-frontier",
+        "current_sessions": 19,
+        "current_engaged_sessions": 8,
+        "current_engagement_rate": 0.4211,
+        "mom_sessions": 14,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 35.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/adventure/how-to-clean-car-after-dog",
+        "current_sessions": 17,
+        "current_engaged_sessions": 6,
+        "current_engagement_rate": 0.3529,
+        "mom_sessions": 17,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 0.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/driving/how-long-test-drive-car",
+        "current_sessions": 16,
+        "current_engaged_sessions": 4,
+        "current_engagement_rate": 0.25,
+        "mom_sessions": 11,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 45.5,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 570,
+          "prior_year_sessions": 179
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 588,
+          "prior_year_sessions": 119
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 687,
+          "prior_year_sessions": 35
+        }
+      ],
+      "ytd_current": 1845,
+      "ytd_prior": 333,
+      "ytd_change_pct": 454.1
+    },
+    "summary": "Hicks Family Nissan experienced explosive growth in March 2026, with sessions jumping 16.8% MoM and a staggering 1862.9% YoY, reaching 687 total sessions. However, engagement rate declined 1.6 pp MoM and 36.6 pp YoY to 23.4%, suggesting that while traffic volume is surging, content relevance or user intent alignment may need refinement. Direct traffic dominates at 52.5% (361 sessions, +10.4% MoM, +2478.6% YoY), followed closely by organic search at 45.3% (311 sessions, +29.0% MoM, +1536.8% YoY), indicating strong brand awareness and SEO momentum. Blog views are the primary engagement driver with 371 events (+17.0% MoM, +1179.3% YoY), yet high-intent conversion events remain minimal: only 1 schedule_service event, 2 view_new_inventory events (-60% MoM), and 20 dealer_site_clicks, suggesting a significant gap between content consumption and dealership-specific actions. YTD 2026 performance is exceptional at 1,845 sessions versus 333 in 2025 (+454.1%), with March alone contributing 687 sessions\u2014a 1862.9% YoY spike that signals either successful content marketing or campaign activity, but conversion funnel optimization is critical to monetize this traffic.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Organic Search Momentum",
+          "detail": "Organic search grew 29.0% MoM and 1536.8% YoY to 311 sessions, demonstrating strong SEO performance on maintenance and vehicle pages. Double down on keyword optimization for high-engagement pages like /maintenance-repair/check-engine-light-flashing (36.5% engagement) and /nissan/nissan-armada (42.5% engagement).",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "High-Engagement Financing Content",
+          "detail": "/financing/how-to-afford-a-car achieved 66.7% engagement rate (16 of 24 sessions engaged), the highest among all landing pages. Replicate this content structure and messaging for other high-intent pages to drive deeper funnel progression.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Vehicle-Specific Pages Driving Engagement",
+          "detail": "/nissan/nissan-armada (42.5% engagement, +176.5% MoM) and /nissan/nissan-frontier (42.1% engagement, +35.7% MoM) show strong traction. These are prime candidates for adding dealer-specific CTAs and inventory links to capture high-intent traffic.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Engagement Rate Erosion",
+          "detail": "Engagement rate fell 36.6 pp YoY to 23.4%, meaning nearly 77% of sessions are non-engaged despite massive traffic growth. This signals quality-quantity mismatch; traffic is arriving but not interacting meaningfully with dealership-critical content.",
+          "severity": "high"
+        },
+        {
+          "title": "Minimal High-Intent Conversions",
+          "detail": "Schedule_service registered only 1 event, view_new_inventory dropped 60% MoM to 2 events, and dealer_site_clicks account for just 20 events despite 687 sessions. The funnel is leaking significantly between awareness (blog views: 371) and consideration (inventory, scheduling).",
+          "severity": "high"
+        },
+        {
+          "title": "Homepage Engagement Decline",
+          "detail": "The homepage (/) saw sessions drop 5.7% MoM and achieved only 10.8% engagement\u2014the lowest of all top landing pages. This is concerning given it commands 21.5% of all traffic and is the primary entry point for branded direct traffic (52.5% of sessions).",
+          "severity": "medium"
+        },
+        {
+          "title": "Inventory Discovery Collapse",
+          "detail": "view_new_inventory events plummeted 60% MoM and 33.3% YoY to just 2 events, despite strong brand and organic search traffic. This suggests poor internal navigation or missing CTAs linking blog/informational content to dealer inventory.",
+          "severity": "high"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Convert Blog Traffic to Dealer Actions",
+          "detail": "Blog views (371 events) vastly outnumber dealer_site_clicks (20) and schedule_service (1). Inject dealer CTAs, service booking links, and inventory cross-links into high-performing blog pages like /maintenance-repair/check-engine-light-flashing and /driving/car-fog-lights to funnel curiosity into conversions.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize Homepage for Direct Traffic",
+          "detail": "Direct traffic (361 sessions, 52.5%) overwhelmingly lands on homepage (/), yet engagement is only 10.8%. Redesign homepage hero with clearer dealership value props, prominent service/inventory CTAs, and a location finder widget to better serve returning customers and brand searchers.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Rebuild Inventory Funnel",
+          "detail": "view_new_inventory collapsed 60% MoM\u2014likely a tracking, UX, or navigation issue given strong upstream traffic. Audit inventory page accessibility, ensure mainsite_clicks (high-value) are properly tagged, and create dedicated landing pages for vehicle models (Armada, Frontier) with clear next-step buttons.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Leverage Nissan Model Pages for Dealership Localization",
+          "detail": "/nissan/nissan-armada and /nissan/nissan-frontier show strong engagement (42%+) but minimal downstream dealer actions. Add location-aware inventory links, schedule test drive CTAs, and financing calculators to these pages to capitalize on high-intent vehicle researchers.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  }
+}

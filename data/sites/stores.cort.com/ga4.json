@@ -1,0 +1,805 @@
+{
+  "site_url": "https://stores.cort.com/",
+  "display_name": "CORT Rental",
+  "property_id": "320986622",
+  "meta": {
+    "last_updated": "2026-04-02",
+    "next_refresh": "2026-04-06"
+  },
+  "daily": [
+    {
+      "date": "2026-03-01",
+      "sessions": 2595,
+      "engaged_sessions": 415,
+      "engagement_rate": 0.1599
+    },
+    {
+      "date": "2026-03-02",
+      "sessions": 2748,
+      "engaged_sessions": 560,
+      "engagement_rate": 0.2038
+    },
+    {
+      "date": "2026-03-03",
+      "sessions": 3015,
+      "engaged_sessions": 608,
+      "engagement_rate": 0.2017
+    },
+    {
+      "date": "2026-03-04",
+      "sessions": 3336,
+      "engaged_sessions": 524,
+      "engagement_rate": 0.1571
+    },
+    {
+      "date": "2026-03-05",
+      "sessions": 3367,
+      "engaged_sessions": 491,
+      "engagement_rate": 0.1458
+    },
+    {
+      "date": "2026-03-06",
+      "sessions": 4271,
+      "engaged_sessions": 525,
+      "engagement_rate": 0.1229
+    },
+    {
+      "date": "2026-03-07",
+      "sessions": 3951,
+      "engaged_sessions": 431,
+      "engagement_rate": 0.1091
+    },
+    {
+      "date": "2026-03-08",
+      "sessions": 3870,
+      "engaged_sessions": 382,
+      "engagement_rate": 0.0987
+    },
+    {
+      "date": "2026-03-09",
+      "sessions": 4082,
+      "engaged_sessions": 497,
+      "engagement_rate": 0.1218
+    },
+    {
+      "date": "2026-03-10",
+      "sessions": 3897,
+      "engaged_sessions": 406,
+      "engagement_rate": 0.1042
+    },
+    {
+      "date": "2026-03-11",
+      "sessions": 4089,
+      "engaged_sessions": 499,
+      "engagement_rate": 0.122
+    },
+    {
+      "date": "2026-03-12",
+      "sessions": 4104,
+      "engaged_sessions": 552,
+      "engagement_rate": 0.1345
+    },
+    {
+      "date": "2026-03-13",
+      "sessions": 4151,
+      "engaged_sessions": 560,
+      "engagement_rate": 0.1349
+    },
+    {
+      "date": "2026-03-14",
+      "sessions": 4419,
+      "engaged_sessions": 550,
+      "engagement_rate": 0.1245
+    },
+    {
+      "date": "2026-03-15",
+      "sessions": 4121,
+      "engaged_sessions": 507,
+      "engagement_rate": 0.123
+    },
+    {
+      "date": "2026-03-16",
+      "sessions": 4385,
+      "engaged_sessions": 677,
+      "engagement_rate": 0.1544
+    },
+    {
+      "date": "2026-03-17",
+      "sessions": 5863,
+      "engaged_sessions": 1472,
+      "engagement_rate": 0.2511
+    },
+    {
+      "date": "2026-03-18",
+      "sessions": 3713,
+      "engaged_sessions": 523,
+      "engagement_rate": 0.1409
+    },
+    {
+      "date": "2026-03-19",
+      "sessions": 3837,
+      "engaged_sessions": 578,
+      "engagement_rate": 0.1506
+    },
+    {
+      "date": "2026-03-20",
+      "sessions": 984,
+      "engaged_sessions": 401,
+      "engagement_rate": 0.4075
+    },
+    {
+      "date": "2026-03-21",
+      "sessions": 939,
+      "engaged_sessions": 365,
+      "engagement_rate": 0.3887
+    },
+    {
+      "date": "2026-03-22",
+      "sessions": 908,
+      "engaged_sessions": 361,
+      "engagement_rate": 0.3976
+    },
+    {
+      "date": "2026-03-23",
+      "sessions": 1285,
+      "engaged_sessions": 508,
+      "engagement_rate": 0.3953
+    },
+    {
+      "date": "2026-03-24",
+      "sessions": 1253,
+      "engaged_sessions": 502,
+      "engagement_rate": 0.4006
+    },
+    {
+      "date": "2026-03-25",
+      "sessions": 978,
+      "engaged_sessions": 504,
+      "engagement_rate": 0.5153
+    },
+    {
+      "date": "2026-03-26",
+      "sessions": 1006,
+      "engaged_sessions": 474,
+      "engagement_rate": 0.4712
+    },
+    {
+      "date": "2026-03-27",
+      "sessions": 784,
+      "engaged_sessions": 387,
+      "engagement_rate": 0.4936
+    },
+    {
+      "date": "2026-03-28",
+      "sessions": 694,
+      "engaged_sessions": 335,
+      "engagement_rate": 0.4827
+    },
+    {
+      "date": "2026-03-29",
+      "sessions": 640,
+      "engaged_sessions": 304,
+      "engagement_rate": 0.475
+    },
+    {
+      "date": "2026-03-30",
+      "sessions": 933,
+      "engaged_sessions": 476,
+      "engagement_rate": 0.5102
+    },
+    {
+      "date": "2026-03-31",
+      "sessions": 945,
+      "engaged_sessions": 456,
+      "engagement_rate": 0.4825
+    },
+    {
+      "date": "2026-04-01",
+      "sessions": 841,
+      "engaged_sessions": 361,
+      "engagement_rate": 0.4293
+    }
+  ],
+  "weekly_snapshots": [
+    {
+      "snapshot_date": "2026-04-02",
+      "rolling_30d": {
+        "window": {
+          "current": {
+            "start": "2026-03-03",
+            "end": "2026-04-01",
+            "label": "Last 30 Days"
+          },
+          "mom": {
+            "start": "2026-02-01",
+            "end": "2026-03-02",
+            "label": "Prior 30 Days"
+          },
+          "yoy": {
+            "start": "2025-03-03",
+            "end": "2025-04-01",
+            "label": "Same Period LY"
+          }
+        },
+        "yoy_available": true,
+        "totals": {
+          "current": {
+            "sessions": 81957,
+            "engaged_sessions": 15079,
+            "engagement_rate": 0.184
+          },
+          "mom": {
+            "sessions": 91536,
+            "engaged_sessions": 14552,
+            "engagement_rate": 0.159
+          },
+          "yoy": {
+            "sessions": 20350,
+            "engaged_sessions": 10606,
+            "engagement_rate": 0.5212
+          },
+          "yoy_available": true,
+          "mom_sessions_change_pct": -10.5,
+          "yoy_sessions_change_pct": 302.7,
+          "mom_engaged_sessions_change_pct": 3.6,
+          "yoy_engaged_sessions_change_pct": 42.2,
+          "mom_engagement_rate_change_pts": 0.025,
+          "yoy_engagement_rate_change_pts": -0.3372
+        },
+        "events": [
+          {
+            "event_name": "outbound_clicks",
+            "current": 21725,
+            "mom": 20022,
+            "yoy": 16217,
+            "mom_change_pct": 8.5,
+            "yoy_change_pct": 34.0
+          },
+          {
+            "event_name": "rent_for_home",
+            "current": 3589,
+            "mom": 3304,
+            "yoy": 5800,
+            "mom_change_pct": 8.6,
+            "yoy_change_pct": -38.1
+          },
+          {
+            "event_name": "navigational_clicks",
+            "current": 1650,
+            "mom": 1223,
+            "yoy": 699,
+            "mom_change_pct": 34.9,
+            "yoy_change_pct": 136.1
+          },
+          {
+            "event_name": "store_locate",
+            "current": 1401,
+            "mom": 1353,
+            "yoy": 669,
+            "mom_change_pct": 3.5,
+            "yoy_change_pct": 109.4
+          },
+          {
+            "event_name": "locate_me",
+            "current": 1395,
+            "mom": 1360,
+            "yoy": 140,
+            "mom_change_pct": 2.6,
+            "yoy_change_pct": 896.4
+          },
+          {
+            "event_name": "calls",
+            "current": 293,
+            "mom": 248,
+            "yoy": 252,
+            "mom_change_pct": 18.1,
+            "yoy_change_pct": 16.3
+          },
+          {
+            "event_name": "rent_for_office",
+            "current": 219,
+            "mom": 287,
+            "yoy": 102,
+            "mom_change_pct": -23.7,
+            "yoy_change_pct": 114.7
+          },
+          {
+            "event_name": "get_directions",
+            "current": 14,
+            "mom": 10,
+            "yoy": 3,
+            "mom_change_pct": 40.0,
+            "yoy_change_pct": 366.7
+          },
+          {
+            "event_name": "accessWidget",
+            "current": 1,
+            "mom": 1,
+            "yoy": 0,
+            "mom_change_pct": 0.0,
+            "yoy_change_pct": null
+          }
+        ],
+        "channels": [
+          {
+            "channel": "Direct",
+            "current_sessions": 62627,
+            "current_pct": 76.4,
+            "mom_sessions": 75366,
+            "yoy_sessions": 4065,
+            "mom_sessions_change_pct": -16.9,
+            "yoy_sessions_change_pct": 1440.6
+          },
+          {
+            "channel": "Organic Search",
+            "current_sessions": 9704,
+            "current_pct": 11.8,
+            "mom_sessions": 9113,
+            "yoy_sessions": 13844,
+            "mom_sessions_change_pct": 6.5,
+            "yoy_sessions_change_pct": -29.9
+          },
+          {
+            "channel": "Paid Search",
+            "current_sessions": 8350,
+            "current_pct": 10.2,
+            "mom_sessions": 7429,
+            "yoy_sessions": 1465,
+            "mom_sessions_change_pct": 12.4,
+            "yoy_sessions_change_pct": 470.0
+          },
+          {
+            "channel": "Unassigned",
+            "current_sessions": 595,
+            "current_pct": 0.7,
+            "mom_sessions": 509,
+            "yoy_sessions": 633,
+            "mom_sessions_change_pct": 16.9,
+            "yoy_sessions_change_pct": -6.0
+          },
+          {
+            "channel": "Referral",
+            "current_sessions": 153,
+            "current_pct": 0.2,
+            "mom_sessions": 168,
+            "yoy_sessions": 125,
+            "mom_sessions_change_pct": -8.9,
+            "yoy_sessions_change_pct": 22.4
+          },
+          {
+            "channel": "Cross-network",
+            "current_sessions": 54,
+            "current_pct": 0.1,
+            "mom_sessions": 60,
+            "yoy_sessions": 2,
+            "mom_sessions_change_pct": -10.0,
+            "yoy_sessions_change_pct": 2600.0
+          },
+          {
+            "channel": "Organic Social",
+            "current_sessions": 36,
+            "current_pct": 0.0,
+            "mom_sessions": 61,
+            "yoy_sessions": 77,
+            "mom_sessions_change_pct": -41.0,
+            "yoy_sessions_change_pct": -53.2
+          }
+        ],
+        "top_pages": [
+          {
+            "landing_page": "/",
+            "current_sessions": 4178,
+            "current_engaged_sessions": 1779,
+            "current_engagement_rate": 0.4258,
+            "mom_sessions": 3180,
+            "yoy_sessions": 1354,
+            "mom_sessions_change_pct": 31.4,
+            "yoy_sessions_change_pct": 208.6
+          },
+          {
+            "landing_page": "(not set)",
+            "current_sessions": 625,
+            "current_engaged_sessions": 10,
+            "current_engagement_rate": 0.016,
+            "mom_sessions": 560,
+            "yoy_sessions": 359,
+            "mom_sessions_change_pct": 11.6,
+            "yoy_sessions_change_pct": 74.1
+          },
+          {
+            "landing_page": "/texas/houston",
+            "current_sessions": 378,
+            "current_engaged_sessions": 231,
+            "current_engagement_rate": 0.6111,
+            "mom_sessions": 293,
+            "yoy_sessions": 264,
+            "mom_sessions_change_pct": 29.0,
+            "yoy_sessions_change_pct": 43.2
+          },
+          {
+            "landing_page": "/illinois/chicago/540-n-lake-shore-drive",
+            "current_sessions": 324,
+            "current_engaged_sessions": 140,
+            "current_engagement_rate": 0.4321,
+            "mom_sessions": 250,
+            "yoy_sessions": 234,
+            "mom_sessions_change_pct": 29.6,
+            "yoy_sessions_change_pct": 38.5
+          },
+          {
+            "landing_page": "/texas/austin",
+            "current_sessions": 292,
+            "current_engaged_sessions": 169,
+            "current_engagement_rate": 0.5788,
+            "mom_sessions": 322,
+            "yoy_sessions": 215,
+            "mom_sessions_change_pct": -9.3,
+            "yoy_sessions_change_pct": 35.8
+          },
+          {
+            "landing_page": "/illinois/chicago",
+            "current_sessions": 286,
+            "current_engaged_sessions": 125,
+            "current_engagement_rate": 0.4371,
+            "mom_sessions": 182,
+            "yoy_sessions": 195,
+            "mom_sessions_change_pct": 57.1,
+            "yoy_sessions_change_pct": 46.7
+          },
+          {
+            "landing_page": "/new-york",
+            "current_sessions": 282,
+            "current_engaged_sessions": 150,
+            "current_engagement_rate": 0.5319,
+            "mom_sessions": 189,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": 49.2,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/nevada/las-vegas",
+            "current_sessions": 262,
+            "current_engaged_sessions": 142,
+            "current_engagement_rate": 0.542,
+            "mom_sessions": 270,
+            "yoy_sessions": 192,
+            "mom_sessions_change_pct": -3.0,
+            "yoy_sessions_change_pct": 36.5
+          },
+          {
+            "landing_page": "/new-york/new-york/140-e-45th-st",
+            "current_sessions": 245,
+            "current_engaged_sessions": 161,
+            "current_engagement_rate": 0.6571,
+            "mom_sessions": 240,
+            "yoy_sessions": 149,
+            "mom_sessions_change_pct": 2.1,
+            "yoy_sessions_change_pct": 64.4
+          },
+          {
+            "landing_page": "/washington/seattle",
+            "current_sessions": 228,
+            "current_engaged_sessions": 128,
+            "current_engagement_rate": 0.5614,
+            "mom_sessions": 188,
+            "yoy_sessions": 214,
+            "mom_sessions_change_pct": 21.3,
+            "yoy_sessions_change_pct": 6.5
+          }
+        ]
+      },
+      "last_calendar_month": {
+        "window": {
+          "current": {
+            "start": "2026-03-01",
+            "end": "2026-03-31",
+            "label": "March 2026"
+          },
+          "mom": {
+            "start": "2026-02-01",
+            "end": "2026-02-28",
+            "label": "February 2026"
+          },
+          "yoy": {
+            "start": "2025-03-01",
+            "end": "2025-03-31",
+            "label": "March 2025"
+          }
+        },
+        "yoy_available": true,
+        "totals": {
+          "current": {
+            "sessions": 86606,
+            "engaged_sessions": 15587,
+            "engagement_rate": 0.18
+          },
+          "mom": {
+            "sessions": 86689,
+            "engaged_sessions": 13706,
+            "engagement_rate": 0.1581
+          },
+          "yoy": {
+            "sessions": 20921,
+            "engaged_sessions": 10786,
+            "engagement_rate": 0.5156
+          },
+          "yoy_available": true,
+          "mom_sessions_change_pct": -0.1,
+          "yoy_sessions_change_pct": 314.0,
+          "mom_engaged_sessions_change_pct": 13.7,
+          "yoy_engaged_sessions_change_pct": 44.5,
+          "mom_engagement_rate_change_pts": 0.0219,
+          "yoy_engagement_rate_change_pts": -0.3356
+        },
+        "events": [
+          {
+            "event_name": "outbound_clicks",
+            "current": 22561,
+            "mom": 18569,
+            "yoy": 16744,
+            "mom_change_pct": 21.5,
+            "yoy_change_pct": 34.7
+          },
+          {
+            "event_name": "rent_for_home",
+            "current": 3729,
+            "mom": 3059,
+            "yoy": 5974,
+            "mom_change_pct": 21.9,
+            "yoy_change_pct": -37.6
+          },
+          {
+            "event_name": "navigational_clicks",
+            "current": 1687,
+            "mom": 1156,
+            "yoy": 721,
+            "mom_change_pct": 45.9,
+            "yoy_change_pct": 134.0
+          },
+          {
+            "event_name": "locate_me",
+            "current": 1468,
+            "mom": 1261,
+            "yoy": 150,
+            "mom_change_pct": 16.4,
+            "yoy_change_pct": 878.7
+          },
+          {
+            "event_name": "store_locate",
+            "current": 1447,
+            "mom": 1277,
+            "yoy": 690,
+            "mom_change_pct": 13.3,
+            "yoy_change_pct": 109.7
+          },
+          {
+            "event_name": "calls",
+            "current": 308,
+            "mom": 231,
+            "yoy": 257,
+            "mom_change_pct": 33.3,
+            "yoy_change_pct": 19.8
+          },
+          {
+            "event_name": "rent_for_office",
+            "current": 239,
+            "mom": 262,
+            "yoy": 98,
+            "mom_change_pct": -8.8,
+            "yoy_change_pct": 143.9
+          },
+          {
+            "event_name": "get_directions",
+            "current": 15,
+            "mom": 9,
+            "yoy": 3,
+            "mom_change_pct": 66.7,
+            "yoy_change_pct": 400.0
+          },
+          {
+            "event_name": "accessWidget",
+            "current": 1,
+            "mom": 1,
+            "yoy": 0,
+            "mom_change_pct": 0.0,
+            "yoy_change_pct": null
+          }
+        ],
+        "channels": [
+          {
+            "channel": "Direct",
+            "current_sessions": 66139,
+            "current_pct": 76.4,
+            "mom_sessions": 71553,
+            "yoy_sessions": 4245,
+            "mom_sessions_change_pct": -7.6,
+            "yoy_sessions_change_pct": 1458.0
+          },
+          {
+            "channel": "Organic Search",
+            "current_sessions": 10086,
+            "current_pct": 11.6,
+            "mom_sessions": 8458,
+            "yoy_sessions": 14136,
+            "mom_sessions_change_pct": 19.2,
+            "yoy_sessions_change_pct": -28.7
+          },
+          {
+            "channel": "Paid Search",
+            "current_sessions": 8738,
+            "current_pct": 10.1,
+            "mom_sessions": 6924,
+            "yoy_sessions": 1435,
+            "mom_sessions_change_pct": 26.2,
+            "yoy_sessions_change_pct": 508.9
+          },
+          {
+            "channel": "Unassigned",
+            "current_sessions": 619,
+            "current_pct": 0.7,
+            "mom_sessions": 477,
+            "yoy_sessions": 631,
+            "mom_sessions_change_pct": 29.8,
+            "yoy_sessions_change_pct": -1.9
+          },
+          {
+            "channel": "Referral",
+            "current_sessions": 149,
+            "current_pct": 0.2,
+            "mom_sessions": 163,
+            "yoy_sessions": 131,
+            "mom_sessions_change_pct": -8.6,
+            "yoy_sessions_change_pct": 13.7
+          },
+          {
+            "channel": "Cross-network",
+            "current_sessions": 52,
+            "current_pct": 0.1,
+            "mom_sessions": 59,
+            "yoy_sessions": 2,
+            "mom_sessions_change_pct": -11.9,
+            "yoy_sessions_change_pct": 2500.0
+          },
+          {
+            "channel": "Organic Social",
+            "current_sessions": 40,
+            "current_pct": 0.0,
+            "mom_sessions": 55,
+            "yoy_sessions": 82,
+            "mom_sessions_change_pct": -27.3,
+            "yoy_sessions_change_pct": -51.2
+          }
+        ],
+        "top_pages": [
+          {
+            "landing_page": "/",
+            "current_sessions": 4278,
+            "current_engaged_sessions": 1808,
+            "current_engagement_rate": 0.4226,
+            "mom_sessions": 3063,
+            "yoy_sessions": 1482,
+            "mom_sessions_change_pct": 39.7,
+            "yoy_sessions_change_pct": 188.7
+          },
+          {
+            "landing_page": "(not set)",
+            "current_sessions": 651,
+            "current_engaged_sessions": 10,
+            "current_engagement_rate": 0.0154,
+            "mom_sessions": 524,
+            "yoy_sessions": 354,
+            "mom_sessions_change_pct": 24.2,
+            "yoy_sessions_change_pct": 83.9
+          },
+          {
+            "landing_page": "/texas/houston",
+            "current_sessions": 390,
+            "current_engaged_sessions": 235,
+            "current_engagement_rate": 0.6026,
+            "mom_sessions": 268,
+            "yoy_sessions": 262,
+            "mom_sessions_change_pct": 45.5,
+            "yoy_sessions_change_pct": 48.9
+          },
+          {
+            "landing_page": "/illinois/chicago/540-n-lake-shore-drive",
+            "current_sessions": 343,
+            "current_engaged_sessions": 150,
+            "current_engagement_rate": 0.4373,
+            "mom_sessions": 222,
+            "yoy_sessions": 235,
+            "mom_sessions_change_pct": 54.5,
+            "yoy_sessions_change_pct": 46.0
+          },
+          {
+            "landing_page": "/texas/austin",
+            "current_sessions": 303,
+            "current_engaged_sessions": 172,
+            "current_engagement_rate": 0.5677,
+            "mom_sessions": 300,
+            "yoy_sessions": 218,
+            "mom_sessions_change_pct": 1.0,
+            "yoy_sessions_change_pct": 39.0
+          },
+          {
+            "landing_page": "/new-york",
+            "current_sessions": 297,
+            "current_engaged_sessions": 158,
+            "current_engagement_rate": 0.532,
+            "mom_sessions": 169,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": 75.7,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/illinois/chicago",
+            "current_sessions": 288,
+            "current_engaged_sessions": 127,
+            "current_engagement_rate": 0.441,
+            "mom_sessions": 170,
+            "yoy_sessions": 204,
+            "mom_sessions_change_pct": 69.4,
+            "yoy_sessions_change_pct": 41.2
+          },
+          {
+            "landing_page": "/nevada/las-vegas",
+            "current_sessions": 276,
+            "current_engaged_sessions": 150,
+            "current_engagement_rate": 0.5435,
+            "mom_sessions": 248,
+            "yoy_sessions": 202,
+            "mom_sessions_change_pct": 11.3,
+            "yoy_sessions_change_pct": 36.6
+          },
+          {
+            "landing_page": "/new-york/new-york/140-e-45th-st",
+            "current_sessions": 248,
+            "current_engaged_sessions": 161,
+            "current_engagement_rate": 0.6492,
+            "mom_sessions": 227,
+            "yoy_sessions": 157,
+            "mom_sessions_change_pct": 9.3,
+            "yoy_sessions_change_pct": 58.0
+          },
+          {
+            "landing_page": "/washington/seattle",
+            "current_sessions": 235,
+            "current_engaged_sessions": 133,
+            "current_engagement_rate": 0.566,
+            "mom_sessions": 176,
+            "yoy_sessions": 220,
+            "mom_sessions_change_pct": 33.5,
+            "yoy_sessions_change_pct": 6.8
+          }
+        ]
+      },
+      "ytd": {
+        "current_year": 2026,
+        "prior_year": 2025,
+        "months": [
+          {
+            "month": "2026-01",
+            "label": "January 2026",
+            "sessions": 70748,
+            "prior_year_sessions": 24830
+          },
+          {
+            "month": "2026-02",
+            "label": "February 2026",
+            "sessions": 86689,
+            "prior_year_sessions": 18626
+          },
+          {
+            "month": "2026-03",
+            "label": "March 2026",
+            "sessions": 86606,
+            "prior_year_sessions": 20921
+          }
+        ],
+        "ytd_current": 244043,
+        "ytd_prior": 64377,
+        "ytd_change_pct": 279.1
+      }
+    }
+  ]
+}

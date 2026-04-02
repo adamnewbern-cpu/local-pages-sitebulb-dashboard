@@ -1,0 +1,601 @@
+{
+  "site_url": "https://vehicle.firestonecompleteautocare.com/",
+  "display_name": "Vehicle Funnel",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 92877,
+        "engaged_sessions": 11300,
+        "engagement_rate": 0.1217
+      },
+      "mom": {
+        "sessions": 162406,
+        "engaged_sessions": 13277,
+        "engagement_rate": 0.0818
+      },
+      "yoy": {
+        "sessions": 36700,
+        "engaged_sessions": 26942,
+        "engagement_rate": 0.7341
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -42.8,
+      "yoy_sessions_change_pct": 153.1,
+      "mom_engaged_sessions_change_pct": -14.9,
+      "yoy_engaged_sessions_change_pct": -58.1,
+      "mom_engagement_rate_change_pts": 0.0399,
+      "yoy_engagement_rate_change_pts": -0.6124
+    },
+    "events": [],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 83520,
+        "current_pct": 89.9,
+        "mom_sessions": 150327,
+        "yoy_sessions": 24367,
+        "mom_sessions_change_pct": -44.4,
+        "yoy_sessions_change_pct": 242.8
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 8396,
+        "current_pct": 9.0,
+        "mom_sessions": 8485,
+        "yoy_sessions": 12417,
+        "mom_sessions_change_pct": -1.0,
+        "yoy_sessions_change_pct": -32.4
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 1199,
+        "current_pct": 1.3,
+        "mom_sessions": 2512,
+        "yoy_sessions": 74,
+        "mom_sessions_change_pct": -52.3,
+        "yoy_sessions_change_pct": 1520.3
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 191,
+        "current_pct": 0.2,
+        "mom_sessions": 171,
+        "yoy_sessions": 111,
+        "mom_sessions_change_pct": 11.7,
+        "yoy_sessions_change_pct": 72.1
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 20,
+        "current_pct": 0.0,
+        "mom_sessions": 5,
+        "yoy_sessions": 27,
+        "mom_sessions_change_pct": 300.0,
+        "yoy_sessions_change_pct": -25.9
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 1494,
+        "current_engaged_sessions": 1001,
+        "current_engagement_rate": 0.67,
+        "mom_sessions": 1354,
+        "yoy_sessions": 18070,
+        "mom_sessions_change_pct": 10.3,
+        "yoy_sessions_change_pct": -91.7
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 1264,
+        "current_engaged_sessions": 4,
+        "current_engagement_rate": 0.0032,
+        "mom_sessions": 2367,
+        "yoy_sessions": 557,
+        "mom_sessions_change_pct": -46.6,
+        "yoy_sessions_change_pct": 126.9
+      },
+      {
+        "landing_page": "/tesla",
+        "current_sessions": 117,
+        "current_engaged_sessions": 98,
+        "current_engagement_rate": 0.8376,
+        "mom_sessions": 171,
+        "yoy_sessions": 112,
+        "mom_sessions_change_pct": -31.6,
+        "yoy_sessions_change_pct": 4.5
+      },
+      {
+        "landing_page": "/bmw",
+        "current_sessions": 39,
+        "current_engaged_sessions": 27,
+        "current_engagement_rate": 0.6923,
+        "mom_sessions": 37,
+        "yoy_sessions": 49,
+        "mom_sessions_change_pct": 5.4,
+        "yoy_sessions_change_pct": -20.4
+      },
+      {
+        "landing_page": "/mercedes-benz",
+        "current_sessions": 33,
+        "current_engaged_sessions": 25,
+        "current_engagement_rate": 0.7576,
+        "mom_sessions": 32,
+        "yoy_sessions": 80,
+        "mom_sessions_change_pct": 3.1,
+        "yoy_sessions_change_pct": -58.8
+      },
+      {
+        "landing_page": "/ford/taurus/2016/maintenance",
+        "current_sessions": 26,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/lincoln/mkz/2018/maintenance/batteries",
+        "current_sessions": 25,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.12,
+        "mom_sessions": 18,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 38.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/chevrolet/colorado/2015/maintenance",
+        "current_sessions": 22,
+        "current_engaged_sessions": 6,
+        "current_engagement_rate": 0.2727,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/volvo/xc90/2020/maintenance/oil",
+        "current_sessions": 20,
+        "current_engaged_sessions": 4,
+        "current_engagement_rate": 0.2,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/chevrolet/spark/2014/maintenance",
+        "current_sessions": 19,
+        "current_engaged_sessions": 10,
+        "current_engagement_rate": 0.5263,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 133969,
+          "prior_year_sessions": 48321
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 150353,
+          "prior_year_sessions": 35833
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 94926,
+          "prior_year_sessions": 38388
+        }
+      ],
+      "ytd_current": 379248,
+      "ytd_prior": 122542,
+      "ytd_change_pct": 209.5
+    },
+    "summary": "Vehicle Funnel traffic declined significantly MoM (-42.8%), dropping to 92,877 sessions, though YoY growth remains robust at +153.1%, indicating strong annual momentum. Engagement Rate improved MoM (+4.0 pp) despite lower session volume, but YoY engagement collapsed (-61.2 pp), suggesting quality degradation year-over-year. Direct traffic dominates at 89.9% of sessions but fell sharply MoM (-44.4%), while YoY direct growth is exceptional (+242.8%), highlighting seasonal or cyclical patterns. Organic Search remains stable MoM (-1.0%) but declined YoY (-32.4%), signaling potential SEO headwinds. YTD 2026 performance is exceptionally strong at 379,248 sessions (+209.5% vs YTD 2025), though March shows deceleration (94,926 sessions) after explosive January\u2013February growth (133,969 and 150,353 respectively). Brand landing pages\u2014Tesla (/tesla: 83.8% engagement), Mercedes-Benz (/mercedes-benz: 75.8%), and BMW (/bmw: 69.2%)\u2014drive high engagement, while maintenance content pages show minimal to no engagement, indicating potential funnel misalignment.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Leverage Tesla Landing Page Momentum",
+          "detail": "The /tesla page achieves 83.8% engagement rate (98 engaged of 117 sessions) and remains a strong performer despite MoM decline (-31.6%). Amplifying promotion of this page or replicating its design/messaging on other brand pages could boost overall funnel quality.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Capitalize on Homepage Improvement",
+          "detail": "The homepage (/) grew MoM (+10.3%) to 1,494 sessions with 67.0% engagement rate, bucking the traffic downturn. Strengthening CTA placement and conversion pathways here could convert more of these engaged visitors into higher-value events.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Monitor Referral Channel Growth",
+          "detail": "Referral traffic grew MoM (+11.7%) to 191 sessions, the only growth-positive channel. Identifying and nurturing these referral sources could provide a stable, high-intent traffic lever.",
+          "impact": "low",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Severe MoM Traffic Contraction",
+          "detail": "Sessions dropped 42.8% MoM to 92,877, with Direct traffic falling 44.4%; Engaged Sessions declined 14.9% to 11,300. This sharp downturn requires immediate investigation into campaign pauses, seasonal factors, or technical issues that may have impacted visibility or user access.",
+          "severity": "high"
+        },
+        {
+          "title": "Engagement Collapse YoY Despite Rate Improvement",
+          "detail": "Engaged Sessions fell 58.1% YoY while Engagement Rate paradoxically rose 4.0 pp MoM but dropped 61.2 pp YoY, indicating that fewer, lower-quality sessions are skewing the percentage metric. The absolute engagement loss is the true concern and suggests content or user intent misalignment year-over-year.",
+          "severity": "high"
+        },
+        {
+          "title": "Maintenance Content Pages Driving No Conversions",
+          "detail": "Multiple maintenance-focused landing pages (/ford/taurus/2016/maintenance, /lincoln/mkz/2018/maintenance/batteries) show 0% or near-0% engagement (0\u201312% rates). These pages may be attracting off-funnel traffic or lack clear CTAs, representing wasted impressions and budget.",
+          "severity": "medium"
+        },
+        {
+          "title": "Organic Search Decline YoY",
+          "detail": "Organic Search fell 32.4% YoY to 8,396 sessions despite MoM stability (-1.0%). This suggests SEO rankings or visibility have deteriorated significantly over 12 months, requiring urgent SEO audit and content optimization.",
+          "severity": "medium"
+        },
+        {
+          "title": "Unassigned Traffic Spike",
+          "detail": "Unassigned sessions jumped 1520.3% YoY to 1,199, suggesting significant tracking or attribution gaps. This obscures true channel performance and prevents accurate budget allocation decisions.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Revamp or Pause Maintenance Content Pages",
+          "detail": "Pages like /ford/taurus/2016/maintenance (0% engagement) and /lincoln/mkz/2018/maintenance/batteries (12% engagement) are not converting. Consolidate, optimize with stronger CTAs to mainsite_clicks or calls, or remove to reduce funnel noise and improve site quality metrics.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Recover Organic Search Traffic",
+          "detail": "Organic Search declined 32.4% YoY but remains 9.0% of total traffic (8,396 sessions). Conduct comprehensive SEO audit, refresh high-intent keywords (e.g., brand + model + maintenance), and optimize top-performing pages (Tesla, BMW, Mercedes) to recapture organic visibility and reduce Direct dependency.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Expand Brand Landing Page Strategy",
+          "detail": "Tesla (/tesla: 83.8%), Mercedes-Benz, and BMW pages show exceptionally high engagement but represent only ~2% of traffic. Create similar optimized brand/model landing pages and promote via Direct and paid channels to drive volume to proven converters.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Investigate and Fix Attribution Gaps",
+          "detail": "Unassigned traffic (1,199 sessions) surged 1520.3% YoY, obscuring true channel attribution. Audit GA4 tracking code, UTM parameters, and cross-domain settings to correctly categorize this traffic and reclaim actionable channel-level insights.",
+          "impact": "medium",
+          "effort": "high"
+        },
+        {
+          "title": "Implement High-Value Conversion Events",
+          "detail": "No custom events (calls, book_now, mainsite_clicks) are currently tracked, despite glossary expectations. Set up event tracking for phone calls, appointment scheduling, and main-site navigation to measure true funnel conversion and optimize for revenue-generating actions.",
+          "impact": "high",
+          "effort": "medium"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 94926,
+        "engaged_sessions": 11884,
+        "engagement_rate": 0.1252
+      },
+      "mom": {
+        "sessions": 150353,
+        "engaged_sessions": 12301,
+        "engagement_rate": 0.0818
+      },
+      "yoy": {
+        "sessions": 38388,
+        "engaged_sessions": 28399,
+        "engagement_rate": 0.7398
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -36.9,
+      "yoy_sessions_change_pct": 147.3,
+      "mom_engaged_sessions_change_pct": -3.4,
+      "yoy_engaged_sessions_change_pct": -58.2,
+      "mom_engagement_rate_change_pts": 0.0434,
+      "yoy_engagement_rate_change_pts": -0.6146
+    },
+    "events": [],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 86012,
+        "current_pct": 90.6,
+        "mom_sessions": 139244,
+        "yoy_sessions": 25804,
+        "mom_sessions_change_pct": -38.2,
+        "yoy_sessions_change_pct": 233.3
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 8564,
+        "current_pct": 9.0,
+        "mom_sessions": 7933,
+        "yoy_sessions": 12934,
+        "mom_sessions_change_pct": 8.0,
+        "yoy_sessions_change_pct": -33.8
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 1145,
+        "current_pct": 1.2,
+        "mom_sessions": 2473,
+        "yoy_sessions": 73,
+        "mom_sessions_change_pct": -53.7,
+        "yoy_sessions_change_pct": 1468.5
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 186,
+        "current_pct": 0.2,
+        "mom_sessions": 163,
+        "yoy_sessions": 116,
+        "mom_sessions_change_pct": 14.1,
+        "yoy_sessions_change_pct": 60.3
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 20,
+        "current_pct": 0.0,
+        "mom_sessions": 4,
+        "yoy_sessions": 34,
+        "mom_sessions_change_pct": 400.0,
+        "yoy_sessions_change_pct": -41.2
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 1557,
+        "current_engaged_sessions": 1040,
+        "current_engagement_rate": 0.668,
+        "mom_sessions": 1240,
+        "yoy_sessions": 19219,
+        "mom_sessions_change_pct": 25.6,
+        "yoy_sessions_change_pct": -91.9
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 1191,
+        "current_engaged_sessions": 4,
+        "current_engagement_rate": 0.0034,
+        "mom_sessions": 2334,
+        "yoy_sessions": 587,
+        "mom_sessions_change_pct": -49.0,
+        "yoy_sessions_change_pct": 102.9
+      },
+      {
+        "landing_page": "/tesla",
+        "current_sessions": 119,
+        "current_engaged_sessions": 98,
+        "current_engagement_rate": 0.8235,
+        "mom_sessions": 167,
+        "yoy_sessions": 115,
+        "mom_sessions_change_pct": -28.7,
+        "yoy_sessions_change_pct": 3.5
+      },
+      {
+        "landing_page": "/bmw",
+        "current_sessions": 38,
+        "current_engaged_sessions": 26,
+        "current_engagement_rate": 0.6842,
+        "mom_sessions": 36,
+        "yoy_sessions": 52,
+        "mom_sessions_change_pct": 5.6,
+        "yoy_sessions_change_pct": -26.9
+      },
+      {
+        "landing_page": "/mercedes-benz",
+        "current_sessions": 33,
+        "current_engaged_sessions": 24,
+        "current_engagement_rate": 0.7273,
+        "mom_sessions": 29,
+        "yoy_sessions": 78,
+        "mom_sessions_change_pct": 13.8,
+        "yoy_sessions_change_pct": -57.7
+      },
+      {
+        "landing_page": "/ford/taurus/2016/maintenance",
+        "current_sessions": 26,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/lincoln/mkz/2018/maintenance/batteries",
+        "current_sessions": 25,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.12,
+        "mom_sessions": 17,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 47.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/chevrolet/colorado/2015/maintenance",
+        "current_sessions": 22,
+        "current_engaged_sessions": 6,
+        "current_engagement_rate": 0.2727,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/chevrolet/spark/2014/maintenance",
+        "current_sessions": 20,
+        "current_engaged_sessions": 11,
+        "current_engagement_rate": 0.55,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/volvo/xc90/2020/maintenance/oil",
+        "current_sessions": 20,
+        "current_engaged_sessions": 4,
+        "current_engagement_rate": 0.2,
+        "mom_sessions": 15,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 33.3,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 133969,
+          "prior_year_sessions": 48321
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 150353,
+          "prior_year_sessions": 35833
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 94926,
+          "prior_year_sessions": 38388
+        }
+      ],
+      "ytd_current": 379248,
+      "ytd_prior": 122542,
+      "ytd_change_pct": 209.5
+    },
+    "summary": "Vehicle Funnel experienced a significant MoM traffic decline of -36.9% in March 2026 (94,926 sessions), reversing the strong momentum from January and February, though YoY growth remains robust at +147.3% versus March 2025. Direct traffic dominates at 90.6% of sessions but contracted -38.2% MoM, suggesting seasonal softness or potential tracking/attribution issues given the +233.3% YoY expansion. Engagement Rate improved +4.3 pp MoM to 12.5%, but absolute engaged sessions fell -3.4% MoM and -58.2% YoY, indicating lower-quality traffic mix despite better proportional engagement. YTD 2026 stands at 379,248 sessions (+209.5% vs YTD 2025), but the month-to-month deceleration (Jan: +177%, Feb: +319%, Mar: +147%) signals a plateau. No custom conversion events (calls, bookings, mainsite_clicks) were recorded in this reporting period, which represents a critical data gap for funnel evaluation.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Tesla Landing Page Outperformance",
+          "detail": "/tesla maintains strong engagement at 82.3% despite -28.7% MoM traffic decline, with 98 engaged sessions. Double down on Tesla-specific messaging and retargeting to stabilize this high-intent segment.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Homepage Engagement Lift MoM",
+          "detail": "/ homepage reversed downward trend with +25.6% MoM sessions and 66.8% engagement rate (1,040 engaged), recovering from -91.9% YoY decline. Consider homepage optimization as a template for other landing pages.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Organic Search Resilience",
+          "detail": "Organic Search grew +8.0% MoM to 8,564 sessions (9% of traffic), one of the few bright spots amid direct traffic collapse. Prioritize SEO investment to offset direct channel volatility.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Direct Traffic Collapse & Tracking Risk",
+          "detail": "Direct traffic fell -38.2% MoM (86,012 sessions, 90.6% of mix) and dominates the funnel unsustainably. The simultaneous +233.3% YoY growth raises red flags for potential attribution model changes or tracking misconfiguration; audit UTM parameters and source/medium assignments immediately.",
+          "severity": "high"
+        },
+        {
+          "title": "Absence of High-Value Conversion Events",
+          "detail": "Zero custom events logged for calls, book_now, schedule_, mainsite_clicks, or store_locate in March 2026. This is either an implementation gap or indicates failed downstream conversions, making ROI assessment impossible and suggesting urgent GA4 event tracking or funnel completion failures.",
+          "severity": "high"
+        },
+        {
+          "title": "Overall Traffic Deceleration & Engagement Erosion YoY",
+          "detail": "Engaged Sessions declined -58.2% YoY despite +147.3% traffic growth, and Engagement Rate fell -61.5 pp YoY, pointing to volume-driven but low-quality traffic growth. The monthly trend (Jan\u2192Feb\u2192Mar) shows diminishing returns, suggesting campaign fatigue or audience saturation.",
+          "severity": "high"
+        },
+        {
+          "title": "Maintenance Content Underperforms Conversion",
+          "detail": "Maintenance-focused pages (/ford/taurus/2016/maintenance, /chevrolet/colorado/2015/maintenance) show zero or very low engagement (0\u201327.3%), indicating misaligned intent. These pages may be cannibalizing top-of-funnel traffic without driving downstream value.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Implement & Validate Conversion Event Tracking",
+          "detail": "Immediately restore or implement GA4 event logging for calls, booking/scheduling, and mainsite_clicks\u2014the highest-value user actions per the event glossary. Without these, the entire funnel is invisible and optimization is impossible.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Investigate & Stabilize Direct Traffic Attribution",
+          "detail": "Direct traffic's -38.2% MoM plunge contradicts the +233.3% YoY growth; audit GA4 cross-domain tracking, mobile app-to-web flows, and any recent analytics config changes. If legitimate, pivot budget to Organic Search (+8% MoM growth) to build sustainable owned channels.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Expand Brand/Model Landing Pages",
+          "detail": "Tesla (/tesla, 82.3% engagement), BMW (/bmw, 68.4%), and Mercedes (/mercedes-benz, 72.7%) show strong engagement; create dedicated landing pages for Ford, Chevrolet, Volvo, and other high-volume marques to replicate this performance and segment intent.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Audit Maintenance Content ROI & Funnel Path",
+          "detail": "Maintenance pages drive negligible engagement (<27% except Spark); determine if they support top-of-funnel awareness or are dead-end pages. If low-value, consolidate or redirect to model-specific pages (/tesla, /bmw) to streamline the funnel.",
+          "impact": "low",
+          "effort": "medium"
+        }
+      ]
+    }
+  }
+}

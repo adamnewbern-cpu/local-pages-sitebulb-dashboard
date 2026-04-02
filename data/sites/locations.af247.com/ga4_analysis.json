@@ -1,0 +1,844 @@
+{
+  "site_url": "https://locations.af247.com/",
+  "display_name": "Advance Financial",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 9706,
+        "engaged_sessions": 3359,
+        "engagement_rate": 0.3461
+      },
+      "mom": {
+        "sessions": 10964,
+        "engaged_sessions": 4024,
+        "engagement_rate": 0.367
+      },
+      "yoy": {
+        "sessions": 11752,
+        "engaged_sessions": 6242,
+        "engagement_rate": 0.5311
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -11.5,
+      "yoy_sessions_change_pct": -17.4,
+      "mom_engaged_sessions_change_pct": -16.5,
+      "yoy_engaged_sessions_change_pct": -46.2,
+      "mom_engagement_rate_change_pts": -0.0209,
+      "yoy_engagement_rate_change_pts": -0.185
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 5241,
+        "mom": 5674,
+        "yoy": 9624,
+        "mom_change_pct": -7.6,
+        "yoy_change_pct": -45.5
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 3811,
+        "mom": 3991,
+        "yoy": 6244,
+        "mom_change_pct": -4.5,
+        "yoy_change_pct": -39.0
+      },
+      {
+        "event_name": "fasttrack_application_start",
+        "current": 2046,
+        "mom": 2017,
+        "yoy": 2474,
+        "mom_change_pct": 1.4,
+        "yoy_change_pct": -17.3
+      },
+      {
+        "event_name": "store_locate",
+        "current": 1149,
+        "mom": 1144,
+        "yoy": 2680,
+        "mom_change_pct": 0.4,
+        "yoy_change_pct": -57.1
+      },
+      {
+        "event_name": "internal_clicks",
+        "current": 1018,
+        "mom": 948,
+        "yoy": 2039,
+        "mom_change_pct": 7.4,
+        "yoy_change_pct": -50.1
+      },
+      {
+        "event_name": "locate_me",
+        "current": 524,
+        "mom": 545,
+        "yoy": 1572,
+        "mom_change_pct": -3.9,
+        "yoy_change_pct": -66.7
+      },
+      {
+        "event_name": "instore_application_start",
+        "current": 199,
+        "mom": 192,
+        "yoy": 281,
+        "mom_change_pct": 3.6,
+        "yoy_change_pct": -29.2
+      },
+      {
+        "event_name": "view_job_openings",
+        "current": 99,
+        "mom": 125,
+        "yoy": 190,
+        "mom_change_pct": -20.8,
+        "yoy_change_pct": -47.9
+      },
+      {
+        "event_name": "get_directions",
+        "current": 36,
+        "mom": 50,
+        "yoy": 0,
+        "mom_change_pct": -28.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "download_app",
+        "current": 22,
+        "mom": 34,
+        "yoy": 68,
+        "mom_change_pct": -35.3,
+        "yoy_change_pct": -67.6
+      },
+      {
+        "event_name": "blog_clicks",
+        "current": 10,
+        "mom": 11,
+        "yoy": 16,
+        "mom_change_pct": -9.1,
+        "yoy_change_pct": -37.5
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 4959,
+        "current_pct": 51.1,
+        "mom_sessions": 5860,
+        "yoy_sessions": 6170,
+        "mom_sessions_change_pct": -15.4,
+        "yoy_sessions_change_pct": -19.6
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 4007,
+        "current_pct": 41.3,
+        "mom_sessions": 4456,
+        "yoy_sessions": 5522,
+        "mom_sessions_change_pct": -10.1,
+        "yoy_sessions_change_pct": -27.4
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 510,
+        "current_pct": 5.3,
+        "mom_sessions": 317,
+        "yoy_sessions": 14,
+        "mom_sessions_change_pct": 60.9,
+        "yoy_sessions_change_pct": 3542.9
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 124,
+        "current_pct": 1.3,
+        "mom_sessions": 98,
+        "yoy_sessions": 22,
+        "mom_sessions_change_pct": 26.5,
+        "yoy_sessions_change_pct": 463.6
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 46,
+        "current_pct": 0.5,
+        "mom_sessions": 37,
+        "yoy_sessions": 54,
+        "mom_sessions_change_pct": 24.3,
+        "yoy_sessions_change_pct": -14.8
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 23,
+        "current_pct": 0.2,
+        "mom_sessions": 28,
+        "yoy_sessions": 18,
+        "mom_sessions_change_pct": -17.9,
+        "yoy_sessions_change_pct": 27.8
+      },
+      {
+        "channel": "Cross-network",
+        "current_sessions": 10,
+        "current_pct": 0.1,
+        "mom_sessions": 5,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 100.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Email",
+        "current_sessions": 2,
+        "current_pct": 0.0,
+        "mom_sessions": 96,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -97.9,
+        "yoy_sessions_change_pct": 0.0
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 2900,
+        "current_engaged_sessions": 1555,
+        "current_engagement_rate": 0.5362,
+        "mom_sessions": 3032,
+        "yoy_sessions": 5271,
+        "mom_sessions_change_pct": -4.4,
+        "yoy_sessions_change_pct": -45.0
+      },
+      {
+        "landing_page": "/tennessee/knoxville/2823-n-broadway",
+        "current_sessions": 293,
+        "current_engaged_sessions": 106,
+        "current_engagement_rate": 0.3618,
+        "mom_sessions": 262,
+        "yoy_sessions": 278,
+        "mom_sessions_change_pct": 11.8,
+        "yoy_sessions_change_pct": 5.4
+      },
+      {
+        "landing_page": "/tennessee/chattanooga/3401-rossville-blvd",
+        "current_sessions": 210,
+        "current_engaged_sessions": 101,
+        "current_engagement_rate": 0.481,
+        "mom_sessions": 242,
+        "yoy_sessions": 222,
+        "mom_sessions_change_pct": -13.2,
+        "yoy_sessions_change_pct": -5.4
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 197,
+        "current_engaged_sessions": 4,
+        "current_engagement_rate": 0.0203,
+        "mom_sessions": 215,
+        "yoy_sessions": 191,
+        "mom_sessions_change_pct": -8.4,
+        "yoy_sessions_change_pct": 3.1
+      },
+      {
+        "landing_page": "/tennessee/millington/8322-n-highway-51",
+        "current_sessions": 138,
+        "current_engaged_sessions": 53,
+        "current_engagement_rate": 0.3841,
+        "mom_sessions": 172,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -19.8,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/chattanooga/3975-hixson-pike",
+        "current_sessions": 107,
+        "current_engaged_sessions": 33,
+        "current_engagement_rate": 0.3084,
+        "mom_sessions": 119,
+        "yoy_sessions": 332,
+        "mom_sessions_change_pct": -10.1,
+        "yoy_sessions_change_pct": -67.8
+      },
+      {
+        "landing_page": "/tennessee/kingsport/1104-e-stone-dr",
+        "current_sessions": 97,
+        "current_engaged_sessions": 47,
+        "current_engagement_rate": 0.4845,
+        "mom_sessions": 112,
+        "yoy_sessions": 127,
+        "mom_sessions_change_pct": -13.4,
+        "yoy_sessions_change_pct": -23.6
+      },
+      {
+        "landing_page": "/tennessee/nashville/800-jefferson-st",
+        "current_sessions": 97,
+        "current_engaged_sessions": 33,
+        "current_engagement_rate": 0.3402,
+        "mom_sessions": 93,
+        "yoy_sessions": 98,
+        "mom_sessions_change_pct": 4.3,
+        "yoy_sessions_change_pct": -1.0
+      },
+      {
+        "landing_page": "/tennessee/jackson/2287-n-highland-ave",
+        "current_sessions": 89,
+        "current_engaged_sessions": 37,
+        "current_engagement_rate": 0.4157,
+        "mom_sessions": 106,
+        "yoy_sessions": 185,
+        "mom_sessions_change_pct": -16.0,
+        "yoy_sessions_change_pct": -51.9
+      },
+      {
+        "landing_page": "/tennessee/knoxville/online-loans",
+        "current_sessions": 87,
+        "current_engaged_sessions": 27,
+        "current_engagement_rate": 0.3103,
+        "mom_sessions": 50,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 74.0,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 12844,
+          "prior_year_sessions": 15273
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 10476,
+          "prior_year_sessions": 12013
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 9926,
+          "prior_year_sessions": 12033
+        }
+      ],
+      "ytd_current": 33246,
+      "ytd_prior": 39319,
+      "ytd_change_pct": -15.4
+    },
+    "summary": "Advance Financial's local pages site experienced a challenging 30-day period, with sessions down 11.5% MoM and 17.4% YoY to 9,706 total. Engagement deteriorated more sharply\u2014engaged sessions fell 16.5% MoM and 46.2% YoY, pulling engagement rate down 2.1pp MoM and 18.5pp YoY to 34.6%. High-value conversion signals show mixed momentum: mainsite_clicks (3,811 events) declined 4.5% MoM but remain the second-largest event category, while fasttrack_application_start (2,046 events) posted a rare bright spot with +1.4% MoM growth despite a 17.3% YoY drop. Location-intent signals are under pressure\u2014store_locate (1,149 events) is essentially flat MoM (+0.4%) but collapsed 57.1% YoY, and locate_me fell 3.9% MoM and 66.7% YoY. Traffic channel composition shifted significantly: Direct (51.1%) and Organic Search (41.3%) remain dominant but both declined MoM; however, Paid Search surged 60.9% MoM and posted an extraordinary 3542.9% YoY gain, indicating a recent paid search campaign ramp. YTD 2026 traffic stands at 33,246 sessions, down 15.4% versus YTD 2025 (39,319), with every month trending negative and March hitting the steepest YoY decline at 17.5%. The consistent downward trajectory across all three months signals a structural headwind rather than seasonal volatility.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Paid Search Momentum Building",
+          "detail": "Paid Search sessions jumped 60.9% MoM (510 total sessions) and 3542.9% YoY, indicating a newly active or ramped campaign is driving measurable incremental traffic. Capitalize on this channel before budget constraints or seasonal factors shift.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "FastTrack Application Start Stabilizing",
+          "detail": "fasttrack_application_start (2,046 events) is the only major conversion funnel event showing positive MoM growth at +1.4%, bucking the broader downtrend. Prioritize messaging and user experience optimization around this flow to sustain momentum.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Knoxville N. Broadway Location Gaining Traction",
+          "detail": "/tennessee/knoxville/2823-n-broadway posted +11.8% MoM growth (293 sessions, 53.6% engagement rate) and +5.4% YoY, making it the only top-10 landing page with positive YoY momentum. Test messaging and offers from this location across paid and organic channels.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Overall Traffic Decline Accelerating",
+          "detail": "Sessions dropped 11.5% MoM and 17.4% YoY; YTD 2026 is down 15.4% versus YTD 2025, with each month worsening. This sustained multi-month decline suggests organic reach erosion, market softening, or competitive pressure that requires diagnostic SEO and content strategy review.",
+          "severity": "high"
+        },
+        {
+          "title": "Engagement Collapse Outpacing Traffic Loss",
+          "detail": "Engaged sessions fell 16.5% MoM and 46.2% YoY\u2014nearly 3\u00d7 the rate of total session decline. Engagement rate dropped 18.5pp YoY to 34.6%, indicating content relevance, page speed, or value proposition issues that are driving users away faster than traffic is dropping.",
+          "severity": "high"
+        },
+        {
+          "title": "Location Finder Intent Signals Evaporating",
+          "detail": "store_locate (1,149 events) and locate_me (524 events) are down 57.1% and 66.7% YoY respectively, signaling declining foot-traffic intent or a shift in customer acquisition strategy. This is critical if in-store conversions drive loan originations.",
+          "severity": "high"
+        },
+        {
+          "title": "Direct & Organic Search Both Declining",
+          "detail": "Direct traffic is down 15.4% MoM and 19.6% YoY (51.1% of total), while Organic Search is down 10.1% MoM and 27.4% YoY (41.3% of total). Combined, these channels represent 92.4% of traffic and are both eroding, suggesting either brand awareness decay or SEO ranking losses.",
+          "severity": "high"
+        },
+        {
+          "title": "Download App & Get Directions Events Cratering",
+          "detail": "download_app fell 35.3% MoM and 67.6% YoY (22 events); get_directions dropped 28.0% MoM (36 events). If app adoption and location-specific actions are revenue drivers, this sharp decline warrants investigation into user friction or marketing spend shifts.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Revive Location Landing Page Performance",
+          "detail": "Location pages represent high-intent traffic but engagement is uneven and YoY trends are mostly negative (e.g., Chattanooga Hixson Pike -67.8% YoY). Audit the top 5\u201310 underperforming location pages for mobile UX, load speed, local SEO metadata, and store-specific call-to-action clarity to re-engage location searchers.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Scale Paid Search Investment",
+          "detail": "Paid Search is growing 60.9% MoM and 3542.9% YoY despite representing only 5.3% of traffic. Increase budget allocation to paid search, particularly for high-intent keywords (application, fast loan, etc.) to offset organic and direct declines.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize FastTrack Application Funnel for Conversion",
+          "detail": "fasttrack_application_start (2,046 events) is the only conversion event with positive MoM momentum. Reduce form friction, A/B test copy, and retarget users who initiated but didn't complete to maximize this warm audience.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Audit and Refresh Homepage Engagement",
+          "detail": "The homepage (/) drives 2,900 sessions (29.9% of traffic) but engagement is only 53.6%, and YoY sessions are down 45.0%. Refresh hero messaging, simplify navigation, and add trust/urgency signals to re-engage returning visitors and reduce bounce.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Reactivate Location Finder & In-Store Application Channels",
+          "detail": "store_locate and locate_me are down 57\u201367% YoY, and in-store_application_start is only 199 events. If offline conversions are significant, develop a geo-targeted retargeting strategy and improve the location finder UX/mobile experience to drive foot traffic.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 9926,
+        "engaged_sessions": 3399,
+        "engagement_rate": 0.3424
+      },
+      "mom": {
+        "sessions": 10476,
+        "engaged_sessions": 3825,
+        "engagement_rate": 0.3651
+      },
+      "yoy": {
+        "sessions": 12033,
+        "engaged_sessions": 6341,
+        "engagement_rate": 0.527
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -5.3,
+      "yoy_sessions_change_pct": -17.5,
+      "mom_engaged_sessions_change_pct": -11.1,
+      "yoy_engaged_sessions_change_pct": -46.4,
+      "mom_engagement_rate_change_pts": -0.0227,
+      "yoy_engagement_rate_change_pts": -0.1846
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 5332,
+        "mom": 5373,
+        "yoy": 9807,
+        "mom_change_pct": -0.8,
+        "yoy_change_pct": -45.6
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 3857,
+        "mom": 3795,
+        "yoy": 6342,
+        "mom_change_pct": 1.6,
+        "yoy_change_pct": -39.2
+      },
+      {
+        "event_name": "fasttrack_application_start",
+        "current": 2084,
+        "mom": 1895,
+        "yoy": 2527,
+        "mom_change_pct": 10.0,
+        "yoy_change_pct": -17.5
+      },
+      {
+        "event_name": "store_locate",
+        "current": 1177,
+        "mom": 1071,
+        "yoy": 2695,
+        "mom_change_pct": 9.9,
+        "yoy_change_pct": -56.3
+      },
+      {
+        "event_name": "internal_clicks",
+        "current": 1007,
+        "mom": 905,
+        "yoy": 1956,
+        "mom_change_pct": 11.3,
+        "yoy_change_pct": -48.5
+      },
+      {
+        "event_name": "locate_me",
+        "current": 537,
+        "mom": 503,
+        "yoy": 1588,
+        "mom_change_pct": 6.8,
+        "yoy_change_pct": -66.2
+      },
+      {
+        "event_name": "instore_application_start",
+        "current": 200,
+        "mom": 184,
+        "yoy": 295,
+        "mom_change_pct": 8.7,
+        "yoy_change_pct": -32.2
+      },
+      {
+        "event_name": "view_job_openings",
+        "current": 102,
+        "mom": 118,
+        "yoy": 203,
+        "mom_change_pct": -13.6,
+        "yoy_change_pct": -49.8
+      },
+      {
+        "event_name": "get_directions",
+        "current": 39,
+        "mom": 45,
+        "yoy": 0,
+        "mom_change_pct": -13.3,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "download_app",
+        "current": 22,
+        "mom": 33,
+        "yoy": 72,
+        "mom_change_pct": -33.3,
+        "yoy_change_pct": -69.4
+      },
+      {
+        "event_name": "blog_clicks",
+        "current": 7,
+        "mom": 10,
+        "yoy": 16,
+        "mom_change_pct": -30.0,
+        "yoy_change_pct": -56.2
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 5045,
+        "current_pct": 50.8,
+        "mom_sessions": 5634,
+        "yoy_sessions": 6271,
+        "mom_sessions_change_pct": -10.5,
+        "yoy_sessions_change_pct": -19.6
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 4101,
+        "current_pct": 41.3,
+        "mom_sessions": 4209,
+        "yoy_sessions": 5632,
+        "mom_sessions_change_pct": -2.6,
+        "yoy_sessions_change_pct": -27.2
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 528,
+        "current_pct": 5.3,
+        "mom_sessions": 274,
+        "yoy_sessions": 14,
+        "mom_sessions_change_pct": 92.7,
+        "yoy_sessions_change_pct": 3671.4
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 120,
+        "current_pct": 1.2,
+        "mom_sessions": 96,
+        "yoy_sessions": 21,
+        "mom_sessions_change_pct": 25.0,
+        "yoy_sessions_change_pct": 471.4
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 46,
+        "current_pct": 0.5,
+        "mom_sessions": 37,
+        "yoy_sessions": 50,
+        "mom_sessions_change_pct": 24.3,
+        "yoy_sessions_change_pct": -8.0
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 24,
+        "current_pct": 0.2,
+        "mom_sessions": 26,
+        "yoy_sessions": 18,
+        "mom_sessions_change_pct": -7.7,
+        "yoy_sessions_change_pct": 33.3
+      },
+      {
+        "channel": "Cross-network",
+        "current_sessions": 10,
+        "current_pct": 0.1,
+        "mom_sessions": 5,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 100.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Email",
+        "current_sessions": 2,
+        "current_pct": 0.0,
+        "mom_sessions": 96,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -97.9,
+        "yoy_sessions_change_pct": 0.0
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 2959,
+        "current_engaged_sessions": 1586,
+        "current_engagement_rate": 0.536,
+        "mom_sessions": 2865,
+        "yoy_sessions": 5337,
+        "mom_sessions_change_pct": 3.3,
+        "yoy_sessions_change_pct": -44.6
+      },
+      {
+        "landing_page": "/tennessee/knoxville/2823-n-broadway",
+        "current_sessions": 301,
+        "current_engaged_sessions": 107,
+        "current_engagement_rate": 0.3555,
+        "mom_sessions": 245,
+        "yoy_sessions": 275,
+        "mom_sessions_change_pct": 22.9,
+        "yoy_sessions_change_pct": 9.5
+      },
+      {
+        "landing_page": "/tennessee/chattanooga/3401-rossville-blvd",
+        "current_sessions": 222,
+        "current_engaged_sessions": 109,
+        "current_engagement_rate": 0.491,
+        "mom_sessions": 224,
+        "yoy_sessions": 237,
+        "mom_sessions_change_pct": -0.9,
+        "yoy_sessions_change_pct": -6.3
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 212,
+        "current_engaged_sessions": 5,
+        "current_engagement_rate": 0.0236,
+        "mom_sessions": 200,
+        "yoy_sessions": 194,
+        "mom_sessions_change_pct": 6.0,
+        "yoy_sessions_change_pct": 9.3
+      },
+      {
+        "landing_page": "/tennessee/millington/8322-n-highway-51",
+        "current_sessions": 137,
+        "current_engaged_sessions": 53,
+        "current_engagement_rate": 0.3869,
+        "mom_sessions": 166,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -17.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/chattanooga/3975-hixson-pike",
+        "current_sessions": 107,
+        "current_engaged_sessions": 32,
+        "current_engagement_rate": 0.2991,
+        "mom_sessions": 113,
+        "yoy_sessions": 326,
+        "mom_sessions_change_pct": -5.3,
+        "yoy_sessions_change_pct": -67.2
+      },
+      {
+        "landing_page": "/tennessee/kingsport/1104-e-stone-dr",
+        "current_sessions": 96,
+        "current_engaged_sessions": 46,
+        "current_engagement_rate": 0.4792,
+        "mom_sessions": 110,
+        "yoy_sessions": 132,
+        "mom_sessions_change_pct": -12.7,
+        "yoy_sessions_change_pct": -27.3
+      },
+      {
+        "landing_page": "/tennessee/nashville/800-jefferson-st",
+        "current_sessions": 92,
+        "current_engaged_sessions": 33,
+        "current_engagement_rate": 0.3587,
+        "mom_sessions": 91,
+        "yoy_sessions": 104,
+        "mom_sessions_change_pct": 1.1,
+        "yoy_sessions_change_pct": -11.5
+      },
+      {
+        "landing_page": "/tennessee/jackson/2287-n-highland-ave",
+        "current_sessions": 88,
+        "current_engaged_sessions": 36,
+        "current_engagement_rate": 0.4091,
+        "mom_sessions": 105,
+        "yoy_sessions": 191,
+        "mom_sessions_change_pct": -16.2,
+        "yoy_sessions_change_pct": -53.9
+      },
+      {
+        "landing_page": "/tennessee/murfreesboro/1661-memorial-blvd",
+        "current_sessions": 88,
+        "current_engaged_sessions": 32,
+        "current_engagement_rate": 0.3636,
+        "mom_sessions": 82,
+        "yoy_sessions": 108,
+        "mom_sessions_change_pct": 7.3,
+        "yoy_sessions_change_pct": -18.5
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 12844,
+          "prior_year_sessions": 15273
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 10476,
+          "prior_year_sessions": 12013
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 9926,
+          "prior_year_sessions": 12033
+        }
+      ],
+      "ytd_current": 33246,
+      "ytd_prior": 39319,
+      "ytd_change_pct": -15.4
+    },
+    "summary": "Advance Financial's March 2026 performance reflects a challenging quarter with declining overall traffic (-17.5% YoY, -5.3% MoM) and significantly weakened engagement (-46.4% YoY, -11.1% MoM), pushing engagement rate down to 34.2%. However, mid-funnel signals show resilience: mainsite_clicks (+1.6% MoM) and fasttrack_application_start (+10.0% MoM) both grew sequentially, suggesting improved conversion intent despite lower top-of-funnel volume. Paid Search emerged as a bright spot with explosive 92.7% MoM growth and 3671.4% YoY growth (528 sessions), though from a small base. YTD 2026 sits at 33,246 sessions vs. 39,319 in 2025 (-15.4%), and the downward trend is accelerating\u2014March declined 17.5% YoY compared to February's -12.8% decline. Location-based store interactions (store_locate +9.9% MoM, locate_me +6.8% MoM) showed consistent sequential growth, indicating users are moving deeper into the consideration funnel. The homepage remains dominant at 2,959 sessions with strong 53.6% engagement, while individual location pages like Knoxville (+22.9% MoM) are driving meaningful traffic shifts.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Paid Search momentum accelerating",
+          "detail": "Paid Search surged 92.7% MoM and 3671.4% YoY to 528 sessions in March, signaling successful campaign activation or budget increase. Maintain and optimize this channel given its strong YoY growth trajectory.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Application starts trending positive sequentially",
+          "detail": "fasttrack_application_start grew 10.0% MoM (2,084 events) and instore_application_start grew 8.7% MoM (200 events), showing improved funnel conversion despite declining overall traffic. Isolate messaging or UX changes driving this lift.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Knoxville location page breakout performance",
+          "detail": "/tennessee/knoxville/2823-n-broadway surged 22.9% MoM with 301 sessions and 53.6% engagement rate. This location page is outperforming category benchmarks and warrants localized promotion strategy expansion.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Severe YoY engagement collapse",
+          "detail": "Engaged sessions plummeted 46.4% YoY and engagement rate dropped 18.5 percentage points YoY, indicating substantial erosion in content relevance, user experience, or audience quality. This is more alarming than the -17.5% session decline and requires immediate content/UX audit.",
+          "severity": "high"
+        },
+        {
+          "title": "Accelerating YoY traffic decline through Q1",
+          "detail": "Monthly YoY declines worsened from -15.9% (January) to -12.8% (February) to -17.5% (March), suggesting seasonal weakness or competitive pressure intensifying. The trend indicates March performance was worse than the quarterly average.",
+          "severity": "high"
+        },
+        {
+          "title": "Direct traffic eroding faster than search",
+          "detail": "Direct traffic (-10.5% MoM, -19.6% YoY to 5,045 sessions) is declining at 1.9x the rate of overall sessions, signaling weakened brand recall or reduced repeat visitation. Organic Search is more resilient at -2.6% MoM, -27.2% YoY.",
+          "severity": "medium"
+        },
+        {
+          "title": "Outbound clicks remain dominant but declining YoY",
+          "detail": "outbound_clicks (5,332 events) represent the highest event volume but fell 45.6% YoY, indicating users are not flowing to external conversion points as effectively. This is a moderate-value conversion signal being underutilized.",
+          "severity": "medium"
+        },
+        {
+          "title": "Email channel collapsed 97.9% MoM",
+          "detail": "Email dropped from 97 sessions MoM to 2 sessions in March (-97.9%), representing near-total channel failure. Investigate list degradation, deliverability issues, or campaign pause.",
+          "severity": "high"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Scale Paid Search investment",
+          "detail": "With 3671.4% YoY growth and 92.7% MoM growth, Paid Search has demonstrated strong ROI signal. Reallocate budget from declining organic/direct channels into expanded Paid Search campaigns to offset top-of-funnel decline.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Reverse Direct traffic decline with brand retention campaigns",
+          "detail": "Direct traffic (-19.6% YoY) is the largest source by volume (50.8%) but declining faster than organic. Deploy email win-back, SMS, or retargeting campaigns to re-engage lapsed visitors and restore repeat traffic.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize store location pages for conversion",
+          "detail": "Location pages (Knoxville +22.9% MoM, individual stores showing 35\u201349% engagement) are high-intent landing pages. Consolidate best-performing location page templates and roll out enhanced store-finder UX to boost store_locate events (currently +9.9% MoM from low absolute base).",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Investigate and replicate application funnel improvements",
+          "detail": "fasttrack_application_start (+10.0% MoM) is growing despite flat overall engagement, suggesting targeting or messaging changes are working. Audit recent changes to application flow, landing page copy, or audience segments to identify replicable lift drivers.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Rebuild email channel infrastructure",
+          "detail": "Email collapsed 97.9% MoM from 97 to 2 sessions\u2014investigate technical issues, list health, or campaign pauses immediately. Email is typically a low-cost, high-intent channel; restoring it could recover meaningful sessions and application starts.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  }
+}

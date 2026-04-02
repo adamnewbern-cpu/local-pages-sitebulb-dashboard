@@ -1,0 +1,722 @@
+{
+  "site_url": "https://www.telemedsforme.com/",
+  "display_name": "TelemedsForMe WWW",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 427,
+        "engaged_sessions": 168,
+        "engagement_rate": 0.3934
+      },
+      "mom": {
+        "sessions": 626,
+        "engaged_sessions": 286,
+        "engagement_rate": 0.4569
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": -31.8,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": -41.3,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": -0.0635,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "internal_clicks",
+        "current": 148,
+        "mom": 308,
+        "yoy": null,
+        "mom_change_pct": -51.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "weight_loss_provider_views_orderlymeds",
+        "current": 44,
+        "mom": 74,
+        "yoy": null,
+        "mom_change_pct": -40.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "shop_glp1s",
+        "current": 30,
+        "mom": 69,
+        "yoy": null,
+        "mom_change_pct": -56.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "blog_clicks",
+        "current": 17,
+        "mom": 20,
+        "yoy": null,
+        "mom_change_pct": -15.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "get_started_with_provider_form_submit",
+        "current": 14,
+        "mom": 36,
+        "yoy": null,
+        "mom_change_pct": -61.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "show_providers_form_submit",
+        "current": 14,
+        "mom": 74,
+        "yoy": null,
+        "mom_change_pct": -81.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 6,
+        "mom": 9,
+        "yoy": null,
+        "mom_change_pct": -33.3,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "shop_by_medication",
+        "current": 5,
+        "mom": 14,
+        "yoy": null,
+        "mom_change_pct": -64.3,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "weight_loss_provider_views_layla",
+        "current": 2,
+        "mom": 11,
+        "yoy": null,
+        "mom_change_pct": -81.8,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 283,
+        "current_pct": 66.3,
+        "mom_sessions": 376,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -24.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 82,
+        "current_pct": 19.2,
+        "mom_sessions": 124,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -33.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 42,
+        "current_pct": 9.8,
+        "mom_sessions": 64,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -34.4,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 16,
+        "current_pct": 3.7,
+        "mom_sessions": 38,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -57.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 3,
+        "current_pct": 0.7,
+        "mom_sessions": 27,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -88.9,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 102,
+        "current_engaged_sessions": 38,
+        "current_engagement_rate": 0.3725,
+        "mom_sessions": 206,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -50.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/lifestyle/top-telehealth-programs-for-semaglutide",
+        "current_sessions": 47,
+        "current_engaged_sessions": 13,
+        "current_engagement_rate": 0.2766,
+        "mom_sessions": 22,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 113.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/shop",
+        "current_sessions": 24,
+        "current_engaged_sessions": 14,
+        "current_engagement_rate": 0.5833,
+        "mom_sessions": 85,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -71.8,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/telemedicine",
+        "current_sessions": 20,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.05,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/glp-1/hawaii",
+        "current_sessions": 15,
+        "current_engaged_sessions": 5,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 6,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 150.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/henry-meds-review",
+        "current_sessions": 13,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.2308,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/glp-1/alabama",
+        "current_sessions": 12,
+        "current_engaged_sessions": 8,
+        "current_engagement_rate": 0.6667,
+        "mom_sessions": 20,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -40.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 9,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.1111,
+        "mom_sessions": 24,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -62.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/provider/orderlymeds",
+        "current_sessions": 8,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.25,
+        "mom_sessions": 9,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -11.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/glp-1/georgia",
+        "current_sessions": 7,
+        "current_engaged_sessions": 5,
+        "current_engagement_rate": 0.7143,
+        "mom_sessions": 9,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -22.2,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 651,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 603,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 433,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 1687,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "TelemedsForMe's GA4 property experienced a significant MoM contraction in March 2026, with sessions declining 31.8% to 427 and engaged sessions dropping 41.3% to 168 \u2014 a steeper engagement loss than traffic loss, signaling quality deterioration beyond volume. Direct traffic remains the dominant channel at 66.3% of sessions but declined 24.7% MoM, while Organic Search held relatively steady at 19.2% with a 33.9% decline. High-intent conversion events contracted sharply: get_started_with_provider_form_submit fell 61.1%, show_providers_form_submit plummeted 81.1%, and shop_glp1s declined 56.5%, indicating either reduced user intent or friction in key conversion paths. The homepage (/) absorbed half of all sessions but saw engagement drop to 37.2%, while content pages like /lifestyle/top-telehealth-programs-for-semaglutide and state-level GLP-1 pages (/glp-1/hawaii, /glp-1/alabama) bucked the trend with MoM gains of +113.6% and +150.0% respectively, suggesting organic/content-driven traffic is outperforming direct. YTD 2026 shows a clear downward trajectory: January 651 sessions \u2192 February 603 \u2192 March 433, requiring immediate diagnostic review of user friction, traffic source health, and conversion funnel performance.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Capitalize on high-performing content landing pages",
+          "detail": "State-level GLP-1 pages (/glp-1/hawaii +150%, /glp-1/alabama 66.7% engagement) and the semaglutide lifestyle article (+113.6% MoM) are driving traffic and engagement against downward trends; replicate messaging, format, and SEO strategy across remaining state pages and similar lifestyle content.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Optimize /shop landing page urgently",
+          "detail": "/shop maintains healthy 58.3% engagement rate but lost 71.8% of sessions MoM; audit for technical issues, ad spend changes, or visibility drops that may have caused the traffic cliff.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Critical conversion funnel collapse",
+          "detail": "High-value form submissions have cratered: get_started_with_provider_form_submit (-61.1%) and show_providers_form_submit (-81.1%) represent the largest declines in the dataset; this signals broken conversion paths, poor UX, or reduced user confidence in booking flows.",
+          "severity": "high"
+        },
+        {
+          "title": "Organic Social channel near-zero",
+          "detail": "Organic Social traffic fell 88.9% to just 3 sessions, suggesting either algorithm suppression, account changes, or loss of organic reach; this channel is non-existent for conversion contribution.",
+          "severity": "medium"
+        },
+        {
+          "title": "Referral traffic declining sharply",
+          "detail": "Referral sessions dropped 57.9% MoM to 16 total, indicating potential loss of partner or PR placements; monitor partner relationships and earned media impact.",
+          "severity": "medium"
+        },
+        {
+          "title": "Homepage engagement declining faster than traffic",
+          "detail": "Homepage (/) lost 50.5% of sessions but engagement rate only fell 6.3pp to 37.2%, meaning remaining visitors are lower-quality; indicates potential brand awareness or acquisition problem upstream.",
+          "severity": "high"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Reverse Direct traffic decline via brand/retention campaigns",
+          "detail": "Direct traffic represents 66.3% of sessions but fell 24.7% MoM; implement retargeting, email re-engagement, and brand awareness campaigns to stabilize this critical channel and recover lost repeat visitors.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Expand and scale organic content strategy",
+          "detail": "State-level pages and lifestyle content are the only growth engines in a contracting month (e.g., /glp-1/hawaii +150%, semaglutide article +113.6%); increase SEO and content investment in this vertical to offset direct/referral losses.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Diagnose and repair form submission flows",
+          "detail": "show_providers_form_submit (-81.1%) and get_started_with_provider_form_submit (-61.1%) are catastrophic declines for a telemedicine business; conduct funnel analysis, heatmaps, and user testing to identify form friction, error messages, or device-specific failures.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Rebuild Organic Search momentum",
+          "detail": "Organic Search declined 33.9% MoM but still drives 82 sessions at 19.2% mix; conduct technical SEO audit, update metadata, and rebuild internal linking on top landing pages to recover organic visibility.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 433,
+        "engaged_sessions": 171,
+        "engagement_rate": 0.3949
+      },
+      "mom": {
+        "sessions": 603,
+        "engaged_sessions": 275,
+        "engagement_rate": 0.4561
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": -28.2,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": -37.8,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": -0.0612,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "internal_clicks",
+        "current": 158,
+        "mom": 293,
+        "yoy": null,
+        "mom_change_pct": -46.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "weight_loss_provider_views_orderlymeds",
+        "current": 49,
+        "mom": 68,
+        "yoy": null,
+        "mom_change_pct": -27.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "shop_glp1s",
+        "current": 30,
+        "mom": 67,
+        "yoy": null,
+        "mom_change_pct": -55.2,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "blog_clicks",
+        "current": 18,
+        "mom": 19,
+        "yoy": null,
+        "mom_change_pct": -5.3,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "get_started_with_provider_form_submit",
+        "current": 16,
+        "mom": 34,
+        "yoy": null,
+        "mom_change_pct": -52.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "show_providers_form_submit",
+        "current": 16,
+        "mom": 72,
+        "yoy": null,
+        "mom_change_pct": -77.8,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 7,
+        "mom": 8,
+        "yoy": null,
+        "mom_change_pct": -12.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "shop_by_medication",
+        "current": 6,
+        "mom": 13,
+        "yoy": null,
+        "mom_change_pct": -53.8,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "weight_loss_provider_views_layla",
+        "current": 2,
+        "mom": 11,
+        "yoy": null,
+        "mom_change_pct": -81.8,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 284,
+        "current_pct": 65.6,
+        "mom_sessions": 360,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -21.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 86,
+        "current_pct": 19.9,
+        "mom_sessions": 119,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -27.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 43,
+        "current_pct": 9.9,
+        "mom_sessions": 61,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -29.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 17,
+        "current_pct": 3.9,
+        "mom_sessions": 37,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -54.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 3,
+        "current_pct": 0.7,
+        "mom_sessions": 27,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -88.9,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 107,
+        "current_engaged_sessions": 39,
+        "current_engagement_rate": 0.3645,
+        "mom_sessions": 198,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -46.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/lifestyle/top-telehealth-programs-for-semaglutide",
+        "current_sessions": 45,
+        "current_engaged_sessions": 13,
+        "current_engagement_rate": 0.2889,
+        "mom_sessions": 22,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 104.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/shop",
+        "current_sessions": 26,
+        "current_engaged_sessions": 15,
+        "current_engagement_rate": 0.5769,
+        "mom_sessions": 82,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -68.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/telemedicine",
+        "current_sessions": 19,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.0526,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/glp-1/hawaii",
+        "current_sessions": 16,
+        "current_engaged_sessions": 6,
+        "current_engagement_rate": 0.375,
+        "mom_sessions": 5,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 220.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/henry-meds-review",
+        "current_sessions": 13,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.2308,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/glp-1/alabama",
+        "current_sessions": 12,
+        "current_engaged_sessions": 9,
+        "current_engagement_rate": 0.75,
+        "mom_sessions": 18,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -33.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 11,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.0909,
+        "mom_sessions": 22,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -50.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/lifestyle/how-to-compare-glp-1-providers-online",
+        "current_sessions": 8,
+        "current_engaged_sessions": 4,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 2,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 300.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/provider/orderlymeds",
+        "current_sessions": 8,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.25,
+        "mom_sessions": 9,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -11.1,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 651,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 603,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 433,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 1687,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "TelemedsForMe experienced a significant traffic contraction in March 2026, with sessions declining 28.2% MoM to 433 total, while engaged sessions fell 37.8% MoM to 171\u2014indicating both volume loss and deteriorating engagement quality (39.5% engagement rate, down 6.1 pp). Direct traffic remains the dominant channel at 65.6% of sessions but declined 21.1% MoM; organic search held steady at 19.9% share but also fell 27.7% MoM. High-intent conversion events showed material weakness: get_started_with_provider_form_submit dropped 52.9% MoM, show_providers_form_submit plummeted 77.8%, and shop_glp1s fell 55.2%\u2014all critical funnel indicators. However, certain content pages showed unexpected strength: /lifestyle/top-telehealth-programs-for-semaglutide surged 104.5% MoM and /lifestyle/how-to-compare-glp-1-providers-online climbed 300% MoM, suggesting editorial content may be a bright spot if properly monetized. YTD 2026 has accumulated 1,687 sessions across Q1 with a clear downward trajectory (January 651 \u2192 February 603 \u2192 March 433), raising concerns about seasonal, competitive, or product-market fit pressures.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Scale performing lifestyle content",
+          "detail": "The semaglutide comparison article (/lifestyle/top-telehealth-programs-for-semaglutide) grew 104.5% MoM and the GLP-1 comparison guide (/lifestyle/how-to-compare-glp-1-providers-online) surged 300% MoM with 50% engagement\u2014both outpacing site average. Double down on similar high-intent comparison and educational content.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Optimize /shop landing experience",
+          "detail": "/shop achieved 57.7% engagement rate (highest among major pages) despite 68.3% MoM traffic loss, indicating strong product-market fit for visitors who land there. Improve paid/organic routing to this page and test CTAs to capture high-intent shoppers.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Investigate geo-targeted GLP-1 pages",
+          "detail": "/glp-1/hawaii posted 220% MoM growth and /glp-1/alabama maintained 75% engagement, showing geographic pages can convert. Audit and refresh underperforming geo pages and consider expanding coverage.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Severe form submission collapse",
+          "detail": "get_started_with_provider_form_submit dropped 52.9% MoM (16 events) and show_providers_form_submit fell 77.8% MoM (16 events)\u2014these are high-value conversion gates. The 77.8% decline is alarming and may signal UX friction, technical issues, or targeting problems requiring immediate audit.",
+          "severity": "high"
+        },
+        {
+          "title": "Conversion funnel weakness across all channels",
+          "detail": "shop_glp1s fell 55.2% MoM, internal_clicks dropped 46.1%, and weight_loss_provider_views_orderlymeds declined 27.9%, indicating broad engagement collapse not confined to one channel. The consistent multi-event decline suggests site-wide friction or external market headwinds.",
+          "severity": "high"
+        },
+        {
+          "title": "Referral traffic near collapse",
+          "detail": "Referral sessions fell 54.1% MoM to just 17 sessions (3.9% of total), and organic social plummeted 88.9% MoM to 3 sessions. Partner integrations, affiliate programs, or social campaigns may need immediate review.",
+          "severity": "medium"
+        },
+        {
+          "title": "Homepage engagement deteriorating sharply",
+          "detail": "The homepage (/) lost 46.0% traffic MoM to 107 sessions with only 36.4% engagement\u2014this is the largest traffic source but also the weakest converter. Homepage refresh, value prop clarity, or nav optimization may be needed.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Recover form submission funnel",
+          "detail": "Diagnose why get_started_with_provider_form_submit and show_providers_form_submit both tanked >50% MoM. Run heat maps, session recordings, and A/B tests on form pages to identify abandonment points; this single fix could unlock 50+ conversions.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Expand and promote lifestyle content hub",
+          "detail": "The two lifestyle comparison articles are outperforming site benchmarks by 2\u20135x engagement multiple; create 5\u201310 similar high-intent educational pieces and drive organic/paid traffic to them, then optimize internal links to shop and provider pages.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Rebuild referral and social channels",
+          "detail": "Referral dropped 54.1% and organic social fell 88.9% MoM\u2014audit partner integrations, affiliate payouts, and social ad campaigns. Reactivate dormant partnerships or launch new ambassador/referral programs to recover this 58-session gap.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Test geo-targeted landing page expansion",
+          "detail": "Hawaii and Alabama GLP-1 pages grew and engaged well; audit performance of other state/region pages and create high-quality local variants for top metros (CA, NY, TX, FL). Each state page could drive 20\u201350 incremental qualified sessions.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  }
+}

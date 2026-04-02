@@ -1,0 +1,687 @@
+{
+  "site_url": "https://dealer.edhicksinfiniti.com/",
+  "display_name": "Ed Hicks INFINITI - Dealer",
+  "property_id": "478250827",
+  "meta": {
+    "last_updated": "2026-04-02",
+    "next_refresh": "2026-04-06"
+  },
+  "daily": [
+    {
+      "date": "2026-03-01",
+      "sessions": 42,
+      "engaged_sessions": 11,
+      "engagement_rate": 0.2619
+    },
+    {
+      "date": "2026-03-02",
+      "sessions": 31,
+      "engaged_sessions": 6,
+      "engagement_rate": 0.1935
+    },
+    {
+      "date": "2026-03-03",
+      "sessions": 41,
+      "engaged_sessions": 14,
+      "engagement_rate": 0.3415
+    },
+    {
+      "date": "2026-03-04",
+      "sessions": 37,
+      "engaged_sessions": 10,
+      "engagement_rate": 0.2703
+    },
+    {
+      "date": "2026-03-05",
+      "sessions": 62,
+      "engaged_sessions": 19,
+      "engagement_rate": 0.3065
+    },
+    {
+      "date": "2026-03-06",
+      "sessions": 42,
+      "engaged_sessions": 8,
+      "engagement_rate": 0.1905
+    },
+    {
+      "date": "2026-03-07",
+      "sessions": 38,
+      "engaged_sessions": 9,
+      "engagement_rate": 0.2368
+    },
+    {
+      "date": "2026-03-08",
+      "sessions": 48,
+      "engaged_sessions": 8,
+      "engagement_rate": 0.1667
+    },
+    {
+      "date": "2026-03-09",
+      "sessions": 59,
+      "engaged_sessions": 12,
+      "engagement_rate": 0.2034
+    },
+    {
+      "date": "2026-03-10",
+      "sessions": 48,
+      "engaged_sessions": 11,
+      "engagement_rate": 0.2292
+    },
+    {
+      "date": "2026-03-11",
+      "sessions": 39,
+      "engaged_sessions": 12,
+      "engagement_rate": 0.3077
+    },
+    {
+      "date": "2026-03-12",
+      "sessions": 42,
+      "engaged_sessions": 10,
+      "engagement_rate": 0.2381
+    },
+    {
+      "date": "2026-03-13",
+      "sessions": 39,
+      "engaged_sessions": 11,
+      "engagement_rate": 0.2821
+    },
+    {
+      "date": "2026-03-14",
+      "sessions": 36,
+      "engaged_sessions": 6,
+      "engagement_rate": 0.1667
+    },
+    {
+      "date": "2026-03-15",
+      "sessions": 50,
+      "engaged_sessions": 13,
+      "engagement_rate": 0.26
+    },
+    {
+      "date": "2026-03-16",
+      "sessions": 42,
+      "engaged_sessions": 11,
+      "engagement_rate": 0.2619
+    },
+    {
+      "date": "2026-03-17",
+      "sessions": 41,
+      "engaged_sessions": 11,
+      "engagement_rate": 0.2683
+    },
+    {
+      "date": "2026-03-18",
+      "sessions": 37,
+      "engaged_sessions": 11,
+      "engagement_rate": 0.2973
+    },
+    {
+      "date": "2026-03-19",
+      "sessions": 41,
+      "engaged_sessions": 14,
+      "engagement_rate": 0.3415
+    },
+    {
+      "date": "2026-03-20",
+      "sessions": 43,
+      "engaged_sessions": 11,
+      "engagement_rate": 0.2558
+    },
+    {
+      "date": "2026-03-21",
+      "sessions": 35,
+      "engaged_sessions": 12,
+      "engagement_rate": 0.3429
+    },
+    {
+      "date": "2026-03-22",
+      "sessions": 39,
+      "engaged_sessions": 6,
+      "engagement_rate": 0.1538
+    },
+    {
+      "date": "2026-03-23",
+      "sessions": 44,
+      "engaged_sessions": 18,
+      "engagement_rate": 0.4091
+    },
+    {
+      "date": "2026-03-24",
+      "sessions": 24,
+      "engaged_sessions": 12,
+      "engagement_rate": 0.5
+    },
+    {
+      "date": "2026-03-25",
+      "sessions": 22,
+      "engaged_sessions": 9,
+      "engagement_rate": 0.4091
+    },
+    {
+      "date": "2026-03-26",
+      "sessions": 26,
+      "engaged_sessions": 12,
+      "engagement_rate": 0.4615
+    },
+    {
+      "date": "2026-03-27",
+      "sessions": 33,
+      "engaged_sessions": 14,
+      "engagement_rate": 0.4242
+    },
+    {
+      "date": "2026-03-28",
+      "sessions": 35,
+      "engaged_sessions": 9,
+      "engagement_rate": 0.2571
+    },
+    {
+      "date": "2026-03-29",
+      "sessions": 48,
+      "engaged_sessions": 16,
+      "engagement_rate": 0.3333
+    },
+    {
+      "date": "2026-03-30",
+      "sessions": 39,
+      "engaged_sessions": 10,
+      "engagement_rate": 0.2564
+    },
+    {
+      "date": "2026-03-31",
+      "sessions": 40,
+      "engaged_sessions": 10,
+      "engagement_rate": 0.25
+    },
+    {
+      "date": "2026-04-01",
+      "sessions": 35,
+      "engaged_sessions": 9,
+      "engagement_rate": 0.2571
+    }
+  ],
+  "weekly_snapshots": [
+    {
+      "snapshot_date": "2026-04-02",
+      "rolling_30d": {
+        "window": {
+          "current": {
+            "start": "2026-03-03",
+            "end": "2026-04-01",
+            "label": "Last 30 Days"
+          },
+          "mom": {
+            "start": "2026-02-01",
+            "end": "2026-03-02",
+            "label": "Prior 30 Days"
+          },
+          "yoy": {
+            "start": "2025-03-03",
+            "end": "2025-04-01",
+            "label": "Same Period LY"
+          }
+        },
+        "yoy_available": true,
+        "totals": {
+          "current": {
+            "sessions": 1206,
+            "engaged_sessions": 338,
+            "engagement_rate": 0.2803
+          },
+          "mom": {
+            "sessions": 1184,
+            "engaged_sessions": 314,
+            "engagement_rate": 0.2652
+          },
+          "yoy": {
+            "sessions": 20,
+            "engaged_sessions": 9,
+            "engagement_rate": 0.45
+          },
+          "yoy_available": true,
+          "mom_sessions_change_pct": 1.9,
+          "yoy_sessions_change_pct": 5930.0,
+          "mom_engaged_sessions_change_pct": 7.6,
+          "yoy_engaged_sessions_change_pct": 3655.6,
+          "mom_engagement_rate_change_pts": 0.0151,
+          "yoy_engagement_rate_change_pts": -0.1697
+        },
+        "events": [
+          {
+            "event_name": "blog_views",
+            "current": 837,
+            "mom": 803,
+            "yoy": 21,
+            "mom_change_pct": 4.2,
+            "yoy_change_pct": 3885.7
+          },
+          {
+            "event_name": "outbound_clicks",
+            "current": 37,
+            "mom": 31,
+            "yoy": 0,
+            "mom_change_pct": 19.4,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "dealer_site_clicks",
+            "current": 30,
+            "mom": 27,
+            "yoy": 0,
+            "mom_change_pct": 11.1,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "view_new_inventory",
+            "current": 8,
+            "mom": 18,
+            "yoy": 0,
+            "mom_change_pct": -55.6,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "navigational_clicks",
+            "current": 7,
+            "mom": 20,
+            "yoy": 4,
+            "mom_change_pct": -65.0,
+            "yoy_change_pct": 75.0
+          }
+        ],
+        "channels": [
+          {
+            "channel": "Organic Search",
+            "current_sessions": 695,
+            "current_pct": 57.6,
+            "mom_sessions": 673,
+            "yoy_sessions": 7,
+            "mom_sessions_change_pct": 3.3,
+            "yoy_sessions_change_pct": 9828.6
+          },
+          {
+            "channel": "Direct",
+            "current_sessions": 490,
+            "current_pct": 40.6,
+            "mom_sessions": 482,
+            "yoy_sessions": 10,
+            "mom_sessions_change_pct": 1.7,
+            "yoy_sessions_change_pct": 4800.0
+          },
+          {
+            "channel": "Unassigned",
+            "current_sessions": 13,
+            "current_pct": 1.1,
+            "mom_sessions": 27,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": -51.9,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "channel": "Referral",
+            "current_sessions": 8,
+            "current_pct": 0.7,
+            "mom_sessions": 3,
+            "yoy_sessions": 3,
+            "mom_sessions_change_pct": 166.7,
+            "yoy_sessions_change_pct": 166.7
+          }
+        ],
+        "top_pages": [
+          {
+            "landing_page": "/maintenance-repair/windshield-washer-not-working",
+            "current_sessions": 245,
+            "current_engaged_sessions": 94,
+            "current_engagement_rate": 0.3837,
+            "mom_sessions": 180,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": 36.1,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/",
+            "current_sessions": 169,
+            "current_engaged_sessions": 11,
+            "current_engagement_rate": 0.0651,
+            "mom_sessions": 172,
+            "yoy_sessions": 9,
+            "mom_sessions_change_pct": -1.7,
+            "yoy_sessions_change_pct": 1777.8
+          },
+          {
+            "landing_page": "/maintenance-repair/check-engine-light-blinking",
+            "current_sessions": 124,
+            "current_engaged_sessions": 45,
+            "current_engagement_rate": 0.3629,
+            "mom_sessions": 161,
+            "yoy_sessions": 2,
+            "mom_sessions_change_pct": -23.0,
+            "yoy_sessions_change_pct": 6100.0
+          },
+          {
+            "landing_page": "/vehicles/is-infiniti-a-good-car",
+            "current_sessions": 105,
+            "current_engaged_sessions": 44,
+            "current_engagement_rate": 0.419,
+            "mom_sessions": 151,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": -30.5,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/driving/city-vs-highway-miles",
+            "current_sessions": 30,
+            "current_engaged_sessions": 16,
+            "current_engagement_rate": 0.5333,
+            "mom_sessions": 45,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": -33.3,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/vehicles/qx80-vs-gls",
+            "current_sessions": 30,
+            "current_engaged_sessions": 12,
+            "current_engagement_rate": 0.4,
+            "mom_sessions": 22,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": 36.4,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/driving/unlock-infiniti-with-key",
+            "current_sessions": 27,
+            "current_engaged_sessions": 4,
+            "current_engagement_rate": 0.1481,
+            "mom_sessions": 21,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": 28.6,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "(not set)",
+            "current_sessions": 24,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 39,
+            "yoy_sessions": 2,
+            "mom_sessions_change_pct": -38.5,
+            "yoy_sessions_change_pct": 1100.0
+          },
+          {
+            "landing_page": "/maintenance-repair/car-engine-issues",
+            "current_sessions": 23,
+            "current_engaged_sessions": 10,
+            "current_engagement_rate": 0.4348,
+            "mom_sessions": 9,
+            "yoy_sessions": 2,
+            "mom_sessions_change_pct": 155.6,
+            "yoy_sessions_change_pct": 1050.0
+          },
+          {
+            "landing_page": "/infiniti/infiniti-qx80",
+            "current_sessions": 20,
+            "current_engaged_sessions": 4,
+            "current_engagement_rate": 0.2,
+            "mom_sessions": 9,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": 122.2,
+            "yoy_sessions_change_pct": null
+          }
+        ]
+      },
+      "last_calendar_month": {
+        "window": {
+          "current": {
+            "start": "2026-03-01",
+            "end": "2026-03-31",
+            "label": "March 2026"
+          },
+          "mom": {
+            "start": "2026-02-01",
+            "end": "2026-02-28",
+            "label": "February 2026"
+          },
+          "yoy": {
+            "start": "2025-03-01",
+            "end": "2025-03-31",
+            "label": "March 2025"
+          }
+        },
+        "yoy_available": true,
+        "totals": {
+          "current": {
+            "sessions": 1244,
+            "engaged_sessions": 346,
+            "engagement_rate": 0.2781
+          },
+          "mom": {
+            "sessions": 1111,
+            "engaged_sessions": 297,
+            "engagement_rate": 0.2673
+          },
+          "yoy": {
+            "sessions": 19,
+            "engaged_sessions": 9,
+            "engagement_rate": 0.4737
+          },
+          "yoy_available": true,
+          "mom_sessions_change_pct": 12.0,
+          "yoy_sessions_change_pct": 6447.4,
+          "mom_engaged_sessions_change_pct": 16.5,
+          "yoy_engaged_sessions_change_pct": 3744.4,
+          "mom_engagement_rate_change_pts": 0.0108,
+          "yoy_engagement_rate_change_pts": -0.1956
+        },
+        "events": [
+          {
+            "event_name": "blog_views",
+            "current": 868,
+            "mom": 751,
+            "yoy": 21,
+            "mom_change_pct": 15.6,
+            "yoy_change_pct": 4033.3
+          },
+          {
+            "event_name": "outbound_clicks",
+            "current": 37,
+            "mom": 28,
+            "yoy": 0,
+            "mom_change_pct": 32.1,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "dealer_site_clicks",
+            "current": 30,
+            "mom": 24,
+            "yoy": 0,
+            "mom_change_pct": 25.0,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "view_new_inventory",
+            "current": 10,
+            "mom": 16,
+            "yoy": 0,
+            "mom_change_pct": -37.5,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "navigational_clicks",
+            "current": 7,
+            "mom": 20,
+            "yoy": 4,
+            "mom_change_pct": -65.0,
+            "yoy_change_pct": 75.0
+          }
+        ],
+        "channels": [
+          {
+            "channel": "Organic Search",
+            "current_sessions": 713,
+            "current_pct": 57.3,
+            "mom_sessions": 637,
+            "yoy_sessions": 6,
+            "mom_sessions_change_pct": 11.9,
+            "yoy_sessions_change_pct": 11783.3
+          },
+          {
+            "channel": "Direct",
+            "current_sessions": 507,
+            "current_pct": 40.8,
+            "mom_sessions": 448,
+            "yoy_sessions": 10,
+            "mom_sessions_change_pct": 13.2,
+            "yoy_sessions_change_pct": 4970.0
+          },
+          {
+            "channel": "Unassigned",
+            "current_sessions": 12,
+            "current_pct": 1.0,
+            "mom_sessions": 25,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": -52.0,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "channel": "Referral",
+            "current_sessions": 9,
+            "current_pct": 0.7,
+            "mom_sessions": 2,
+            "yoy_sessions": 3,
+            "mom_sessions_change_pct": 350.0,
+            "yoy_sessions_change_pct": 200.0
+          }
+        ],
+        "top_pages": [
+          {
+            "landing_page": "/maintenance-repair/windshield-washer-not-working",
+            "current_sessions": 236,
+            "current_engaged_sessions": 92,
+            "current_engagement_rate": 0.3898,
+            "mom_sessions": 177,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": 33.3,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/",
+            "current_sessions": 178,
+            "current_engaged_sessions": 11,
+            "current_engagement_rate": 0.0618,
+            "mom_sessions": 158,
+            "yoy_sessions": 8,
+            "mom_sessions_change_pct": 12.7,
+            "yoy_sessions_change_pct": 2125.0
+          },
+          {
+            "landing_page": "/maintenance-repair/check-engine-light-blinking",
+            "current_sessions": 130,
+            "current_engaged_sessions": 46,
+            "current_engagement_rate": 0.3538,
+            "mom_sessions": 153,
+            "yoy_sessions": 2,
+            "mom_sessions_change_pct": -15.0,
+            "yoy_sessions_change_pct": 6400.0
+          },
+          {
+            "landing_page": "/vehicles/is-infiniti-a-good-car",
+            "current_sessions": 119,
+            "current_engaged_sessions": 50,
+            "current_engagement_rate": 0.4202,
+            "mom_sessions": 136,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": -12.5,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/vehicles/qx80-vs-gls",
+            "current_sessions": 33,
+            "current_engaged_sessions": 13,
+            "current_engagement_rate": 0.3939,
+            "mom_sessions": 19,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": 73.7,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/driving/city-vs-highway-miles",
+            "current_sessions": 32,
+            "current_engaged_sessions": 17,
+            "current_engagement_rate": 0.5312,
+            "mom_sessions": 43,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": -25.6,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "(not set)",
+            "current_sessions": 27,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 36,
+            "yoy_sessions": 2,
+            "mom_sessions_change_pct": -25.0,
+            "yoy_sessions_change_pct": 1250.0
+          },
+          {
+            "landing_page": "/driving/unlock-infiniti-with-key",
+            "current_sessions": 26,
+            "current_engaged_sessions": 3,
+            "current_engagement_rate": 0.1154,
+            "mom_sessions": 20,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": 30.0,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/maintenance-repair/car-engine-issues",
+            "current_sessions": 23,
+            "current_engaged_sessions": 10,
+            "current_engagement_rate": 0.4348,
+            "mom_sessions": 8,
+            "yoy_sessions": 2,
+            "mom_sessions_change_pct": 187.5,
+            "yoy_sessions_change_pct": 1050.0
+          },
+          {
+            "landing_page": "/maintenance-repair/car-tire-wear",
+            "current_sessions": 22,
+            "current_engaged_sessions": 8,
+            "current_engagement_rate": 0.3636,
+            "mom_sessions": 12,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": 83.3,
+            "yoy_sessions_change_pct": null
+          }
+        ]
+      },
+      "ytd": {
+        "current_year": 2026,
+        "prior_year": 2025,
+        "months": [
+          {
+            "month": "2026-01",
+            "label": "January 2026",
+            "sessions": 1160,
+            "prior_year_sessions": 0
+          },
+          {
+            "month": "2026-02",
+            "label": "February 2026",
+            "sessions": 1111,
+            "prior_year_sessions": 8
+          },
+          {
+            "month": "2026-03",
+            "label": "March 2026",
+            "sessions": 1244,
+            "prior_year_sessions": 19
+          }
+        ],
+        "ytd_current": 3515,
+        "ytd_prior": 27,
+        "ytd_change_pct": 12918.5
+      }
+    }
+  ]
+}

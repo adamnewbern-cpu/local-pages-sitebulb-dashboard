@@ -1,0 +1,796 @@
+{
+  "site_url": "https://stores.cort.com/",
+  "display_name": "CORT Rental",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 81957,
+        "engaged_sessions": 15079,
+        "engagement_rate": 0.184
+      },
+      "mom": {
+        "sessions": 91536,
+        "engaged_sessions": 14552,
+        "engagement_rate": 0.159
+      },
+      "yoy": {
+        "sessions": 20350,
+        "engaged_sessions": 10606,
+        "engagement_rate": 0.5212
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -10.5,
+      "yoy_sessions_change_pct": 302.7,
+      "mom_engaged_sessions_change_pct": 3.6,
+      "yoy_engaged_sessions_change_pct": 42.2,
+      "mom_engagement_rate_change_pts": 0.025,
+      "yoy_engagement_rate_change_pts": -0.3372
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 21725,
+        "mom": 20022,
+        "yoy": 16217,
+        "mom_change_pct": 8.5,
+        "yoy_change_pct": 34.0
+      },
+      {
+        "event_name": "rent_for_home",
+        "current": 3589,
+        "mom": 3304,
+        "yoy": 5800,
+        "mom_change_pct": 8.6,
+        "yoy_change_pct": -38.1
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 1650,
+        "mom": 1223,
+        "yoy": 699,
+        "mom_change_pct": 34.9,
+        "yoy_change_pct": 136.1
+      },
+      {
+        "event_name": "store_locate",
+        "current": 1401,
+        "mom": 1353,
+        "yoy": 669,
+        "mom_change_pct": 3.5,
+        "yoy_change_pct": 109.4
+      },
+      {
+        "event_name": "locate_me",
+        "current": 1395,
+        "mom": 1360,
+        "yoy": 140,
+        "mom_change_pct": 2.6,
+        "yoy_change_pct": 896.4
+      },
+      {
+        "event_name": "calls",
+        "current": 293,
+        "mom": 248,
+        "yoy": 252,
+        "mom_change_pct": 18.1,
+        "yoy_change_pct": 16.3
+      },
+      {
+        "event_name": "rent_for_office",
+        "current": 219,
+        "mom": 287,
+        "yoy": 102,
+        "mom_change_pct": -23.7,
+        "yoy_change_pct": 114.7
+      },
+      {
+        "event_name": "get_directions",
+        "current": 14,
+        "mom": 10,
+        "yoy": 3,
+        "mom_change_pct": 40.0,
+        "yoy_change_pct": 366.7
+      },
+      {
+        "event_name": "accessWidget",
+        "current": 1,
+        "mom": 1,
+        "yoy": 0,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 62627,
+        "current_pct": 76.4,
+        "mom_sessions": 75366,
+        "yoy_sessions": 4065,
+        "mom_sessions_change_pct": -16.9,
+        "yoy_sessions_change_pct": 1440.6
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 9704,
+        "current_pct": 11.8,
+        "mom_sessions": 9113,
+        "yoy_sessions": 13844,
+        "mom_sessions_change_pct": 6.5,
+        "yoy_sessions_change_pct": -29.9
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 8350,
+        "current_pct": 10.2,
+        "mom_sessions": 7429,
+        "yoy_sessions": 1465,
+        "mom_sessions_change_pct": 12.4,
+        "yoy_sessions_change_pct": 470.0
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 595,
+        "current_pct": 0.7,
+        "mom_sessions": 509,
+        "yoy_sessions": 633,
+        "mom_sessions_change_pct": 16.9,
+        "yoy_sessions_change_pct": -6.0
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 153,
+        "current_pct": 0.2,
+        "mom_sessions": 168,
+        "yoy_sessions": 125,
+        "mom_sessions_change_pct": -8.9,
+        "yoy_sessions_change_pct": 22.4
+      },
+      {
+        "channel": "Cross-network",
+        "current_sessions": 54,
+        "current_pct": 0.1,
+        "mom_sessions": 60,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -10.0,
+        "yoy_sessions_change_pct": 2600.0
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 36,
+        "current_pct": 0.0,
+        "mom_sessions": 61,
+        "yoy_sessions": 77,
+        "mom_sessions_change_pct": -41.0,
+        "yoy_sessions_change_pct": -53.2
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 4178,
+        "current_engaged_sessions": 1779,
+        "current_engagement_rate": 0.4258,
+        "mom_sessions": 3180,
+        "yoy_sessions": 1354,
+        "mom_sessions_change_pct": 31.4,
+        "yoy_sessions_change_pct": 208.6
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 625,
+        "current_engaged_sessions": 10,
+        "current_engagement_rate": 0.016,
+        "mom_sessions": 560,
+        "yoy_sessions": 359,
+        "mom_sessions_change_pct": 11.6,
+        "yoy_sessions_change_pct": 74.1
+      },
+      {
+        "landing_page": "/texas/houston",
+        "current_sessions": 378,
+        "current_engaged_sessions": 231,
+        "current_engagement_rate": 0.6111,
+        "mom_sessions": 293,
+        "yoy_sessions": 264,
+        "mom_sessions_change_pct": 29.0,
+        "yoy_sessions_change_pct": 43.2
+      },
+      {
+        "landing_page": "/illinois/chicago/540-n-lake-shore-drive",
+        "current_sessions": 324,
+        "current_engaged_sessions": 140,
+        "current_engagement_rate": 0.4321,
+        "mom_sessions": 250,
+        "yoy_sessions": 234,
+        "mom_sessions_change_pct": 29.6,
+        "yoy_sessions_change_pct": 38.5
+      },
+      {
+        "landing_page": "/texas/austin",
+        "current_sessions": 292,
+        "current_engaged_sessions": 169,
+        "current_engagement_rate": 0.5788,
+        "mom_sessions": 322,
+        "yoy_sessions": 215,
+        "mom_sessions_change_pct": -9.3,
+        "yoy_sessions_change_pct": 35.8
+      },
+      {
+        "landing_page": "/illinois/chicago",
+        "current_sessions": 286,
+        "current_engaged_sessions": 125,
+        "current_engagement_rate": 0.4371,
+        "mom_sessions": 182,
+        "yoy_sessions": 195,
+        "mom_sessions_change_pct": 57.1,
+        "yoy_sessions_change_pct": 46.7
+      },
+      {
+        "landing_page": "/new-york",
+        "current_sessions": 282,
+        "current_engaged_sessions": 150,
+        "current_engagement_rate": 0.5319,
+        "mom_sessions": 189,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 49.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/nevada/las-vegas",
+        "current_sessions": 262,
+        "current_engaged_sessions": 142,
+        "current_engagement_rate": 0.542,
+        "mom_sessions": 270,
+        "yoy_sessions": 192,
+        "mom_sessions_change_pct": -3.0,
+        "yoy_sessions_change_pct": 36.5
+      },
+      {
+        "landing_page": "/new-york/new-york/140-e-45th-st",
+        "current_sessions": 245,
+        "current_engaged_sessions": 161,
+        "current_engagement_rate": 0.6571,
+        "mom_sessions": 240,
+        "yoy_sessions": 149,
+        "mom_sessions_change_pct": 2.1,
+        "yoy_sessions_change_pct": 64.4
+      },
+      {
+        "landing_page": "/washington/seattle",
+        "current_sessions": 228,
+        "current_engaged_sessions": 128,
+        "current_engagement_rate": 0.5614,
+        "mom_sessions": 188,
+        "yoy_sessions": 214,
+        "mom_sessions_change_pct": 21.3,
+        "yoy_sessions_change_pct": 6.5
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 70748,
+          "prior_year_sessions": 24830
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 86689,
+          "prior_year_sessions": 18626
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 86606,
+          "prior_year_sessions": 20921
+        }
+      ],
+      "ytd_current": 244043,
+      "ytd_prior": 64377,
+      "ytd_change_pct": 279.1
+    },
+    "summary": "CORT Rental's local pages site generated 81,957 sessions over the last 30 days, representing a strong YoY surge of +302.7% despite a MoM decline of -10.5%. Engagement quality improved significantly, with engaged sessions climbing +3.6% MoM and +42.2% YoY, while engagement rate expanded 2.5 percentage points MoM\u2014though it contracted 33.7 pp YoY, likely due to higher overall traffic volume diluting the rate. Direct traffic dominates at 76.4% of sessions (+1440.6% YoY), suggesting strong brand awareness and repeat visits, though it declined 16.9% MoM, signaling potential seasonal softness or competitive pressure. Paid Search grew 12.4% MoM and 470% YoY, indicating effective paid acquisition strategies. High-value conversion events show mixed momentum: calls surged +18.1% MoM (+16.3% YoY), while rent_for_home events climbed +8.6% MoM but fell -38.1% YoY\u2014a red flag for product-level demand. Location-finding intent remains robust, with store_locate and locate_me combining for 2,796 events and strong YoY growth of 109.4% and 896.4% respectively. YTD 2026 traffic stands at 244,043 sessions, a +279.1% increase versus YTD 2025, with January\u2013March showing consistent triple-digit MoM growth, positioning the brand for a record year.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Phone calls momentum accelerates",
+          "detail": "Calls events increased +18.1% MoM to 293 total, the strongest sequential lift among high-value conversions. Paired with +16.3% YoY growth, this signals improving conversion quality and warrants continued investment in call-to-action placement.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Paid Search ROI expanding",
+          "detail": "Paid Search sessions grew +12.4% MoM and +470% YoY, capturing 8,350 sessions (10.2% of traffic). This channel is outpacing organic and referral, suggesting keyword and creative optimization is yielding returns.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Homepage engagement driving traffic",
+          "detail": "The homepage (/) generated 4,178 sessions with a 42.6% engagement rate, up +31.4% MoM and +208.6% YoY. This is the top landing page and shows strong momentum, indicating effective brand messaging.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Location pages showing strong engagement",
+          "detail": "Regional pages like /texas/houston (61.1% engagement), /new-york/new-york/140-e-45th-st (65.7%), and /texas/austin (57.9%) are outperforming site average, with robust YoY growth (+43.2%, +64.4%, +35.8% respectively). These pages are winning high-intent visitors.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Sessions declining month-over-month",
+          "detail": "Despite strong YoY growth, sessions fell -10.5% MoM to 81,957. This reverses the upward trajectory seen across Q1 2026 and warrants investigation into seasonal patterns, competitive activity, or paid media budget allocation.",
+          "severity": "medium"
+        },
+        {
+          "title": "rent_for_home product interest collapsing YoY",
+          "detail": "rent_for_home events dropped -38.1% YoY while climbing +8.6% MoM, suggesting recent campaign recovery masking a structural demand decline. This product line is losing appeal compared to the prior year and may need repositioning or competitive analysis.",
+          "severity": "high"
+        },
+        {
+          "title": "Organic Search traffic declining YoY",
+          "detail": "Organic Search fell -29.9% YoY (9,704 sessions) while growing +6.5% MoM. SEO performance is lagging year-over-year, potentially indicating keyword ranking losses or increased SERP competition that offset recent recovery efforts.",
+          "severity": "medium"
+        },
+        {
+          "title": "Organic Social engagement collapsing",
+          "detail": "Organic Social sessions plummeted -41.0% MoM and -53.2% YoY to just 36 sessions. This channel is negligible and declining sharply, suggesting underinvestment, algorithm changes, or ineffective content strategy.",
+          "severity": "low"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Expand location-finder intent capture",
+          "detail": "store_locate (1,401 events) and locate_me (1,395 events) are thriving with +109.4% and +896.4% YoY growth respectively. Doubling down on location-based targeting, map integrations, and local inventory ads could capitalize on this high-intent behavior.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize Paid Search spend allocation",
+          "detail": "Paid Search is the only organic-comparable channel growing faster YoY (+470%) than overall traffic (+302.7%), and it's the second-largest driver at 10.2% of sessions. Increasing budget share from Direct and Organic Search into Paid Search keywords could accelerate growth.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Reverse rent_for_home decline with urgency/scarcity campaigns",
+          "detail": "rent_for_home is down -38.1% YoY despite recent MoM recovery, indicating lost market share. Introducing limited-time offers, scarcity messaging, or product bundling on landing pages and paid ads could reignite demand.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Double down on regional landing page optimization",
+          "detail": "High-engagement location pages like /texas/houston (61.1%), /new-york/new-york/140-e-45th-st (65.7%), and /illinois/chicago (43.7% \u2192 +57.1% MoM) are outperforming site average. Replicating their conversion elements\u2014localized CTAs, nearby inventory, live availability\u2014across underperforming regional pages could lift overall funnel.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Rebuild Organic Search presence",
+          "detail": "Organic Search is down -29.9% YoY and represents only 11.8% of traffic. A content audit targeting high-intent keywords (e.g., 'rent furniture [city]', 'temporary office solutions') and backlink building could recover lost visibility without incremental paid spend.",
+          "impact": "medium",
+          "effort": "high"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 86606,
+        "engaged_sessions": 15587,
+        "engagement_rate": 0.18
+      },
+      "mom": {
+        "sessions": 86689,
+        "engaged_sessions": 13706,
+        "engagement_rate": 0.1581
+      },
+      "yoy": {
+        "sessions": 20921,
+        "engaged_sessions": 10786,
+        "engagement_rate": 0.5156
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -0.1,
+      "yoy_sessions_change_pct": 314.0,
+      "mom_engaged_sessions_change_pct": 13.7,
+      "yoy_engaged_sessions_change_pct": 44.5,
+      "mom_engagement_rate_change_pts": 0.0219,
+      "yoy_engagement_rate_change_pts": -0.3356
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 22561,
+        "mom": 18569,
+        "yoy": 16744,
+        "mom_change_pct": 21.5,
+        "yoy_change_pct": 34.7
+      },
+      {
+        "event_name": "rent_for_home",
+        "current": 3729,
+        "mom": 3059,
+        "yoy": 5974,
+        "mom_change_pct": 21.9,
+        "yoy_change_pct": -37.6
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 1687,
+        "mom": 1156,
+        "yoy": 721,
+        "mom_change_pct": 45.9,
+        "yoy_change_pct": 134.0
+      },
+      {
+        "event_name": "locate_me",
+        "current": 1468,
+        "mom": 1261,
+        "yoy": 150,
+        "mom_change_pct": 16.4,
+        "yoy_change_pct": 878.7
+      },
+      {
+        "event_name": "store_locate",
+        "current": 1447,
+        "mom": 1277,
+        "yoy": 690,
+        "mom_change_pct": 13.3,
+        "yoy_change_pct": 109.7
+      },
+      {
+        "event_name": "calls",
+        "current": 308,
+        "mom": 231,
+        "yoy": 257,
+        "mom_change_pct": 33.3,
+        "yoy_change_pct": 19.8
+      },
+      {
+        "event_name": "rent_for_office",
+        "current": 239,
+        "mom": 262,
+        "yoy": 98,
+        "mom_change_pct": -8.8,
+        "yoy_change_pct": 143.9
+      },
+      {
+        "event_name": "get_directions",
+        "current": 15,
+        "mom": 9,
+        "yoy": 3,
+        "mom_change_pct": 66.7,
+        "yoy_change_pct": 400.0
+      },
+      {
+        "event_name": "accessWidget",
+        "current": 1,
+        "mom": 1,
+        "yoy": 0,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 66139,
+        "current_pct": 76.4,
+        "mom_sessions": 71553,
+        "yoy_sessions": 4245,
+        "mom_sessions_change_pct": -7.6,
+        "yoy_sessions_change_pct": 1458.0
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 10086,
+        "current_pct": 11.6,
+        "mom_sessions": 8458,
+        "yoy_sessions": 14136,
+        "mom_sessions_change_pct": 19.2,
+        "yoy_sessions_change_pct": -28.7
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 8738,
+        "current_pct": 10.1,
+        "mom_sessions": 6924,
+        "yoy_sessions": 1435,
+        "mom_sessions_change_pct": 26.2,
+        "yoy_sessions_change_pct": 508.9
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 619,
+        "current_pct": 0.7,
+        "mom_sessions": 477,
+        "yoy_sessions": 631,
+        "mom_sessions_change_pct": 29.8,
+        "yoy_sessions_change_pct": -1.9
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 149,
+        "current_pct": 0.2,
+        "mom_sessions": 163,
+        "yoy_sessions": 131,
+        "mom_sessions_change_pct": -8.6,
+        "yoy_sessions_change_pct": 13.7
+      },
+      {
+        "channel": "Cross-network",
+        "current_sessions": 52,
+        "current_pct": 0.1,
+        "mom_sessions": 59,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -11.9,
+        "yoy_sessions_change_pct": 2500.0
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 40,
+        "current_pct": 0.0,
+        "mom_sessions": 55,
+        "yoy_sessions": 82,
+        "mom_sessions_change_pct": -27.3,
+        "yoy_sessions_change_pct": -51.2
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 4278,
+        "current_engaged_sessions": 1808,
+        "current_engagement_rate": 0.4226,
+        "mom_sessions": 3063,
+        "yoy_sessions": 1482,
+        "mom_sessions_change_pct": 39.7,
+        "yoy_sessions_change_pct": 188.7
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 651,
+        "current_engaged_sessions": 10,
+        "current_engagement_rate": 0.0154,
+        "mom_sessions": 524,
+        "yoy_sessions": 354,
+        "mom_sessions_change_pct": 24.2,
+        "yoy_sessions_change_pct": 83.9
+      },
+      {
+        "landing_page": "/texas/houston",
+        "current_sessions": 390,
+        "current_engaged_sessions": 235,
+        "current_engagement_rate": 0.6026,
+        "mom_sessions": 268,
+        "yoy_sessions": 262,
+        "mom_sessions_change_pct": 45.5,
+        "yoy_sessions_change_pct": 48.9
+      },
+      {
+        "landing_page": "/illinois/chicago/540-n-lake-shore-drive",
+        "current_sessions": 343,
+        "current_engaged_sessions": 150,
+        "current_engagement_rate": 0.4373,
+        "mom_sessions": 222,
+        "yoy_sessions": 235,
+        "mom_sessions_change_pct": 54.5,
+        "yoy_sessions_change_pct": 46.0
+      },
+      {
+        "landing_page": "/texas/austin",
+        "current_sessions": 303,
+        "current_engaged_sessions": 172,
+        "current_engagement_rate": 0.5677,
+        "mom_sessions": 300,
+        "yoy_sessions": 218,
+        "mom_sessions_change_pct": 1.0,
+        "yoy_sessions_change_pct": 39.0
+      },
+      {
+        "landing_page": "/new-york",
+        "current_sessions": 297,
+        "current_engaged_sessions": 158,
+        "current_engagement_rate": 0.532,
+        "mom_sessions": 169,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 75.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/illinois/chicago",
+        "current_sessions": 288,
+        "current_engaged_sessions": 127,
+        "current_engagement_rate": 0.441,
+        "mom_sessions": 170,
+        "yoy_sessions": 204,
+        "mom_sessions_change_pct": 69.4,
+        "yoy_sessions_change_pct": 41.2
+      },
+      {
+        "landing_page": "/nevada/las-vegas",
+        "current_sessions": 276,
+        "current_engaged_sessions": 150,
+        "current_engagement_rate": 0.5435,
+        "mom_sessions": 248,
+        "yoy_sessions": 202,
+        "mom_sessions_change_pct": 11.3,
+        "yoy_sessions_change_pct": 36.6
+      },
+      {
+        "landing_page": "/new-york/new-york/140-e-45th-st",
+        "current_sessions": 248,
+        "current_engaged_sessions": 161,
+        "current_engagement_rate": 0.6492,
+        "mom_sessions": 227,
+        "yoy_sessions": 157,
+        "mom_sessions_change_pct": 9.3,
+        "yoy_sessions_change_pct": 58.0
+      },
+      {
+        "landing_page": "/washington/seattle",
+        "current_sessions": 235,
+        "current_engaged_sessions": 133,
+        "current_engagement_rate": 0.566,
+        "mom_sessions": 176,
+        "yoy_sessions": 220,
+        "mom_sessions_change_pct": 33.5,
+        "yoy_sessions_change_pct": 6.8
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 70748,
+          "prior_year_sessions": 24830
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 86689,
+          "prior_year_sessions": 18626
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 86606,
+          "prior_year_sessions": 20921
+        }
+      ],
+      "ytd_current": 244043,
+      "ytd_prior": 64377,
+      "ytd_change_pct": 279.1
+    },
+    "summary": "CORT Rental demonstrated robust YoY growth in March 2026, with sessions up 314.0% YoY to 86,606, though MoM momentum flatlined at -0.1%. More encouraging: Engaged Sessions grew 13.7% MoM and 44.5% YoY to 15,587, signaling stronger quality despite marginal session decline. Engagement Rate improved to 18.0% (+2.2 pp MoM), a notable positive given YoY compression of 33.6 pp\u2014likely due to channel mix shift. Direct traffic dominates at 76.4% of sessions with explosive 1458.0% YoY growth, while Paid Search surged 26.2% MoM and 508.9% YoY, indicating effective paid acquisition scaling. High-value conversions showed mixed signals: Calls rose 33.3% MoM (+19.8% YoY) to 308 events, but rent_for_home declined 37.6% YoY despite +21.9% MoM gain. Location-intent events thrived\u2014locate_me jumped 878.7% YoY and store_locate grew 13.3% MoM\u2014reflecting strong mobile and local search behavior. Homepage (/) captured 4,278 sessions with 42.3% engagement and +39.7% MoM growth; regional pages like /texas/houston (60.3% engagement, +45.5% MoM) and /new-york (+75.7% MoM) outperformed with higher intent. Q1 2026 cumulative sessions reached 244,043 (+279.1% YoY), establishing a strong seasonal baseline for the year. Primary headwind: organic search declined 28.7% YoY despite modest +19.2% MoM recovery, and rent_for_office dropped 8.8% MoM, warranting tactical attention.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Calls conversion surge",
+          "detail": "Phone call initiations grew 33.3% MoM to 308 events, a high-value conversion signal gaining momentum heading into Q2.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Location intent acceleration",
+          "detail": "Locate_me events exploded 878.7% YoY to 1,468; paired with store_locate growth of 13.3% MoM, users are actively seeking local inventory\u2014prime upsell moment.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Regional page engagement wins",
+          "detail": "/texas/houston achieved 60.3% engagement (+45.5% MoM) and /new-york posted 75.7% MoM growth; these localized pages are outperforming the homepage and warrant increased paid/organic spend.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Paid Search momentum",
+          "detail": "Paid Search sessions grew 26.2% MoM and 508.9% YoY to 8,738, outpacing organic search recovery; continued investment is clearly driving high-intent traffic.",
+          "impact": "high",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Organic Search erosion",
+          "detail": "Organic Search declined 28.7% YoY to 10,086 sessions (11.6% of mix), signaling keyword visibility loss or increased competitive pressure; modest +19.2% MoM recovery is insufficient to offset annual decay.",
+          "severity": "high"
+        },
+        {
+          "title": "Rent-for-home conversion cliff",
+          "detail": "rent_for_home events fell 37.6% YoY despite +21.9% MoM uptick to 3,729 events; this high-intent event is underperforming relative to traffic gains, suggesting messaging or targeting misalignment on home rental segments.",
+          "severity": "medium"
+        },
+        {
+          "title": "Organic Social collapse",
+          "detail": "Organic Social traffic plummeted 27.3% MoM and 51.2% YoY to just 40 sessions; either social strategy has stalled or platform algorithm changes have reduced reach.",
+          "severity": "medium"
+        },
+        {
+          "title": "Session growth deceleration MoM",
+          "detail": "Despite 314.0% YoY growth, March sessions were essentially flat MoM (-0.1%), indicating potential saturation in current acquisition channels or seasonal demand softening heading into April.",
+          "severity": "low"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Expand regional paid + organic targeting",
+          "detail": "/texas/houston (60.3% engagement, 390 sessions), /new-york (75.7% MoM growth), and /illinois/chicago (69.4% MoM growth) are regional hotspots with disproportionately high engagement; allocate incremental budget to these geo-segments.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Recover Organic Search visibility",
+          "detail": "Organic Search is the only major channel in YoY decline (-28.7% to 10,086 sessions); conduct keyword audits on high-performing regional pages and rebuild rankings for home/office rental categories.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Monetize location-intent traffic",
+          "detail": "Locate_me (1,468 events, +878.7% YoY) and store_locate (1,447 events) users are primed for conversion; test in-page booking CTAs and location-based promos to drive rent_for_home and calls higher.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Investigate rent_for_office decline",
+          "detail": "rent_for_office dropped 8.8% MoM to 239 events despite broader engagement gains; audit the office rental funnel and messaging to identify friction points or messaging gaps.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Resurrect Organic Social strategy",
+          "detail": "Organic Social collapsed 51.2% YoY to 40 sessions; evaluate platform mix, content strategy, and posting cadence; even modest social recovery could diversify acquisition risk away from paid channels.",
+          "impact": "low",
+          "effort": "medium"
+        }
+      ]
+    }
+  }
+}

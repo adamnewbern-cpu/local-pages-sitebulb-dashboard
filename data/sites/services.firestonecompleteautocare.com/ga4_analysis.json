@@ -1,0 +1,662 @@
+{
+  "site_url": "https://services.firestonecompleteautocare.com/",
+  "display_name": "Services Funnel",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 10687,
+        "engaged_sessions": 6042,
+        "engagement_rate": 0.5654
+      },
+      "mom": {
+        "sessions": 10112,
+        "engaged_sessions": 5630,
+        "engagement_rate": 0.5568
+      },
+      "yoy": {
+        "sessions": 2376,
+        "engaged_sessions": 1592,
+        "engagement_rate": 0.67
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": 5.7,
+      "yoy_sessions_change_pct": 349.8,
+      "mom_engaged_sessions_change_pct": 7.3,
+      "yoy_engaged_sessions_change_pct": 279.5,
+      "mom_engagement_rate_change_pts": 0.0086,
+      "yoy_engagement_rate_change_pts": -0.1046
+    },
+    "events": [
+      {
+        "event_name": "internal_clicks",
+        "current": 3280,
+        "mom": 1662,
+        "yoy": 1682,
+        "mom_change_pct": 97.4,
+        "yoy_change_pct": 95.0
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 1051,
+        "mom": 967,
+        "yoy": 1001,
+        "mom_change_pct": 8.7,
+        "yoy_change_pct": 5.0
+      },
+      {
+        "event_name": "schedule_appointment",
+        "current": 148,
+        "mom": 120,
+        "yoy": 416,
+        "mom_change_pct": 23.3,
+        "yoy_change_pct": -64.4
+      },
+      {
+        "event_name": "contact_us",
+        "current": 21,
+        "mom": 16,
+        "yoy": 17,
+        "mom_change_pct": 31.2,
+        "yoy_change_pct": 23.5
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 8158,
+        "current_pct": 76.3,
+        "mom_sessions": 7946,
+        "yoy_sessions": 253,
+        "mom_sessions_change_pct": 2.7,
+        "yoy_sessions_change_pct": 3124.5
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 2448,
+        "current_pct": 22.9,
+        "mom_sessions": 2174,
+        "yoy_sessions": 2100,
+        "mom_sessions_change_pct": 12.6,
+        "yoy_sessions_change_pct": 16.6
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 83,
+        "current_pct": 0.8,
+        "mom_sessions": 87,
+        "yoy_sessions": 7,
+        "mom_sessions_change_pct": -4.6,
+        "yoy_sessions_change_pct": 1085.7
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 52,
+        "current_pct": 0.5,
+        "mom_sessions": 34,
+        "yoy_sessions": 17,
+        "mom_sessions_change_pct": 52.9,
+        "yoy_sessions_change_pct": 205.9
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 1,
+        "current_pct": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": -50.0
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 1691,
+        "current_engaged_sessions": 932,
+        "current_engagement_rate": 0.5512,
+        "mom_sessions": 1443,
+        "yoy_sessions": 2033,
+        "mom_sessions_change_pct": 17.2,
+        "yoy_sessions_change_pct": -16.8
+      },
+      {
+        "landing_page": "/ram/1500-2019-2025",
+        "current_sessions": 505,
+        "current_engaged_sessions": 294,
+        "current_engagement_rate": 0.5822,
+        "mom_sessions": 647,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -21.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/honda/crv-2023-2025",
+        "current_sessions": 468,
+        "current_engaged_sessions": 284,
+        "current_engagement_rate": 0.6068,
+        "mom_sessions": 529,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -11.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/honda/crv-2017-2022",
+        "current_sessions": 399,
+        "current_engaged_sessions": 254,
+        "current_engagement_rate": 0.6366,
+        "mom_sessions": 356,
+        "yoy_sessions": 3,
+        "mom_sessions_change_pct": 12.1,
+        "yoy_sessions_change_pct": 13200.0
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 305,
+        "current_engaged_sessions": 8,
+        "current_engagement_rate": 0.0262,
+        "mom_sessions": 310,
+        "yoy_sessions": 53,
+        "mom_sessions_change_pct": -1.6,
+        "yoy_sessions_change_pct": 475.5
+      },
+      {
+        "landing_page": "/hyundai/elantra-2020-2025",
+        "current_sessions": 276,
+        "current_engaged_sessions": 143,
+        "current_engagement_rate": 0.5181,
+        "mom_sessions": 310,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -11.0,
+        "yoy_sessions_change_pct": 13700.0
+      },
+      {
+        "landing_page": "/jeep/grand-cherokee-2021-2025",
+        "current_sessions": 250,
+        "current_engaged_sessions": 159,
+        "current_engagement_rate": 0.636,
+        "mom_sessions": 305,
+        "yoy_sessions": 3,
+        "mom_sessions_change_pct": -18.0,
+        "yoy_sessions_change_pct": 8233.3
+      },
+      {
+        "landing_page": "/honda/civic-2022-2025",
+        "current_sessions": 243,
+        "current_engaged_sessions": 143,
+        "current_engagement_rate": 0.5885,
+        "mom_sessions": 222,
+        "yoy_sessions": 11,
+        "mom_sessions_change_pct": 9.5,
+        "yoy_sessions_change_pct": 2109.1
+      },
+      {
+        "landing_page": "/ford/escape-2020-2025",
+        "current_sessions": 234,
+        "current_engaged_sessions": 139,
+        "current_engagement_rate": 0.594,
+        "mom_sessions": 231,
+        "yoy_sessions": 10,
+        "mom_sessions_change_pct": 1.3,
+        "yoy_sessions_change_pct": 2240.0
+      },
+      {
+        "landing_page": "/honda/crv-2012-2016",
+        "current_sessions": 207,
+        "current_engaged_sessions": 124,
+        "current_engagement_rate": 0.599,
+        "mom_sessions": 276,
+        "yoy_sessions": 3,
+        "mom_sessions_change_pct": -25.0,
+        "yoy_sessions_change_pct": 6800.0
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 10881,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 9388,
+          "prior_year_sessions": 21
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 11090,
+          "prior_year_sessions": 2422
+        }
+      ],
+      "ytd_current": 31359,
+      "ytd_prior": 2443,
+      "ytd_change_pct": 1183.6
+    },
+    "summary": "The Services Funnel experienced robust growth over the last 30 days, with sessions up 5.7% MoM and a staggering +349.8% YoY, driven primarily by organic search which now represents 76.3% of traffic and grew +3124.5% YoY. Engagement rate held steady at 56.5% (+0.9 pp MoM), though it declined 10.5 pp YoY, suggesting that while traffic quality remains solid, the influx of new visitors is slightly less engaged than prior-year cohorts. High-value scheduling events (schedule_appointment) generated 148 conversions, up 23.3% MoM but down -64.4% YoY\u2014a concerning reversal that warrants investigation into funnel friction or competitive pressures. Internal clicks surged 97.4% MoM to 3,280 events, indicating strong site navigation but also revealing that most engagement is still exploratory rather than conversion-focused; contact_us events (+31.2% MoM) and outbound_clicks (+8.7% MoM) grew modestly, suggesting limited downstream funnel maturation. YTD 2026 has delivered 31,359 sessions versus only 2,443 in Q1 2025 (+1183.6%), with January and February 2026 establishing a new baseline, though March's growth rate (+357.9% YoY) hints at seasonal normalization. Top landing pages like /honda/crv-2023-2025 and /ram/1500-2019-2025 maintain strong engagement (58\u201361%) but are trending negative MoM (-21.9% and -11.5%), while vehicle-specific deep pages (/honda/crv-2017-2022, /hyundai/elantra-2020-2025) show explosive YoY gains (+13200%, +13700%) from low bases, indicating emerging organic visibility in long-tail searches.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Organic Search Dominance",
+          "detail": "Organic search accounts for 76.3% of sessions (8,158) with +3124.5% YoY growth, establishing it as the primary traffic engine. This exceptional growth suggests SEO initiatives or algorithm shifts are delivering substantial reach.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Contact Form Momentum",
+          "detail": "contact_us events grew +31.2% MoM to 21 conversions and +23.5% YoY, indicating rising intent among visitors to reach out directly. This is a precursor signal to higher-value conversions like calls or bookings.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Homepage Traction",
+          "detail": "The homepage (/) generated 1,691 sessions with a 55.1% engagement rate, up +17.2% MoM, serving as a reliable traffic aggregator and entry point for funnel qualification.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Schedule_Appointment Conversion Decline YoY",
+          "detail": "schedule_appointment events dropped -64.4% YoY despite being a high-value conversion target, declining from a prior-year baseline to just 148 events. This sharp reversal suggests either increased friction in the booking funnel, cannibalization by alternative contact methods, or competitive displacement.",
+          "severity": "high"
+        },
+        {
+          "title": "Engagement Rate YoY Deterioration",
+          "detail": "Engagement rate fell 10.5 pp YoY to 56.5%, indicating that the massive influx of new visitors (sessions +349.8% YoY) is proportionally less engaged than prior-year traffic. This may reflect lower-intent long-tail organic traffic or acquisition of less-qualified segments.",
+          "severity": "medium"
+        },
+        {
+          "title": "Organic Social Collapse",
+          "detail": "Organic social traffic collapsed to just 1 session, down -50.0% YoY, suggesting either platform algorithm shifts, reduced organic visibility, or deprioritization of social channels. This channel was minimal but warrants diagnostic review.",
+          "severity": "low"
+        },
+        {
+          "title": "Top Vehicle Pages Declining MoM",
+          "detail": "/ram/1500-2019-2025 (-21.9% MoM) and /honda/crv-2023-2025 (-11.5% MoM) are bleeding sessions despite strong engagement rates, signaling potential ranking losses or seasonal traffic fluctuations in high-volume pages.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Unlock Phone Call Conversions",
+          "detail": "The event glossary identifies calls as high-value conversions, yet no call event data appears in the custom events table. Implementing robust call-tracking and phone-click measurement would reveal an entirely unmeasured conversion channel and likely unlock immediate ROI visibility on high-intent traffic.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Reverse schedule_appointment YoY Decline",
+          "detail": "Investigate and optimize the booking funnel for /honda/crv-2023-2025, /ram/1500-2019-2025, and other high-traffic vehicle pages to recover the -64.4% YoY decline in schedule_appointment events. Run A/B tests on CTA placement, form fields, and checkout friction.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Scale Long-Tail Vehicle Pages",
+          "detail": "Pages like /hyundai/elantra-2020-2025 (+13700% YoY) and /jeep/grand-cherokee-2021-2025 (+8233.3% YoY) are capturing explosive organic visibility from long-tail searches. Expand content, internal linking, and schema markup on underperforming vehicle SKUs to replicate this organic growth pattern.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Convert High Internal_Clicks Traffic into Downstream Actions",
+          "detail": "internal_clicks surged 97.4% MoM to 3,280 events but represent exploratory, low-value engagement. Add strategic CTAs, exit-intent overlays, or guided tours on top landing pages (/honda/crv-2023-2025, /ram/1500-2019-2025) to funnel this engaged traffic toward contact_us or schedule_appointment.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Recover Direct Traffic Growth Momentum",
+          "detail": "Direct traffic grew +12.6% MoM and +16.6% YoY to 2,448 sessions, second only to organic. Optimize branded search presence and retargeting campaigns to continue capturing returning visitors and strengthen the 22.9% direct channel.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 11090,
+        "engaged_sessions": 6275,
+        "engagement_rate": 0.5658
+      },
+      "mom": {
+        "sessions": 9388,
+        "engaged_sessions": 5223,
+        "engagement_rate": 0.5563
+      },
+      "yoy": {
+        "sessions": 2422,
+        "engaged_sessions": 1617,
+        "engagement_rate": 0.6676
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": 18.1,
+      "yoy_sessions_change_pct": 357.9,
+      "mom_engaged_sessions_change_pct": 20.1,
+      "yoy_engaged_sessions_change_pct": 288.1,
+      "mom_engagement_rate_change_pts": 0.0095,
+      "yoy_engagement_rate_change_pts": -0.1018
+    },
+    "events": [
+      {
+        "event_name": "internal_clicks",
+        "current": 3410,
+        "mom": 1458,
+        "yoy": 1718,
+        "mom_change_pct": 133.9,
+        "yoy_change_pct": 98.5
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 1090,
+        "mom": 902,
+        "yoy": 1024,
+        "mom_change_pct": 20.8,
+        "yoy_change_pct": 6.4
+      },
+      {
+        "event_name": "schedule_appointment",
+        "current": 155,
+        "mom": 109,
+        "yoy": 426,
+        "mom_change_pct": 42.2,
+        "yoy_change_pct": -63.6
+      },
+      {
+        "event_name": "contact_us",
+        "current": 21,
+        "mom": 16,
+        "yoy": 16,
+        "mom_change_pct": 31.2,
+        "yoy_change_pct": 31.2
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 8448,
+        "current_pct": 76.2,
+        "mom_sessions": 7409,
+        "yoy_sessions": 261,
+        "mom_sessions_change_pct": 14.0,
+        "yoy_sessions_change_pct": 3136.8
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 2543,
+        "current_pct": 22.9,
+        "mom_sessions": 2012,
+        "yoy_sessions": 2138,
+        "mom_sessions_change_pct": 26.4,
+        "yoy_sessions_change_pct": 18.9
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 88,
+        "current_pct": 0.8,
+        "mom_sessions": 79,
+        "yoy_sessions": 7,
+        "mom_sessions_change_pct": 11.4,
+        "yoy_sessions_change_pct": 1157.1
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 53,
+        "current_pct": 0.5,
+        "mom_sessions": 32,
+        "yoy_sessions": 17,
+        "mom_sessions_change_pct": 65.6,
+        "yoy_sessions_change_pct": 211.8
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 1,
+        "current_pct": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": -50.0
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 1763,
+        "current_engaged_sessions": 966,
+        "current_engagement_rate": 0.5479,
+        "mom_sessions": 1327,
+        "yoy_sessions": 2071,
+        "mom_sessions_change_pct": 32.9,
+        "yoy_sessions_change_pct": -14.9
+      },
+      {
+        "landing_page": "/ram/1500-2019-2025",
+        "current_sessions": 540,
+        "current_engaged_sessions": 317,
+        "current_engagement_rate": 0.587,
+        "mom_sessions": 587,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -8.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/honda/crv-2023-2025",
+        "current_sessions": 489,
+        "current_engaged_sessions": 296,
+        "current_engagement_rate": 0.6053,
+        "mom_sessions": 491,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -0.4,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/honda/crv-2017-2022",
+        "current_sessions": 426,
+        "current_engaged_sessions": 271,
+        "current_engagement_rate": 0.6362,
+        "mom_sessions": 319,
+        "yoy_sessions": 3,
+        "mom_sessions_change_pct": 33.5,
+        "yoy_sessions_change_pct": 14100.0
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 321,
+        "current_engaged_sessions": 8,
+        "current_engagement_rate": 0.0249,
+        "mom_sessions": 285,
+        "yoy_sessions": 55,
+        "mom_sessions_change_pct": 12.6,
+        "yoy_sessions_change_pct": 483.6
+      },
+      {
+        "landing_page": "/hyundai/elantra-2020-2025",
+        "current_sessions": 299,
+        "current_engaged_sessions": 158,
+        "current_engagement_rate": 0.5284,
+        "mom_sessions": 284,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 5.3,
+        "yoy_sessions_change_pct": 14850.0
+      },
+      {
+        "landing_page": "/jeep/grand-cherokee-2021-2025",
+        "current_sessions": 256,
+        "current_engaged_sessions": 159,
+        "current_engagement_rate": 0.6211,
+        "mom_sessions": 291,
+        "yoy_sessions": 4,
+        "mom_sessions_change_pct": -12.0,
+        "yoy_sessions_change_pct": 6300.0
+      },
+      {
+        "landing_page": "/ford/escape-2020-2025",
+        "current_sessions": 250,
+        "current_engaged_sessions": 149,
+        "current_engagement_rate": 0.596,
+        "mom_sessions": 213,
+        "yoy_sessions": 9,
+        "mom_sessions_change_pct": 17.4,
+        "yoy_sessions_change_pct": 2677.8
+      },
+      {
+        "landing_page": "/honda/civic-2022-2025",
+        "current_sessions": 241,
+        "current_engaged_sessions": 140,
+        "current_engagement_rate": 0.5809,
+        "mom_sessions": 215,
+        "yoy_sessions": 12,
+        "mom_sessions_change_pct": 12.1,
+        "yoy_sessions_change_pct": 1908.3
+      },
+      {
+        "landing_page": "/honda/crv-2012-2016",
+        "current_sessions": 212,
+        "current_engaged_sessions": 132,
+        "current_engagement_rate": 0.6226,
+        "mom_sessions": 261,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -18.8,
+        "yoy_sessions_change_pct": 10500.0
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 10881,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 9388,
+          "prior_year_sessions": 21
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 11090,
+          "prior_year_sessions": 2422
+        }
+      ],
+      "ytd_current": 31359,
+      "ytd_prior": 2443,
+      "ytd_change_pct": 1183.6
+    },
+    "summary": "The Services Funnel experienced robust growth in March 2026, with sessions climbing 18.1% MoM and 357.9% YoY to 11,090 total sessions. Organic Search dominates traffic at 76.2% of volume (+14.0% MoM, +3136.8% YoY), signaling strong SEO performance and sustained keyword relevance across vehicle-specific landing pages. Engagement rate held steady at 56.6% (+0.9 pp MoM), with 6,275 engaged sessions indicating consistent quality traffic despite the volume surge. However, high-value conversion events paint a mixed picture: schedule_appointment dropped significantly to 155 events (-63.6% YoY despite +42.2% MoM recovery), while internal_clicks surged 133.9% MoM to 3,410 events\u2014a concerning trend suggesting visitors are clicking through local pages rather than progressing deeper into the funnel. Contact_us events remained minimal at 21 (though +31.2% MoM/YoY). Year-to-date 2026 is tracking at 31,359 sessions vs. 2,443 in YTD 2025 (+1183.6%), with consistent monthly growth through January, February, and March establishing a strong seasonal trend. The absence of mainsite_clicks and calls data from the custom event feed should be flagged for tracking completeness.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Organic Search Momentum Accelerating",
+          "detail": "Organic Search sessions grew 14.0% MoM and 3136.8% YoY, now representing 76.2% of total traffic and driving most high-intent vehicle-specific landing pages (/ram/1500-2019-2025, /honda/crv-2023-2025, /hyundai/elantra-2020-2025). This suggests keyword targeting and SEO optimization are resonating strongly.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Vehicle-Specific Landing Pages Show Strong Engagement",
+          "detail": "/honda/crv-2017-2022 achieved 63.6% engagement rate (+33.5% MoM, +14100% YoY), and /honda/crv-2012-2016 maintained 62.3% engagement despite slight MoM decline. These model pages are converting intent effectively and should be templates for expansion.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Direct Traffic Growing Faster Than Overall",
+          "detail": "Direct sessions rose 26.4% MoM (2,543 total) and 18.9% YoY, indicating brand recall and repeat visitor loyalty. This is a healthier growth signal than organic alone and warrants retention marketing investment.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Schedule_Appointment Declining Sharply Year-Over-Year",
+          "detail": "Despite +42.2% MoM recovery, schedule_appointment events fell 63.6% YoY to 155 conversions. This is the primary high-value conversion event and the dramatic annual decline suggests friction in the booking flow or competitive pressure that requires immediate investigation.",
+          "severity": "high"
+        },
+        {
+          "title": "Internal Clicks Exploding at Expense of Funnel Depth",
+          "detail": "Internal_clicks surged 133.9% MoM and 98.5% YoY to 3,410 events\u2014the highest event volume by far. This suggests visitors are navigating within local pages rather than proceeding to scheduling or contacting, indicating poor funnel progression and potential UX friction.",
+          "severity": "high"
+        },
+        {
+          "title": "Overall Engagement Rate Declining Year-Over-Year",
+          "detail": "Engagement Rate fell 10.2 pp YoY to 56.6%, meaning traffic quality\u2014relative to volume\u2014has softened. Despite session growth, a smaller percentage of visitors are engaging meaningfully, suggesting audience composition shift or landing page fatigue.",
+          "severity": "medium"
+        },
+        {
+          "title": "Homepage Performance Slipping Annually",
+          "detail": "The homepage (/) logged 1,763 sessions with 54.8% engagement but declined 14.9% YoY. This flagship page should be driving funnel entry; its annual decline warrants content and CTA audits.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Resurrect Schedule_Appointment Conversion Path",
+          "detail": "With 155 events in March but -63.6% YoY decline, audit the booking flow on all vehicle-specific pages\u2014particularly high-traffic pages like /ram/1500-2019-2025 (540 sessions) and /honda/crv-2023-2025 (489 sessions). Test simplified booking CTAs, form optimization, and mobile UX to recover lost conversions.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Redirect Internal Navigation to Conversion Actions",
+          "detail": "Internal_clicks at 3,410 events (12.8% of engaged session actions) suggest visitors are browsing pages without converting. Implement sticky CTAs, exit-intent scheduling prompts, or guided navigation on vehicle model pages to funnel these clicks toward schedule_appointment or contact_us.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Scale Vehicle Model Pages Across Missing Makes/Models",
+          "detail": "Vehicle-specific pages (Honda CRV, RAM 1500, Hyundai Elantra, Ford Escape) are driving 60%+ engagement rates. Audit analytics for high-search-volume vehicle models missing from the site and prioritize content expansion to capture underserved organic demand.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize Direct Traffic for Scheduling Conversion",
+          "detail": "Direct traffic grew 26.4% MoM and represents 22.9% of sessions (2,543), suggesting engaged repeat visitors. Create a direct-traffic landing variant with prominent scheduling/contact prompts to convert this warm audience more efficiently than organic new visitors.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  }
+}

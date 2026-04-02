@@ -1,0 +1,643 @@
+{
+  "site_url": "https://locations.myautoloan.com/",
+  "display_name": "myAutoLoan",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 10994,
+        "engaged_sessions": 865,
+        "engagement_rate": 0.0787
+      },
+      "mom": {
+        "sessions": 34804,
+        "engaged_sessions": 2160,
+        "engagement_rate": 0.0621
+      },
+      "yoy": {
+        "sessions": 665,
+        "engaged_sessions": 366,
+        "engagement_rate": 0.5504
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -68.4,
+      "yoy_sessions_change_pct": 1553.2,
+      "mom_engaged_sessions_change_pct": -60.0,
+      "yoy_engaged_sessions_change_pct": 136.3,
+      "mom_engagement_rate_change_pts": 0.0166,
+      "yoy_engagement_rate_change_pts": -0.4717
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 254,
+        "mom": 260,
+        "yoy": 561,
+        "mom_change_pct": -2.3,
+        "yoy_change_pct": -54.7
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 129,
+        "mom": 68,
+        "yoy": 69,
+        "mom_change_pct": 89.7,
+        "yoy_change_pct": 87.0
+      },
+      {
+        "event_name": "apply_now",
+        "current": 91,
+        "mom": 122,
+        "yoy": 81,
+        "mom_change_pct": -25.4,
+        "yoy_change_pct": 12.3
+      },
+      {
+        "event_name": "calls",
+        "current": 2,
+        "mom": 3,
+        "yoy": 2,
+        "mom_change_pct": -33.3,
+        "yoy_change_pct": 0.0
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 10656,
+        "current_pct": 96.9,
+        "mom_sessions": 34255,
+        "yoy_sessions": 367,
+        "mom_sessions_change_pct": -68.9,
+        "yoy_sessions_change_pct": 2803.5
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 246,
+        "current_pct": 2.2,
+        "mom_sessions": 278,
+        "yoy_sessions": 272,
+        "mom_sessions_change_pct": -11.5,
+        "yoy_sessions_change_pct": -9.6
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 79,
+        "current_pct": 0.7,
+        "mom_sessions": 98,
+        "yoy_sessions": 17,
+        "mom_sessions_change_pct": -19.4,
+        "yoy_sessions_change_pct": 364.7
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 21,
+        "current_pct": 0.2,
+        "mom_sessions": 35,
+        "yoy_sessions": 12,
+        "mom_sessions_change_pct": -40.0,
+        "yoy_sessions_change_pct": 75.0
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 389,
+        "current_engaged_sessions": 153,
+        "current_engagement_rate": 0.3933,
+        "mom_sessions": 409,
+        "yoy_sessions": 335,
+        "mom_sessions_change_pct": -4.9,
+        "yoy_sessions_change_pct": 16.1
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 59,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 46,
+        "yoy_sessions": 13,
+        "mom_sessions_change_pct": 28.3,
+        "yoy_sessions_change_pct": 353.8
+      },
+      {
+        "landing_page": "/massachusetts/greenfield",
+        "current_sessions": 8,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/new-york",
+        "current_sessions": 8,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.25,
+        "mom_sessions": 0,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": 300.0
+      },
+      {
+        "landing_page": "/north-carolina/durham/1001-southpoint-auto-park-blvd",
+        "current_sessions": 8,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/maryland/easton/car-dealerships",
+        "current_sessions": 7,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/massachusetts/pittsfield",
+        "current_sessions": 7,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/michigan/dundee/4402-n-ann-arbor-rd",
+        "current_sessions": 7,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.2857,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/michigan/ypsilanti/refinance-auto-loans",
+        "current_sessions": 7,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/minnesota/litchfield",
+        "current_sessions": 7,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.1429,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 36484,
+          "prior_year_sessions": 674
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 32897,
+          "prior_year_sessions": 858
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 12833,
+          "prior_year_sessions": 667
+        }
+      ],
+      "ytd_current": 82214,
+      "ytd_prior": 2199,
+      "ytd_change_pct": 3638.7
+    },
+    "summary": "myAutoLoan experienced significant MoM decline across core metrics: sessions dropped 68.4% to 10,994, engaged sessions fell 60.0% to 865, and engagement rate softened by 1.7 pp to 7.9%. However, YoY growth remains exceptional\u2014sessions surged +1553.2% and engaged sessions grew +136.3%\u2014reflecting strong Q1 2026 momentum (82,214 YTD sessions vs. 2,199 in 2025, +3638.7%). Direct traffic dominates at 96.9% of sessions but declined 68.9% MoM, signaling potential seasonal pullback or campaign pause. High-value conversion events show mixed signals: apply_now dropped 25.4% MoM but grew 12.3% YoY (91 events), while calls nearly flatlined at only 2 events. Navigational clicks surged 89.7% MoM to 129 events, indicating increased site exploration but lower-intent behavior. The homepage (/) remains the strongest performer with 39.3% engagement rate and 153 engaged sessions, though it declined 4.9% MoM. Geographic landing pages show emerging traction in New York and Michigan locations, though most are newly tracked with minimal volume.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Homepage remains engagement engine",
+          "detail": "/ landing page drove 389 sessions with 39.3% engagement rate (153 engaged sessions), substantially outperforming all other pages and declining only 4.9% MoM despite overall traffic drop.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Apply_now event shows YoY resilience",
+          "detail": "apply_now maintained 91 events with +12.3% YoY growth despite 25.4% MoM decline, suggesting structural demand still outpaces seasonal volatility.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Geographic expansion emerging in key markets",
+          "detail": "/new-york and /michigan/dundee location pages each achieved 25\u201328.6% engagement rates on minimal traffic, indicating strong intent in these untapped markets.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Severe MoM traffic cliff",
+          "detail": "Sessions crashed 68.4% MoM to 10,994, with engaged sessions falling 60.0% to 865\u2014a steeper decline than the 11.5% organic search drop, suggesting either campaign pause, seasonality, or attribution shift affecting direct traffic dominance (96.9%).",
+          "severity": "high"
+        },
+        {
+          "title": "High-value phone calls nearly extinct",
+          "detail": "Calls dropped to only 2 events (down 33.3% MoM, flat YoY), representing a critical funnel break for one of the highest-intent conversion types in auto lending.",
+          "severity": "high"
+        },
+        {
+          "title": "Outbound clicks declining YoY despite engagement",
+          "detail": "outbound_clicks fell 54.7% YoY to 254 events, suggesting either reduced third-party routing or shifted user behavior away from external partner sites.",
+          "severity": "medium"
+        },
+        {
+          "title": "Engagement rate compression YoY",
+          "detail": "Engagement rate fell 47.2 pp YoY despite +136.3% growth in engaged session count, indicating Q1 2026 traffic surge brought lower-intent visitors to the site.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Recover direct traffic baseline",
+          "detail": "Direct traffic (96.9% of sessions) plummeted 68.9% MoM despite +2803.5% YoY growth\u2014investigate whether January/February campaign lift has subsided or if tracking/UTM implementation changed; reactivating or clarifying attribution could recapture thousands of sessions.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Resuscitate phone call pathway",
+          "detail": "Only 2 calls in 30 days represents massive untapped funnel potential; audit call-to-action placement on homepage (/), review call tracking implementation, and test prominent phone number CTAs above the fold to drive high-intent conversions.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Scale underperforming location pages",
+          "detail": "Geographic pages like /maryland/easton and /massachusetts/pittsfield show 0% engagement; analyze why /new-york and /michigan/dundee achieved 25%+ engagement, then apply messaging/UX learnings to similar location clusters to unlock localized demand.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Capitalize on navigational momentum",
+          "detail": "navigational_clicks jumped 89.7% MoM to 129 events\u2014users are exploring; pair with retargeting or personalized apply_now prompts to convert exploratory behavior into high-value apply_now or call events.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 12833,
+        "engaged_sessions": 973,
+        "engagement_rate": 0.0758
+      },
+      "mom": {
+        "sessions": 32897,
+        "engaged_sessions": 2018,
+        "engagement_rate": 0.0613
+      },
+      "yoy": {
+        "sessions": 667,
+        "engaged_sessions": 369,
+        "engagement_rate": 0.5532
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -61.0,
+      "yoy_sessions_change_pct": 1824.0,
+      "mom_engaged_sessions_change_pct": -51.8,
+      "yoy_engaged_sessions_change_pct": 163.7,
+      "mom_engagement_rate_change_pts": 0.0145,
+      "yoy_engagement_rate_change_pts": -0.4774
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 252,
+        "mom": 248,
+        "yoy": 573,
+        "mom_change_pct": 1.6,
+        "yoy_change_pct": -56.0
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 136,
+        "mom": 59,
+        "yoy": 80,
+        "mom_change_pct": 130.5,
+        "yoy_change_pct": 70.0
+      },
+      {
+        "event_name": "apply_now",
+        "current": 93,
+        "mom": 115,
+        "yoy": 82,
+        "mom_change_pct": -19.1,
+        "yoy_change_pct": 13.4
+      },
+      {
+        "event_name": "calls",
+        "current": 2,
+        "mom": 3,
+        "yoy": 2,
+        "mom_change_pct": -33.3,
+        "yoy_change_pct": 0.0
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 12473,
+        "current_pct": 97.2,
+        "mom_sessions": 32461,
+        "yoy_sessions": 364,
+        "mom_sessions_change_pct": -61.6,
+        "yoy_sessions_change_pct": 3326.6
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 252,
+        "current_pct": 2.0,
+        "mom_sessions": 259,
+        "yoy_sessions": 278,
+        "mom_sessions_change_pct": -2.7,
+        "yoy_sessions_change_pct": -9.4
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 85,
+        "current_pct": 0.7,
+        "mom_sessions": 90,
+        "yoy_sessions": 17,
+        "mom_sessions_change_pct": -5.6,
+        "yoy_sessions_change_pct": 400.0
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 21,
+        "current_pct": 0.2,
+        "mom_sessions": 34,
+        "yoy_sessions": 11,
+        "mom_sessions_change_pct": -38.2,
+        "yoy_sessions_change_pct": 90.9
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 407,
+        "current_engaged_sessions": 157,
+        "current_engagement_rate": 0.3857,
+        "mom_sessions": 383,
+        "yoy_sessions": 332,
+        "mom_sessions_change_pct": 6.3,
+        "yoy_sessions_change_pct": 22.6
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 61,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 42,
+        "yoy_sessions": 12,
+        "mom_sessions_change_pct": 45.2,
+        "yoy_sessions_change_pct": 408.3
+      },
+      {
+        "landing_page": "/north-carolina/durham/1001-southpoint-auto-park-blvd",
+        "current_sessions": 9,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/massachusetts/greenfield",
+        "current_sessions": 8,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/missouri/willow-springs/auto-loan-interest-rates",
+        "current_sessions": 8,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/new-york",
+        "current_sessions": 8,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.25,
+        "mom_sessions": 0,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": 300.0
+      },
+      {
+        "landing_page": "/north-carolina/raleigh/3910-capital-hills-dr",
+        "current_sessions": 8,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.125,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/florida",
+        "current_sessions": 7,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.4286,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/illinois/aurora/auto-loans",
+        "current_sessions": 7,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/maryland/clarksville/21029",
+        "current_sessions": 7,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 36484,
+          "prior_year_sessions": 674
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 32897,
+          "prior_year_sessions": 858
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 12833,
+          "prior_year_sessions": 667
+        }
+      ],
+      "ytd_current": 82214,
+      "ytd_prior": 2199,
+      "ytd_change_pct": 3638.7
+    },
+    "summary": "March 2026 traffic declined sharply MoM (-61.0% sessions) but remains dramatically elevated YoY (+1824.0%), with YTD 2026 at 82,214 sessions vs. 2,199 in YTD 2025 (+3638.7%). The monthly trend shows a deceleration pattern: January 2026 peaked at 36,484 sessions, February held at 32,897, and March dropped to 12,833\u2014suggesting either seasonal pullback, campaign wind-down, or market saturation. Engagement rate improved 1.5 percentage points MoM to 7.6%, though it lags YoY by 47.7 pp, indicating traffic quality is recovering relative to volume but remains below prior-year standards. Direct traffic dominates at 97.2% of sessions (12,473) but fell 61.6% MoM, while organic search remained stable MoM (-2.7%) and flat YoY (-9.4%). High-value conversion events are concerning: calls dropped 33.3% MoM to just 2 events, and apply_now declined 19.1% MoM to 93 events, despite healthy YoY growth of +13.4% in apply_now. Navigational clicks surged 130.5% MoM, suggesting users are exploring site structure but not converting; outbound_clicks held steady MoM (+1.6%) but fell 56.0% YoY. Homepage (/) remains the primary engagement driver at 38.6% engagement rate and 407 sessions, growing 6.3% MoM. YTD trajectory is strong, but March's sharp sequential decline and weak call volume warrant immediate investigation into channel health and conversion funnel optimization.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Homepage engagement is stable and outperforming",
+          "detail": "The / landing page maintains 38.6% engagement rate (157 engaged of 407 sessions) and grew 6.3% MoM\u2014the strongest performer by far among all pages.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Apply_now event shows YoY momentum despite MoM dip",
+          "detail": "Apply_now totaled 93 events with +13.4% YoY growth, signaling underlying user intent; the 19.1% MoM decline may be temporary and reversible with minor channel or messaging optimization.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Organic search is stable and efficient",
+          "detail": "Organic search held 252 sessions (2.0% of total) with only -2.7% MoM and -9.4% YoY change, indicating reliable baseline traffic and low churn risk for this channel.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Dramatic MoM session collapse signals upstream problem",
+          "detail": "Sessions plummeted 61.0% from February to March (32,897 \u2192 12,833), with direct traffic dropping 61.6% MoM. This sharp decline suggests a campaign pause, budget cut, or major channel disruption that requires immediate root-cause analysis.",
+          "severity": "high"
+        },
+        {
+          "title": "Phone calls have nearly disappeared",
+          "detail": "Only 2 call events in March, down 33.3% MoM and unchanged YoY\u2014this is a critical conversion signal. Combined with the apply_now decline, it indicates the funnel is leaking at high-intent stages.",
+          "severity": "high"
+        },
+        {
+          "title": "Engagement quality remains far below prior-year baseline",
+          "detail": "Engagement rate is 47.7 pp lower YoY (7.6% vs. 55.3% implied), meaning the traffic influx is substantially lower-intent despite high volume gains. This suggests audience composition has shifted negatively or targeting accuracy has degraded.",
+          "severity": "high"
+        },
+        {
+          "title": "Navigational clicks surging while conversion stalls",
+          "detail": "Navigational clicks jumped 130.5% MoM and +70.0% YoY to 136 events, but high-value events (calls, apply_now) are declining\u2014users are clicking through pages without converting.",
+          "severity": "medium"
+        },
+        {
+          "title": "Location-specific pages show zero engagement",
+          "detail": "Multiple location pages (Durham NC, Greenfield MA, Willow Springs MO, Aurora IL, Clarksville MD) are attracting 7\u20139 sessions each with 0% engagement, indicating either poor landing page relevance or mismatched user intent.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Investigate and revive the direct traffic channel",
+          "detail": "Direct traffic represents 97.2% of sessions but fell 61.6% MoM\u2014this channel is the lifeblood of the site. Audit email campaigns, branded search, and bookmark/repeat visitor flows to identify the collapse point and recover volume.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Optimize location landing pages for engagement",
+          "detail": "State and city-level pages (NC, MA, MO, IL, MD) are capturing traffic but zero conversions, suggesting poor page design, weak CTAs, or mismatched audience. A/B test messaging, add prominent call/apply buttons, and evaluate whether these pages should exist or redirect to homepage.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Rebuild call volume through funnel optimization",
+          "detail": "With only 2 calls in March, audit the call-initiation path on homepage and apply_now pages. Add click-to-call buttons above the fold, simplify phone contact forms, and test SMS scheduling as an alternative high-intent conversion event.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Reduce navigational friction and increase apply_now prominence",
+          "detail": "Users are clicking internal navigation (+130.5% MoM) but not applying; this suggests unclear CTA hierarchy. Consolidate navigation, make apply_now more discoverable on key pages, and test exit-intent offers to capture users exploring without converting.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  }
+}

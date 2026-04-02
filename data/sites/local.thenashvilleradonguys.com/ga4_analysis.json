@@ -1,0 +1,678 @@
+{
+  "site_url": "https://local.thenashvilleradonguys.com/",
+  "display_name": "The Radon Guys",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 332,
+        "engaged_sessions": 68,
+        "engagement_rate": 0.2048
+      },
+      "mom": {
+        "sessions": 458,
+        "engaged_sessions": 79,
+        "engagement_rate": 0.1725
+      },
+      "yoy": {
+        "sessions": 63,
+        "engaged_sessions": 45,
+        "engagement_rate": 0.7143
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -27.5,
+      "yoy_sessions_change_pct": 427.0,
+      "mom_engaged_sessions_change_pct": -13.9,
+      "yoy_engaged_sessions_change_pct": 51.1,
+      "mom_engagement_rate_change_pts": 0.0323,
+      "yoy_engagement_rate_change_pts": -0.5095
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 47,
+        "mom": 66,
+        "yoy": 44,
+        "mom_change_pct": -28.8,
+        "yoy_change_pct": 6.8
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 39,
+        "mom": 40,
+        "yoy": 29,
+        "mom_change_pct": -2.5,
+        "yoy_change_pct": 34.5
+      },
+      {
+        "event_name": "store_locate",
+        "current": 24,
+        "mom": 22,
+        "yoy": 8,
+        "mom_change_pct": 9.1,
+        "yoy_change_pct": 200.0
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 11,
+        "mom": 10,
+        "yoy": 17,
+        "mom_change_pct": 10.0,
+        "yoy_change_pct": -35.3
+      },
+      {
+        "event_name": "calls",
+        "current": 5,
+        "mom": 13,
+        "yoy": 11,
+        "mom_change_pct": -61.5,
+        "yoy_change_pct": -54.5
+      },
+      {
+        "event_name": "shop_now",
+        "current": 2,
+        "mom": 1,
+        "yoy": 2,
+        "mom_change_pct": 100.0,
+        "yoy_change_pct": 0.0
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 299,
+        "current_pct": 90.1,
+        "mom_sessions": 410,
+        "yoy_sessions": 23,
+        "mom_sessions_change_pct": -27.1,
+        "yoy_sessions_change_pct": 1200.0
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 30,
+        "current_pct": 9.0,
+        "mom_sessions": 43,
+        "yoy_sessions": 37,
+        "mom_sessions_change_pct": -30.2,
+        "yoy_sessions_change_pct": -18.9
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 2,
+        "current_pct": 0.6,
+        "mom_sessions": 2,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 0.0,
+        "yoy_sessions_change_pct": 0.0
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 1,
+        "current_pct": 0.3,
+        "mom_sessions": 2,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -50.0,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 177,
+        "current_engaged_sessions": 36,
+        "current_engagement_rate": 0.2034,
+        "mom_sessions": 200,
+        "yoy_sessions": 24,
+        "mom_sessions_change_pct": -11.5,
+        "yoy_sessions_change_pct": 637.5
+      },
+      {
+        "landing_page": "/kentucky/bowling-green",
+        "current_sessions": 9,
+        "current_engaged_sessions": 8,
+        "current_engagement_rate": 0.8889,
+        "mom_sessions": 11,
+        "yoy_sessions": 7,
+        "mom_sessions_change_pct": -18.2,
+        "yoy_sessions_change_pct": 28.6
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 4,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 5,
+        "yoy_sessions": 3,
+        "mom_sessions_change_pct": -20.0,
+        "yoy_sessions_change_pct": 33.3
+      },
+      {
+        "landing_page": "/tennessee/columbia",
+        "current_sessions": 4,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 4,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 0.0,
+        "yoy_sessions_change_pct": 100.0
+      },
+      {
+        "landing_page": "/tennessee/dickson",
+        "current_sessions": 4,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.25,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/kentucky/bowling-green/42104",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/cross-plains",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/mt-juliet",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 4,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -25.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/kentucky",
+        "current_sessions": 2,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 2,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 0.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/kentucky/allensville",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 784,
+          "prior_year_sessions": 38
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 424,
+          "prior_year_sessions": 52
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 344,
+          "prior_year_sessions": 64
+        }
+      ],
+      "ytd_current": 1552,
+      "ytd_prior": 154,
+      "ytd_change_pct": 907.8
+    },
+    "summary": "The Radon Guys' local pages site delivered 332 sessions over the last 30 days, representing a sharp -27.5% MoM decline but a remarkable +427.0% YoY surge. Despite the month-over-month contraction, engagement rate improved by 3.2 percentage points to 20.5%, signaling healthier quality traffic\u2014only 68 of 332 sessions engaged, but those that did showed intent. Direct traffic dominates at 90.1% of sessions (299) with explosive +1200% YoY growth, though it also fell -27.1% MoM, suggesting seasonal or campaign-driven volatility. High-value conversions show mixed signals: mainsite_clicks held steady at 39 events (-2.5% MoM, +34.5% YoY), but critical phone calls plummeted to just 5 events (-61.5% MoM, -54.5% YoY)\u2014a concerning trend for a service-based business. The bright spot is store_locate interactions, which grew +9.1% MoM and surged +200.0% YoY to 24 events, indicating strong location-specific intent. Year-to-date momentum remains exceptional at +907.8% vs. 2025 (1,552 vs. 154 sessions), though March's 344 sessions signal a deceleration pattern after January's 784-session peak.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Bowling Green, KY page driving outsized engagement",
+          "detail": "/kentucky/bowling-green generated 9 sessions with 88.9% engagement rate\u2014the highest of all location pages\u2014suggesting this market is particularly receptive to the service offering.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Store locator momentum accelerating",
+          "detail": "store_locate events grew +9.1% MoM and +200.0% YoY to 24 events, proving the location-finder tool is resonating and driving high-intent traffic toward conversion funnels.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Mainsite clicks stable despite traffic decline",
+          "detail": "mainsite_clicks held at 39 events with only -2.5% MoM decline while overall sessions fell -27.5%, indicating visitors who land on local pages are increasingly likely to navigate to the main site\u2014a sign of effective funnel design.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Phone calls in freefall",
+          "detail": "calls dropped to just 5 events, down -61.5% MoM and -54.5% YoY\u2014a critical conversion metric for a service business. This suggests either landing page messaging is not driving phone intent, or call-to-action placement/visibility needs immediate review.",
+          "severity": "high"
+        },
+        {
+          "title": "Month-over-month traffic contraction accelerating",
+          "detail": "Sessions fell -27.5% MoM after Q1's peak in January (784 sessions); March dropped to 344 sessions. If this trend continues into April, the YTD growth narrative will weaken significantly.",
+          "severity": "high"
+        },
+        {
+          "title": "Organic search declining YoY",
+          "detail": "Organic search delivered only 30 sessions (9% of total) with -30.2% MoM and -18.9% YoY decline. Over-reliance on direct traffic (90.1%) and weak organic performance suggests SEO or content visibility issues.",
+          "severity": "medium"
+        },
+        {
+          "title": "Homepage engagement concentrated but limited in reach",
+          "detail": "The homepage (/) captured 177 sessions and 36 engaged sessions, yet engagement rate of 20.3% lags behind location-specific pages like Bowling Green (88.9%). Homepage messaging may need localization or clearer CTAs.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Revive phone call conversion pathway",
+          "detail": "With calls at an all-time low (5 events, -61.5% MoM), audit landing page CTA prominence, phone number visibility, and click-to-call functionality across all location pages. Test click-to-call buttons above the fold and implement local number formatting.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Scale Bowling Green success across other location pages",
+          "detail": "Bowling Green's 88.9% engagement rate vastly outperforms other locations. Analyze messaging, CTA structure, and layout on that page and replicate it across underperforming location pages like Tennessee/Columbia (0% engagement) and Tennessee/Dickson (25%).",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Rebuild organic search traffic and reduce direct traffic dependency",
+          "detail": "Organic search is down -30.2% MoM and -18.9% YoY to just 30 sessions; 90.1% reliance on direct traffic creates channel risk. Invest in location-based SEO content and link-building for high-intent local keywords in service areas.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Expand store_locate promotion and integration",
+          "detail": "store_locate events grew +200% YoY and +9.1% MoM (24 events), proving strong location-finder intent. Promote this tool more prominently on the homepage and in navigation, and ensure it links directly to booking or call-initiation flows.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 344,
+        "engaged_sessions": 72,
+        "engagement_rate": 0.2093
+      },
+      "mom": {
+        "sessions": 424,
+        "engaged_sessions": 72,
+        "engagement_rate": 0.1698
+      },
+      "yoy": {
+        "sessions": 64,
+        "engaged_sessions": 45,
+        "engagement_rate": 0.7031
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -18.9,
+      "yoy_sessions_change_pct": 437.5,
+      "mom_engaged_sessions_change_pct": 0.0,
+      "yoy_engaged_sessions_change_pct": 60.0,
+      "mom_engagement_rate_change_pts": 0.0395,
+      "yoy_engagement_rate_change_pts": -0.4938
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 51,
+        "mom": 61,
+        "yoy": 44,
+        "mom_change_pct": -16.4,
+        "yoy_change_pct": 15.9
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 42,
+        "mom": 36,
+        "yoy": 29,
+        "mom_change_pct": 16.7,
+        "yoy_change_pct": 44.8
+      },
+      {
+        "event_name": "store_locate",
+        "current": 26,
+        "mom": 19,
+        "yoy": 7,
+        "mom_change_pct": 36.8,
+        "yoy_change_pct": 271.4
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 10,
+        "mom": 10,
+        "yoy": 17,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": -41.2
+      },
+      {
+        "event_name": "calls",
+        "current": 5,
+        "mom": 13,
+        "yoy": 11,
+        "mom_change_pct": -61.5,
+        "yoy_change_pct": -54.5
+      },
+      {
+        "event_name": "shop_now",
+        "current": 2,
+        "mom": 1,
+        "yoy": 2,
+        "mom_change_pct": 100.0,
+        "yoy_change_pct": 0.0
+      },
+      {
+        "event_name": "locate_me",
+        "current": 1,
+        "mom": 7,
+        "yoy": 1,
+        "mom_change_pct": -85.7,
+        "yoy_change_pct": 0.0
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 308,
+        "current_pct": 89.5,
+        "mom_sessions": 381,
+        "yoy_sessions": 22,
+        "mom_sessions_change_pct": -19.2,
+        "yoy_sessions_change_pct": 1300.0
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 33,
+        "current_pct": 9.6,
+        "mom_sessions": 38,
+        "yoy_sessions": 39,
+        "mom_sessions_change_pct": -13.2,
+        "yoy_sessions_change_pct": -15.4
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 2,
+        "current_pct": 0.6,
+        "mom_sessions": 2,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 0.0,
+        "yoy_sessions_change_pct": 0.0
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 1,
+        "current_pct": 0.3,
+        "mom_sessions": 2,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -50.0,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 186,
+        "current_engaged_sessions": 38,
+        "current_engagement_rate": 0.2043,
+        "mom_sessions": 184,
+        "yoy_sessions": 23,
+        "mom_sessions_change_pct": 1.1,
+        "yoy_sessions_change_pct": 708.7
+      },
+      {
+        "landing_page": "/kentucky/bowling-green",
+        "current_sessions": 7,
+        "current_engaged_sessions": 7,
+        "current_engagement_rate": 1.0,
+        "mom_sessions": 11,
+        "yoy_sessions": 11,
+        "mom_sessions_change_pct": -36.4,
+        "yoy_sessions_change_pct": -36.4
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 5,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 4,
+        "yoy_sessions": 3,
+        "mom_sessions_change_pct": 25.0,
+        "yoy_sessions_change_pct": 66.7
+      },
+      {
+        "landing_page": "/kentucky",
+        "current_sessions": 4,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/dickson",
+        "current_sessions": 4,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.25,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/mt-juliet",
+        "current_sessions": 4,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.25,
+        "mom_sessions": 3,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 33.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/murfreesboro",
+        "current_sessions": 4,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/kentucky/bowling-green/42104",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/bell-buckle",
+        "current_sessions": 3,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 2,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 50.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/columbia",
+        "current_sessions": 3,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 4,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -25.0,
+        "yoy_sessions_change_pct": 50.0
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 784,
+          "prior_year_sessions": 38
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 424,
+          "prior_year_sessions": 52
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 344,
+          "prior_year_sessions": 64
+        }
+      ],
+      "ytd_current": 1552,
+      "ytd_prior": 154,
+      "ytd_change_pct": 907.8
+    },
+    "summary": "The Radon Guys experienced a significant traffic decline MoM (-18.9%) in March 2026, dropping from 424 to 344 sessions, though YoY growth remains exceptional at +437.5% versus March 2025's 64 sessions. Despite the monthly pullback, engagement rate improved +4.0 pp to 20.9%, signaling that remaining traffic is more qualified. Direct traffic dominates at 89.5% of sessions with extraordinary YoY growth (+1300%), indicating strong brand awareness and repeat visitation, though it declined slightly MoM (-19.2%). High-value conversion signals show mixed momentum: mainsite_clicks grew +16.7% MoM and +44.8% YoY (42 events), while critical phone calls collapsed -61.5% MoM and -54.5% YoY (5 events). Store location finder interactions surged +36.8% MoM and +271.4% YoY (26 events), representing the strongest conversion intent signal. YTD 2026 performance is outstanding at 1,552 sessions (+907.8% vs YTD 2025's 154), though the three-month trajectory shows deceleration: January's +1963.2% YoY growth moderated to March's +437.5%, suggesting market saturation or seasonal normalization.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Store locator momentum accelerating",
+          "detail": "store_locate events grew +36.8% MoM and +271.4% YoY, demonstrating strong local intent signals; this is the highest-performing high-intent conversion event on the property.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Homepage engagement remaining stable",
+          "detail": "The / landing page generated 186 sessions with a 20.4% engagement rate and sustained +1.1% MoM growth despite overall traffic decline, with YoY growth of +708.7% showing foundational brand strength.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Mainsite clicks trending upward",
+          "detail": "mainsite_clicks grew +16.7% MoM to 42 events and +44.8% YoY, indicating deeper funnel progression and users advancing toward primary conversion destinations.",
+          "impact": "high",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Phone call conversions in freefall",
+          "detail": "calls dropped -61.5% MoM (from 13 to 5 events) and -54.5% YoY, representing the steepest decline among high-value conversion events and a critical funnel leakage point.",
+          "severity": "high"
+        },
+        {
+          "title": "Monthly traffic deceleration trend",
+          "detail": "Sessions fell -18.9% MoM and YoY growth compressed from January's +1963.2% to March's +437.5%, signaling potential market saturation or seasonal decline after Q1 spike.",
+          "severity": "medium"
+        },
+        {
+          "title": "Organic search underperforming",
+          "detail": "Organic search contributed only 33 sessions (9.6% of traffic) and declined -13.2% MoM and -15.4% YoY, suggesting SEO visibility or keyword strategy may need optimization.",
+          "severity": "medium"
+        },
+        {
+          "title": "Multiple location pages showing zero engagement",
+          "detail": "Pages like /tennessee/murfreesboro, /tennessee/bell-buckle, and /tennessee/columbia recorded 3\u20134 sessions each with 0% engagement, indicating potential irrelevant traffic or poor landing page relevance.",
+          "severity": "low"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Resurrect phone call conversion funnel",
+          "detail": "With calls down -61.5% MoM, audit call-to-action placement, button visibility, and mobile usability across top landing pages; prioritize the homepage (/) and /kentucky/bowling-green where engagement is strong.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Expand organic search investment",
+          "detail": "Organic search represents only 9.6% of sessions despite a +437.5% YoY baseline; developing location-specific content and radon-service keywords could capture high-intent search volume and reduce reliance on Direct traffic.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Leverage store locator success into booking actions",
+          "detail": "store_locate events are thriving (+271.4% YoY, 26 events), but no booking/scheduling events are tracked; implement post-locator prompts to convert location-finders into appointment bookings and capture the momentum.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize underperforming local landing pages",
+          "detail": "Pages like /tennessee/murfreesboro, /tennessee/bell-buckle, and /tennessee/columbia show 0% engagement; consolidate, refresh content, or redirect to higher-performing location pages like /kentucky/bowling-green (100% engagement).",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  }
+}

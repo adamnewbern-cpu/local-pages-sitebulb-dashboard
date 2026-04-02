@@ -1,0 +1,634 @@
+{
+  "site_url": "https://find.telemedsforme.com/",
+  "display_name": "TelemedsForMe Local",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 68,
+        "engaged_sessions": 14,
+        "engagement_rate": 0.2059
+      },
+      "mom": {
+        "sessions": 1318,
+        "engaged_sessions": 41,
+        "engagement_rate": 0.0311
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": -94.8,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": -65.9,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": 0.1748,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "internal_clicks",
+        "current": 17,
+        "mom": 36,
+        "yoy": null,
+        "mom_change_pct": -52.8,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 13,
+        "mom": 63,
+        "yoy": null,
+        "mom_change_pct": -79.4,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "shop_glp1s",
+        "current": 11,
+        "mom": 55,
+        "yoy": null,
+        "mom_change_pct": -80.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "get_started_by_state_clicks",
+        "current": 7,
+        "mom": 40,
+        "yoy": null,
+        "mom_change_pct": -82.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "blog_clicks",
+        "current": 1,
+        "mom": 1,
+        "yoy": null,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 46,
+        "current_pct": 67.6,
+        "mom_sessions": 1251,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -96.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 14,
+        "current_pct": 20.6,
+        "mom_sessions": 13,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 7.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 6,
+        "current_pct": 8.8,
+        "mom_sessions": 45,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -86.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 2,
+        "current_pct": 2.9,
+        "mom_sessions": 10,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -80.0,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 15,
+        "current_engaged_sessions": 8,
+        "current_engagement_rate": 0.5333,
+        "mom_sessions": 34,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -55.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/alaska/fairbanks",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california",
+        "current_sessions": 2,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 5,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -60.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/berkeley",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/chino",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 6,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -66.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/alaska/sitka",
+        "current_sessions": 1,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 6,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -83.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/arizona/carefree",
+        "current_sessions": 1,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 5,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -80.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/bell",
+        "current_sessions": 1,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 5,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -80.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/cypress",
+        "current_sessions": 1,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/lompoc",
+        "current_sessions": 1,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 3283,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 1220,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 165,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 4668,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "TelemedsForMe Local experienced a severe traffic contraction MoM, declining 94.8% from 68 sessions in the last 30 days. Engagement rate improved 17.5 percentage points to 20.6%, suggesting that remaining traffic is higher-intent, though absolute engaged sessions fell 65.9% to just 14. All custom event categories declined sharply: shop_glp1s (-80.0%), get_started_by_state_clicks (-82.5%), outbound_clicks (-79.4%), and internal_clicks (-52.8%), indicating a broad loss of user interaction across the funnel. Direct traffic collapsed 96.3% MoM while organic search held relatively steady with a modest 7.7% gain, becoming the second-largest channel at 20.6% of sessions. YTD trajectory shows a steep monthly decline from 3,283 sessions in January to 165 in March, signaling ongoing momentum loss despite the property being newly implemented in GA4.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Organic search gaining relative ground",
+          "detail": "Organic search +7.7% MoM and now represents 20.6% of total traffic, outpacing referral and unassigned channels. Double down on SEO for high-intent local keywords (e.g., telemedicine + location) to rebuild traffic cost-efficiently.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Homepage still driving half of all engagement",
+          "detail": "The homepage (/) maintains a 53.3% engagement rate with 8 engaged sessions, making it the strongest landing page by far. Optimize this page's CTA visibility and layout to capitalize on remaining qualified traffic.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Catastrophic direct traffic decline",
+          "detail": "Direct traffic plummeted 96.3% MoM from an implied ~1,204 sessions to 46, suggesting either a major loss of repeat/bookmarked visitors, removal from email campaigns, or tracking issues. Verify GA4 implementation and investigate whether users are still returning via branded search or bookmarks.",
+          "severity": "high"
+        },
+        {
+          "title": "Funnel engagement events collapsing across the board",
+          "detail": "All four tracked custom events (shop_glp1s, get_started_by_state_clicks, outbound_clicks, internal_clicks) declined 52\u201382% MoM, with no high-value conversion events (calls, book_now, schedule_) visible in the report. This indicates minimal downstream conversion activity and suggests either content friction or user drop-off early in the funnel.",
+          "severity": "high"
+        },
+        {
+          "title": "Local landing pages showing zero or near-zero engagement",
+          "detail": "Geo-specific pages (/california/berkeley, /california/chino, /alaska/fairbanks, /arizona/carefree, etc.) are receiving sparse traffic and converting at 0% engagement. These pages may lack relevant content, CTAs, or organic visibility to drive qualified local traffic.",
+          "severity": "medium"
+        },
+        {
+          "title": "Steep month-over-month session erosion throughout Q1",
+          "detail": "Sessions declined 63% from January (3,283) to March (165), indicating a structural problem beyond seasonal variation. Without YoY data, root causes are unclear, but this trajectory suggests urgent investigation into site changes, marketing pullback, or algorithm/platform issues.",
+          "severity": "high"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Revive direct traffic through email and branded campaigns",
+          "detail": "Direct traffic represents 67.6% of remaining sessions but dropped 96.3% MoM. Rebuild this channel through re-engagement email campaigns, SMS, and paid brand awareness to restore repeat visitor volume and stabilize baseline traffic.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Improve local landing page content and CTAs",
+          "detail": "State and city-level pages (/california, /california/berkeley, /alaska/fairbanks, etc.) show 0\u201350% engagement and minimal session volume despite being core to a local telemedicine strategy. Audit these pages for relevance, location-specific offers, and prominent scheduling/call-to-action buttons.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Investigate missing high-value conversion events",
+          "detail": "The event glossary includes calls, book_now, schedule_, and appointment_ as high-value conversions, but none appear in the last 30 days of data. Verify these events are firing correctly in GA4 and audit the conversion funnel to identify where users drop off before booking.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Expand organic search as primary growth lever",
+          "detail": "Organic search is the only channel showing resilience (+7.7% MoM) and now accounts for 20.6% of traffic. Invest in local SEO content, reviews, and schema markup for state/city landing pages to capture high-intent telemedicine searches and offset direct traffic losses.",
+          "impact": "high",
+          "effort": "medium"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 165,
+        "engaged_sessions": 15,
+        "engagement_rate": 0.0909
+      },
+      "mom": {
+        "sessions": 1220,
+        "engaged_sessions": 40,
+        "engagement_rate": 0.0328
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": -86.5,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": -62.5,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": 0.0581,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "internal_clicks",
+        "current": 20,
+        "mom": 33,
+        "yoy": null,
+        "mom_change_pct": -39.4,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 16,
+        "mom": 60,
+        "yoy": null,
+        "mom_change_pct": -73.3,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "shop_glp1s",
+        "current": 14,
+        "mom": 52,
+        "yoy": null,
+        "mom_change_pct": -73.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "get_started_by_state_clicks",
+        "current": 9,
+        "mom": 38,
+        "yoy": null,
+        "mom_change_pct": -76.3,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "blog_clicks",
+        "current": 1,
+        "mom": 1,
+        "yoy": null,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 139,
+        "current_pct": 84.2,
+        "mom_sessions": 1157,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -88.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 14,
+        "current_pct": 8.5,
+        "mom_sessions": 13,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 7.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 9,
+        "current_pct": 5.5,
+        "mom_sessions": 42,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -78.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 3,
+        "current_pct": 1.8,
+        "mom_sessions": 9,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -66.7,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 18,
+        "current_engaged_sessions": 9,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 31,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -41.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/alaska/fairbanks",
+        "current_sessions": 3,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/chino",
+        "current_sessions": 3,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 5,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -40.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/alaska/sitka",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 5,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -60.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/arizona/tempe",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/beumont",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/buena-park",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 5,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -60.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/castro-valley",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/coachella",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 3283,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 1220,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 165,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 4668,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "March 2026 represents a significant traffic decline MoM, with sessions dropping 86.5% from February's 1,220 to 165\u2014a concerning downward trajectory across Q1 2026 (4,668 YTD sessions). Despite this sharp traffic loss, engagement rate improved 5.8 percentage points to 9.1%, suggesting that remaining visitors are higher-intent; however, absolute engaged sessions fell 62.5%, indicating quality gains cannot offset volume losses. All major conversion-adjacent events declined sharply: outbound_clicks (-73.3%), shop_glp1s (-73.1%), and get_started_by_state_clicks (-76.3%), signaling both reduced traffic and weakened funnel performance. Direct traffic dominates at 84.2% but suffered an 88.0% MoM drop, while organic search held relatively steady at 14 sessions (+7.7%), positioning it as the only growth channel. The homepage (/) remains the strongest performer with 50% engagement, but its 41.9% session decline mirrors overall traffic loss. This property requires urgent diagnosis of traffic acquisition and funnel health to reverse the steep March decline.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Organic Search as Stable Channel",
+          "detail": "Organic Search grew 7.7% MoM and now accounts for 8.5% of traffic (14 sessions). Double down on SEO content for high-intent location pages (e.g., /california, /alaska) to capture users actively searching for telemedicine services.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Homepage Engagement Strength",
+          "detail": "The homepage (/) maintains 50% engagement rate despite 41.9% session decline, proving it converts available traffic effectively. Ensure homepage copy, CTAs, and navigation are optimized to funnel visitors toward book_now or mainsite_clicks events.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Catastrophic Direct Traffic Collapse",
+          "detail": "Direct traffic plummeted 88.0% MoM, dropping from ~1,163 sessions in February to 139 in March. This suggests either a major brand awareness loss, broken bookmarks/direct links, or algorithmic/technical issues preventing repeat visitors from returning\u2014urgent investigation required.",
+          "severity": "high"
+        },
+        {
+          "title": "High-Value Conversion Events Crashing",
+          "detail": "get_started_by_state_clicks (-76.3%) and shop_glp1s (-73.1%) declined dramatically, indicating users are not progressing through the funnel to scheduling or medication exploration stages. These are critical mid-to-lower funnel signals that demand immediate funnel audit.",
+          "severity": "high"
+        },
+        {
+          "title": "Geographic Page Engagement Stalled",
+          "detail": "Most location-specific landing pages (/california/chino, /alaska/sitka, /arizona/tempe, etc.) show 0% engagement despite receiving 2\u20133 sessions each. These pages are not converting intent into action, suggesting weak page design, unclear CTAs, or poor product-market fit messaging.",
+          "severity": "medium"
+        },
+        {
+          "title": "Overall Session Decline Across Q1",
+          "detail": "YTD sessions show a steep downward trend: January (3,283) \u2192 February (1,220) \u2192 March (165). If this decline continues, property will soon become unmeasurable; root-cause analysis of acquisition and retention is critical.",
+          "severity": "high"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Revive Direct Traffic Channel",
+          "detail": "Direct traffic represents 84.2% of volume but collapsed 88% MoM. Investigate whether brand campaigns, email lists, or repeat-visitor pathways have been disrupted; implement retargeting and email nurture sequences to recover this lost audience segment.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Optimize Geographic Landing Pages for Engagement",
+          "detail": "Location pages (e.g., /california, /alaska/fairbanks, /california/chino) receive traffic but generate zero engagement. Audit messaging, add localized CTAs, prominent book_now or schedule_appointment buttons, and ensure location-specific value props are clear to convert geographic intent.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Debug Conversion Event Funnel",
+          "detail": "shop_glp1s and get_started_by_state_clicks represent critical mid-funnel steps that both declined >73% MoM. Conduct full funnel audit from landing page \u2192 call-to-action \u2192 conversion event to identify breakage points, form errors, or unclear messaging blocking progression.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Expand Organic Search Presence",
+          "detail": "Organic search is the only channel with positive MoM growth (+7.7%) and has lower churn risk than direct. Increase SEO investment in high-intent location-based keywords (e.g., 'telemedicine [city]', 'schedule GLP-1 [state]') and build internal linking from homepage to top-performing location pages.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  }
+}

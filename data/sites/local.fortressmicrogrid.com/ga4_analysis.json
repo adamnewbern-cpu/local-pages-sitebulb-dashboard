@@ -1,0 +1,667 @@
+{
+  "site_url": "https://local.fortressmicrogrid.com/",
+  "display_name": "Fortress Microgrid",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 344,
+        "engaged_sessions": 31,
+        "engagement_rate": 0.0901
+      },
+      "mom": {
+        "sessions": 596,
+        "engaged_sessions": 54,
+        "engagement_rate": 0.0906
+      },
+      "yoy": {
+        "sessions": 50,
+        "engaged_sessions": 24,
+        "engagement_rate": 0.48
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -42.3,
+      "yoy_sessions_change_pct": 588.0,
+      "mom_engaged_sessions_change_pct": -42.6,
+      "yoy_engaged_sessions_change_pct": 29.2,
+      "mom_engagement_rate_change_pts": -0.0005,
+      "yoy_engagement_rate_change_pts": -0.3899
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 18,
+        "mom": 26,
+        "yoy": 18,
+        "mom_change_pct": -30.8,
+        "yoy_change_pct": 0.0
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 16,
+        "mom": 23,
+        "yoy": 15,
+        "mom_change_pct": -30.4,
+        "yoy_change_pct": 6.7
+      },
+      {
+        "event_name": "contact_us",
+        "current": 6,
+        "mom": 6,
+        "yoy": 8,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": -25.0
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 4,
+        "mom": 5,
+        "yoy": 7,
+        "mom_change_pct": -20.0,
+        "yoy_change_pct": -42.9
+      },
+      {
+        "event_name": "calls",
+        "current": 1,
+        "mom": 2,
+        "yoy": 0,
+        "mom_change_pct": -50.0,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 312,
+        "current_pct": 90.7,
+        "mom_sessions": 566,
+        "yoy_sessions": 19,
+        "mom_sessions_change_pct": -44.9,
+        "yoy_sessions_change_pct": 1542.1
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 25,
+        "current_pct": 7.3,
+        "mom_sessions": 26,
+        "yoy_sessions": 26,
+        "mom_sessions_change_pct": -3.8,
+        "yoy_sessions_change_pct": -3.8
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 6,
+        "current_pct": 1.7,
+        "mom_sessions": 1,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": 500.0,
+        "yoy_sessions_change_pct": 500.0
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 1,
+        "current_pct": 0.3,
+        "mom_sessions": 3,
+        "yoy_sessions": 4,
+        "mom_sessions_change_pct": -66.7,
+        "yoy_sessions_change_pct": -75.0
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 135,
+        "current_engaged_sessions": 4,
+        "current_engagement_rate": 0.0296,
+        "mom_sessions": 124,
+        "yoy_sessions": 24,
+        "mom_sessions_change_pct": 8.9,
+        "yoy_sessions_change_pct": 462.5
+      },
+      {
+        "landing_page": "/texas",
+        "current_sessions": 5,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.6,
+        "mom_sessions": 8,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -37.5,
+        "yoy_sessions_change_pct": 150.0
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 4,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": 300.0
+      },
+      {
+        "landing_page": "/texas/carrollton/fortress-microgrid",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/texas/fort-worth/fortress-microgrid",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/texas/katy/generators",
+        "current_sessions": 3,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/texas/levelland/fortress-microgrid",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/texas/lockhart/solar-storage",
+        "current_sessions": 3,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/texas/wichita-falls/fortress-microgrid",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/texas/amarillo/tesla-solar-roof",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 978,
+          "prior_year_sessions": 56
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 566,
+          "prior_year_sessions": 32
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 354,
+          "prior_year_sessions": 48
+        }
+      ],
+      "ytd_current": 1898,
+      "ytd_prior": 136,
+      "ytd_change_pct": 1295.6
+    },
+    "summary": "Fortress Microgrid's local pages property experienced significant volatility in the last 30 days: sessions dropped 42.3% MoM to 344, though YoY growth remains exceptional at +588.0%, reflecting the property's nascent maturity. Engagement rate declined sharply to 9.0% (down 39.0 pp YoY), indicating that while absolute traffic has surged year-over-year, visitor quality and intent have compressed. Direct traffic dominates at 90.7% of sessions but fell 44.9% MoM, though YoY direct growth is extraordinary at +1542.1%, suggesting seasonal volatility or campaign calendar shifts. High-value conversion events paint a mixed picture: mainsite_clicks (16 events, -30.4% MoM) and calls (1 event, -50% MoM) both declined, while contact_us held flat MoM at 6 events. The homepage (/) remains the traffic engine with 135 sessions (+8.9% MoM), but engagement there is anemic at 3.0%. Geo-targeted Texas pages show promise\u2014/texas generated 60% engagement despite only 5 sessions, suggesting strong product-market fit in specific locations. YTD 2026 performance is robust at 1,898 sessions (+1295.6% vs YTD 2025), though the trajectory is decelerating (Q1 averaged 633 sessions/month; March alone dropped to 354).",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Leverage high-engagement /texas landing page",
+          "detail": "The /texas page achieved 60% engagement rate across 5 sessions (vs. 3% on homepage). Replicate its messaging, CTA structure, or targeting strategy across other geo-targeted state pages to lift engagement on /texas/carrollton, /texas/fort-worth, and /texas/levelland variants.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Capitalize on mainsite_clicks as funnel accelerator",
+          "detail": "16 mainsite_clicks in the period indicate users are progressing to deeper engagement. Test homepage-to-mainsite CTA prominence and positioning to recover the 30.4% MoM decline and reactivate the funnel.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize homepage engagement funnel",
+          "detail": "The homepage captured 135 sessions (39% of total traffic) but only 3 engaged\u2014a 3% rate. Even a modest lift to 6% engagement would convert 3\u20134 additional engaged sessions monthly; test hero CTA clarity, value prop positioning, or form friction reduction.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Engagement rate collapse YoY (-39.0 pp)",
+          "detail": "While sessions grew 588% YoY, engaged sessions only grew 29.2%, indicating traffic quality or targeting has deteriorated significantly. The 9.0% engagement rate suggests most visitors are not finding relevant content or converting intent.",
+          "severity": "high"
+        },
+        {
+          "title": "Steep MoM traffic decline (-42.3% sessions, -42.6% engaged sessions)",
+          "detail": "Last month underperformed the prior 30-day window substantially. Direct traffic fell 44.9% MoM, and high-value conversions (mainsite_clicks, calls, contact_us) all declined or flatlined, indicating potential seasonal drop-off, budget reduction, or campaign pause.",
+          "severity": "high"
+        },
+        {
+          "title": "Phone calls bottoming out (1 event, -50% MoM)",
+          "detail": "With only 1 call conversion in 30 days, the sales funnel is critically thin. This may reflect low-intent traffic or friction in the call-to-action path and warrants immediate review of click-to-call implementation and page messaging.",
+          "severity": "high"
+        },
+        {
+          "title": "Decelerating monthly growth trajectory",
+          "detail": "Q1 2026 averaged 633 sessions/month, but March dropped to 354 (down ~37% from February). If this trend continues, April\u2013June may see further contraction despite strong YoY comps.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Revitalize direct traffic quality and intent",
+          "detail": "Direct traffic represents 90.7% of sessions but engagement is minimal. Implement UTM tagging or enhance on-site messaging to clarify value proposition for direct visitors who may arrive without context; test dedicated landing pages for key service offerings (microgrids, solar, storage) to segment intent.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Scale geo-targeted Texas pages with proven messaging",
+          "detail": "Five regional pages (/texas/carrollton, /texas/fort-worth, /texas/levelland, /texas/wichita-falls) each generated 3 sessions with 33% engagement. Allocate PPC or organic budget to scale these high-intent pages and replicate their CTA structure across lower-performing geo variants.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Rebuild contact_us and booking funnel",
+          "detail": "contact_us (6 events) and booking events are critically low; no schedule_/appointment_ events are logged. Implement clear, above-the-fold contact/booking CTAs on /texas landing pages and homepage to capture intent before visitors exit; A/B test form field reduction to lower friction.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Diagnose and recover organic search opportunity",
+          "detail": "Organic search represents only 7.3% of traffic (25 sessions) with no YoY growth (-3.8% YoY). This suggests SEO underinvestment or ranking degradation; audit keyword rankings for high-intent terms (e.g., 'microgrid Texas,' 'solar storage Carrollton') and prioritize content/backlink strategy to capture non-branded, high-intent search demand.",
+          "impact": "medium",
+          "effort": "high"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 354,
+        "engaged_sessions": 32,
+        "engagement_rate": 0.0904
+      },
+      "mom": {
+        "sessions": 566,
+        "engaged_sessions": 50,
+        "engagement_rate": 0.0883
+      },
+      "yoy": {
+        "sessions": 48,
+        "engaged_sessions": 23,
+        "engagement_rate": 0.4792
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -37.5,
+      "yoy_sessions_change_pct": 637.5,
+      "mom_engaged_sessions_change_pct": -36.0,
+      "yoy_engaged_sessions_change_pct": 39.1,
+      "mom_engagement_rate_change_pts": 0.0021,
+      "yoy_engagement_rate_change_pts": -0.3888
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 20,
+        "mom": 23,
+        "yoy": 18,
+        "mom_change_pct": -13.0,
+        "yoy_change_pct": 11.1
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 18,
+        "mom": 20,
+        "yoy": 15,
+        "mom_change_pct": -10.0,
+        "yoy_change_pct": 20.0
+      },
+      {
+        "event_name": "contact_us",
+        "current": 5,
+        "mom": 6,
+        "yoy": 8,
+        "mom_change_pct": -16.7,
+        "yoy_change_pct": -37.5
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 4,
+        "mom": 5,
+        "yoy": 7,
+        "mom_change_pct": -20.0,
+        "yoy_change_pct": -42.9
+      },
+      {
+        "event_name": "calls",
+        "current": 1,
+        "mom": 2,
+        "yoy": 0,
+        "mom_change_pct": -50.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "store_locate",
+        "current": 1,
+        "mom": 2,
+        "yoy": 0,
+        "mom_change_pct": -50.0,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 324,
+        "current_pct": 91.5,
+        "mom_sessions": 537,
+        "yoy_sessions": 19,
+        "mom_sessions_change_pct": -39.7,
+        "yoy_sessions_change_pct": 1605.3
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 24,
+        "current_pct": 6.8,
+        "mom_sessions": 25,
+        "yoy_sessions": 24,
+        "mom_sessions_change_pct": -4.0,
+        "yoy_sessions_change_pct": 0.0
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 5,
+        "current_pct": 1.4,
+        "mom_sessions": 1,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": 400.0,
+        "yoy_sessions_change_pct": 400.0
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 1,
+        "current_pct": 0.3,
+        "mom_sessions": 3,
+        "yoy_sessions": 4,
+        "mom_sessions_change_pct": -66.7,
+        "yoy_sessions_change_pct": -75.0
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 137,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.0219,
+        "mom_sessions": 116,
+        "yoy_sessions": 24,
+        "mom_sessions_change_pct": 18.1,
+        "yoy_sessions_change_pct": 470.8
+      },
+      {
+        "landing_page": "/texas",
+        "current_sessions": 7,
+        "current_engaged_sessions": 4,
+        "current_engagement_rate": 0.5714,
+        "mom_sessions": 6,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 16.7,
+        "yoy_sessions_change_pct": 250.0
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 4,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": 300.0
+      },
+      {
+        "landing_page": "/texas/carrollton/fortress-microgrid",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/texas/fort-worth/fortress-microgrid",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/texas/katy/generators",
+        "current_sessions": 3,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/texas/levelland/fortress-microgrid",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/texas/wichita-falls/fortress-microgrid",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/texas/amarillo/tesla-solar-roof",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/texas/bergheim/tesla-solar-roof",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 978,
+          "prior_year_sessions": 56
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 566,
+          "prior_year_sessions": 32
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 354,
+          "prior_year_sessions": 48
+        }
+      ],
+      "ytd_current": 1898,
+      "ytd_prior": 136,
+      "ytd_change_pct": 1295.6
+    },
+    "summary": "March 2026 saw a significant MoM contraction (-37.5% sessions, -36.0% engaged sessions) after strong January and February performance, though YoY growth remains exceptional (+637.5% sessions, +39.1% engaged sessions). Direct traffic dominates at 91.5% of sessions but declined -39.7% MoM, suggesting seasonal or campaign-driven volatility rather than organic search strength. High-value conversion events show mixed signals: mainsite_clicks grew +20.0% YoY (18 events) but declined -10.0% MoM, while calls dropped -50.0% MoM to just 1 event. The homepage (/) drove 137 sessions but engaged only 2.2%, while /texas pages demonstrated substantially higher engagement rates (57.1% on /texas itself). YTD 2026 has captured 1,898 sessions versus 136 in 2025, representing a +1,295.6% surge, though the deceleration from 978\u2192566\u2192354 monthly sessions suggests need for sustained acquisition strategy to maintain momentum.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Leverage /texas landing page performance",
+          "detail": "/texas achieved 57.1% engagement rate (4 of 7 sessions engaged) and grew +250.0% YoY, significantly outperforming the homepage's 2.2% engagement rate. Replicate messaging and structure from /texas across other regional pages.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Expand high-intent location-specific pages",
+          "detail": "Multi-location pages (/texas/carrollton, /texas/fort-worth, /texas/levelland, /texas/wichita-falls) each drove 33.3% engagement on minimal traffic. Scaling these pages with paid or organic promotion could yield disproportionate conversion gains.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Maintain mainsite_clicks momentum",
+          "detail": "mainsite_clicks grew +20.0% YoY to 18 events (high-value conversion), despite -10.0% MoM decline. This channel demonstrates funnel depth and should remain a tracking priority for attribution.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Steep MoM traffic decline signals campaign or seasonality reset",
+          "detail": "Sessions dropped -37.5% from February to March (566\u2192354), following even sharper drops would indicate a structural problem rather than typical variance. Verify whether January\u2013February benefited from time-limited campaigns that ended.",
+          "severity": "high"
+        },
+        {
+          "title": "Call conversions have collapsed",
+          "detail": "Calls fell -50.0% MoM (2\u21921 event) and appear to be a new tracking issue or genuine funnel leakage; only 1 call in March represents critical underperformance for a service-based business. Audit call tracking implementation and review phone number visibility on high-traffic pages.",
+          "severity": "high"
+        },
+        {
+          "title": "contact_us event declining across both timeframes",
+          "detail": "contact_us dropped -16.7% MoM and -37.5% YoY (down to 5 events), suggesting either a form UX issue or reduced visitor intent. This should be cross-checked with CRM or email submission data to confirm true conversion loss.",
+          "severity": "medium"
+        },
+        {
+          "title": "Homepage engagement rate severely lags expectations",
+          "detail": "The homepage (/) captured 137 sessions (38.7% of traffic) but engaged only 3 (2.2% engagement rate), acting as a traffic sink rather than funnel driver. Poor homepage-to-interior conversion may explain low overall engagement at 9.0%.",
+          "severity": "medium"
+        },
+        {
+          "title": "Organic search remains negligible and flat",
+          "detail": "Organic Search delivered only 24 sessions (6.8% of total) with 0.0% YoY growth, indicating weak SEO visibility or competitive disadvantage. Over-reliance on Direct traffic (91.5%) creates vulnerability to campaign fluctuations.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Rebuild and stabilize Direct traffic acquisition",
+          "detail": "Direct traffic plummeted -39.7% MoM despite +1605.3% YoY growth, likely reflecting campaign spend or referral source volatility. Implement a disciplined retargeting and email nurture strategy to create recurring direct sessions independent of external campaigns.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Scale organic search presence systematically",
+          "detail": "Organic Search represents only 6.8% of sessions (24 events) with flat YoY growth; Texas-specific service pages (/texas/carrollton, /texas/fort-worth) present high-intent keywords with minimal competition. Target 'Fortress Microgrid near me' and location-based terms with local SEO and content expansion.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Diagnose and fix homepage-to-interior conversion funnel",
+          "detail": "137 homepage sessions with only 2.2% engagement suggests a critical messaging, design, or CTA misalignment. Conduct user testing and A/B test homepage CTAs to drive visitors toward /texas regional pages or high-intent service pages rather than internal navigation.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Prioritize call tracking and phone visibility audit",
+          "detail": "With only 1 call recorded in March, verify that phone numbers are prominently displayed, click-to-call is enabled on mobile, and tracking parameters are correctly fired. This is likely a quick win with outsized impact on high-value conversions.",
+          "impact": "high",
+          "effort": "low"
+        }
+      ]
+    }
+  }
+}

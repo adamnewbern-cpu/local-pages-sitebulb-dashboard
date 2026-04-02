@@ -1,0 +1,660 @@
+{
+  "site_url": "https://dealer.edhicksinfiniti.com/",
+  "display_name": "Ed Hicks INFINITI - Dealer",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 1206,
+        "engaged_sessions": 338,
+        "engagement_rate": 0.2803
+      },
+      "mom": {
+        "sessions": 1184,
+        "engaged_sessions": 314,
+        "engagement_rate": 0.2652
+      },
+      "yoy": {
+        "sessions": 20,
+        "engaged_sessions": 9,
+        "engagement_rate": 0.45
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": 1.9,
+      "yoy_sessions_change_pct": 5930.0,
+      "mom_engaged_sessions_change_pct": 7.6,
+      "yoy_engaged_sessions_change_pct": 3655.6,
+      "mom_engagement_rate_change_pts": 0.0151,
+      "yoy_engagement_rate_change_pts": -0.1697
+    },
+    "events": [
+      {
+        "event_name": "blog_views",
+        "current": 837,
+        "mom": 803,
+        "yoy": 21,
+        "mom_change_pct": 4.2,
+        "yoy_change_pct": 3885.7
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 37,
+        "mom": 31,
+        "yoy": 0,
+        "mom_change_pct": 19.4,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "dealer_site_clicks",
+        "current": 30,
+        "mom": 27,
+        "yoy": 0,
+        "mom_change_pct": 11.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "view_new_inventory",
+        "current": 8,
+        "mom": 18,
+        "yoy": 0,
+        "mom_change_pct": -55.6,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 7,
+        "mom": 20,
+        "yoy": 4,
+        "mom_change_pct": -65.0,
+        "yoy_change_pct": 75.0
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 695,
+        "current_pct": 57.6,
+        "mom_sessions": 673,
+        "yoy_sessions": 7,
+        "mom_sessions_change_pct": 3.3,
+        "yoy_sessions_change_pct": 9828.6
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 490,
+        "current_pct": 40.6,
+        "mom_sessions": 482,
+        "yoy_sessions": 10,
+        "mom_sessions_change_pct": 1.7,
+        "yoy_sessions_change_pct": 4800.0
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 13,
+        "current_pct": 1.1,
+        "mom_sessions": 27,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -51.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 8,
+        "current_pct": 0.7,
+        "mom_sessions": 3,
+        "yoy_sessions": 3,
+        "mom_sessions_change_pct": 166.7,
+        "yoy_sessions_change_pct": 166.7
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/maintenance-repair/windshield-washer-not-working",
+        "current_sessions": 245,
+        "current_engaged_sessions": 94,
+        "current_engagement_rate": 0.3837,
+        "mom_sessions": 180,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 36.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/",
+        "current_sessions": 169,
+        "current_engaged_sessions": 11,
+        "current_engagement_rate": 0.0651,
+        "mom_sessions": 172,
+        "yoy_sessions": 9,
+        "mom_sessions_change_pct": -1.7,
+        "yoy_sessions_change_pct": 1777.8
+      },
+      {
+        "landing_page": "/maintenance-repair/check-engine-light-blinking",
+        "current_sessions": 124,
+        "current_engaged_sessions": 45,
+        "current_engagement_rate": 0.3629,
+        "mom_sessions": 161,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -23.0,
+        "yoy_sessions_change_pct": 6100.0
+      },
+      {
+        "landing_page": "/vehicles/is-infiniti-a-good-car",
+        "current_sessions": 105,
+        "current_engaged_sessions": 44,
+        "current_engagement_rate": 0.419,
+        "mom_sessions": 151,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -30.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/driving/city-vs-highway-miles",
+        "current_sessions": 30,
+        "current_engaged_sessions": 16,
+        "current_engagement_rate": 0.5333,
+        "mom_sessions": 45,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -33.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/vehicles/qx80-vs-gls",
+        "current_sessions": 30,
+        "current_engaged_sessions": 12,
+        "current_engagement_rate": 0.4,
+        "mom_sessions": 22,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 36.4,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/driving/unlock-infiniti-with-key",
+        "current_sessions": 27,
+        "current_engaged_sessions": 4,
+        "current_engagement_rate": 0.1481,
+        "mom_sessions": 21,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 28.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 24,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 39,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -38.5,
+        "yoy_sessions_change_pct": 1100.0
+      },
+      {
+        "landing_page": "/maintenance-repair/car-engine-issues",
+        "current_sessions": 23,
+        "current_engaged_sessions": 10,
+        "current_engagement_rate": 0.4348,
+        "mom_sessions": 9,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 155.6,
+        "yoy_sessions_change_pct": 1050.0
+      },
+      {
+        "landing_page": "/infiniti/infiniti-qx80",
+        "current_sessions": 20,
+        "current_engaged_sessions": 4,
+        "current_engagement_rate": 0.2,
+        "mom_sessions": 9,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 122.2,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 1160,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 1111,
+          "prior_year_sessions": 8
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 1244,
+          "prior_year_sessions": 19
+        }
+      ],
+      "ytd_current": 3515,
+      "ytd_prior": 27,
+      "ytd_change_pct": 12918.5
+    },
+    "summary": "Ed Hicks INFINITI experienced strong traffic growth over the last 30 days, with 1,206 sessions (+1.9% MoM, +5930% YoY), driven primarily by organic search (57.6% of traffic, +3.3% MoM). Engagement quality improved with engaged sessions climbing 7.6% MoM to 338, though engagement rate declined 17 percentage points YoY\u2014suggesting a larger traffic influx is offsetting per-session quality gains. Blog views dominated custom events (837, +4.2% MoM), indicating strong content consumption, while dealer site clicks (30 events) and outbound clicks (37 events) show moderate conversion pathway activity. Year-to-date performance is exceptional: Q1 2026 generated 3,515 sessions versus only 27 in Q1 2025 (+12919%), with January\u2013March tracking consistently above 1,100 sessions monthly. However, inventory-related engagement has weakened sharply: view_new_inventory dropped 55.6% MoM, and navigational_clicks fell 65% MoM, signaling either depleted inventory visibility or reduced dealer-specific interaction.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Windshield Washer Landing Page Dominance",
+          "detail": "/maintenance-repair/windshield-washer-not-working is the top performer with 245 sessions and 38.4% engagement rate, up 36.1% MoM. This page is a proven traffic magnet\u2014double down with internal linking to dealer services or vehicle model pages.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Organic Search Efficiency",
+          "detail": "Organic search delivered 695 sessions (57.6% of total) with strong MoM growth (+3.3%) and exceptional YoY gains (+9829%). Continue optimizing meta tags, headers, and schema markup on high-performing maintenance and vehicle comparison pages.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Referral Channel Momentum",
+          "detail": "Referral traffic surged 166.7% MoM (8 sessions), indicating emerging word-of-mouth or partnership opportunities. Identify referral sources and consider formalizing partnerships or incentive programs.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Inventory Engagement Collapse",
+          "detail": "view_new_inventory events plummeted 55.6% MoM to just 8 events. Combined with 65% decline in navigational_clicks, this suggests either low inventory availability or poor discoverability of vehicle inventory pages\u2014critical for dealer conversion.",
+          "severity": "high"
+        },
+        {
+          "title": "YoY Engagement Rate Decline",
+          "detail": "Despite massive traffic growth (+5930% YoY), engagement rate fell 17 percentage points YoY to 28%, indicating new traffic is less engaged than historical cohorts. Audit landing page relevance and call-to-action clarity.",
+          "severity": "medium"
+        },
+        {
+          "title": "Homepage Underperformance",
+          "detail": "The homepage (/) generated 169 sessions but only 6.5% engagement rate\u2014well below site average. With 40.6% of traffic coming direct, homepage optimization is essential to convert brand visitors into engaged prospects.",
+          "severity": "medium"
+        },
+        {
+          "title": "No Conversion Event Data",
+          "detail": "The data includes no calls, book_now, schedule_, or store_locate events. Without high-value conversion tracking, dealer performance is unmeasured and opportunity for optimization is invisible.",
+          "severity": "high"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Revive Inventory Discovery & Conversion Path",
+          "detail": "view_new_inventory (8 events, -55.6% MoM) is severely underperforming. Create a dedicated inventory landing page or carousel, link prominently from maintenance/education content, and implement store_locate + schedule_service events to capture dealer intent.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Homepage-to-Inventory Funnel",
+          "detail": "Direct traffic (490 sessions, 40.6%) lands heavily on homepage (/) but engagement is only 6.5%. Implement sticky navigation, hero call-to-action buttons to inventory/scheduling, and A/B test messaging to convert brand traffic into dealer actions.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Scale Education Content with Dealer CTAs",
+          "detail": "Blog views (837 events) and maintenance pages (windshield washer, check-engine light) are engagement powerhouses (36\u201338% rates). Inject dealer service booking links, schedule_appointment events, and location-based CTAs into these high-intent pages.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Implement High-Value Conversion Tracking",
+          "detail": "No calls, book_now, or schedule_ events are recorded in the data. Audit GA4 tag configuration and ensure phone-click tracking, form submissions, and booking button clicks are properly instrumented to measure true dealer ROI.",
+          "impact": "high",
+          "effort": "low"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 1244,
+        "engaged_sessions": 346,
+        "engagement_rate": 0.2781
+      },
+      "mom": {
+        "sessions": 1111,
+        "engaged_sessions": 297,
+        "engagement_rate": 0.2673
+      },
+      "yoy": {
+        "sessions": 19,
+        "engaged_sessions": 9,
+        "engagement_rate": 0.4737
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": 12.0,
+      "yoy_sessions_change_pct": 6447.4,
+      "mom_engaged_sessions_change_pct": 16.5,
+      "yoy_engaged_sessions_change_pct": 3744.4,
+      "mom_engagement_rate_change_pts": 0.0108,
+      "yoy_engagement_rate_change_pts": -0.1956
+    },
+    "events": [
+      {
+        "event_name": "blog_views",
+        "current": 868,
+        "mom": 751,
+        "yoy": 21,
+        "mom_change_pct": 15.6,
+        "yoy_change_pct": 4033.3
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 37,
+        "mom": 28,
+        "yoy": 0,
+        "mom_change_pct": 32.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "dealer_site_clicks",
+        "current": 30,
+        "mom": 24,
+        "yoy": 0,
+        "mom_change_pct": 25.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "view_new_inventory",
+        "current": 10,
+        "mom": 16,
+        "yoy": 0,
+        "mom_change_pct": -37.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 7,
+        "mom": 20,
+        "yoy": 4,
+        "mom_change_pct": -65.0,
+        "yoy_change_pct": 75.0
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 713,
+        "current_pct": 57.3,
+        "mom_sessions": 637,
+        "yoy_sessions": 6,
+        "mom_sessions_change_pct": 11.9,
+        "yoy_sessions_change_pct": 11783.3
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 507,
+        "current_pct": 40.8,
+        "mom_sessions": 448,
+        "yoy_sessions": 10,
+        "mom_sessions_change_pct": 13.2,
+        "yoy_sessions_change_pct": 4970.0
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 12,
+        "current_pct": 1.0,
+        "mom_sessions": 25,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -52.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 9,
+        "current_pct": 0.7,
+        "mom_sessions": 2,
+        "yoy_sessions": 3,
+        "mom_sessions_change_pct": 350.0,
+        "yoy_sessions_change_pct": 200.0
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/maintenance-repair/windshield-washer-not-working",
+        "current_sessions": 236,
+        "current_engaged_sessions": 92,
+        "current_engagement_rate": 0.3898,
+        "mom_sessions": 177,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 33.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/",
+        "current_sessions": 178,
+        "current_engaged_sessions": 11,
+        "current_engagement_rate": 0.0618,
+        "mom_sessions": 158,
+        "yoy_sessions": 8,
+        "mom_sessions_change_pct": 12.7,
+        "yoy_sessions_change_pct": 2125.0
+      },
+      {
+        "landing_page": "/maintenance-repair/check-engine-light-blinking",
+        "current_sessions": 130,
+        "current_engaged_sessions": 46,
+        "current_engagement_rate": 0.3538,
+        "mom_sessions": 153,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -15.0,
+        "yoy_sessions_change_pct": 6400.0
+      },
+      {
+        "landing_page": "/vehicles/is-infiniti-a-good-car",
+        "current_sessions": 119,
+        "current_engaged_sessions": 50,
+        "current_engagement_rate": 0.4202,
+        "mom_sessions": 136,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -12.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/vehicles/qx80-vs-gls",
+        "current_sessions": 33,
+        "current_engaged_sessions": 13,
+        "current_engagement_rate": 0.3939,
+        "mom_sessions": 19,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 73.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/driving/city-vs-highway-miles",
+        "current_sessions": 32,
+        "current_engaged_sessions": 17,
+        "current_engagement_rate": 0.5312,
+        "mom_sessions": 43,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -25.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 27,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 36,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -25.0,
+        "yoy_sessions_change_pct": 1250.0
+      },
+      {
+        "landing_page": "/driving/unlock-infiniti-with-key",
+        "current_sessions": 26,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.1154,
+        "mom_sessions": 20,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 30.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/maintenance-repair/car-engine-issues",
+        "current_sessions": 23,
+        "current_engaged_sessions": 10,
+        "current_engagement_rate": 0.4348,
+        "mom_sessions": 8,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 187.5,
+        "yoy_sessions_change_pct": 1050.0
+      },
+      {
+        "landing_page": "/maintenance-repair/car-tire-wear",
+        "current_sessions": 22,
+        "current_engaged_sessions": 8,
+        "current_engagement_rate": 0.3636,
+        "mom_sessions": 12,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 83.3,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 1160,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 1111,
+          "prior_year_sessions": 8
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 1244,
+          "prior_year_sessions": 19
+        }
+      ],
+      "ytd_current": 3515,
+      "ytd_prior": 27,
+      "ytd_change_pct": 12918.5
+    },
+    "summary": "Ed Hicks INFINITI experienced strong momentum in March 2026, with sessions climbing 12.0% MoM to 1,244 and engagement rate holding steady at 27.8% (+1.1 pp MoM). The YoY growth is exceptional across all traffic metrics\u2014sessions up 6447.4%, engaged sessions up 3744.4%, and blog_views surging 4033.3%\u2014reflecting either new tracking implementation in 2025 or significant recent content and SEO investments. Organic Search dominates at 57.3% of traffic (713 sessions, +11.9% MoM), while Direct traffic accounts for 40.8% (507 sessions, +13.2% MoM), indicating strong brand awareness and repeat visitation. The top-performing landing page, /maintenance-repair/windshield-washer-not-working, generated 236 sessions with 39% engagement (+33.3% MoM), followed by the homepage with 178 sessions but only 6.2% engagement, suggesting content-focused pages outperform brand pages. However, high-intent conversion events remain sparse\u2014only 30 dealer_site_clicks and 37 outbound_clicks recorded\u2014indicating a gap between content consumption and sales funnel progression. YTD 2026 stands at 3,515 sessions with consistent monthly growth, positioning Q1 favorably, though the lack of recorded calls, booking events, or scheduling actions warrants immediate investigation into conversion tracking completeness.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Windshield Washer Content Momentum",
+          "detail": "/maintenance-repair/windshield-washer-not-working is the strongest performer with 236 sessions and 39% engagement rate, up 33.3% MoM. This maintenance-focused content is clearly resonating with local search intent.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Organic Search Channel Growth",
+          "detail": "Organic Search sessions grew 11.9% MoM to 713 total (57.3% of traffic), indicating SEO investments are working. Maintenance/repair keywords like check-engine-light-blinking and car-engine-issues show strong organic visibility.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Referral Traffic Spike",
+          "detail": "Referral sessions jumped 350% MoM (from 2 to 9 sessions), though small in absolute volume. This suggests emerging partnership or content promotion opportunities worth monitoring and scaling.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Minimal High-Value Conversion Events",
+          "detail": "No calls, book_now, or scheduling events recorded in March 2026 despite 1,244 sessions and 346 engaged sessions. Only 30 dealer_site_clicks and 37 outbound_clicks suggest either tracking gaps or a broken conversion funnel between content engagement and dealership actions.",
+          "severity": "high"
+        },
+        {
+          "title": "Inventory View Events Declining Sharply",
+          "detail": "view_new_inventory dropped 37.5% MoM to just 10 events, indicating weak conversion from content pages to product consideration. This is concerning for a dealer site where inventory browsing is a key revenue indicator.",
+          "severity": "high"
+        },
+        {
+          "title": "Homepage Engagement Rate Collapsed",
+          "detail": "The homepage (/) generated 178 sessions but only 6.2% engagement\u2014the lowest engagement rate among top landing pages. This high-traffic page may lack clear CTAs or relevance to incoming users.",
+          "severity": "medium"
+        },
+        {
+          "title": "Navigational Clicks Declining",
+          "detail": "navigational_clicks fell 65% MoM to 7 events, signaling reduced internal site exploration. Users may be landing on specific content and leaving rather than discovering deeper dealership resources.",
+          "severity": "low"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Unlock Conversion Funnel from Content to Dealer Engagement",
+          "detail": "With 868 blog_views and high engagement on maintenance content, implement clear CTAs linking to dealer_site_clicks, calls, or appointment scheduling. A/B test CTAs on /maintenance-repair/windshield-washer-not-working and /vehicles/is-infiniti-a-good-car to drive dealer site traffic and conversions.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Revitalize Homepage Engagement",
+          "detail": "The homepage's 6.2% engagement rate is a missed opportunity; with 178 sessions, even a 5 pp improvement would add ~9 engaged sessions monthly. Redesign homepage CTAs to segment users toward maintenance (content), shopping (inventory), or service (calls/scheduling).",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Expand Maintenance/Repair Content Cluster",
+          "detail": "/maintenance-repair/windshield-washer-not-working and /maintenance-repair/check-engine-light-blinking are proven traffic drivers. Create 5\u201310 additional maintenance guides to capture long-tail organic search intent and funnel that audience to service scheduling.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Investigate & Restore Inventory Browsing",
+          "detail": "view_new_inventory plummeted 37.5% MoM to 10 events. Audit inventory page performance, ensure vehicle detail pages load properly, and add prominent inventory CTAs on high-engagement content pages like /vehicles/qx80-vs-gls.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Verify & Complete Conversion Event Tracking",
+          "detail": "The absence of calls, booking, or scheduling events across 1,244 sessions is unusual for a dealer site. Audit GA4 event implementation for phone click tracking, appointment form submissions, and outbound call events to ensure no revenue-driving conversions are invisible.",
+          "impact": "high",
+          "effort": "high"
+        }
+      ]
+    }
+  }
+}

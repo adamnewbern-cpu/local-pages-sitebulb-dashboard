@@ -1,0 +1,805 @@
+{
+  "site_url": "https://local.bedrosians.com/",
+  "display_name": "Bedrosians",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 1669,
+        "engaged_sessions": 910,
+        "engagement_rate": 0.5452
+      },
+      "mom": {
+        "sessions": 1542,
+        "engaged_sessions": 808,
+        "engagement_rate": 0.524
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": 8.2,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": 12.6,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": 0.0212,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 1101,
+        "mom": 1005,
+        "yoy": null,
+        "mom_change_pct": 9.6,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 957,
+        "mom": 833,
+        "yoy": null,
+        "mom_change_pct": 14.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "product_grid_clicks",
+        "current": 400,
+        "mom": 357,
+        "yoy": null,
+        "mom_change_pct": 12.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "internal_clicks",
+        "current": 265,
+        "mom": 125,
+        "yoy": null,
+        "mom_change_pct": 112.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "store_locate",
+        "current": 77,
+        "mom": 71,
+        "yoy": null,
+        "mom_change_pct": 8.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "locate_me",
+        "current": 35,
+        "mom": 37,
+        "yoy": null,
+        "mom_change_pct": -5.4,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "become_a_pro",
+        "current": 13,
+        "mom": 15,
+        "yoy": null,
+        "mom_change_pct": -13.3,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "get_directions",
+        "current": 12,
+        "mom": 37,
+        "yoy": null,
+        "mom_change_pct": -67.6,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "browse_slab_inventory",
+        "current": 7,
+        "mom": 0,
+        "yoy": null,
+        "mom_change_pct": null,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "newsletter_subscribe",
+        "current": 3,
+        "mom": 0,
+        "yoy": null,
+        "mom_change_pct": null,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "call_for_appointment",
+        "current": 2,
+        "mom": 0,
+        "yoy": null,
+        "mom_change_pct": null,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 1053,
+        "current_pct": 63.1,
+        "mom_sessions": 414,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 154.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 311,
+        "current_pct": 18.6,
+        "mom_sessions": 278,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 11.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 148,
+        "current_pct": 8.9,
+        "mom_sessions": 48,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 208.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 89,
+        "current_pct": 5.3,
+        "mom_sessions": 723,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -87.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 49,
+        "current_pct": 2.9,
+        "mom_sessions": 23,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 113.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 16,
+        "current_pct": 1.0,
+        "mom_sessions": 50,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -68.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Cross-network",
+        "current_sessions": 1,
+        "current_pct": 0.1,
+        "mom_sessions": 9,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -88.9,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/california/anaheim/1235-south-state-college-boulevard",
+        "current_sessions": 220,
+        "current_engaged_sessions": 126,
+        "current_engagement_rate": 0.5727,
+        "mom_sessions": 46,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 378.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/",
+        "current_sessions": 193,
+        "current_engaged_sessions": 127,
+        "current_engagement_rate": 0.658,
+        "mom_sessions": 143,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 35.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/tustin/1123-warner-ave",
+        "current_sessions": 137,
+        "current_engaged_sessions": 76,
+        "current_engagement_rate": 0.5547,
+        "mom_sessions": 42,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 226.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/nevada/reno/6970-longley-ln",
+        "current_sessions": 116,
+        "current_engaged_sessions": 71,
+        "current_engagement_rate": 0.6121,
+        "mom_sessions": 12,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 866.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 80,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.0125,
+        "mom_sessions": 52,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 53.8,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/idaho/boise/12376-w-executive-drive",
+        "current_sessions": 80,
+        "current_engaged_sessions": 46,
+        "current_engagement_rate": 0.575,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/san-jose",
+        "current_sessions": 51,
+        "current_engaged_sessions": 25,
+        "current_engagement_rate": 0.4902,
+        "mom_sessions": 79,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -35.4,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/bakersfield/4301-ashe-road",
+        "current_sessions": 42,
+        "current_engaged_sessions": 25,
+        "current_engagement_rate": 0.5952,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/washington/seattle",
+        "current_sessions": 34,
+        "current_engaged_sessions": 23,
+        "current_engagement_rate": 0.6765,
+        "mom_sessions": 80,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -57.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/colorado/denver/14155-e-42nd-ave",
+        "current_sessions": 30,
+        "current_engaged_sessions": 15,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 33,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -9.1,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 1225,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 1465,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 1666,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 4356,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "Bedrosians' local pages property is demonstrating strong upward momentum across core traffic and engagement metrics in the last 30 days. Sessions grew 8.2% MoM to 1,669, while engaged sessions jumped 12.6% MoM, indicating improving content relevance and user intent match. Organic Search surged 154.3% MoM to capture 63.1% of traffic\u2014a significant win\u2014while Paid Search contracted 87.7% MoM, suggesting either budget reallocation or reduced PPC performance. High-value conversion signals are positive: mainsite_clicks grew 14.9% MoM (957 events), outbound_clicks rose 9.6% MoM (1,101 events), and store_locate held steady with modest 8.5% growth (77 events). However, critical conversion events remain low in absolute volume: calls total only 2 events YTD, and scheduling/appointment events are absent entirely. The Anaheim location page (/california/anaheim/1235-south-state-college-boulevard) is a standout performer, exploding 378.3% MoM with 220 sessions and 57.3% engagement rate. YTD trajectory shows consistent monthly growth (Jan: 1,225 \u2192 Feb: 1,465 \u2192 Mar: 1,666 sessions), confirming the property is on an upward arc.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Organic Search dominance driving traffic efficiency",
+          "detail": "Organic Search skyrocketed 154.3% MoM to 1,053 sessions (63.1% of traffic), replacing reliance on paid or direct channels. This organic lift suggests strong keyword performance and/or improved local SEO visibility for store location pages.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Anaheim location page proving high-intent funnel stage",
+          "detail": "The /california/anaheim/1235-south-state-college-boulevard page accelerated 378.3% MoM with 220 sessions and 57.3% engagement\u2014far outpacing other location pages. Replicate this page's structure, messaging, and CTA placement across underperforming location URLs.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "mainsite_clicks growth signals deeper funnel progression",
+          "detail": "mainsite_clicks grew 14.9% MoM to 957 events\u2014the highest-value click type after conversion events\u2014outpacing total traffic growth of 8.2%. This suggests users are finding value in local pages and moving to broader product/service exploration.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Reno location page emerging as high-growth opportunity",
+          "detail": "The /nevada/reno/6970-longley-ln page generated 866.7% MoM growth (116 sessions, 61.2% engagement), indicating strong recent visibility lift or new traffic source. Monitor this page for conversion optimization opportunities.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Paid Search budget collapse\u201487.7% MoM decline",
+          "detail": "Paid Search dropped from ~719 sessions to 89 sessions MoM (\u221287.7%), now representing only 5.3% of traffic. If this was a deliberate budget shift, confirm ROI assumptions; if unintentional, investigate bid strategy, quality score, or account changes immediately.",
+          "severity": "high"
+        },
+        {
+          "title": "Critical conversion event volume near-zero",
+          "detail": "Phone calls total only 2 YTD events, and no schedule_/appointment_ events recorded at all. Despite strong traffic and engagement, the property is not driving measurable phone or booking conversions\u2014a major blind spot for a local services business.",
+          "severity": "high"
+        },
+        {
+          "title": "get_directions plummeted 67.6% MoM",
+          "detail": "get_directions fell from 36 to 12 events MoM (\u221267.6%), suggesting reduced map/navigation interaction. For a retail/showroom business, this decline may indicate broken location integration, poor CTA visibility, or users bouncing before location step.",
+          "severity": "medium"
+        },
+        {
+          "title": "Become a Pro program disengagement",
+          "detail": "become_a_pro events dropped 13.3% MoM to just 13 events. If this is a key B2B or contractor funnel, the declining interest warrants messaging or program value review.",
+          "severity": "low"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Activate high-volume outbound_clicks toward mainsite conversions",
+          "detail": "1,101 outbound_clicks is the single largest event bucket, but these are external exits with moderate conversion value. Test strategic placement of mainsite_clicks CTAs (which grew 14.9% MoM) in place of generic external links to recapture users earlier in the funnel.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Implement phone call and booking event tracking immediately",
+          "detail": "With only 2 recorded calls and zero booking events YTD, the property is flying blind on actual revenue-driving conversions. Install call tracking pixels, form submission tracking, and appointment booking integrations across all location pages to measure true conversion funnel.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Scale the Anaheim location page playbook to underperforming regions",
+          "detail": "The Anaheim page's 378.3% growth and 57.3% engagement rate far exceed other location pages (avg ~55\u201360% engagement but much lower traffic). Audit its on-page content, product showcase, inventory display, and CTA design, then apply to San Jose (\u221235.4% MoM), Seattle (\u221257.5% MoM), and (not set) pages.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Fix or optimize store_locate and get_directions user path",
+          "detail": "store_locate (77 events, +8.5% MoM) and locate_me (35 events, \u22125.4% MoM) are moderate-intent signals, but get_directions collapsed 67.6% MoM. Audit the mapping/directions UX, test call-to-action prominence, and confirm integration with Google Maps and mobile navigation.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 1666,
+        "engaged_sessions": 909,
+        "engagement_rate": 0.5456
+      },
+      "mom": {
+        "sessions": 1465,
+        "engaged_sessions": 770,
+        "engagement_rate": 0.5256
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": 13.7,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": 18.1,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": 0.02,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 1099,
+        "mom": 960,
+        "yoy": null,
+        "mom_change_pct": 14.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 933,
+        "mom": 811,
+        "yoy": null,
+        "mom_change_pct": 15.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "product_grid_clicks",
+        "current": 400,
+        "mom": 346,
+        "yoy": null,
+        "mom_change_pct": 15.6,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "internal_clicks",
+        "current": 248,
+        "mom": 125,
+        "yoy": null,
+        "mom_change_pct": 98.4,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "store_locate",
+        "current": 82,
+        "mom": 66,
+        "yoy": null,
+        "mom_change_pct": 24.2,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "locate_me",
+        "current": 37,
+        "mom": 35,
+        "yoy": null,
+        "mom_change_pct": 5.7,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "become_a_pro",
+        "current": 13,
+        "mom": 15,
+        "yoy": null,
+        "mom_change_pct": -13.3,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "get_directions",
+        "current": 11,
+        "mom": 37,
+        "yoy": null,
+        "mom_change_pct": -70.3,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "browse_slab_inventory",
+        "current": 5,
+        "mom": 0,
+        "yoy": null,
+        "mom_change_pct": null,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "newsletter_subscribe",
+        "current": 3,
+        "mom": 0,
+        "yoy": null,
+        "mom_change_pct": null,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "call_for_appointment",
+        "current": 2,
+        "mom": 0,
+        "yoy": null,
+        "mom_change_pct": null,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 1030,
+        "current_pct": 61.8,
+        "mom_sessions": 384,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 168.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 327,
+        "current_pct": 19.6,
+        "mom_sessions": 245,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 33.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 147,
+        "current_pct": 8.8,
+        "mom_sessions": 47,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 212.8,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 87,
+        "current_pct": 5.2,
+        "mom_sessions": 721,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -87.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 50,
+        "current_pct": 3.0,
+        "mom_sessions": 20,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 150.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 24,
+        "current_pct": 1.4,
+        "mom_sessions": 41,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -41.5,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/california/anaheim/1235-south-state-college-boulevard",
+        "current_sessions": 210,
+        "current_engaged_sessions": 121,
+        "current_engagement_rate": 0.5762,
+        "mom_sessions": 44,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 377.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/",
+        "current_sessions": 198,
+        "current_engaged_sessions": 128,
+        "current_engagement_rate": 0.6465,
+        "mom_sessions": 131,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 51.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/tustin/1123-warner-ave",
+        "current_sessions": 131,
+        "current_engaged_sessions": 73,
+        "current_engagement_rate": 0.5573,
+        "mom_sessions": 42,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 211.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/nevada/reno/6970-longley-ln",
+        "current_sessions": 109,
+        "current_engaged_sessions": 67,
+        "current_engagement_rate": 0.6147,
+        "mom_sessions": 11,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 890.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 80,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.0125,
+        "mom_sessions": 48,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 66.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/idaho/boise/12376-w-executive-drive",
+        "current_sessions": 74,
+        "current_engaged_sessions": 43,
+        "current_engagement_rate": 0.5811,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/san-jose",
+        "current_sessions": 56,
+        "current_engaged_sessions": 27,
+        "current_engagement_rate": 0.4821,
+        "mom_sessions": 72,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -22.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/california/bakersfield/4301-ashe-road",
+        "current_sessions": 38,
+        "current_engaged_sessions": 24,
+        "current_engagement_rate": 0.6316,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/washington/seattle",
+        "current_sessions": 33,
+        "current_engaged_sessions": 21,
+        "current_engagement_rate": 0.6364,
+        "mom_sessions": 79,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -58.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/colorado/denver/14155-e-42nd-ave",
+        "current_sessions": 30,
+        "current_engaged_sessions": 15,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 33,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -9.1,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 1225,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 1465,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 1666,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 4356,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "Bedrosians' local pages property demonstrated strong MoM momentum in March 2026, with sessions climbing 13.7% to 1,666 and engaged sessions surging 18.1% to 909, reflecting a healthy 54.6% engagement rate (+2.0 pp). Organic Search emerged as the dominant traffic driver, delivering 1,030 sessions (+168.2% MoM)\u2014a dramatic shift indicating successful SEO performance or algorithm recovery for location-based queries. High-value conversion signals remain modest but positive: mainsite_clicks (933 events, +15.0% MoM) and outbound_clicks (1,099 events, +14.5% MoM) both grew in line with overall traffic, while store_locate interactions jumped 24.2% to 82 events, signaling strong local intent. The Anaheim location page (/california/anaheim/1235-south-state-college-boulevard) exploded with 377.3% MoM growth to 210 sessions, suggesting either targeted campaign lift or organic visibility gains for that specific store. However, Paid Search collapsed 87.9% MoM and referral traffic fell 41.5%, indicating potential budget reallocation or campaign pausing; meanwhile, low-value events like internal_clicks spiked 98.4%, suggesting users are browsing locally but not deeply converting to calls or appointments. YTD 2026 stands at 4,356 sessions with steady month-over-month growth trajectory (Jan: 1,225 \u2192 Feb: 1,465 \u2192 Mar: 1,666).",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Organic Search Momentum",
+          "detail": "Organic Search surged 168.2% MoM to 1,030 sessions (61.8% of traffic), now the dominant channel\u2014validate ranking improvements for high-intent location keywords and continue SEO investment in this area.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Anaheim Location Page Performance",
+          "detail": "The /california/anaheim/1235-south-state-college-boulevard page generated 210 sessions with 57.6% engagement, up 377.3% MoM\u2014investigate what drove this spike (organic visibility, local campaign, or content refresh) and replicate for other underperforming location pages.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Store Locator Engagement Growth",
+          "detail": "store_locate events increased 24.2% MoM to 82 interactions, indicating strong local-intent traffic\u2014ensure location pages have clear CTAs to drive these users toward calls or appointment bookings.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Overall Traffic Growth Stability",
+          "detail": "Sessions and engaged sessions both grew double-digits MoM while engagement rate improved, showing consistent, healthy MoM trajectory across Q1 2026 (Jan: 1,225 \u2192 Feb: 1,465 \u2192 Mar: 1,666 sessions).",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Paid Search Collapse",
+          "detail": "Paid Search traffic plummeted 87.9% MoM to just 87 sessions (5.2% of total), down from ~700 estimated sessions in February\u2014verify if campaigns were paused, budgets cut, or bids reduced, as this channel typically delivers high-intent users.",
+          "severity": "high"
+        },
+        {
+          "title": "Minimal High-Value Conversions",
+          "detail": "Despite 1,666 sessions and 909 engaged sessions, calls (0 tracked), book_now/scheduling events (2 call_for_appointment total), and become_a_pro (13 events, -13.3% MoM) remain extremely low\u2014tracking or implementation gaps may be hiding true conversion volume, or UX barriers are preventing appointment booking.",
+          "severity": "high"
+        },
+        {
+          "title": "Get Directions Event Decline",
+          "detail": "get_directions fell 70.3% MoM to just 11 events, suggesting users are not moving from discovery to physical visit intent\u2014this warrants review of map integration, CTAs, and mobile UX on location pages.",
+          "severity": "medium"
+        },
+        {
+          "title": "Referral Traffic Erosion",
+          "detail": "Referral sessions declined 41.5% MoM to 24 events, indicating reduced partner/directory traffic or potential deindexing from high-authority referral sources\u2014audit backlinks and local directory presence.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Convert Store Locator Clicks to Calls/Appointments",
+          "detail": "82 store_locate events and 37 locate_me interactions show users are finding locations, but only 2 call_for_appointment events and 0 tracked calls suggest a handoff failure\u2014add prominent click-to-call buttons, hours, and instant booking CTAs on all location pages to capture high-intent traffic.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Restore and Optimize Paid Search",
+          "detail": "Paid Search dropped 87.9% MoM but remains a high-intent channel\u2014re-enable or expand campaigns targeting local location keywords (e.g., 'tile near me,' 'stone showroom [city]') to recapture traffic lost to organic competitor surge.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Scale Anaheim Location Page Success Model",
+          "detail": "The Anaheim page achieved 377.3% growth to 210 sessions; audit its content, layout, internal links, and local SEO signals, then replicate for underperformers like /california/san-jose (56 sessions, -22.2% MoM) and /washington/seattle (33 sessions, -58.2% MoM).",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Rebuild Referral Channel",
+          "detail": "Referral traffic fell 41.5% MoM to 24 sessions\u2014re-establish partnerships with local directories, review sites (Yelp, Google Business), and trade platforms to restore this secondary high-intent source.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Improve Product Grid Click-Through Rate",
+          "detail": "product_grid_clicks (400 events) are the third-most frequent action but rarely lead to mainsite_clicks (933) or conversions\u2014audit UX flow from product browse to mainsite CTA and add clearer value props or filtering to reduce bounce.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  }
+}

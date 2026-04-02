@@ -1,0 +1,262 @@
+{
+  "generated_at": "2026-04-02",
+  "next_refresh": "2026-04-06",
+  "sites": [
+    {
+      "site_url": "https://locations.atipt.com/",
+      "display_name": "ATI Physical Therapy",
+      "slug": "locations.atipt.com",
+      "ga4_property_id": "516677885",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://locations.acima.com/",
+      "display_name": "Acima",
+      "slug": "locations.acima.com",
+      "ga4_property_id": "275169238",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://locations.af247.com/",
+      "display_name": "Advance Financial",
+      "slug": "locations.af247.com",
+      "ga4_property_id": "456384437",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://local.bedrosians.com/",
+      "display_name": "Bedrosians",
+      "slug": "local.bedrosians.com",
+      "ga4_property_id": "508567753",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://locations.budgetbrakes.com/",
+      "display_name": "Budget Brakes",
+      "slug": "locations.budgetbrakes.com",
+      "ga4_property_id": "515789527",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://locations.burrachos.com/",
+      "display_name": "Burrachos",
+      "slug": "locations.burrachos.com",
+      "ga4_property_id": "497565115",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://locations.cfsc.com/",
+      "display_name": "CFSC",
+      "slug": "locations.cfsc.com",
+      "ga4_property_id": "510764779",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://stores.cort.com/",
+      "display_name": "CORT Rental",
+      "slug": "stores.cort.com",
+      "ga4_property_id": "320986622",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://stores.cortfurnitureoutlet.com/",
+      "display_name": "CORT Furniture Outlet",
+      "slug": "stores.cortfurnitureoutlet.com",
+      "ga4_property_id": "321015558",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://www.cortglobal.com/",
+      "display_name": "CORT Global",
+      "slug": "www.cortglobal.com",
+      "ga4_property_id": null,
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://care.daymarkrecovery.org/",
+      "display_name": "Daymark",
+      "slug": "care.daymarkrecovery.org",
+      "ga4_property_id": "426316971",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://dealer.edhicksinfiniti.com/",
+      "display_name": "Ed Hicks INFINITI - Dealer",
+      "slug": "dealer.edhicksinfiniti.com",
+      "ga4_property_id": "478250827",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://dealer.edhicksimports.com/",
+      "display_name": "Ed Hicks Imports - Dealer",
+      "slug": "dealer.edhicksimports.com",
+      "ga4_property_id": "464171594",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://dealer.edhicksnissan.com/",
+      "display_name": "Ed Hicks Nissan - Dealer",
+      "slug": "dealer.edhicksnissan.com",
+      "ga4_property_id": "455167348",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://dealer.hicksfamilysubaru.com/",
+      "display_name": "Hicks Family Subaru - Dealer",
+      "slug": "dealer.hicksfamilysubaru.com",
+      "ga4_property_id": "461817807",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://dealer.hicksfamilynissan.com/",
+      "display_name": "Hicks Family Nissan - Dealer",
+      "slug": "dealer.hicksfamilynissan.com",
+      "ga4_property_id": "470844448",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://local.envelainsurance.com/",
+      "display_name": "Envela Local",
+      "slug": "local.envelainsurance.com",
+      "ga4_property_id": "494244541",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://local.fortressmicrogrid.com/",
+      "display_name": "Fortress Microgrid",
+      "slug": "local.fortressmicrogrid.com",
+      "ga4_property_id": "451096036",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://local.frepouch.com/",
+      "display_name": "FRE",
+      "slug": "local.frepouch.com",
+      "ga4_property_id": "443699067",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://locations.myautoloan.com/",
+      "display_name": "myAutoLoan",
+      "slug": "locations.myautoloan.com",
+      "ga4_property_id": "350222354",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://sellmycar.pullapart.com/",
+      "display_name": "Pull-A-Part",
+      "slug": "sellmycar.pullapart.com",
+      "ga4_property_id": "307361972",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://locations.rentacenter.com/",
+      "display_name": "Rent-A-Center",
+      "slug": "locations.rentacenter.com",
+      "ga4_property_id": "307405625",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://products.rentacenter.com/",
+      "display_name": "Rent-A-Center Products",
+      "slug": "products.rentacenter.com",
+      "ga4_property_id": "307371238",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://services.firestonecompleteautocare.com/",
+      "display_name": "Services Funnel",
+      "slug": "services.firestonecompleteautocare.com",
+      "ga4_property_id": "479566517",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://vehicle.firestonecompleteautocare.com/",
+      "display_name": "Vehicle Funnel",
+      "slug": "vehicle.firestonecompleteautocare.com",
+      "ga4_property_id": "307364346",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://locations.second-specs.com/",
+      "display_name": "Second Specs",
+      "slug": "locations.second-specs.com",
+      "ga4_property_id": "522109235",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://local.starblends.com/",
+      "display_name": "Star Blends",
+      "slug": "local.starblends.com",
+      "ga4_property_id": "459647467",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://find.telemedsforme.com/",
+      "display_name": "TelemedsForMe Local",
+      "slug": "find.telemedsforme.com",
+      "ga4_property_id": "485933319",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://www.telemedsforme.com/",
+      "display_name": "TelemedsForMe WWW",
+      "slug": "www.telemedsforme.com",
+      "ga4_property_id": "483715513",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://local.thenashvilleradonguys.com/",
+      "display_name": "The Radon Guys",
+      "slug": "local.thenashvilleradonguys.com",
+      "ga4_property_id": "465285671",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://local.visa-pros.com/",
+      "display_name": "Weinstock",
+      "slug": "local.visa-pros.com",
+      "ga4_property_id": "451089673",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    },
+    {
+      "site_url": "https://local.zigzag.com/",
+      "display_name": "Zig-Zag",
+      "slug": "local.zigzag.com",
+      "ga4_property_id": "452226848",
+      "last_updated": "2026-04-02",
+      "next_refresh": "2026-04-06"
+    }
+  ]
+}

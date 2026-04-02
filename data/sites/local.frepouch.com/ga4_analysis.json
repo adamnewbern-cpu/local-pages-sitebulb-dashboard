@@ -1,0 +1,744 @@
+{
+  "site_url": "https://local.frepouch.com/",
+  "display_name": "FRE",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 36215,
+        "engaged_sessions": 15947,
+        "engagement_rate": 0.4403
+      },
+      "mom": {
+        "sessions": 26001,
+        "engaged_sessions": 12742,
+        "engagement_rate": 0.4901
+      },
+      "yoy": {
+        "sessions": 16834,
+        "engaged_sessions": 9643,
+        "engagement_rate": 0.5728
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": 39.3,
+      "yoy_sessions_change_pct": 115.1,
+      "mom_engaged_sessions_change_pct": 25.2,
+      "yoy_engaged_sessions_change_pct": 65.4,
+      "mom_engagement_rate_change_pts": -0.0498,
+      "yoy_engagement_rate_change_pts": -0.1325
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 10297,
+        "mom": 8290,
+        "yoy": 5965,
+        "mom_change_pct": 24.2,
+        "yoy_change_pct": 72.6
+      },
+      {
+        "event_name": "store_locate",
+        "current": 8965,
+        "mom": 7277,
+        "yoy": 6221,
+        "mom_change_pct": 23.2,
+        "yoy_change_pct": 44.1
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 8738,
+        "mom": 7091,
+        "yoy": 4881,
+        "mom_change_pct": 23.2,
+        "yoy_change_pct": 79.0
+      },
+      {
+        "event_name": "shop_now",
+        "current": 8130,
+        "mom": 6567,
+        "yoy": 4469,
+        "mom_change_pct": 23.8,
+        "yoy_change_pct": 81.9
+      },
+      {
+        "event_name": "locate_me",
+        "current": 7175,
+        "mom": 5441,
+        "yoy": 5352,
+        "mom_change_pct": 31.9,
+        "yoy_change_pct": 34.1
+      },
+      {
+        "event_name": "get_directions",
+        "current": 1106,
+        "mom": 779,
+        "yoy": 765,
+        "mom_change_pct": 42.0,
+        "yoy_change_pct": 44.6
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 21420,
+        "current_pct": 59.1,
+        "mom_sessions": 14448,
+        "yoy_sessions": 9392,
+        "mom_sessions_change_pct": 48.3,
+        "yoy_sessions_change_pct": 128.1
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 12432,
+        "current_pct": 34.3,
+        "mom_sessions": 11376,
+        "yoy_sessions": 6996,
+        "mom_sessions_change_pct": 9.3,
+        "yoy_sessions_change_pct": 77.7
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 2727,
+        "current_pct": 7.5,
+        "mom_sessions": 298,
+        "yoy_sessions": 228,
+        "mom_sessions_change_pct": 815.1,
+        "yoy_sessions_change_pct": 1096.1
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 60,
+        "current_pct": 0.2,
+        "mom_sessions": 37,
+        "yoy_sessions": 17,
+        "mom_sessions_change_pct": 62.2,
+        "yoy_sessions_change_pct": 252.9
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 46,
+        "current_pct": 0.1,
+        "mom_sessions": 40,
+        "yoy_sessions": 37,
+        "mom_sessions_change_pct": 15.0,
+        "yoy_sessions_change_pct": 24.3
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 34,
+        "current_pct": 0.1,
+        "mom_sessions": 31,
+        "yoy_sessions": 115,
+        "mom_sessions_change_pct": 9.7,
+        "yoy_sessions_change_pct": -70.4
+      },
+      {
+        "channel": "Paid Social",
+        "current_sessions": 28,
+        "current_pct": 0.1,
+        "mom_sessions": 9,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 211.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Other",
+        "current_sessions": 4,
+        "current_pct": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Affiliates",
+        "current_sessions": 3,
+        "current_pct": 0.0,
+        "mom_sessions": 2,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 50.0,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 16497,
+        "current_engaged_sessions": 10866,
+        "current_engagement_rate": 0.6587,
+        "mom_sessions": 13076,
+        "yoy_sessions": 12125,
+        "mom_sessions_change_pct": 26.2,
+        "yoy_sessions_change_pct": 36.1
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 1397,
+        "current_engaged_sessions": 27,
+        "current_engagement_rate": 0.0193,
+        "mom_sessions": 996,
+        "yoy_sessions": 1043,
+        "mom_sessions_change_pct": 40.3,
+        "yoy_sessions_change_pct": 33.9
+      },
+      {
+        "landing_page": "/california",
+        "current_sessions": 171,
+        "current_engaged_sessions": 99,
+        "current_engagement_rate": 0.5789,
+        "mom_sessions": 107,
+        "yoy_sessions": 92,
+        "mom_sessions_change_pct": 59.8,
+        "yoy_sessions_change_pct": 85.9
+      },
+      {
+        "landing_page": "/texas",
+        "current_sessions": 142,
+        "current_engaged_sessions": 87,
+        "current_engagement_rate": 0.6127,
+        "mom_sessions": 219,
+        "yoy_sessions": 32,
+        "mom_sessions_change_pct": -35.2,
+        "yoy_sessions_change_pct": 343.8
+      },
+      {
+        "landing_page": "/florida",
+        "current_sessions": 115,
+        "current_engaged_sessions": 50,
+        "current_engagement_rate": 0.4348,
+        "mom_sessions": 48,
+        "yoy_sessions": 22,
+        "mom_sessions_change_pct": 139.6,
+        "yoy_sessions_change_pct": 422.7
+      },
+      {
+        "landing_page": "/new-york",
+        "current_sessions": 109,
+        "current_engaged_sessions": 26,
+        "current_engagement_rate": 0.2385,
+        "mom_sessions": 61,
+        "yoy_sessions": 27,
+        "mom_sessions_change_pct": 78.7,
+        "yoy_sessions_change_pct": 303.7
+      },
+      {
+        "landing_page": "/georgia",
+        "current_sessions": 63,
+        "current_engaged_sessions": 36,
+        "current_engagement_rate": 0.5714,
+        "mom_sessions": 29,
+        "yoy_sessions": 21,
+        "mom_sessions_change_pct": 117.2,
+        "yoy_sessions_change_pct": 200.0
+      },
+      {
+        "landing_page": "/washington",
+        "current_sessions": 61,
+        "current_engaged_sessions": 38,
+        "current_engagement_rate": 0.623,
+        "mom_sessions": 52,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 17.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/ohio",
+        "current_sessions": 60,
+        "current_engaged_sessions": 41,
+        "current_engagement_rate": 0.6833,
+        "mom_sessions": 39,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 53.8,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/illinois",
+        "current_sessions": 51,
+        "current_engaged_sessions": 30,
+        "current_engagement_rate": 0.5882,
+        "mom_sessions": 37,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 37.8,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 34360,
+          "prior_year_sessions": 13477
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 24238,
+          "prior_year_sessions": 17832
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 37184,
+          "prior_year_sessions": 17675
+        }
+      ],
+      "ytd_current": 95782,
+      "ytd_prior": 48984,
+      "ytd_change_pct": 95.5
+    },
+    "summary": "FRE is experiencing robust growth across all major traffic channels, with sessions up 39.3% MoM and 115.1% YoY over the last 30 days. However, engagement rate declined 5.0 pp MoM and 13.2 pp YoY despite a 25.2% MoM increase in engaged sessions, indicating that traffic volume growth is outpacing quality engagement\u2014a healthy scaling signal but one requiring monitoring. High-value conversions are performing exceptionally: mainsite_clicks (+23.2% MoM, +79.0% YoY), shop_now (+23.8% MoM, +81.9% YoY), and location-based events (store_locate +23.2% MoM, locate_me +31.9% MoM) are all trending strongly, suggesting users are progressing deeper into the funnel. Direct traffic dominates at 59.1% of sessions with a 48.3% MoM and 128.1% YoY surge, while organic search remains steady at 34.3% with more modest 9.3% MoM growth. State-level landing pages show mixed performance: /florida and /texas are explosive (YoY +422.7% and +343.8% respectively), while /texas declined 35.2% MoM despite strong YoY gains. YTD 2026 sits at 95,782 sessions (+95.5% vs 2025), with March showing particular strength at +110.4% YoY, though February's growth decelerated to +35.9% YoY.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Capitalize on location-intent momentum",
+          "detail": "store_locate (8,965 events, +23.2% MoM) and get_directions (1,106 events, +42.0% MoM) are accelerating faster than overall traffic, signaling strong local search behavior. Doubling down on location-based content and mobile optimization for state pages could amplify these high-intent actions.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Leverage direct traffic dominance",
+          "detail": "Direct traffic (21,420 sessions, +48.3% MoM, +128.1% YoY) is the primary driver and growing faster than organic search. This suggests strong brand recall and repeat visits; invest in retention campaigns and email nurture to sustain this channel.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize homepage engagement",
+          "detail": "The homepage (/) captures 45.5% of all sessions (16,497) with a healthy 65.9% engagement rate. Small improvements to CTA clarity and pathway to mainsite_clicks could unlock significant conversion gains.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Engagement rate deterioration despite volume growth",
+          "detail": "Engagement rate dropped 5.0 pp MoM and 13.2 pp YoY while sessions surged 39.3% MoM and 115.1% YoY, indicating incoming traffic quality may be declining or user experience friction is increasing. Monitor scroll depth, time-on-page, and bounce rate by channel to diagnose.",
+          "severity": "medium"
+        },
+        {
+          "title": "Texas landing page volatility",
+          "detail": "/texas declined 35.2% MoM despite strong 343.8% YoY growth, suggesting either seasonal dips or recent traffic shifts away from this state page. Investigate whether organic search visibility or paid campaigns targeting Texas have changed.",
+          "severity": "medium"
+        },
+        {
+          "title": "Unassigned traffic explosion requires investigation",
+          "detail": "Unassigned traffic spiked 815.1% MoM and 1096.1% YoY to 2,727 sessions (7.5% of total), potentially masking true channel attribution. This could be a GA4 tracking issue or a sign that data validation needs review.",
+          "severity": "high"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Scale organic search investment",
+          "detail": "Organic search (12,432 sessions, 34.3% of total) is growing only 9.3% MoM versus direct's 48.3% MoM. Prioritizing SEO improvements on high-performing state pages (/california, /florida, /georgia) could capture market share and reduce reliance on direct traffic.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Expand paid search and paid social",
+          "detail": "Paid search (60 sessions, +62.2% MoM) and paid social (28 sessions, +211.1% MoM) are negligible but accelerating. These channels have massive headroom and could diversify traffic away from the direct-dominated mix.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Diagnose and fix New York engagement gap",
+          "detail": "/new-york has only 23.8% engagement rate (lowest among state pages) despite 78.7% MoM growth in sessions. This suggests traffic quality or content relevance issues; A/B testing page layout or messaging could significantly improve conversion efficiency.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Investigate February growth deceleration",
+          "detail": "February 2026 sessions (+35.9% YoY) significantly underperformed January (+155.0% YoY) and March (+110.4% YoY). Identify whether external factors (campaign pauses, seasonality, competition) drove the slowdown and ensure March momentum is sustained.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 37184,
+        "engaged_sessions": 16249,
+        "engagement_rate": 0.437
+      },
+      "mom": {
+        "sessions": 24238,
+        "engaged_sessions": 11848,
+        "engagement_rate": 0.4888
+      },
+      "yoy": {
+        "sessions": 17675,
+        "engaged_sessions": 10094,
+        "engagement_rate": 0.5711
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": 53.4,
+      "yoy_sessions_change_pct": 110.4,
+      "mom_engaged_sessions_change_pct": 37.1,
+      "yoy_engaged_sessions_change_pct": 61.0,
+      "mom_engagement_rate_change_pts": -0.0518,
+      "yoy_engagement_rate_change_pts": -0.1341
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 10525,
+        "mom": 7728,
+        "yoy": 6146,
+        "mom_change_pct": 36.2,
+        "yoy_change_pct": 71.2
+      },
+      {
+        "event_name": "store_locate",
+        "current": 9156,
+        "mom": 6776,
+        "yoy": 6401,
+        "mom_change_pct": 35.1,
+        "yoy_change_pct": 43.0
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 8942,
+        "mom": 6591,
+        "yoy": 5008,
+        "mom_change_pct": 35.7,
+        "yoy_change_pct": 78.6
+      },
+      {
+        "event_name": "shop_now",
+        "current": 8328,
+        "mom": 6101,
+        "yoy": 4591,
+        "mom_change_pct": 36.5,
+        "yoy_change_pct": 81.4
+      },
+      {
+        "event_name": "locate_me",
+        "current": 7311,
+        "mom": 5083,
+        "yoy": 5524,
+        "mom_change_pct": 43.8,
+        "yoy_change_pct": 32.3
+      },
+      {
+        "event_name": "get_directions",
+        "current": 1116,
+        "mom": 733,
+        "yoy": 796,
+        "mom_change_pct": 52.3,
+        "yoy_change_pct": 40.2
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 22050,
+        "current_pct": 59.3,
+        "mom_sessions": 13437,
+        "yoy_sessions": 9886,
+        "mom_sessions_change_pct": 64.1,
+        "yoy_sessions_change_pct": 123.0
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 12668,
+        "current_pct": 34.1,
+        "mom_sessions": 10577,
+        "yoy_sessions": 7211,
+        "mom_sessions_change_pct": 19.8,
+        "yoy_sessions_change_pct": 75.7
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 2748,
+        "current_pct": 7.4,
+        "mom_sessions": 272,
+        "yoy_sessions": 416,
+        "mom_sessions_change_pct": 910.3,
+        "yoy_sessions_change_pct": 560.6
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 59,
+        "current_pct": 0.2,
+        "mom_sessions": 37,
+        "yoy_sessions": 17,
+        "mom_sessions_change_pct": 59.5,
+        "yoy_sessions_change_pct": 247.1
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 43,
+        "current_pct": 0.1,
+        "mom_sessions": 39,
+        "yoy_sessions": 37,
+        "mom_sessions_change_pct": 10.3,
+        "yoy_sessions_change_pct": 16.2
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 32,
+        "current_pct": 0.1,
+        "mom_sessions": 30,
+        "yoy_sessions": 117,
+        "mom_sessions_change_pct": 6.7,
+        "yoy_sessions_change_pct": -72.6
+      },
+      {
+        "channel": "Paid Social",
+        "current_sessions": 28,
+        "current_pct": 0.1,
+        "mom_sessions": 8,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 250.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Other",
+        "current_sessions": 3,
+        "current_pct": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "SMS",
+        "current_sessions": 1,
+        "current_pct": 0.0,
+        "mom_sessions": 3,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -66.7,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 17000,
+        "current_engaged_sessions": 11076,
+        "current_engagement_rate": 0.6515,
+        "mom_sessions": 12149,
+        "yoy_sessions": 12830,
+        "mom_sessions_change_pct": 39.9,
+        "yoy_sessions_change_pct": 32.5
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 1433,
+        "current_engaged_sessions": 26,
+        "current_engagement_rate": 0.0181,
+        "mom_sessions": 925,
+        "yoy_sessions": 1063,
+        "mom_sessions_change_pct": 54.9,
+        "yoy_sessions_change_pct": 34.8
+      },
+      {
+        "landing_page": "/california",
+        "current_sessions": 180,
+        "current_engaged_sessions": 105,
+        "current_engagement_rate": 0.5833,
+        "mom_sessions": 97,
+        "yoy_sessions": 92,
+        "mom_sessions_change_pct": 85.6,
+        "yoy_sessions_change_pct": 95.7
+      },
+      {
+        "landing_page": "/texas",
+        "current_sessions": 149,
+        "current_engaged_sessions": 93,
+        "current_engagement_rate": 0.6242,
+        "mom_sessions": 203,
+        "yoy_sessions": 31,
+        "mom_sessions_change_pct": -26.6,
+        "yoy_sessions_change_pct": 380.6
+      },
+      {
+        "landing_page": "/florida",
+        "current_sessions": 114,
+        "current_engaged_sessions": 53,
+        "current_engagement_rate": 0.4649,
+        "mom_sessions": 43,
+        "yoy_sessions": 23,
+        "mom_sessions_change_pct": 165.1,
+        "yoy_sessions_change_pct": 395.7
+      },
+      {
+        "landing_page": "/new-york",
+        "current_sessions": 107,
+        "current_engaged_sessions": 26,
+        "current_engagement_rate": 0.243,
+        "mom_sessions": 59,
+        "yoy_sessions": 26,
+        "mom_sessions_change_pct": 81.4,
+        "yoy_sessions_change_pct": 311.5
+      },
+      {
+        "landing_page": "/georgia",
+        "current_sessions": 60,
+        "current_engaged_sessions": 34,
+        "current_engagement_rate": 0.5667,
+        "mom_sessions": 28,
+        "yoy_sessions": 22,
+        "mom_sessions_change_pct": 114.3,
+        "yoy_sessions_change_pct": 172.7
+      },
+      {
+        "landing_page": "/ohio",
+        "current_sessions": 58,
+        "current_engaged_sessions": 41,
+        "current_engagement_rate": 0.7069,
+        "mom_sessions": 39,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 48.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/washington",
+        "current_sessions": 58,
+        "current_engaged_sessions": 37,
+        "current_engagement_rate": 0.6379,
+        "mom_sessions": 52,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 11.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/illinois",
+        "current_sessions": 51,
+        "current_engaged_sessions": 29,
+        "current_engagement_rate": 0.5686,
+        "mom_sessions": 36,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 41.7,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 34360,
+          "prior_year_sessions": 13477
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 24238,
+          "prior_year_sessions": 17832
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 37184,
+          "prior_year_sessions": 17675
+        }
+      ],
+      "ytd_current": 95782,
+      "ytd_prior": 48984,
+      "ytd_change_pct": 95.5
+    },
+    "summary": "FRE delivered exceptional growth in March 2026, with sessions up 53.4% MoM and 110.4% YoY, reaching 37,184 total sessions. YTD 2026 has already eclipsed 95,782 sessions \u2014 a 95.5% increase versus YTD 2025 \u2014 signaling sustained momentum after a record January (+155.0% YoY). However, engagement rate declined 5.2 pp MoM and 13.4 pp YoY to 43.7%, indicating that traffic growth is outpacing quality engagement, likely driven by higher volumes of lower-intent Direct traffic (59.3% of sessions, +64.1% MoM). High-value conversion signals remain strong: mainsite_clicks (+35.7% MoM, +78.6% YoY), shop_now (+36.5% MoM, +81.4% YoY), and store_locate (+35.1% MoM, +43.0% YoY) all grew substantially. Location-intent events (store_locate, locate_me, get_directions) collectively show healthy demand, with locate_me particularly strong (+43.8% MoM). Regional landing pages\u2014especially /florida, /texas, and /california\u2014are driving outsized engagement and YoY growth, suggesting effective localized traffic acquisition or seasonal demand. A critical anomaly: Unassigned traffic exploded +910.3% MoM to 2,748 sessions, requiring immediate audit to ensure proper channel attribution.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Capitalize on regional landing page momentum",
+          "detail": "/florida, /texas, and /california are delivering strong engagement (46.5%\u201362.4%) with explosive YoY growth (+95.7%, +380.6%, +395.7% respectively). Consider amplifying paid search and organic optimization for these high-intent state pages.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Leverage Direct traffic volume for retargeting",
+          "detail": "Direct now represents 59.3% of sessions (+64.1% MoM). Implement audience segmentation and personalization on homepage to convert these high-volume but lower-engagement visitors into mainsite_clicks and location actions.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Expand store locator UX investment",
+          "detail": "store_locate (9,156 events), locate_me (7,311), and get_directions (1,116) collectively signal strong location-seeking intent. All three grew 32\u201352% MoM; doubling down on frictionless location lookup could convert this intent into foot traffic.",
+          "impact": "high",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Engagement rate compression despite session growth",
+          "detail": "Engagement rate fell 5.2 pp MoM and 13.4 pp YoY despite 53.4% MoM session growth, indicating new traffic is lower-quality or arriving via less-engaged channels. This suggests organic acquisition may be pulling in higher-funnel traffic that requires nurturing.",
+          "severity": "medium"
+        },
+        {
+          "title": "Unassigned traffic spike requires urgent audit",
+          "detail": "Unassigned traffic jumped 910.3% MoM to 2,748 sessions (7.4% of total), obscuring true channel performance and undermining attribution analysis. Investigate GA4 configuration, server-side tagging, and UTM consistency immediately.",
+          "severity": "high"
+        },
+        {
+          "title": "Organic Search underperforming relative to session growth",
+          "detail": "Organic Search grew only 19.8% MoM while overall sessions grew 53.4%, indicating Direct is driving most gains. If Direct growth is unsustainable, organic rankings and paid efforts must be prioritized to stabilize acquisition.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Optimize Organic Search for location queries",
+          "detail": "Organic Search is only 34.1% of traffic but commands strong YoY growth (+75.7%). Targeting state-level and local keyword clusters (e.g., 'FRE [state]') paired with /california, /texas, /florida landing pages could unlock significant volume at high intent.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Resurrect Paid Search program",
+          "detail": "Paid Search represents just 59 sessions (0.2%) despite +247.1% YoY growth and strong YoY ROI signals. Even a modest $500\u20131,000/month budget targeting high-intent 'book now' and location keywords could yield outsized returns given mainsite_clicks and shop_now momentum.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Expand Paid Social beyond current footprint",
+          "detail": "Paid Social grew 250% MoM but remains negligible at 28 sessions. Given state landing pages' strong engagement and Direct audience scale, a targeted Paid Social campaign to these segments could recapture high-intent traffic at lower CAC than Direct.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  }
+}

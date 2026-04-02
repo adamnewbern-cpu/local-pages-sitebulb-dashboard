@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-01T14:23:05.121402Z",
+  "generated_at": "2026-04-01T21:21:11.224124Z",
   "model": "claude-haiku-4-5-20251001",
   "gsc_generated_at": "2026-03-31T20:12:59.599799Z",
   "sites": [
     {
       "site_url": "https://locations.atipt.com/",
       "display_name": "ATI Physical Therapy",
-      "analysis_date": "2026-04-01T14:23:05.121317Z",
+      "analysis_date": "2026-04-01T21:21:11.224036Z",
       "model": "claude-haiku-4-5-20251001",
       "totals": {
         "current": {
@@ -733,77 +733,66 @@
         }
       ],
       "recommendations": {
-        "summary": "ATI Physical Therapy experienced a challenging February 2026, with clicks declining 5.9% MoM to 41,786 and impressions dropping 12.5% MoM to 1.78M. However, average position improved by 4.4 positions (now 10.0), and CTR increased slightly by +0.17% to 2.35%, suggesting better ranking quality offsetting volume losses. Brand-heavy queries dominate performance, with \"ati physical therapy\" (6,011 clicks) accounting for 14% of total clicks, while geographic variants like \"ati physical therapy las vegas\" (+21% MoM) and \"ati physical therapy seattle\" (+21% MoM) are emerging as growth drivers. The primary concern is softening demand in core queries like \"ati physical therapy\" (-6% MoM) and \"physical therapy near me\" (-11% MoM), indicating either seasonal decline or competitive pressure.",
+        "summary": "ATI Physical Therapy experienced a mixed February 2026, with clicks declining 5.9% MoM to 41,786 while impressions fell 12.5% MoM to 1.78M. However, average position improved significantly by 4.4 positions MoM (now 10.0), and CTR ticked up 0.17% to 2.35%, indicating better ranking quality despite lower overall volume. Brand queries dominate performance\u2014\"ati physical therapy\" alone drove 6,011 clicks at position 1.1 with 10.97% CTR\u2014but generic local queries like \"physical therapy near me\" remain weak at position 10.6 with only 0.8% CTR despite 81K impressions. The brand is gaining traction on geo-specific searches (Las Vegas +21%, Seattle +21%, Tacoma +19% MoM), while some core branded terms like \"ati physical therapy\" (-6% MoM) and \"physical therapy near me\" (-11% MoM) show softness.",
         "quick_wins": [
           {
-            "title": "Optimize \"ati\" meta description for CTR lift",
-            "detail": "\"ati\" ranks at position 2.6 with 229,020 impressions but only 0.23% CTR\u2014among the lowest on-page CTR for such high volume. Rewrite the meta description to clarify ATI's value proposition (locations, services, or \"Find ATI Physical Therapy Near You\") to capture more clicks from this high-intent, high-volume query.",
+            "title": "Optimize meta descriptions for high-impression, low-CTR queries",
+            "detail": "\"ati\" (229K impressions, 0.23% CTR at pos 2.6), \"physical therapy\" (24K impressions, 0.74% CTR at pos 3.5), and \"physical therapist\" (8K impressions, 0.17% CTR at pos 4.0) are bleeding clicks due to weak snippets. Refresh title tags and meta descriptions to highlight unique value (e.g., 'award-winning PT', 'book online', 'locations nationwide').",
             "impact": "high",
             "effort": "low"
           },
           {
-            "title": "Refine \"physical therapy near me\" title and meta for position 10 query",
-            "detail": "Ranking at position 10.6 with 81,107 impressions but only 0.8% CTR, this query is being outcompeted. Update the title tag to lead with \"ATI Physical Therapy Near Me\" and emphasize multi-location availability in the meta description to push past position 10.",
+            "title": "Strengthen CTR for \"physical therapy near me\" at position 10.6",
+            "detail": "This query has 81K impressions but only 0.8% CTR; improving rank to top 5 or refreshing the SERP snippet could unlock significant clicks. Add location-specific schema markup and ensure title includes \"Near Me\" variant.",
             "impact": "high",
             "effort": "low"
           },
           {
-            "title": "Capitalize on geographic winner: Las Vegas and Seattle momentum",
-            "detail": "\"ati physical therapy las vegas\" (+21% MoM, 23.25% CTR at position 1.1) and \"ati physical therapy seattle\" (+21% MoM, 21.12% CTR at position 1.3) are both accelerating. Ensure landing pages for these locations are fully optimized with local reviews, hours, photos, and service details to maintain and grow this momentum.",
-            "impact": "medium",
-            "effort": "low"
-          },
-          {
-            "title": "Improve \"physical therapist near me\" CTR from position 9",
-            "detail": "This query has 17,905 impressions but only 0.27% CTR at position 9.1. Update the title and description to prominently feature \"Licensed Physical Therapists Near Me\" and ATI's clinic count/locations to improve click-through before pushing for a better ranking.",
+            "title": "Capitalize on geo-specific momentum with internal linking",
+            "detail": "\"ati physical therapy las vegas\" (+21% MoM), \"ati physical therapy seattle\" (+21% MoM), and \"ati physical therapy tacoma\" (+19% MoM) are trending upward. Cross-link these location pages from the homepage and main service pages to reinforce topical authority.",
             "impact": "medium",
             "effort": "low"
           }
         ],
         "potential_warnings": [
           {
-            "title": "Core brand query declining: \"ati physical therapy\" down 6% MoM",
-            "detail": "Your strongest performing query dropped from 6,404 to 6,011 clicks (\u2212393 clicks). While position remains at 1.1 and CTR is strong at 10.97%, this 6% decline warrants investigation into potential seasonal factors, increased SERP competition, or reduced search volume.",
+            "title": "Core branded query decline",
+            "detail": "\"ati physical therapy\" (your strongest performer) dropped 6% MoM from 6,404 to 6,011 clicks; \"ati physical therapy near me\" fell 14% MoM (232\u2192200 clicks). Investigate if algorithm shifts, indexing issues, or competitive pressure are eroding brand visibility despite strong position 1.1 ranking.",
+            "severity": "high"
+          },
+          {
+            "title": "Impression growth stalled while competitors may be gaining",
+            "detail": "Impressions fell 12.5% MoM while clicks only fell 5.9%, suggesting Google may have deprioritized your URLs in favor of other results. Monitor SERP features (knowledge panels, local packs, featured snippets) that may be cannibalizing organic traffic.",
             "severity": "medium"
           },
           {
-            "title": "Overall click decline of 5.9% MoM amid impression drop of 12.5%",
-            "detail": "Impressions fell much faster than clicks (\u221212.5% vs \u22125.9%), which initially suggests improved ranking quality, but the absolute click loss of ~2,400 clicks is material. Monitor whether this is seasonal (February is short) or signals broader competitive or content issues.",
+            "title": "Generic local terms remain weak at position 10\u201311",
+            "detail": "\"physical therapy near me\" is at position 10.6 with 0.8% CTR (81K impressions wasted), and \"physical therapy clinics near me\" sits at position 11 with only 1K impressions. These are high-intent queries that should rank in top 5.",
             "severity": "medium"
-          },
-          {
-            "title": "\"Physical therapy near me\" losing ground: \u221211% MoM clicks despite high volume",
-            "detail": "Dropped from 732 to 652 clicks at position 10.6 with only 0.8% CTR. This high-volume, high-intent query is underperforming and ranking worse than competitors, making it a priority for content and title tag overhaul.",
-            "severity": "medium"
-          },
-          {
-            "title": "Local-intent queries showing pockets of weakness",
-            "detail": "\"ati physical therapy austin\" (\u221230% MoM, pos 2.8) and \"ati near me\" (\u221222% MoM, pos 1.2) both declined significantly. Geographic targeting may need review or local landing page content may need strengthening.",
-            "severity": "low"
           }
         ],
         "biggest_opportunities": [
           {
-            "title": "Push \"physical therapy near me\" from position 10.6 to top 3",
-            "detail": "This query has 81,107 impressions with only 0.8% CTR at position 10.6\u2014moving to position 3\u20135 could yield 5,000+ additional clicks monthly. Requires competitive content audit, link building, and on-page optimization to beat local and national PT directories.",
+            "title": "Push \"physical therapy near me\" into top 5",
+            "detail": "Currently at position 10.6 with 81K impressions and 0.8% CTR, this generic local query has massive volume. Enhance your location landing pages with schema (LocalBusiness, AggregateOffer), add local reviews, and ensure every clinic page has unique content. Potential: 5\u201310K additional clicks if ranked top 5.",
             "impact": "high",
             "effort": "high"
           },
           {
-            "title": "Expand geographic landing pages for high-CTR location keywords",
-            "detail": "\"ati physical therapy las vegas\" (23.25% CTR), \"ati physical therapy seattle\" (21.12% CTR), and \"ati physical therapy tacoma\" (24.14% CTR) are all top-3 ranked with excellent CTR. Create or expand dedicated city pages for Austin, Tucson, Greenville SC, Albuquerque, and Rockville to capture similar momentum at scale.",
+            "title": "Build out underperforming geo-specific landing pages",
+            "detail": "\"physical therapy austin\" (pos 10.3, 940 impr, 2.02% CTR), \"physical therapy tucson\" (pos 10.4, 851 impr), \"dry needling near me\" (pos 11.2, 785 impr, 1.91% CTR), and \"physical therapy albuquerque\" (pos 16.6, 744 impr) are all page-2 opportunities. Create dedicated city-level pages with treatment types, therapist bios, and patient reviews.",
             "impact": "high",
-            "effort": "medium"
+            "effort": "high"
           },
           {
-            "title": "Target page-2 keywords: \"physical therapy clinics near me\" and \"dry needling near me\"",
-            "detail": "\"physical therapy clinics near me\" (pos 11, 1,250 impr, 0.88% CTR) and \"dry needling near me\" (pos 11.2, 785 impr, 1.91% CTR) are one rank away from breakthrough positions. Optimize existing or create targeted landing pages for these queries with local clinic information and service-specific content.",
+            "title": "Expand geo-specific branded momentum with new cities",
+            "detail": "Las Vegas, Seattle, and Tacoma branded queries are surging (+19\u201321% MoM). Identify underserved ATI locations and create/optimize local landing pages with structured data, localized content, and Google Business Profile optimization to replicate this success.",
             "impact": "medium",
             "effort": "medium"
           },
           {
-            "title": "Create hybrid content targeting \"physical therapy\" + location combinations",
-            "detail": "Generic \"physical therapy\" (pos 3.5, 24,429 impr, 0.74% CTR) and \"physical therapist\" (pos 4, 8,159 impr, 0.17% CTR) have high impressions but low CTR. Develop location-specific service pages that answer both queries to improve relevance and CTR, feeding authority into local rankings.",
+            "title": "Target \"physical therapist near me\" with intent-driven content",
+            "detail": "At position 9.1 with 17.9K impressions but only 0.27% CTR, this high-intent query needs a landing page focused on therapist credentials, specialties, and booking. This alone could add 1\u20132K clicks if optimized.",
             "impact": "medium",
             "effort": "medium"
           }

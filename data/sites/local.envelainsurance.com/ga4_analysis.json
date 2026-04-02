@@ -1,0 +1,644 @@
+{
+  "site_url": "https://local.envelainsurance.com/",
+  "display_name": "Envela Local",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 107,
+        "engaged_sessions": 36,
+        "engagement_rate": 0.3364
+      },
+      "mom": {
+        "sessions": 411,
+        "engaged_sessions": 43,
+        "engagement_rate": 0.1046
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": -74.0,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": -16.3,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": 0.2318,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "navigational_clicks",
+        "current": 21,
+        "mom": 21,
+        "yoy": null,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 21,
+        "mom": 28,
+        "yoy": null,
+        "mom_change_pct": -25.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "get_a_quote",
+        "current": 7,
+        "mom": 4,
+        "yoy": null,
+        "mom_change_pct": 75.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "locate_me",
+        "current": 3,
+        "mom": 2,
+        "yoy": null,
+        "mom_change_pct": 50.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "store_locate",
+        "current": 3,
+        "mom": 13,
+        "yoy": null,
+        "mom_change_pct": -76.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "learn_more_insurance_products",
+        "current": 1,
+        "mom": 1,
+        "yoy": null,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 88,
+        "current_pct": 82.2,
+        "mom_sessions": 355,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -75.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 12,
+        "current_pct": 11.2,
+        "mom_sessions": 25,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -52.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 7,
+        "current_pct": 6.5,
+        "mom_sessions": 1,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 600.0,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 28,
+        "current_engaged_sessions": 18,
+        "current_engagement_rate": 0.6429,
+        "mom_sessions": 27,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 3.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 3,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 2,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 50.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/alabama/prattville/pet-insurance",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/florida/gainesville/valerie-webb",
+        "current_sessions": 2,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 2,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 0.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/florida/kissimmee/nancy-clemente",
+        "current_sessions": 2,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 1.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/florida/miami/atv-scooter-golf-cart-insurance",
+        "current_sessions": 2,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/florida/st-petersburg/atv-scooter-golf-cart-insurance",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/georgia/savannah/rv-motorhome-trailer-insurance",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/south-carolina/greenville/atv-scooter-golf-cart-insurance",
+        "current_sessions": 2,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/knoxville/homeowners-insurance",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 359,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 388,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 124,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 871,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "Envela Local experienced a significant traffic decline MoM, with sessions dropping 74.0% to 107 in the last 30 days. However, engagement rate improved +23.2 percentage points to 33.6%, indicating that remaining traffic is higher-intent. Direct traffic dominated at 82.2% but declined 75.2% MoM, while Referral unexpectedly surged +600.0%, suggesting emerging word-of-mouth or partnership channel potential. High-value events show mixed signals: get_a_quote grew +75.0% (7 events) and locate_me climbed +50.0% (3 events), but store_locate fell 76.9%, indicating users may be using alternative discovery methods. The homepage (/) remains the strongest performer with 64.3% engagement, while specialty pages like /florida/kissimmee/nancy-clemente achieved 100% engagement on just 2 sessions. YTD trajectory shows sharp decline from 388 sessions in February to 124 in March, warranting immediate investigation into root causes.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Referral Channel Momentum",
+          "detail": "Referral traffic surged +600.0% MoM to 7 sessions. Identify and double down on the source\u2014partnership, review site, or directory listing\u2014and replicate success.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Get a Quote Event Growth",
+          "detail": "get_a_quote events increased +75.0% to 7 events, the strongest high-intent signal in the property. This high-value conversion driver deserves prominent placement and messaging optimization.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Homepage Engagement Stability",
+          "detail": "The homepage (/) maintained strong 64.3% engagement with 28 sessions and showed MoM growth of +3.7%, making it a reliable funnel entry point.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Critical Traffic Collapse",
+          "detail": "Sessions fell 74.0% MoM and Direct traffic (primary channel) dropped 75.2%, coinciding with a steep March decline (124 sessions vs. 388 in February). This 68% month-to-month drop signals potential technical, algorithmic, or campaign issues requiring urgent audit.",
+          "severity": "high"
+        },
+        {
+          "title": "Store Locator Underperformance",
+          "detail": "store_locate events plummeted 76.9% to 3 events, a critical concern for a local services property where location discovery is a primary conversion driver. Users may be abandoning this flow or using alternative methods.",
+          "severity": "high"
+        },
+        {
+          "title": "Organic Search Weakness",
+          "detail": "Organic Search declined 52.0% MoM to only 12 sessions (11.2% of traffic). For a local property, organic performance is foundational; sustained declines suggest indexing, ranking, or content visibility issues.",
+          "severity": "medium"
+        },
+        {
+          "title": "Data Collection Gaps",
+          "detail": "3 sessions landed on (not set) with 0% engagement, and multiple location pages show sparse traffic and zero engagement. Confirm GA4 tagging accuracy and landing page URL structure to avoid data loss.",
+          "severity": "low"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Restore Direct & Organic Traffic",
+          "detail": "Direct traffic is 82.2% of the mix but contracted 75.2% MoM. Audit email campaigns, bookmarks, and branded search; investigate Organic Search decline (52.0%) through GSC for ranking losses or indexation issues. Recovery here is the single largest lever for volume.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Expand Referral Channel Strategy",
+          "detail": "The +600.0% referral surge to 7 sessions is a bright spot. Identify the referral source(s) in traffic details, negotiate expanded partnerships, and test similar referral partnerships in underperforming regions.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Rebuild Store Locator Flow",
+          "detail": "store_locate declined 76.9% despite locate_me growing +50.0%. These events likely serve similar intents; consolidate messaging, simplify the locator UX, and test A/B variations on local landing pages to rebuild this high-intent funnel.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize High-Engagement Local Pages",
+          "detail": "Pages like /florida/kissimmee/nancy-clemente (100% engagement) and /florida/miami/atv-scooter-golf-cart-insurance (50% engagement) show strong conversion potential but lack volume. Analyze their content and messaging strategy, then scale via organic and paid promotions to similar local markets.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 124,
+        "engaged_sessions": 36,
+        "engagement_rate": 0.2903
+      },
+      "mom": {
+        "sessions": 388,
+        "engaged_sessions": 41,
+        "engagement_rate": 0.1057
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": -68.0,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": -12.2,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": 0.1846,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 23,
+        "mom": 26,
+        "yoy": null,
+        "mom_change_pct": -11.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 19,
+        "mom": 21,
+        "yoy": null,
+        "mom_change_pct": -9.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "get_a_quote",
+        "current": 8,
+        "mom": 3,
+        "yoy": null,
+        "mom_change_pct": 166.7,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "locate_me",
+        "current": 3,
+        "mom": 2,
+        "yoy": null,
+        "mom_change_pct": 50.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "store_locate",
+        "current": 3,
+        "mom": 13,
+        "yoy": null,
+        "mom_change_pct": -76.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "learn_more_insurance_products",
+        "current": 1,
+        "mom": 1,
+        "yoy": null,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 106,
+        "current_pct": 85.5,
+        "mom_sessions": 334,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -68.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 13,
+        "current_pct": 10.5,
+        "mom_sessions": 23,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -43.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 5,
+        "current_pct": 4.0,
+        "mom_sessions": 1,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 400.0,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 27,
+        "current_engaged_sessions": 17,
+        "current_engagement_rate": 0.6296,
+        "mom_sessions": 26,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 3.8,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 3,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 2,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 50.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/south-carolina/charleston/envela-insurance",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 5,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -40.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/clarksville/envela-insurance",
+        "current_sessions": 3,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 6,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -50.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/florida/kissimmee/nancy-clemente",
+        "current_sessions": 2,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 1.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/florida/miami/atv-scooter-golf-cart-insurance",
+        "current_sessions": 2,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/georgia/savannah/rv-motorhome-trailer-insurance",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/south-carolina/greenville/atv-scooter-golf-cart-insurance",
+        "current_sessions": 2,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/franklin",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 5,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -60.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/knoxville/homeowners-insurance",
+        "current_sessions": 2,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 359,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 388,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 124,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 871,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "March 2026 marked a significant traffic decline MoM, with sessions dropping 68.0% to 124 total\u2014the steepest monthly contraction since GA4 property launch. However, engagement rate improved 18.5 pp to 29.0%, and engaged sessions held relatively stable at 36 (only -12.2% MoM), signaling that remaining traffic is higher-intent. Direct traffic bore the brunt of the decline (-68.3%), while referral traffic surged +400% despite low absolute volume (5 sessions). High-value conversions showed mixed signals: get_a_quote events doubled (+166.7% to 8), and locate_me grew +50%, but store_locate dropped sharply (-76.9% to 3 events). The homepage (/) remains the strongest landing page at 63% engagement, and Kissimmee, FL (Nancy Clemente page) achieved perfect 100% engagement despite minimal traffic. YTD 2026 sits at 871 sessions across Q1, with an evident downward trajectory (Jan: 359 \u2192 Feb: 388 \u2192 Mar: 124) that warrants immediate investigation into traffic source and messaging changes.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Capitalize on get_a_quote momentum",
+          "detail": "get_a_quote events surged +166.7% MoM to 8 conversions\u2014the strongest event growth signal in the dataset. Identify which pages and traffic sources drove this spike and replicate messaging/CTA placement across underperforming local pages.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Leverage Kissimmee page success",
+          "detail": "/florida/kissimmee/nancy-clemente achieved 100% engagement rate (2 engaged out of 2 sessions). Audit this page's content, CTA structure, and messaging to identify conversion patterns that can be applied to lower-performing local pages.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Grow referral channel systematically",
+          "detail": "Referral traffic grew +400% to 5 sessions in March despite small absolute volume. Identify which referral sources drove this growth and pursue partnership or link-building opportunities with those domains.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Severe session decline threatens property viability",
+          "detail": "Sessions fell 68% MoM to 124, and the quarterly trend (359 \u2192 388 \u2192 124) shows accelerating decline. Without intervention, April may see further contraction, jeopardizing ROI on this local pages property.",
+          "severity": "high"
+        },
+        {
+          "title": "Direct traffic collapse driving overall decline",
+          "detail": "Direct traffic plummeted -68.3% MoM and comprises 85.5% of total traffic, meaning the property has minimal organic/paid diversification. Loss of direct traffic indicates either brand awareness erosion, seasonal drop, or technical/tracking issues.",
+          "severity": "high"
+        },
+        {
+          "title": "store_locate conversions fell 76.9%",
+          "detail": "store_locate events dropped from 13 to 3 (\u201076.9% MoM), a critical event type for local intent and foot traffic. This steep decline may signal broken location finder functionality, poor UX, or loss of high-intent traffic cohorts.",
+          "severity": "medium"
+        },
+        {
+          "title": "Organic search underperforming relative to potential",
+          "detail": "Organic search represents only 10.5% of traffic (13 sessions) with -43.5% MoM decline. For a local pages property, organic search should be a larger revenue driver; this suggests SEO visibility or keyword strategy gaps.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Rebuild direct traffic through retargeting and brand campaigns",
+          "detail": "Direct traffic (-68.3% MoM, 85.5% of total) is the primary revenue engine and is collapsing. Launch or refresh retargeting campaigns on Facebook/Google and audit brand keyword bids to recapture lost direct sessions.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Scale paid search to offset organic/direct weakness",
+          "detail": "Organic search is small (10.5%) and declining (-43.5% MoM). Invest in paid search campaigns targeting high-intent local keywords (e.g., 'insurance near me', city + product combinations) to diversify traffic and stabilize March's decline.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Audit and fix store_locate/location finder feature",
+          "detail": "store_locate events dropped -76.9% MoM to 3 events, a sharp reversal for a local pages property. Verify the feature is functioning, test on mobile/desktop, and ensure clear CTAs are present on high-traffic pages like the homepage.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Expand content around top-performing products (ATV, scooter, golf cart insurance)",
+          "detail": "Pages targeting niche products (/atv-scooter-golf-cart-insurance/) are showing 50% engagement rates despite low volume. Create dedicated landing pages and paid campaigns for these underserved product categories across all geo-targeted pages.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  }
+}

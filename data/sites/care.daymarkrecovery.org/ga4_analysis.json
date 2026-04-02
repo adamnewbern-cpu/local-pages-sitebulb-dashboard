@@ -1,0 +1,610 @@
+{
+  "site_url": "https://care.daymarkrecovery.org/",
+  "display_name": "Daymark",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 485,
+        "engaged_sessions": 156,
+        "engagement_rate": 0.3216
+      },
+      "mom": {
+        "sessions": 578,
+        "engaged_sessions": 158,
+        "engagement_rate": 0.2734
+      },
+      "yoy": {
+        "sessions": 260,
+        "engaged_sessions": 129,
+        "engagement_rate": 0.4962
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -16.1,
+      "yoy_sessions_change_pct": 86.5,
+      "mom_engaged_sessions_change_pct": -1.3,
+      "yoy_engaged_sessions_change_pct": 20.9,
+      "mom_engagement_rate_change_pts": 0.0482,
+      "yoy_engagement_rate_change_pts": -0.1746
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 129,
+        "mom": 118,
+        "yoy": 122,
+        "mom_change_pct": 9.3,
+        "yoy_change_pct": 5.7
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 97,
+        "mom": 83,
+        "yoy": 100,
+        "mom_change_pct": 16.9,
+        "yoy_change_pct": -3.0
+      },
+      {
+        "event_name": "location_search",
+        "current": 49,
+        "mom": 41,
+        "yoy": 33,
+        "mom_change_pct": 19.5,
+        "yoy_change_pct": 48.5
+      },
+      {
+        "event_name": "locate_me",
+        "current": 23,
+        "mom": 15,
+        "yoy": 17,
+        "mom_change_pct": 53.3,
+        "yoy_change_pct": 35.3
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 374,
+        "current_pct": 77.1,
+        "mom_sessions": 449,
+        "yoy_sessions": 152,
+        "mom_sessions_change_pct": -16.7,
+        "yoy_sessions_change_pct": 146.1
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 106,
+        "current_pct": 21.9,
+        "mom_sessions": 105,
+        "yoy_sessions": 99,
+        "mom_sessions_change_pct": 1.0,
+        "yoy_sessions_change_pct": 7.1
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 5,
+        "current_pct": 1.0,
+        "mom_sessions": 15,
+        "yoy_sessions": 4,
+        "mom_sessions_change_pct": -66.7,
+        "yoy_sessions_change_pct": 25.0
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 273,
+        "current_engaged_sessions": 87,
+        "current_engagement_rate": 0.3187,
+        "mom_sessions": 283,
+        "yoy_sessions": 163,
+        "mom_sessions_change_pct": -3.5,
+        "yoy_sessions_change_pct": 67.5
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 20,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 16,
+        "yoy_sessions": 18,
+        "mom_sessions_change_pct": 25.0,
+        "yoy_sessions_change_pct": 11.1
+      },
+      {
+        "landing_page": "/north-carolina",
+        "current_sessions": 15,
+        "current_engaged_sessions": 10,
+        "current_engagement_rate": 0.6667,
+        "mom_sessions": 7,
+        "yoy_sessions": 6,
+        "mom_sessions_change_pct": 114.3,
+        "yoy_sessions_change_pct": 150.0
+      },
+      {
+        "landing_page": "/north-carolina/concord/cabarrus-county",
+        "current_sessions": 7,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.1429,
+        "mom_sessions": 0,
+        "yoy_sessions": 5,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": 40.0
+      },
+      {
+        "landing_page": "/north-carolina/asheboro/randolph-county",
+        "current_sessions": 6,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 0,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": 500.0
+      },
+      {
+        "landing_page": "/north-carolina/winston-salem",
+        "current_sessions": 6,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.3333,
+        "mom_sessions": 4,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 50.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/north-carolina/lillington/sampson-county",
+        "current_sessions": 5,
+        "current_engaged_sessions": 4,
+        "current_engagement_rate": 0.8,
+        "mom_sessions": 7,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -28.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/north-carolina/newland/rutherford-county",
+        "current_sessions": 5,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.2,
+        "mom_sessions": 10,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -50.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/north-carolina/statesville/catawba-county",
+        "current_sessions": 5,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.4,
+        "mom_sessions": 5,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 0.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/north-carolina/albemarle/stanly-county",
+        "current_sessions": 4,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.25,
+        "mom_sessions": 3,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 33.3,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 742,
+          "prior_year_sessions": 232
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 533,
+          "prior_year_sessions": 219
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 513,
+          "prior_year_sessions": 254
+        }
+      ],
+      "ytd_current": 1788,
+      "ytd_prior": 705,
+      "ytd_change_pct": 153.6
+    },
+    "summary": "Daymark's local pages site experienced a challenging month with overall sessions declining 16.1% MoM to 485, though the YoY comparison remains strongly positive at +86.5%, reflecting robust year-over-year growth momentum. Engagement rate improved 4.8 percentage points MoM to 32.2%, suggesting higher-quality traffic despite lower volume. Location-based intent signals are particularly strong: location_search grew 19.5% MoM and 48.5% YoY with 49 events, while locate_me surged 53.3% MoM and 35.3% YoY with 23 events, indicating increased demand for local discovery. Outbound clicks (129 events) grew 9.3% MoM and remained stable YoY at +5.7%, showing consistent external engagement. The homepage (/) remains the dominant landing page with 273 sessions and 31.9% engagement, though MoM growth stalled at -3.5%; however, regional North Carolina pages are emerging as high-engagement entry points, particularly /north-carolina (66.7% engagement, +114.3% MoM) and /north-carolina/lillington/sampson-county (80.0% engagement). Direct traffic dominates at 77.1% of sessions, declining 16.7% MoM but exploding 146.1% YoY, while organic search remains stable at 106 sessions (+1.0% MoM, +7.1% YoY). YTD 2026 shows exceptional growth at 1,788 sessions (+153.6% vs. 2025), with January's +219.8% spike normalizing but remaining healthy through Q1.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Location Search Intent Is Accelerating",
+          "detail": "location_search events hit 49 with +19.5% MoM and +48.5% YoY growth; locate_me also surged 53.3% MoM. Pair this with high engagement rates on regional pages like /north-carolina/lillington/sampson-county (80.0% engagement) to prioritize store locator UX and local landing page optimization.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Regional North Carolina Pages Showing Strong Engagement",
+          "detail": "The /north-carolina hub page achieved 66.7% engagement (+114.3% MoM) and /north-carolina/lillington/sampson-county reached 80.0% engagement despite low volume. Investing in content, CTAs, and conversion paths on these emerging high-intent pages can amplify ROI without scaling traffic costs.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Outbound Clicks Remain Healthy and Growing",
+          "detail": "129 outbound_clicks (+9.3% MoM, +5.7% YoY) indicate consistent external engagement; these represent moderate-value funneling to deeper destinations. Monitor attribution to ensure downstream conversions (calls, bookings) are captured and attributed back to these click sources.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Overall Sessions Declined 16.1% Month-over-Month",
+          "detail": "485 sessions in the last 30 days marks a significant pullback from the prior month, breaking the strong YoY trajectory. While YoY growth remains +86.5%, the sequential decline warrants investigation into seasonality, traffic source volatility (Direct dropped 16.7% MoM), or potential technical/tracking issues.",
+          "severity": "medium"
+        },
+        {
+          "title": "Direct Traffic Dominance Masks Organic Search Stagnation",
+          "detail": "Direct traffic represents 77.1% of sessions but declined 16.7% MoM, creating single-channel dependency risk. Organic search (106 sessions) grew only +1.0% MoM, suggesting SEO momentum is flat; branded/direct reliance leaves Daymark vulnerable to algorithm changes or user behavior shifts.",
+          "severity": "medium"
+        },
+        {
+          "title": "Homepage Engagement MoM Flattened",
+          "detail": "The / landing page (273 sessions, 31.9% engagement) saw traffic decline 3.5% MoM despite being the conversion hub. With navigational_clicks up 16.9% MoM but no corresponding boost in high-value conversions (calls, mainsite_clicks, bookings), users may be exploring but not converting.",
+          "severity": "low"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Accelerate Organic Search Investment",
+          "detail": "Organic search grew only +1.0% MoM and 106 sessions represent just 21.9% of traffic; with location-based intent surging (+48.5% YoY in location_search events), investing in local SEO for regional North Carolina pages, store locator keywords, and county/city clusters could unlock high-intent, sustainable traffic.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Scale High-Engagement Regional Landing Pages",
+          "detail": "Pages like /north-carolina/lillington/sampson-county (80.0% engagement) and /north-carolina/asheboro/randolph-county (50.0% engagement) show exceptional engagement-to-traffic ratios; create templated, scalable versions for underrepresented North Carolina counties and promote them via Direct, Organic, and paid channels to capture fragmented local demand.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Close the Engagement-to-Conversion Gap on Homepage & Regional Hubs",
+          "detail": "Engaged sessions total only 156 (32.2% engagement rate), but custom events reveal low mainsite_clicks, calls, and booking events relative to navigational activity. Implement conversion-focused CTA testing, clearer value propositions, and prominent call/booking buttons on / and /north-carolina to convert engaged traffic into high-value actions.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Investigate and Stabilize Direct Traffic Volatility",
+          "detail": "Direct traffic (374 sessions, -16.7% MoM, +146.1% YoY) shows erratic patterns; clarify whether the MoM drop reflects seasonal dips, campaign pauses, or tracking anomalies, then develop a steady-state direct traffic strategy (email nurture, branded campaigns, offline promotion) to reduce reliance on month-to-month swings.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 513,
+        "engaged_sessions": 175,
+        "engagement_rate": 0.3411
+      },
+      "mom": {
+        "sessions": 533,
+        "engaged_sessions": 137,
+        "engagement_rate": 0.257
+      },
+      "yoy": {
+        "sessions": 254,
+        "engaged_sessions": 127,
+        "engagement_rate": 0.5
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -3.8,
+      "yoy_sessions_change_pct": 102.0,
+      "mom_engaged_sessions_change_pct": 27.7,
+      "yoy_engaged_sessions_change_pct": 37.8,
+      "mom_engagement_rate_change_pts": 0.0841,
+      "yoy_engagement_rate_change_pts": -0.1589
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 134,
+        "mom": 112,
+        "yoy": 125,
+        "mom_change_pct": 19.6,
+        "yoy_change_pct": 7.2
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 99,
+        "mom": 79,
+        "yoy": 103,
+        "mom_change_pct": 25.3,
+        "yoy_change_pct": -3.9
+      },
+      {
+        "event_name": "location_search",
+        "current": 50,
+        "mom": 40,
+        "yoy": 34,
+        "mom_change_pct": 25.0,
+        "yoy_change_pct": 47.1
+      },
+      {
+        "event_name": "locate_me",
+        "current": 23,
+        "mom": 15,
+        "yoy": 16,
+        "mom_change_pct": 53.3,
+        "yoy_change_pct": 43.8
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 395,
+        "current_pct": 77.0,
+        "mom_sessions": 413,
+        "yoy_sessions": 148,
+        "mom_sessions_change_pct": -4.4,
+        "yoy_sessions_change_pct": 166.9
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 113,
+        "current_pct": 22.0,
+        "mom_sessions": 96,
+        "yoy_sessions": 98,
+        "mom_sessions_change_pct": 17.7,
+        "yoy_sessions_change_pct": 15.3
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 5,
+        "current_pct": 1.0,
+        "mom_sessions": 15,
+        "yoy_sessions": 4,
+        "mom_sessions_change_pct": -66.7,
+        "yoy_sessions_change_pct": 25.0
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 278,
+        "current_engaged_sessions": 87,
+        "current_engagement_rate": 0.3129,
+        "mom_sessions": 270,
+        "yoy_sessions": 158,
+        "mom_sessions_change_pct": 3.0,
+        "yoy_sessions_change_pct": 75.9
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 20,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 16,
+        "yoy_sessions": 17,
+        "mom_sessions_change_pct": 25.0,
+        "yoy_sessions_change_pct": 17.6
+      },
+      {
+        "landing_page": "/north-carolina",
+        "current_sessions": 17,
+        "current_engaged_sessions": 11,
+        "current_engagement_rate": 0.6471,
+        "mom_sessions": 5,
+        "yoy_sessions": 7,
+        "mom_sessions_change_pct": 240.0,
+        "yoy_sessions_change_pct": 142.9
+      },
+      {
+        "landing_page": "/north-carolina/concord/cabarrus-county",
+        "current_sessions": 7,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.1429,
+        "mom_sessions": 0,
+        "yoy_sessions": 5,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": 40.0
+      },
+      {
+        "landing_page": "/north-carolina/newland/rutherford-county",
+        "current_sessions": 7,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.4286,
+        "mom_sessions": 8,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -12.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/north-carolina/winston-salem",
+        "current_sessions": 7,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.4286,
+        "mom_sessions": 3,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 133.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/north-carolina/asheboro/randolph-county",
+        "current_sessions": 6,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 0,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": 500.0
+      },
+      {
+        "landing_page": "/north-carolina/lillington/sampson-county",
+        "current_sessions": 5,
+        "current_engaged_sessions": 4,
+        "current_engagement_rate": 0.8,
+        "mom_sessions": 7,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -28.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/north-carolina/statesville/catawba-county",
+        "current_sessions": 5,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.4,
+        "mom_sessions": 5,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 0.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/north-carolina/boone/transylvania-county",
+        "current_sessions": 4,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 742,
+          "prior_year_sessions": 232
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 533,
+          "prior_year_sessions": 219
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 513,
+          "prior_year_sessions": 254
+        }
+      ],
+      "ytd_current": 1788,
+      "ytd_prior": 705,
+      "ytd_change_pct": 153.6
+    },
+    "summary": "March 2026 delivered mixed signals for Daymark: total sessions declined 3.8% MoM to 513, but engaged sessions surged 27.7% MoM and engagement rate improved +8.4 pp, suggesting higher-intent traffic composition despite lower volume. YoY growth remains robust at +102.0% sessions and +37.8% engaged sessions, with Q1 2026 delivering 1,788 sessions vs. 705 in Q1 2025 (+153.6%), though momentum is gradually decelerating (Jan: +219.8%, Feb: +143.4%, Mar: +102.0%). Direct traffic dominates at 77.0% of sessions with exceptional YoY growth (+166.9%), while organic search contributes 22.0% and grew a modest 15.3% YoY. High-intent location searches drove strong performance: location_search events grew 25.0% MoM and 47.1% YoY to 50 events, while locate_me surged 53.3% MoM (+43.8% YoY) to 23 events\u2014indicating strong local intent signaling. Outbound clicks (134 events, +19.6% MoM, +7.2% YoY) and navigational clicks (99 events, +25.3% MoM) both grew, but the absence of tracked booking/calls/mainsite_click data limits conversion visibility.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "North Carolina regional pages showing explosive engagement lift",
+          "detail": "/north-carolina saw 17 sessions (+240% MoM) with 64.7% engagement rate; /north-carolina/asheboro/randolph-county delivered 50% engagement (+500% YoY) on just 6 sessions, signaling strong local relevance.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Location-search intent accelerating month-over-month",
+          "detail": "location_search events grew 25.0% MoM and 47.1% YoY to 50, while locate_me jumped 53.3% MoM\u2014clear evidence that map/finder tools are resonating with users seeking local services.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Direct traffic loyalty and YoY scale",
+          "detail": "Direct channel now 395 sessions (77% of total) with +166.9% YoY growth, indicating strong brand recall and repeat/bookmarked visits even as total sessions moderated MoM.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Overall session volume declining month-over-month despite engagement gains",
+          "detail": "Sessions dropped 3.8% MoM from 533 to 513, marking the third consecutive monthly decline (Jan\u2192Feb: -28.2%, Feb\u2192Mar: -3.8%), which suggests seasonal or campaign pullback rather than organic traffic momentum.",
+          "severity": "medium"
+        },
+        {
+          "title": "No visibility into high-value conversions (calls, bookings, mainsite_clicks)",
+          "detail": "Event glossary indicates calls, book_now, schedule_, and mainsite_clicks carry high conversion value, but these events are absent from the March dataset, making it impossible to assess true business outcomes.",
+          "severity": "high"
+        },
+        {
+          "title": "Organic search growth decelerating despite 22% channel share",
+          "detail": "Organic search grew only 15.3% YoY (113 sessions) and +17.7% MoM, significantly trailing direct's +166.9% YoY, suggesting SEO or content initiatives may need optimization to capitalize on local intent.",
+          "severity": "low"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Expand and optimize North Carolina county-level landing pages",
+          "detail": "/north-carolina/lillington/sampson-county achieved 80.0% engagement on 5 sessions; scale similar high-intent county pages (Cabarrus, Randolph, Catawba) with targeted local content and CTAs to capture growing map-search traffic.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Implement conversion tracking for calls and booking events",
+          "detail": "Establish GA4 event capture for phone calls and scheduling actions to unlock business-critical metrics; current absence of these high-value conversions leaves a major blind spot in campaign ROI assessment.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Drive organic search growth through local SEO investment",
+          "detail": "Organic search contributes 22% of traffic but lags direct YoY growth (15.3% vs. 166.9%); develop county-specific keyword strategies and local schema markup for /north-carolina/* pages to capture bottom-funnel search intent.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Leverage locate_me momentum with frictionless user experience",
+          "detail": "locate_me events surged 53.3% MoM (23 events); audit the geolocation feature for mobile UX, load speed, and downstream conversion funnel to maximize this high-intent interaction.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ]
+    }
+  }
+}

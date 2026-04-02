@@ -1,0 +1,665 @@
+{
+  "site_url": "https://sellmycar.pullapart.com/",
+  "display_name": "Pull-A-Part",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 5458,
+        "engaged_sessions": 1326,
+        "engagement_rate": 0.2429
+      },
+      "mom": {
+        "sessions": 5322,
+        "engaged_sessions": 1262,
+        "engagement_rate": 0.2371
+      },
+      "yoy": {
+        "sessions": 9931,
+        "engaged_sessions": 5323,
+        "engagement_rate": 0.536
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": 2.6,
+      "yoy_sessions_change_pct": -45.0,
+      "mom_engaged_sessions_change_pct": 5.1,
+      "yoy_engaged_sessions_change_pct": -75.1,
+      "mom_engagement_rate_change_pts": 0.0058,
+      "yoy_engagement_rate_change_pts": -0.2931
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 2230,
+        "mom": 2233,
+        "yoy": 8312,
+        "mom_change_pct": -0.1,
+        "yoy_change_pct": -73.2
+      },
+      {
+        "event_name": "calls",
+        "current": 188,
+        "mom": 168,
+        "yoy": 1026,
+        "mom_change_pct": 11.9,
+        "yoy_change_pct": -81.7
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 127,
+        "mom": 195,
+        "yoy": 613,
+        "mom_change_pct": -34.9,
+        "yoy_change_pct": -79.3
+      },
+      {
+        "event_name": "store_locate",
+        "current": 62,
+        "mom": 71,
+        "yoy": 125,
+        "mom_change_pct": -12.7,
+        "yoy_change_pct": -50.4
+      },
+      {
+        "event_name": "locate_me",
+        "current": 35,
+        "mom": 28,
+        "yoy": 62,
+        "mom_change_pct": 25.0,
+        "yoy_change_pct": -43.5
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 4197,
+        "current_pct": 76.9,
+        "mom_sessions": 4099,
+        "yoy_sessions": 1571,
+        "mom_sessions_change_pct": 2.4,
+        "yoy_sessions_change_pct": 167.2
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 1130,
+        "current_pct": 20.7,
+        "mom_sessions": 1129,
+        "yoy_sessions": 8310,
+        "mom_sessions_change_pct": 0.1,
+        "yoy_sessions_change_pct": -86.4
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 55,
+        "current_pct": 1.0,
+        "mom_sessions": 75,
+        "yoy_sessions": 29,
+        "mom_sessions_change_pct": -26.7,
+        "yoy_sessions_change_pct": 89.7
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 22,
+        "current_pct": 0.4,
+        "mom_sessions": 16,
+        "yoy_sessions": 128,
+        "mom_sessions_change_pct": 37.5,
+        "yoy_sessions_change_pct": -82.8
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 599,
+        "current_engaged_sessions": 240,
+        "current_engagement_rate": 0.4007,
+        "mom_sessions": 549,
+        "yoy_sessions": 690,
+        "mom_sessions_change_pct": 9.1,
+        "yoy_sessions_change_pct": -13.2
+      },
+      {
+        "landing_page": "/louisiana/harvey/4401-peters-rd",
+        "current_sessions": 548,
+        "current_engaged_sessions": 379,
+        "current_engagement_rate": 0.6916,
+        "mom_sessions": 561,
+        "yoy_sessions": 710,
+        "mom_sessions_change_pct": -2.3,
+        "yoy_sessions_change_pct": -22.8
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 40,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.05,
+        "mom_sessions": 39,
+        "yoy_sessions": 191,
+        "mom_sessions_change_pct": 2.6,
+        "yoy_sessions_change_pct": -79.1
+      },
+      {
+        "landing_page": "/north-carolina/charlotte/6024-n-tryon-st",
+        "current_sessions": 31,
+        "current_engaged_sessions": 14,
+        "current_engagement_rate": 0.4516,
+        "mom_sessions": 43,
+        "yoy_sessions": 275,
+        "mom_sessions_change_pct": -27.9,
+        "yoy_sessions_change_pct": -88.7
+      },
+      {
+        "landing_page": "/north-carolina/greensboro",
+        "current_sessions": 20,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.15,
+        "mom_sessions": 16,
+        "yoy_sessions": 56,
+        "mom_sessions_change_pct": 25.0,
+        "yoy_sessions_change_pct": -64.3
+      },
+      {
+        "landing_page": "/ohio/newbury",
+        "current_sessions": 17,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 12,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 41.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/ohio/medina",
+        "current_sessions": 16,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.125,
+        "mom_sessions": 16,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 0.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/ohio/litchfield",
+        "current_sessions": 14,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/south-carolina/columbia/top-models",
+        "current_sessions": 14,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/alabama/foley",
+        "current_sessions": 13,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.2308,
+        "mom_sessions": 16,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -18.8,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 7503,
+          "prior_year_sessions": 10234
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 4953,
+          "prior_year_sessions": 9103
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 5674,
+          "prior_year_sessions": 10341
+        }
+      ],
+      "ytd_current": 18130,
+      "ytd_prior": 29678,
+      "ytd_change_pct": -38.9
+    },
+    "summary": "Pull-A-Part's local pages experienced modest MoM growth (+2.6% sessions, +5.1% engaged sessions) but faces a severe YoY headwind, with total sessions down 45.0% and engaged sessions down 75.1% versus the same period last year. Direct traffic remains the dominant channel at 76.9% of sessions and grew 167.2% YoY, suggesting strong brand recall and repeat visitation, yet this growth masks alarming declines in organic search (-86.4% YoY) and paid/referral channels. High-value conversions show mixed signals: calls grew 11.9% MoM (+188 events) but plummeted 81.7% YoY, while outbound_clicks held flat MoM but fell 73.2% YoY. The Harvey, Louisiana location (/louisiana/harvey/4401-peters-rd) remains the engagement leader at 69.2%, but secondary markets show inconsistent traction and zero engagement. YTD 2026 tracking at -38.9% versus 2025 across Q1, with February representing the sharpest monthly decline (-45.6%), signals a structural traffic loss rather than seasonal volatility.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Capitalize on Harvey, Louisiana momentum",
+          "detail": "The /louisiana/harvey/4401-peters-rd page generated 548 sessions with 69.2% engagement rate\u2014highest among all location pages. Replicate this landing page structure and conversion flow to secondary locations (Charlotte, Greensboro, Foley) that show lower engagement (0\u201345%).",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Double down on Direct channel strength",
+          "detail": "Direct traffic is 76.9% of volume and grew 167.2% YoY, indicating strong brand equity. Invest in retargeting and email nurture to convert repeat visitors into high-value calls and mainsite_clicks, currently underperforming relative to session volume.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Leverage 'locate_me' momentum",
+          "detail": "The locate_me event grew 25.0% MoM (35 events) despite overall decline, suggesting mobile-first location intent. Optimize this feature's visibility and conversion path to calls or store_locate actions.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Catastrophic YoY organic search decline",
+          "detail": "Organic search traffic dropped 86.4% YoY to just 1,130 sessions (20.7% of total). This suggests significant visibility loss in search results, likely due to algorithm changes, lost backlinks, or on-page SEO degradation\u2014requires immediate technical and content audit.",
+          "severity": "high"
+        },
+        {
+          "title": "Severe engagement cliff in secondary markets",
+          "detail": "Multiple Ohio, North Carolina, and South Carolina location pages (Newbury, Litchfield, Columbia, Medina) show 0% engagement or single-digit sessions. These pages are traffic drains and may indicate missing inventory, outdated information, or poor local SEO setup.",
+          "severity": "high"
+        },
+        {
+          "title": "Year-over-year conversion collapse across all high-value events",
+          "detail": "Calls are down 81.7% YoY, outbound_clicks down 73.2% YoY, and navigational_clicks down 79.3% YoY. Combined with -45.0% session decline YoY, this indicates both traffic loss and conversion quality degradation\u2014not just volume contraction.",
+          "severity": "high"
+        },
+        {
+          "title": "Navigational clicks plummeting MoM",
+          "detail": "Navigational_clicks fell 34.9% MoM (127 events) despite slight session growth, suggesting users are less likely to explore the site or move between pages\u2014possible UX friction or content relevance issue.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Recover organic search visibility",
+          "detail": "Organic search collapsed -86.4% YoY; even modest recovery to 50% of prior-year volume would add ~500+ sessions monthly. Conduct full technical SEO audit, rebuild local search citations, and align location page content with high-intent keywords (e.g., 'auto parts near me,' 'salvage yards').",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Improve secondary market location pages",
+          "detail": "Charlotte (/north-carolina/charlotte/6024-n-tryon-st) dropped 27.9% MoM and Greensboro shows 15% engagement; audit inventory accuracy, hours, phone numbers, and implement templates proven by Harvey location's 69.2% engagement to standardize conversion funnels.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Convert direct traffic to high-value calls",
+          "detail": "Direct channel is 76.9% of volume (4,197 sessions) but calls only total 188\u2014a 4.5% implicit conversion rate. Test prominent click-to-call CTAs, sticky phone headers, and landing page call button placement to unlock conversion upside on existing traffic.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Activate store locator as conversion funnel",
+          "detail": "Store_locate (62 events) and locate_me (35 events) combined represent ~100 high-intent interactions, but downstream conversion to calls is unclear. Map these events to downstream call/booking funnels and test UX improvements (one-click calling, map preview expansion) to close the gap.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 5674,
+        "engaged_sessions": 1397,
+        "engagement_rate": 0.2462
+      },
+      "mom": {
+        "sessions": 4953,
+        "engaged_sessions": 1151,
+        "engagement_rate": 0.2324
+      },
+      "yoy": {
+        "sessions": 10341,
+        "engaged_sessions": 5514,
+        "engagement_rate": 0.5332
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": 14.6,
+      "yoy_sessions_change_pct": -45.1,
+      "mom_engaged_sessions_change_pct": 21.4,
+      "yoy_engaged_sessions_change_pct": -74.7,
+      "mom_engagement_rate_change_pts": 0.0138,
+      "yoy_engagement_rate_change_pts": -0.287
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 2340,
+        "mom": 2041,
+        "yoy": 8562,
+        "mom_change_pct": 14.6,
+        "yoy_change_pct": -72.7
+      },
+      {
+        "event_name": "calls",
+        "current": 194,
+        "mom": 159,
+        "yoy": 1043,
+        "mom_change_pct": 22.0,
+        "yoy_change_pct": -81.4
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 148,
+        "mom": 172,
+        "yoy": 608,
+        "mom_change_pct": -14.0,
+        "yoy_change_pct": -75.7
+      },
+      {
+        "event_name": "store_locate",
+        "current": 72,
+        "mom": 61,
+        "yoy": 125,
+        "mom_change_pct": 18.0,
+        "yoy_change_pct": -42.4
+      },
+      {
+        "event_name": "locate_me",
+        "current": 38,
+        "mom": 25,
+        "yoy": 66,
+        "mom_change_pct": 52.0,
+        "yoy_change_pct": -42.4
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Direct",
+        "current_sessions": 4352,
+        "current_pct": 76.7,
+        "mom_sessions": 3830,
+        "yoy_sessions": 1647,
+        "mom_sessions_change_pct": 13.6,
+        "yoy_sessions_change_pct": 164.2
+      },
+      {
+        "channel": "Organic Search",
+        "current_sessions": 1175,
+        "current_pct": 20.7,
+        "mom_sessions": 1049,
+        "yoy_sessions": 8585,
+        "mom_sessions_change_pct": 12.0,
+        "yoy_sessions_change_pct": -86.3
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 58,
+        "current_pct": 1.0,
+        "mom_sessions": 68,
+        "yoy_sessions": 31,
+        "mom_sessions_change_pct": -14.7,
+        "yoy_sessions_change_pct": 87.1
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 26,
+        "current_pct": 0.5,
+        "mom_sessions": 12,
+        "yoy_sessions": 127,
+        "mom_sessions_change_pct": 116.7,
+        "yoy_sessions_change_pct": -79.5
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 634,
+        "current_engaged_sessions": 259,
+        "current_engagement_rate": 0.4085,
+        "mom_sessions": 501,
+        "yoy_sessions": 714,
+        "mom_sessions_change_pct": 26.5,
+        "yoy_sessions_change_pct": -11.2
+      },
+      {
+        "landing_page": "/louisiana/harvey/4401-peters-rd",
+        "current_sessions": 579,
+        "current_engaged_sessions": 404,
+        "current_engagement_rate": 0.6978,
+        "mom_sessions": 511,
+        "yoy_sessions": 740,
+        "mom_sessions_change_pct": 13.3,
+        "yoy_sessions_change_pct": -21.8
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 44,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.0455,
+        "mom_sessions": 35,
+        "yoy_sessions": 194,
+        "mom_sessions_change_pct": 25.7,
+        "yoy_sessions_change_pct": -77.3
+      },
+      {
+        "landing_page": "/north-carolina/charlotte/6024-n-tryon-st",
+        "current_sessions": 32,
+        "current_engaged_sessions": 14,
+        "current_engagement_rate": 0.4375,
+        "mom_sessions": 41,
+        "yoy_sessions": 278,
+        "mom_sessions_change_pct": -22.0,
+        "yoy_sessions_change_pct": -88.5
+      },
+      {
+        "landing_page": "/north-carolina/greensboro",
+        "current_sessions": 20,
+        "current_engaged_sessions": 3,
+        "current_engagement_rate": 0.15,
+        "mom_sessions": 16,
+        "yoy_sessions": 62,
+        "mom_sessions_change_pct": 25.0,
+        "yoy_sessions_change_pct": -67.7
+      },
+      {
+        "landing_page": "/alabama/foley",
+        "current_sessions": 16,
+        "current_engaged_sessions": 5,
+        "current_engagement_rate": 0.3125,
+        "mom_sessions": 13,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 23.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/ohio/medina",
+        "current_sessions": 16,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.125,
+        "mom_sessions": 16,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 0.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/ohio/newbury",
+        "current_sessions": 16,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 11,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 45.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/georgia/griffin",
+        "current_sessions": 14,
+        "current_engaged_sessions": 1,
+        "current_engagement_rate": 0.0714,
+        "mom_sessions": 12,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 16.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/louisiana/edgard",
+        "current_sessions": 14,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 7503,
+          "prior_year_sessions": 10234
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 4953,
+          "prior_year_sessions": 9103
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 5674,
+          "prior_year_sessions": 10341
+        }
+      ],
+      "ytd_current": 18130,
+      "ytd_prior": 29678,
+      "ytd_change_pct": -38.9
+    },
+    "summary": "March 2026 delivered modest month-over-month growth with 5,674 sessions (+14.6% MoM) and 1,397 engaged sessions (+21.4% MoM), suggesting stabilization after February's sharp decline. However, YoY performance remains deeply challenged: sessions are down 45.1%, engaged sessions down 74.7%, and the engagement rate has contracted 28.7 percentage points despite improving MoM. High-value conversions show mixed signals\u2014calls grew 22.0% MoM but collapsed 81.4% YoY, while the critical store_locate event (+18.0% MoM) remains 42.4% below March 2025. Direct traffic dominates at 76.7% of sessions (+164.2% YoY), an unusual strength that masks organic search's severe 86.3% YoY decline. Q1 2026 YTD sits at 18,130 sessions versus 29,678 in 2025 (\u221238.9%), with February marking the low point before modest March recovery. The Louisiana Harvey location (579 sessions, 69.8% engagement) is the only high-traffic page showing strong engagement, while most other location pages lag with engagement rates below 45%. Without urgent intervention to restore organic visibility and rebuild YoY conversion volume, the downward trajectory will likely persist into Q2.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Direct Traffic Surge as Retention Lever",
+          "detail": "Direct channel grew 164.2% YoY and now represents 76.7% of all traffic (4,352 sessions in March). Capitalize on this brand loyalty by implementing retargeting campaigns and email nurture sequences to convert repeat visitors into location-specific engagement and calls.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize Louisiana Harvey Location Page",
+          "detail": "The /louisiana/harvey/4401-peters-rd page delivers 69.8% engagement rate (404 engaged of 579 sessions) and grew 13.3% MoM\u2014far outpacing site average of 24.6%. Audit and replicate its UX, CTA placement, and content structure across underperforming location pages.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Calls Recovery Momentum",
+          "detail": "Phone calls rebounded 22.0% MoM (194 events in March), signaling renewed conversion intent despite YoY headwinds. Double down on call-to-action prominence and local SEO to sustain this trend into Q2.",
+          "impact": "high",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Catastrophic YoY Decline in High-Value Conversions",
+          "detail": "Calls plummeted 81.4% YoY (194 vs. ~1,050 estimated), and outbound_clicks dropped 72.7% YoY (2,340 vs. ~8,600 estimated). This signals severe erosion of conversion funnel quality and buyer intent, not just traffic volume.",
+          "severity": "high"
+        },
+        {
+          "title": "Organic Search Collapse",
+          "detail": "Organic search sessions fell 86.3% YoY (1,175 vs. ~8,600 estimated) while making up only 20.7% of March traffic. Without recovery in organic visibility and rankings, the site is increasingly dependent on direct traffic, which is unsustainable.",
+          "severity": "high"
+        },
+        {
+          "title": "Q1 YTD Trajectory Below Prior Year",
+          "detail": "Q1 2026 closed at 18,130 sessions versus 29,678 in 2025 (\u221238.9%), with February representing the lowest point at 4,953 sessions. While March shows recovery, the quarterly performance gap signals systemic headwinds that month-to-month bounces cannot mask.",
+          "severity": "high"
+        },
+        {
+          "title": "Low-Intent Engagement Dominance",
+          "detail": "Navigational_clicks represent only 148 events but fell 75.7% YoY, while store_locate (72 events, \u221242.4% YoY) and high-value appointment actions are absent from the event list. The site is capturing clicks but not intent-driven location or booking signals.",
+          "severity": "medium"
+        },
+        {
+          "title": "Geographic Concentration Risk",
+          "detail": "Two locations (Louisiana Harvey and North Carolina Charlotte) account for the majority of engaged traffic; most other location pages show 0\u201315% engagement rates. Underperforming locations require immediate audit and localization optimization.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Restore Organic Search Visibility",
+          "detail": "Organic search collapsed 86.3% YoY and now drives only 20.7% of traffic. Conduct a technical and content SEO audit focusing on location-based keywords, local schema markup, and competitor gap analysis to recapture organic volume and high-intent traffic.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Scale and Replicate Louisiana Harvey UX Model",
+          "detail": "The /louisiana/harvey/4401-peters-rd page's 69.8% engagement rate is 2.8x the site average. Systematically audit its layout, CTAs, inventory presentation, and form fields, then standardize across 30+ underperforming location pages.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Implement Location-Specific Booking/Scheduling Events",
+          "detail": "book_now and appointment events are entirely absent from the data despite pull-a-part's junkyard car sales model. Add location-specific scheduling CTAs and track them as conversion events to unlock visibility into the funnel and optimize checkout flow.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Leverage Direct Traffic for Segment-Based Retargeting",
+          "detail": "Direct traffic is 76.7% of volume (+164.2% YoY) but only 24.6% engaged. Create segmented email and display campaigns targeting repeat direct visitors by location interest and engagement level to convert browsers into location visitors and callers.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Investigate and Fix North Carolina Charlotte Decline",
+          "detail": "The Charlotte page (6024-n-tryon-st) dropped 88.5% YoY (32 sessions, \u221222.0% MoM) with only 43.8% engagement. Audit for technical issues, local ranking drops, or content staleness; this location may represent addressable revenue recovery.",
+          "impact": "low",
+          "effort": "low"
+        }
+      ]
+    }
+  }
+}

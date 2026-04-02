@@ -1,0 +1,647 @@
+{
+  "site_url": "https://local.envelainsurance.com/",
+  "display_name": "Envela Local",
+  "property_id": "494244541",
+  "meta": {
+    "last_updated": "2026-04-02",
+    "next_refresh": "2026-04-06"
+  },
+  "daily": [
+    {
+      "date": "2026-03-01",
+      "sessions": 10,
+      "engaged_sessions": 0,
+      "engagement_rate": 0.0
+    },
+    {
+      "date": "2026-03-02",
+      "sessions": 13,
+      "engaged_sessions": 2,
+      "engagement_rate": 0.1538
+    },
+    {
+      "date": "2026-03-03",
+      "sessions": 23,
+      "engaged_sessions": 12,
+      "engagement_rate": 0.5217
+    },
+    {
+      "date": "2026-03-04",
+      "sessions": 6,
+      "engaged_sessions": 1,
+      "engagement_rate": 0.1667
+    },
+    {
+      "date": "2026-03-05",
+      "sessions": 3,
+      "engaged_sessions": 0,
+      "engagement_rate": 0.0
+    },
+    {
+      "date": "2026-03-06",
+      "sessions": 4,
+      "engaged_sessions": 0,
+      "engagement_rate": 0.0
+    },
+    {
+      "date": "2026-03-07",
+      "sessions": 6,
+      "engaged_sessions": 1,
+      "engagement_rate": 0.1667
+    },
+    {
+      "date": "2026-03-08",
+      "sessions": 4,
+      "engaged_sessions": 1,
+      "engagement_rate": 0.25
+    },
+    {
+      "date": "2026-03-09",
+      "sessions": 2,
+      "engaged_sessions": 0,
+      "engagement_rate": 0.0
+    },
+    {
+      "date": "2026-03-10",
+      "sessions": 6,
+      "engaged_sessions": 1,
+      "engagement_rate": 0.1667
+    },
+    {
+      "date": "2026-03-11",
+      "sessions": 4,
+      "engaged_sessions": 3,
+      "engagement_rate": 0.75
+    },
+    {
+      "date": "2026-03-12",
+      "sessions": 7,
+      "engaged_sessions": 1,
+      "engagement_rate": 0.1429
+    },
+    {
+      "date": "2026-03-13",
+      "sessions": 2,
+      "engaged_sessions": 0,
+      "engagement_rate": 0.0
+    },
+    {
+      "date": "2026-03-14",
+      "sessions": 2,
+      "engaged_sessions": 0,
+      "engagement_rate": 0.0
+    },
+    {
+      "date": "2026-03-15",
+      "sessions": 1,
+      "engaged_sessions": 0,
+      "engagement_rate": 0.0
+    },
+    {
+      "date": "2026-03-16",
+      "sessions": 1,
+      "engaged_sessions": 0,
+      "engagement_rate": 0.0
+    },
+    {
+      "date": "2026-03-17",
+      "sessions": 3,
+      "engaged_sessions": 1,
+      "engagement_rate": 0.3333
+    },
+    {
+      "date": "2026-03-18",
+      "sessions": 3,
+      "engaged_sessions": 1,
+      "engagement_rate": 0.3333
+    },
+    {
+      "date": "2026-03-20",
+      "sessions": 8,
+      "engaged_sessions": 6,
+      "engagement_rate": 0.75
+    },
+    {
+      "date": "2026-03-21",
+      "sessions": 2,
+      "engaged_sessions": 0,
+      "engagement_rate": 0.0
+    },
+    {
+      "date": "2026-03-23",
+      "sessions": 6,
+      "engaged_sessions": 2,
+      "engagement_rate": 0.3333
+    },
+    {
+      "date": "2026-03-25",
+      "sessions": 1,
+      "engaged_sessions": 1,
+      "engagement_rate": 1.0
+    },
+    {
+      "date": "2026-03-26",
+      "sessions": 1,
+      "engaged_sessions": 1,
+      "engagement_rate": 1.0
+    },
+    {
+      "date": "2026-03-27",
+      "sessions": 1,
+      "engaged_sessions": 0,
+      "engagement_rate": 0.0
+    },
+    {
+      "date": "2026-03-28",
+      "sessions": 1,
+      "engaged_sessions": 1,
+      "engagement_rate": 1.0
+    },
+    {
+      "date": "2026-03-31",
+      "sessions": 4,
+      "engaged_sessions": 1,
+      "engagement_rate": 0.25
+    },
+    {
+      "date": "2026-04-01",
+      "sessions": 6,
+      "engaged_sessions": 2,
+      "engagement_rate": 0.3333
+    }
+  ],
+  "weekly_snapshots": [
+    {
+      "snapshot_date": "2026-04-02",
+      "rolling_30d": {
+        "window": {
+          "current": {
+            "start": "2026-03-03",
+            "end": "2026-04-01",
+            "label": "Last 30 Days"
+          },
+          "mom": {
+            "start": "2026-02-01",
+            "end": "2026-03-02",
+            "label": "Prior 30 Days"
+          },
+          "yoy": {
+            "start": "2025-03-03",
+            "end": "2025-04-01",
+            "label": "Same Period LY"
+          }
+        },
+        "yoy_available": false,
+        "totals": {
+          "current": {
+            "sessions": 107,
+            "engaged_sessions": 36,
+            "engagement_rate": 0.3364
+          },
+          "mom": {
+            "sessions": 411,
+            "engaged_sessions": 43,
+            "engagement_rate": 0.1046
+          },
+          "yoy": null,
+          "yoy_available": false,
+          "mom_sessions_change_pct": -74.0,
+          "yoy_sessions_change_pct": null,
+          "mom_engaged_sessions_change_pct": -16.3,
+          "yoy_engaged_sessions_change_pct": null,
+          "mom_engagement_rate_change_pts": 0.2318,
+          "yoy_engagement_rate_change_pts": null
+        },
+        "events": [
+          {
+            "event_name": "navigational_clicks",
+            "current": 21,
+            "mom": 21,
+            "yoy": null,
+            "mom_change_pct": 0.0,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "outbound_clicks",
+            "current": 21,
+            "mom": 28,
+            "yoy": null,
+            "mom_change_pct": -25.0,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "get_a_quote",
+            "current": 7,
+            "mom": 4,
+            "yoy": null,
+            "mom_change_pct": 75.0,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "locate_me",
+            "current": 3,
+            "mom": 2,
+            "yoy": null,
+            "mom_change_pct": 50.0,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "store_locate",
+            "current": 3,
+            "mom": 13,
+            "yoy": null,
+            "mom_change_pct": -76.9,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "learn_more_insurance_products",
+            "current": 1,
+            "mom": 1,
+            "yoy": null,
+            "mom_change_pct": 0.0,
+            "yoy_change_pct": null
+          }
+        ],
+        "channels": [
+          {
+            "channel": "Direct",
+            "current_sessions": 88,
+            "current_pct": 82.2,
+            "mom_sessions": 355,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": -75.2,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "channel": "Organic Search",
+            "current_sessions": 12,
+            "current_pct": 11.2,
+            "mom_sessions": 25,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": -52.0,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "channel": "Referral",
+            "current_sessions": 7,
+            "current_pct": 6.5,
+            "mom_sessions": 1,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": 600.0,
+            "yoy_sessions_change_pct": null
+          }
+        ],
+        "top_pages": [
+          {
+            "landing_page": "/",
+            "current_sessions": 28,
+            "current_engaged_sessions": 18,
+            "current_engagement_rate": 0.6429,
+            "mom_sessions": 27,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": 3.7,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "(not set)",
+            "current_sessions": 3,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 2,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": 50.0,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/alabama/prattville/pet-insurance",
+            "current_sessions": 2,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/florida/gainesville/valerie-webb",
+            "current_sessions": 2,
+            "current_engaged_sessions": 1,
+            "current_engagement_rate": 0.5,
+            "mom_sessions": 2,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": 0.0,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/florida/kissimmee/nancy-clemente",
+            "current_sessions": 2,
+            "current_engaged_sessions": 2,
+            "current_engagement_rate": 1.0,
+            "mom_sessions": 0,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/florida/miami/atv-scooter-golf-cart-insurance",
+            "current_sessions": 2,
+            "current_engaged_sessions": 1,
+            "current_engagement_rate": 0.5,
+            "mom_sessions": 0,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/florida/st-petersburg/atv-scooter-golf-cart-insurance",
+            "current_sessions": 2,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/georgia/savannah/rv-motorhome-trailer-insurance",
+            "current_sessions": 2,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/south-carolina/greenville/atv-scooter-golf-cart-insurance",
+            "current_sessions": 2,
+            "current_engaged_sessions": 1,
+            "current_engagement_rate": 0.5,
+            "mom_sessions": 0,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/tennessee/knoxville/homeowners-insurance",
+            "current_sessions": 2,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          }
+        ]
+      },
+      "last_calendar_month": {
+        "window": {
+          "current": {
+            "start": "2026-03-01",
+            "end": "2026-03-31",
+            "label": "March 2026"
+          },
+          "mom": {
+            "start": "2026-02-01",
+            "end": "2026-02-28",
+            "label": "February 2026"
+          },
+          "yoy": {
+            "start": "2025-03-01",
+            "end": "2025-03-31",
+            "label": "March 2025"
+          }
+        },
+        "yoy_available": false,
+        "totals": {
+          "current": {
+            "sessions": 124,
+            "engaged_sessions": 36,
+            "engagement_rate": 0.2903
+          },
+          "mom": {
+            "sessions": 388,
+            "engaged_sessions": 41,
+            "engagement_rate": 0.1057
+          },
+          "yoy": null,
+          "yoy_available": false,
+          "mom_sessions_change_pct": -68.0,
+          "yoy_sessions_change_pct": null,
+          "mom_engaged_sessions_change_pct": -12.2,
+          "yoy_engaged_sessions_change_pct": null,
+          "mom_engagement_rate_change_pts": 0.1846,
+          "yoy_engagement_rate_change_pts": null
+        },
+        "events": [
+          {
+            "event_name": "outbound_clicks",
+            "current": 23,
+            "mom": 26,
+            "yoy": null,
+            "mom_change_pct": -11.5,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "navigational_clicks",
+            "current": 19,
+            "mom": 21,
+            "yoy": null,
+            "mom_change_pct": -9.5,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "get_a_quote",
+            "current": 8,
+            "mom": 3,
+            "yoy": null,
+            "mom_change_pct": 166.7,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "locate_me",
+            "current": 3,
+            "mom": 2,
+            "yoy": null,
+            "mom_change_pct": 50.0,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "store_locate",
+            "current": 3,
+            "mom": 13,
+            "yoy": null,
+            "mom_change_pct": -76.9,
+            "yoy_change_pct": null
+          },
+          {
+            "event_name": "learn_more_insurance_products",
+            "current": 1,
+            "mom": 1,
+            "yoy": null,
+            "mom_change_pct": 0.0,
+            "yoy_change_pct": null
+          }
+        ],
+        "channels": [
+          {
+            "channel": "Direct",
+            "current_sessions": 106,
+            "current_pct": 85.5,
+            "mom_sessions": 334,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": -68.3,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "channel": "Organic Search",
+            "current_sessions": 13,
+            "current_pct": 10.5,
+            "mom_sessions": 23,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": -43.5,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "channel": "Referral",
+            "current_sessions": 5,
+            "current_pct": 4.0,
+            "mom_sessions": 1,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": 400.0,
+            "yoy_sessions_change_pct": null
+          }
+        ],
+        "top_pages": [
+          {
+            "landing_page": "/",
+            "current_sessions": 27,
+            "current_engaged_sessions": 17,
+            "current_engagement_rate": 0.6296,
+            "mom_sessions": 26,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": 3.8,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "(not set)",
+            "current_sessions": 3,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 2,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": 50.0,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/south-carolina/charleston/envela-insurance",
+            "current_sessions": 3,
+            "current_engaged_sessions": 1,
+            "current_engagement_rate": 0.3333,
+            "mom_sessions": 5,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": -40.0,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/tennessee/clarksville/envela-insurance",
+            "current_sessions": 3,
+            "current_engaged_sessions": 1,
+            "current_engagement_rate": 0.3333,
+            "mom_sessions": 6,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": -50.0,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/florida/kissimmee/nancy-clemente",
+            "current_sessions": 2,
+            "current_engaged_sessions": 2,
+            "current_engagement_rate": 1.0,
+            "mom_sessions": 0,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/florida/miami/atv-scooter-golf-cart-insurance",
+            "current_sessions": 2,
+            "current_engaged_sessions": 1,
+            "current_engagement_rate": 0.5,
+            "mom_sessions": 0,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/georgia/savannah/rv-motorhome-trailer-insurance",
+            "current_sessions": 2,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/south-carolina/greenville/atv-scooter-golf-cart-insurance",
+            "current_sessions": 2,
+            "current_engaged_sessions": 1,
+            "current_engagement_rate": 0.5,
+            "mom_sessions": 0,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/tennessee/franklin",
+            "current_sessions": 2,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 5,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": -60.0,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/tennessee/knoxville/homeowners-insurance",
+            "current_sessions": 2,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": null,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          }
+        ]
+      },
+      "ytd": {
+        "current_year": 2026,
+        "prior_year": 2025,
+        "months": [
+          {
+            "month": "2026-01",
+            "label": "January 2026",
+            "sessions": 359,
+            "prior_year_sessions": 0
+          },
+          {
+            "month": "2026-02",
+            "label": "February 2026",
+            "sessions": 388,
+            "prior_year_sessions": 0
+          },
+          {
+            "month": "2026-03",
+            "label": "March 2026",
+            "sessions": 124,
+            "prior_year_sessions": 0
+          }
+        ],
+        "ytd_current": 871,
+        "ytd_prior": 0,
+        "ytd_change_pct": null
+      }
+    }
+  ]
+}

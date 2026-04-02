@@ -1,0 +1,886 @@
+{
+  "site_url": "https://locations.atipt.com/",
+  "display_name": "ATI Physical Therapy",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 106445,
+        "engaged_sessions": 47447,
+        "engagement_rate": 0.4457
+      },
+      "mom": {
+        "sessions": 107621,
+        "engaged_sessions": 47229,
+        "engagement_rate": 0.4388
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": -1.1,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": 0.5,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": 0.0069,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 45191,
+        "mom": 47685,
+        "yoy": null,
+        "mom_change_pct": -5.2,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 27252,
+        "mom": 27650,
+        "yoy": null,
+        "mom_change_pct": -1.4,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "store_locate",
+        "current": 8534,
+        "mom": 10311,
+        "yoy": null,
+        "mom_change_pct": -17.2,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "internal_clicks",
+        "current": 7991,
+        "mom": 10521,
+        "yoy": null,
+        "mom_change_pct": -24.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_services_clicks",
+        "current": 4488,
+        "mom": 4568,
+        "yoy": null,
+        "mom_change_pct": -1.8,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "on_page_faq_engagement",
+        "current": 3598,
+        "mom": 3504,
+        "yoy": null,
+        "mom_change_pct": 2.7,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "locate_me",
+        "current": 2308,
+        "mom": 2468,
+        "yoy": null,
+        "mom_change_pct": -6.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "learn_more_services_cta",
+        "current": 2243,
+        "mom": 2245,
+        "yoy": null,
+        "mom_change_pct": -0.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_careers_clicks",
+        "current": 2094,
+        "mom": 2032,
+        "yoy": null,
+        "mom_change_pct": 3.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "get_directions",
+        "current": 1804,
+        "mom": 1990,
+        "yoy": null,
+        "mom_change_pct": -9.3,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_insurance_clicks",
+        "current": 1404,
+        "mom": 1336,
+        "yoy": null,
+        "mom_change_pct": 5.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "request_an_appointment",
+        "current": 1395,
+        "mom": 1395,
+        "yoy": null,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "pay_my_bill",
+        "current": 818,
+        "mom": 797,
+        "yoy": null,
+        "mom_change_pct": 2.6,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "schedule_an_appointment",
+        "current": 558,
+        "mom": 657,
+        "yoy": null,
+        "mom_change_pct": -15.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_faq_clicks",
+        "current": 249,
+        "mom": 254,
+        "yoy": null,
+        "mom_change_pct": -2.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "learn_more_about_pt_cta",
+        "current": 99,
+        "mom": 88,
+        "yoy": null,
+        "mom_change_pct": 12.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_blog_clicks",
+        "current": 53,
+        "mom": 58,
+        "yoy": null,
+        "mom_change_pct": -8.6,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 63842,
+        "current_pct": 60.0,
+        "mom_sessions": 61252,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 4.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 43539,
+        "current_pct": 40.9,
+        "mom_sessions": 45991,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -5.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 539,
+        "current_pct": 0.5,
+        "mom_sessions": 536,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 0.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 242,
+        "current_pct": 0.2,
+        "mom_sessions": 315,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -23.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 168,
+        "current_pct": 0.2,
+        "mom_sessions": 179,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -6.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 13,
+        "current_pct": 0.0,
+        "mom_sessions": 13,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 0.0,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/embed",
+        "current_sessions": 30887,
+        "current_engaged_sessions": 6558,
+        "current_engagement_rate": 0.2123,
+        "mom_sessions": 31511,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -2.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/",
+        "current_sessions": 6511,
+        "current_engaged_sessions": 4268,
+        "current_engagement_rate": 0.6555,
+        "mom_sessions": 7736,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -15.8,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 6135,
+        "current_engaged_sessions": 202,
+        "current_engagement_rate": 0.0329,
+        "mom_sessions": 5952,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 3.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/washington/federal-way/32030-23rd-ave-s",
+        "current_sessions": 289,
+        "current_engaged_sessions": 168,
+        "current_engagement_rate": 0.5813,
+        "mom_sessions": 205,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 41.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/washington/kirkland/11620-97th-ln-ne",
+        "current_sessions": 287,
+        "current_engaged_sessions": 136,
+        "current_engagement_rate": 0.4739,
+        "mom_sessions": 154,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 86.4,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/south-carolina/greenville/200-patewood-dr",
+        "current_sessions": 278,
+        "current_engaged_sessions": 164,
+        "current_engagement_rate": 0.5899,
+        "mom_sessions": 242,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 14.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/massachusetts/east-longmeadow/168-denslow-rd",
+        "current_sessions": 271,
+        "current_engaged_sessions": 171,
+        "current_engagement_rate": 0.631,
+        "mom_sessions": 230,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 17.8,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/washington/lynnwood/3105-alderwood-mall-blvd",
+        "current_sessions": 252,
+        "current_engaged_sessions": 142,
+        "current_engagement_rate": 0.5635,
+        "mom_sessions": 181,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 39.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/delaware/newark/4051-ogletown-stanton-rd",
+        "current_sessions": 247,
+        "current_engaged_sessions": 160,
+        "current_engagement_rate": 0.6478,
+        "mom_sessions": 292,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -15.4,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/illinois/tinley-park/16651-s-harlem-ave",
+        "current_sessions": 243,
+        "current_engaged_sessions": 136,
+        "current_engagement_rate": 0.5597,
+        "mom_sessions": 221,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 10.0,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 114932,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 101293,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 107499,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 323724,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "ATI Physical Therapy's local pages property delivered 106,445 sessions over the last 30 days with a slight 1.1% MoM decline in total traffic, yet engagement rate improved 0.7pp to 44.6%, signaling stronger quality despite modest volume softness. Organic Search remains the dominant channel at 60.0% of sessions and grew 4.2% MoM, offsetting a 5.3% decline in Direct traffic\u2014a healthy sign of SEO momentum. High-value conversion events show mixed momentum: mainsite_clicks declined 1.4% MoM to 27,252 events, while request_an_appointment held flat at 1,395 events, but schedule_an_appointment dropped sharply 15.1% to just 558 events, warranting investigation. Location-based landing pages\u2014particularly /washington/kirkland/11620-97th-ln-ne (+86.4% MoM) and /washington/federal-way/32030-23rd-ave-s (+41.0% MoM)\u2014are driving outsized engagement, suggesting strong local intent in Washington markets. YTD trajectory shows steady monthly volumes (114.9K in January, 101.3K in February, 107.5K in March), indicating stabilization after the property launch, though the /embed page's dominance (29.1% of all sessions) with low engagement (21.2%) suggests potential tracking or UX issues worth auditing.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Organic Search Momentum",
+          "detail": "Organic Search grew 4.2% MoM to 63,842 sessions (60% of total traffic), demonstrating strong SEO performance despite overall MoM decline. Double down on keyword optimization for high-intent location pages.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "High-Engagement Location Pages",
+          "detail": "Washington market pages /kirkland/11620-97th-ln-ne (+86.4% MoM, 47.4% engagement) and /federal-way/32030-23rd-ave-s (+41.0% MoM, 58.1% engagement) are outperforming significantly. Replicate content and UX patterns across underperforming location pages.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "FAQ Engagement Growth",
+          "detail": "on_page_faq_engagement rose 2.7% MoM to 3,598 events, indicating users are finding value in on-page resources. Consider expanding FAQ coverage on location pages with lowest engagement.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Sharp Decline in Scheduling Events",
+          "detail": "schedule_an_appointment dropped 15.1% MoM to 558 events\u2014the steepest conversion event decline in the dataset. This suggests potential friction in the appointment-booking funnel that requires immediate testing and user feedback.",
+          "severity": "high"
+        },
+        {
+          "title": "Location Finder Underperformance",
+          "detail": "store_locate plummeted 17.2% MoM to 8,534 events, indicating reduced usage of the location discovery tool. Combined with get_directions down 9.3% MoM, users may be finding alternative pathways or experiencing UX friction.",
+          "severity": "medium"
+        },
+        {
+          "title": "Embed Page Engagement Gap",
+          "detail": "The /embed page dominates traffic (30,887 sessions, 29% of total) but has the lowest engagement rate (21.2%) among top pages, suggesting it may be a tracking artifact or low-intent entry point. Audit tracking implementation and consider traffic segregation.",
+          "severity": "medium"
+        },
+        {
+          "title": "Direct Traffic Decline",
+          "detail": "Direct sessions fell 5.3% MoM to 43,539 (40.9% of total), a notable softening in returning/branded traffic. Monitor brand search trends and test homepage UX to re-engage direct visitors.",
+          "severity": "low"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Expand Washington Location Page Strategy",
+          "detail": "Kirkland and Federal Way pages are driving engagement 40\u201386% above MoM baseline; replicate their content structure, local keywords, and CTA placement to 8+ underperforming location pages across other states.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Recover Schedule Appointment Funnel",
+          "detail": "schedule_an_appointment (558 events, -15.1% MoM) is a critical micro-conversion; audit form friction, load time, and mobile UX. Cross-reference with request_an_appointment (1,395 events, flat) to identify why users prefer one path.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize Homepage Engagement",
+          "detail": "Homepage (/) shows high engagement (65.5%) but sessions declined 15.8% MoM to 6,511. Test updated copy, CTA prominence, and navigation to reverse the decline while maintaining conversion quality.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Revitalize Store Locator Feature",
+          "detail": "store_locate (-17.2% MoM, 8,534 events) and locate_me (-6.5% MoM, 2,308 events) suggest declining location discovery intent. Audit mobile usability, map load performance, and integrate store_locate CTAs into high-traffic location pages.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 107499,
+        "engaged_sessions": 48239,
+        "engagement_rate": 0.4487
+      },
+      "mom": {
+        "sessions": 101293,
+        "engaged_sessions": 44378,
+        "engagement_rate": 0.4381
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": 6.1,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": 8.7,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": 0.0106,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 46483,
+        "mom": 44670,
+        "yoy": null,
+        "mom_change_pct": 4.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 27923,
+        "mom": 25875,
+        "yoy": null,
+        "mom_change_pct": 7.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "store_locate",
+        "current": 8760,
+        "mom": 9742,
+        "yoy": null,
+        "mom_change_pct": -10.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "internal_clicks",
+        "current": 8205,
+        "mom": 10024,
+        "yoy": null,
+        "mom_change_pct": -18.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_services_clicks",
+        "current": 4581,
+        "mom": 4275,
+        "yoy": null,
+        "mom_change_pct": 7.2,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "on_page_faq_engagement",
+        "current": 3668,
+        "mom": 3294,
+        "yoy": null,
+        "mom_change_pct": 11.4,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "locate_me",
+        "current": 2369,
+        "mom": 2331,
+        "yoy": null,
+        "mom_change_pct": 1.6,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "learn_more_services_cta",
+        "current": 2292,
+        "mom": 2107,
+        "yoy": null,
+        "mom_change_pct": 8.8,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_careers_clicks",
+        "current": 2127,
+        "mom": 1900,
+        "yoy": null,
+        "mom_change_pct": 11.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "get_directions",
+        "current": 1835,
+        "mom": 1880,
+        "yoy": null,
+        "mom_change_pct": -2.4,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "request_an_appointment",
+        "current": 1440,
+        "mom": 1299,
+        "yoy": null,
+        "mom_change_pct": 10.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_insurance_clicks",
+        "current": 1438,
+        "mom": 1243,
+        "yoy": null,
+        "mom_change_pct": 15.7,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "pay_my_bill",
+        "current": 836,
+        "mom": 739,
+        "yoy": null,
+        "mom_change_pct": 13.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "schedule_an_appointment",
+        "current": 577,
+        "mom": 613,
+        "yoy": null,
+        "mom_change_pct": -5.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_faq_clicks",
+        "current": 265,
+        "mom": 230,
+        "yoy": null,
+        "mom_change_pct": 15.2,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "learn_more_about_pt_cta",
+        "current": 101,
+        "mom": 84,
+        "yoy": null,
+        "mom_change_pct": 20.2,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "outbound_blog_clicks",
+        "current": 50,
+        "mom": 57,
+        "yoy": null,
+        "mom_change_pct": -12.3,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 64542,
+        "current_pct": 60.0,
+        "mom_sessions": 57896,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 11.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 44636,
+        "current_pct": 41.5,
+        "mom_sessions": 43136,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 3.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 544,
+        "current_pct": 0.5,
+        "mom_sessions": 511,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 6.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 242,
+        "current_pct": 0.2,
+        "mom_sessions": 302,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -19.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 175,
+        "current_pct": 0.2,
+        "mom_sessions": 170,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 2.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 14,
+        "current_pct": 0.0,
+        "mom_sessions": 12,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 16.7,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/embed",
+        "current_sessions": 31927,
+        "current_engaged_sessions": 6665,
+        "current_engagement_rate": 0.2088,
+        "mom_sessions": 29651,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 7.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/",
+        "current_sessions": 6664,
+        "current_engaged_sessions": 4340,
+        "current_engagement_rate": 0.6513,
+        "mom_sessions": 7339,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -9.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 6224,
+        "current_engaged_sessions": 198,
+        "current_engagement_rate": 0.0318,
+        "mom_sessions": 5663,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 9.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/washington/federal-way/32030-23rd-ave-s",
+        "current_sessions": 287,
+        "current_engaged_sessions": 168,
+        "current_engagement_rate": 0.5854,
+        "mom_sessions": 195,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 47.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/washington/kirkland/11620-97th-ln-ne",
+        "current_sessions": 284,
+        "current_engaged_sessions": 131,
+        "current_engagement_rate": 0.4613,
+        "mom_sessions": 146,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 94.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/massachusetts/east-longmeadow/168-denslow-rd",
+        "current_sessions": 277,
+        "current_engaged_sessions": 175,
+        "current_engagement_rate": 0.6318,
+        "mom_sessions": 213,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 30.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/south-carolina/greenville/200-patewood-dr",
+        "current_sessions": 270,
+        "current_engaged_sessions": 160,
+        "current_engagement_rate": 0.5926,
+        "mom_sessions": 234,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 15.4,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/washington/lynnwood/3105-alderwood-mall-blvd",
+        "current_sessions": 255,
+        "current_engaged_sessions": 147,
+        "current_engagement_rate": 0.5765,
+        "mom_sessions": 169,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 50.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/illinois/tinley-park/16651-s-harlem-ave",
+        "current_sessions": 248,
+        "current_engaged_sessions": 138,
+        "current_engagement_rate": 0.5565,
+        "mom_sessions": 206,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 20.4,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/delaware/newark/4051-ogletown-stanton-rd",
+        "current_sessions": 245,
+        "current_engaged_sessions": 158,
+        "current_engagement_rate": 0.6449,
+        "mom_sessions": 277,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -11.6,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 114932,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 101293,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 107499,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 323724,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "ATI Physical Therapy's local pages property delivered solid MoM growth in March 2026, with sessions up 6.1% to 107,499 and engaged sessions climbing 8.7% to 48,239\u2014pushing engagement rate to 44.9% (+1.1 pp). Organic Search was the primary driver, surging 11.5% MoM to 64,542 sessions (60% of total traffic), while Direct remained steady at +3.5%. High-value conversion signals are mixed: mainsite_clicks grew a healthy 7.9% to 27,923 events, and request_an_appointment spiked 10.9%, but the critical schedule_an_appointment event declined 5.9% to just 577 conversions\u2014a concern given its direct booking value. Location pages showed volatile but largely positive engagement, with Kirkland and Lynnwood facilities surging 94.5% and 50.9% respectively, though store_locate interactions fell 10.1% overall. FAQ engagement (+11.4%) and insurance-related outbound clicks (+15.7%) indicate users are seeking information and coverage details, suggesting opportunity to streamline these paths to conversion. YTD Q1 2026 tracking at 323,724 sessions shows the property is ramping steadily month-to-month.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Organic Search Momentum",
+          "detail": "Organic Search sessions grew 11.5% MoM to 64,542, now representing 60% of total traffic and demonstrating strong SEO traction on local location pages.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "High-Value Mainsite Clicks Growth",
+          "detail": "Mainsite_clicks increased 7.9% MoM to 27,923 events\u2014a critical deeper-funnel metric signaling visitors are navigating to the primary ATI site for broader service discovery.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Location Page Engagement Spikes",
+          "detail": "Kirkland (/washington/kirkland/11620-97th-ln-ne) and Lynnwood (/washington/lynnwood/3105-alderwood-mall-blvd) pages surged 94.5% and 50.9% respectively, with strong engagement rates (46.1% and 57.6%), indicating targeted traffic quality in key markets.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Request an Appointment Uptick",
+          "detail": "request_an_appointment events climbed 10.9% MoM to 1,440, outpacing the weaker schedule_an_appointment metric and suggesting improved CTA effectiveness.",
+          "impact": "high",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Schedule Appointment Conversion Decline",
+          "detail": "schedule_an_appointment\u2014a direct booking event\u2014fell 5.9% MoM to just 577 conversions, the lowest among appointment-related events and a potential funnel leakage point despite overall session growth.",
+          "severity": "high"
+        },
+        {
+          "title": "Store Locator Disengagement",
+          "detail": "store_locate events dropped 10.1% MoM to 8,760, a significant decline for a high-intent, location-discovery action that should track with local page traffic growth.",
+          "severity": "medium"
+        },
+        {
+          "title": "Internal Navigation Collapse",
+          "detail": "internal_clicks plummeted 18.1% MoM to 8,205 events, suggesting users may be exiting early or finding information through external channels rather than exploring local pages.",
+          "severity": "medium"
+        },
+        {
+          "title": "Homepage Engagement Drop",
+          "detail": "The homepage (/) saw a 9.2% MoM session decline and engagement rate of 65.1%, indicating potential friction or poor entry-point quality despite its high engagement rate.",
+          "severity": "low"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Optimize Booking Funnel for Schedule Completions",
+          "detail": "request_an_appointment is outperforming schedule_an_appointment by a 2.5x event ratio; audit the request-to-schedule conversion path and CTA copy to close the gap and recover the 5.9% decline.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Revitalize Store Locator Experience",
+          "detail": "Despite 6.1% overall session growth, store_locate dropped 10.1% MoM; test mobile UX, map load times, and clarity of location details, especially on high-performing pages like Kirkland and Lynnwood.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Capitalize on Information-Seeking Signals",
+          "detail": "on_page_faq_engagement (+11.4%) and outbound_insurance_clicks (+15.7%) show users are actively researching coverage and FAQs; create internally-hosted FAQ or insurance explainer content to capture these intents before they leave.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Double Down on High-Growth Location Pages",
+          "detail": "Kirkland (+94.5%) and Lynnwood (+50.9%) are momentum leaders; replicate their page structure, content strategy, and local SEO tactics across underperforming facility pages to drive broader location-level conversion.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Address Internal Navigation Decay",
+          "detail": "internal_clicks fell 18.1% MoM despite overall session growth; review IA, breadcrumb clarity, and related-link placement on the /embed landing page (31,927 sessions) to re-engage site explorers.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ]
+    }
+  }
+}

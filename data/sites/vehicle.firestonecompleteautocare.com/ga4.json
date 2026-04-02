@@ -1,0 +1,623 @@
+{
+  "site_url": "https://vehicle.firestonecompleteautocare.com/",
+  "display_name": "Vehicle Funnel",
+  "property_id": "307364346",
+  "meta": {
+    "last_updated": "2026-04-02",
+    "next_refresh": "2026-04-06"
+  },
+  "daily": [
+    {
+      "date": "2026-03-01",
+      "sessions": 5132,
+      "engaged_sessions": 467,
+      "engagement_rate": 0.091
+    },
+    {
+      "date": "2026-03-02",
+      "sessions": 5547,
+      "engaged_sessions": 552,
+      "engagement_rate": 0.0995
+    },
+    {
+      "date": "2026-03-03",
+      "sessions": 5120,
+      "engaged_sessions": 449,
+      "engagement_rate": 0.0877
+    },
+    {
+      "date": "2026-03-04",
+      "sessions": 3841,
+      "engaged_sessions": 398,
+      "engagement_rate": 0.1036
+    },
+    {
+      "date": "2026-03-05",
+      "sessions": 3803,
+      "engaged_sessions": 316,
+      "engagement_rate": 0.0831
+    },
+    {
+      "date": "2026-03-06",
+      "sessions": 3423,
+      "engaged_sessions": 325,
+      "engagement_rate": 0.0949
+    },
+    {
+      "date": "2026-03-07",
+      "sessions": 3458,
+      "engaged_sessions": 279,
+      "engagement_rate": 0.0807
+    },
+    {
+      "date": "2026-03-08",
+      "sessions": 2309,
+      "engaged_sessions": 237,
+      "engagement_rate": 0.1026
+    },
+    {
+      "date": "2026-03-09",
+      "sessions": 2278,
+      "engaged_sessions": 334,
+      "engagement_rate": 0.1466
+    },
+    {
+      "date": "2026-03-10",
+      "sessions": 1725,
+      "engaged_sessions": 283,
+      "engagement_rate": 0.1641
+    },
+    {
+      "date": "2026-03-11",
+      "sessions": 2347,
+      "engaged_sessions": 306,
+      "engagement_rate": 0.1304
+    },
+    {
+      "date": "2026-03-12",
+      "sessions": 2232,
+      "engaged_sessions": 354,
+      "engagement_rate": 0.1586
+    },
+    {
+      "date": "2026-03-13",
+      "sessions": 1561,
+      "engaged_sessions": 272,
+      "engagement_rate": 0.1742
+    },
+    {
+      "date": "2026-03-14",
+      "sessions": 1920,
+      "engaged_sessions": 314,
+      "engagement_rate": 0.1635
+    },
+    {
+      "date": "2026-03-15",
+      "sessions": 2257,
+      "engaged_sessions": 287,
+      "engagement_rate": 0.1272
+    },
+    {
+      "date": "2026-03-16",
+      "sessions": 2823,
+      "engaged_sessions": 420,
+      "engagement_rate": 0.1488
+    },
+    {
+      "date": "2026-03-17",
+      "sessions": 2222,
+      "engaged_sessions": 345,
+      "engagement_rate": 0.1553
+    },
+    {
+      "date": "2026-03-18",
+      "sessions": 1913,
+      "engaged_sessions": 379,
+      "engagement_rate": 0.1981
+    },
+    {
+      "date": "2026-03-19",
+      "sessions": 2097,
+      "engaged_sessions": 329,
+      "engagement_rate": 0.1569
+    },
+    {
+      "date": "2026-03-20",
+      "sessions": 1374,
+      "engaged_sessions": 311,
+      "engagement_rate": 0.2263
+    },
+    {
+      "date": "2026-03-21",
+      "sessions": 2455,
+      "engaged_sessions": 328,
+      "engagement_rate": 0.1336
+    },
+    {
+      "date": "2026-03-22",
+      "sessions": 1419,
+      "engaged_sessions": 322,
+      "engagement_rate": 0.2269
+    },
+    {
+      "date": "2026-03-23",
+      "sessions": 2340,
+      "engaged_sessions": 309,
+      "engagement_rate": 0.1321
+    },
+    {
+      "date": "2026-03-24",
+      "sessions": 1395,
+      "engaged_sessions": 351,
+      "engagement_rate": 0.2516
+    },
+    {
+      "date": "2026-03-25",
+      "sessions": 3448,
+      "engaged_sessions": 462,
+      "engagement_rate": 0.134
+    },
+    {
+      "date": "2026-03-26",
+      "sessions": 4037,
+      "engaged_sessions": 535,
+      "engagement_rate": 0.1325
+    },
+    {
+      "date": "2026-03-27",
+      "sessions": 4709,
+      "engaged_sessions": 544,
+      "engagement_rate": 0.1155
+    },
+    {
+      "date": "2026-03-28",
+      "sessions": 4407,
+      "engaged_sessions": 423,
+      "engagement_rate": 0.096
+    },
+    {
+      "date": "2026-03-29",
+      "sessions": 3766,
+      "engaged_sessions": 419,
+      "engagement_rate": 0.1113
+    },
+    {
+      "date": "2026-03-30",
+      "sessions": 4198,
+      "engaged_sessions": 597,
+      "engagement_rate": 0.1422
+    },
+    {
+      "date": "2026-03-31",
+      "sessions": 6278,
+      "engaged_sessions": 468,
+      "engagement_rate": 0.0745
+    },
+    {
+      "date": "2026-04-01",
+      "sessions": 7964,
+      "engaged_sessions": 437,
+      "engagement_rate": 0.0549
+    }
+  ],
+  "weekly_snapshots": [
+    {
+      "snapshot_date": "2026-04-02",
+      "rolling_30d": {
+        "window": {
+          "current": {
+            "start": "2026-03-03",
+            "end": "2026-04-01",
+            "label": "Last 30 Days"
+          },
+          "mom": {
+            "start": "2026-02-01",
+            "end": "2026-03-02",
+            "label": "Prior 30 Days"
+          },
+          "yoy": {
+            "start": "2025-03-03",
+            "end": "2025-04-01",
+            "label": "Same Period LY"
+          }
+        },
+        "yoy_available": true,
+        "totals": {
+          "current": {
+            "sessions": 92877,
+            "engaged_sessions": 11300,
+            "engagement_rate": 0.1217
+          },
+          "mom": {
+            "sessions": 162406,
+            "engaged_sessions": 13277,
+            "engagement_rate": 0.0818
+          },
+          "yoy": {
+            "sessions": 36700,
+            "engaged_sessions": 26942,
+            "engagement_rate": 0.7341
+          },
+          "yoy_available": true,
+          "mom_sessions_change_pct": -42.8,
+          "yoy_sessions_change_pct": 153.1,
+          "mom_engaged_sessions_change_pct": -14.9,
+          "yoy_engaged_sessions_change_pct": -58.1,
+          "mom_engagement_rate_change_pts": 0.0399,
+          "yoy_engagement_rate_change_pts": -0.6124
+        },
+        "events": [],
+        "channels": [
+          {
+            "channel": "Direct",
+            "current_sessions": 83520,
+            "current_pct": 89.9,
+            "mom_sessions": 150327,
+            "yoy_sessions": 24367,
+            "mom_sessions_change_pct": -44.4,
+            "yoy_sessions_change_pct": 242.8
+          },
+          {
+            "channel": "Organic Search",
+            "current_sessions": 8396,
+            "current_pct": 9.0,
+            "mom_sessions": 8485,
+            "yoy_sessions": 12417,
+            "mom_sessions_change_pct": -1.0,
+            "yoy_sessions_change_pct": -32.4
+          },
+          {
+            "channel": "Unassigned",
+            "current_sessions": 1199,
+            "current_pct": 1.3,
+            "mom_sessions": 2512,
+            "yoy_sessions": 74,
+            "mom_sessions_change_pct": -52.3,
+            "yoy_sessions_change_pct": 1520.3
+          },
+          {
+            "channel": "Referral",
+            "current_sessions": 191,
+            "current_pct": 0.2,
+            "mom_sessions": 171,
+            "yoy_sessions": 111,
+            "mom_sessions_change_pct": 11.7,
+            "yoy_sessions_change_pct": 72.1
+          },
+          {
+            "channel": "Organic Social",
+            "current_sessions": 20,
+            "current_pct": 0.0,
+            "mom_sessions": 5,
+            "yoy_sessions": 27,
+            "mom_sessions_change_pct": 300.0,
+            "yoy_sessions_change_pct": -25.9
+          }
+        ],
+        "top_pages": [
+          {
+            "landing_page": "/",
+            "current_sessions": 1494,
+            "current_engaged_sessions": 1001,
+            "current_engagement_rate": 0.67,
+            "mom_sessions": 1354,
+            "yoy_sessions": 18070,
+            "mom_sessions_change_pct": 10.3,
+            "yoy_sessions_change_pct": -91.7
+          },
+          {
+            "landing_page": "(not set)",
+            "current_sessions": 1264,
+            "current_engaged_sessions": 4,
+            "current_engagement_rate": 0.0032,
+            "mom_sessions": 2367,
+            "yoy_sessions": 557,
+            "mom_sessions_change_pct": -46.6,
+            "yoy_sessions_change_pct": 126.9
+          },
+          {
+            "landing_page": "/tesla",
+            "current_sessions": 117,
+            "current_engaged_sessions": 98,
+            "current_engagement_rate": 0.8376,
+            "mom_sessions": 171,
+            "yoy_sessions": 112,
+            "mom_sessions_change_pct": -31.6,
+            "yoy_sessions_change_pct": 4.5
+          },
+          {
+            "landing_page": "/bmw",
+            "current_sessions": 39,
+            "current_engaged_sessions": 27,
+            "current_engagement_rate": 0.6923,
+            "mom_sessions": 37,
+            "yoy_sessions": 49,
+            "mom_sessions_change_pct": 5.4,
+            "yoy_sessions_change_pct": -20.4
+          },
+          {
+            "landing_page": "/mercedes-benz",
+            "current_sessions": 33,
+            "current_engaged_sessions": 25,
+            "current_engagement_rate": 0.7576,
+            "mom_sessions": 32,
+            "yoy_sessions": 80,
+            "mom_sessions_change_pct": 3.1,
+            "yoy_sessions_change_pct": -58.8
+          },
+          {
+            "landing_page": "/ford/taurus/2016/maintenance",
+            "current_sessions": 26,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/lincoln/mkz/2018/maintenance/batteries",
+            "current_sessions": 25,
+            "current_engaged_sessions": 3,
+            "current_engagement_rate": 0.12,
+            "mom_sessions": 18,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": 38.9,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/chevrolet/colorado/2015/maintenance",
+            "current_sessions": 22,
+            "current_engaged_sessions": 6,
+            "current_engagement_rate": 0.2727,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/volvo/xc90/2020/maintenance/oil",
+            "current_sessions": 20,
+            "current_engaged_sessions": 4,
+            "current_engagement_rate": 0.2,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/chevrolet/spark/2014/maintenance",
+            "current_sessions": 19,
+            "current_engaged_sessions": 10,
+            "current_engagement_rate": 0.5263,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          }
+        ]
+      },
+      "last_calendar_month": {
+        "window": {
+          "current": {
+            "start": "2026-03-01",
+            "end": "2026-03-31",
+            "label": "March 2026"
+          },
+          "mom": {
+            "start": "2026-02-01",
+            "end": "2026-02-28",
+            "label": "February 2026"
+          },
+          "yoy": {
+            "start": "2025-03-01",
+            "end": "2025-03-31",
+            "label": "March 2025"
+          }
+        },
+        "yoy_available": true,
+        "totals": {
+          "current": {
+            "sessions": 94926,
+            "engaged_sessions": 11884,
+            "engagement_rate": 0.1252
+          },
+          "mom": {
+            "sessions": 150353,
+            "engaged_sessions": 12301,
+            "engagement_rate": 0.0818
+          },
+          "yoy": {
+            "sessions": 38388,
+            "engaged_sessions": 28399,
+            "engagement_rate": 0.7398
+          },
+          "yoy_available": true,
+          "mom_sessions_change_pct": -36.9,
+          "yoy_sessions_change_pct": 147.3,
+          "mom_engaged_sessions_change_pct": -3.4,
+          "yoy_engaged_sessions_change_pct": -58.2,
+          "mom_engagement_rate_change_pts": 0.0434,
+          "yoy_engagement_rate_change_pts": -0.6146
+        },
+        "events": [],
+        "channels": [
+          {
+            "channel": "Direct",
+            "current_sessions": 86012,
+            "current_pct": 90.6,
+            "mom_sessions": 139244,
+            "yoy_sessions": 25804,
+            "mom_sessions_change_pct": -38.2,
+            "yoy_sessions_change_pct": 233.3
+          },
+          {
+            "channel": "Organic Search",
+            "current_sessions": 8564,
+            "current_pct": 9.0,
+            "mom_sessions": 7933,
+            "yoy_sessions": 12934,
+            "mom_sessions_change_pct": 8.0,
+            "yoy_sessions_change_pct": -33.8
+          },
+          {
+            "channel": "Unassigned",
+            "current_sessions": 1145,
+            "current_pct": 1.2,
+            "mom_sessions": 2473,
+            "yoy_sessions": 73,
+            "mom_sessions_change_pct": -53.7,
+            "yoy_sessions_change_pct": 1468.5
+          },
+          {
+            "channel": "Referral",
+            "current_sessions": 186,
+            "current_pct": 0.2,
+            "mom_sessions": 163,
+            "yoy_sessions": 116,
+            "mom_sessions_change_pct": 14.1,
+            "yoy_sessions_change_pct": 60.3
+          },
+          {
+            "channel": "Organic Social",
+            "current_sessions": 20,
+            "current_pct": 0.0,
+            "mom_sessions": 4,
+            "yoy_sessions": 34,
+            "mom_sessions_change_pct": 400.0,
+            "yoy_sessions_change_pct": -41.2
+          }
+        ],
+        "top_pages": [
+          {
+            "landing_page": "/",
+            "current_sessions": 1557,
+            "current_engaged_sessions": 1040,
+            "current_engagement_rate": 0.668,
+            "mom_sessions": 1240,
+            "yoy_sessions": 19219,
+            "mom_sessions_change_pct": 25.6,
+            "yoy_sessions_change_pct": -91.9
+          },
+          {
+            "landing_page": "(not set)",
+            "current_sessions": 1191,
+            "current_engaged_sessions": 4,
+            "current_engagement_rate": 0.0034,
+            "mom_sessions": 2334,
+            "yoy_sessions": 587,
+            "mom_sessions_change_pct": -49.0,
+            "yoy_sessions_change_pct": 102.9
+          },
+          {
+            "landing_page": "/tesla",
+            "current_sessions": 119,
+            "current_engaged_sessions": 98,
+            "current_engagement_rate": 0.8235,
+            "mom_sessions": 167,
+            "yoy_sessions": 115,
+            "mom_sessions_change_pct": -28.7,
+            "yoy_sessions_change_pct": 3.5
+          },
+          {
+            "landing_page": "/bmw",
+            "current_sessions": 38,
+            "current_engaged_sessions": 26,
+            "current_engagement_rate": 0.6842,
+            "mom_sessions": 36,
+            "yoy_sessions": 52,
+            "mom_sessions_change_pct": 5.6,
+            "yoy_sessions_change_pct": -26.9
+          },
+          {
+            "landing_page": "/mercedes-benz",
+            "current_sessions": 33,
+            "current_engaged_sessions": 24,
+            "current_engagement_rate": 0.7273,
+            "mom_sessions": 29,
+            "yoy_sessions": 78,
+            "mom_sessions_change_pct": 13.8,
+            "yoy_sessions_change_pct": -57.7
+          },
+          {
+            "landing_page": "/ford/taurus/2016/maintenance",
+            "current_sessions": 26,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/lincoln/mkz/2018/maintenance/batteries",
+            "current_sessions": 25,
+            "current_engaged_sessions": 3,
+            "current_engagement_rate": 0.12,
+            "mom_sessions": 17,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": 47.1,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/chevrolet/colorado/2015/maintenance",
+            "current_sessions": 22,
+            "current_engaged_sessions": 6,
+            "current_engagement_rate": 0.2727,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/chevrolet/spark/2014/maintenance",
+            "current_sessions": 20,
+            "current_engaged_sessions": 11,
+            "current_engagement_rate": 0.55,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/volvo/xc90/2020/maintenance/oil",
+            "current_sessions": 20,
+            "current_engaged_sessions": 4,
+            "current_engagement_rate": 0.2,
+            "mom_sessions": 15,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": 33.3,
+            "yoy_sessions_change_pct": null
+          }
+        ]
+      },
+      "ytd": {
+        "current_year": 2026,
+        "prior_year": 2025,
+        "months": [
+          {
+            "month": "2026-01",
+            "label": "January 2026",
+            "sessions": 133969,
+            "prior_year_sessions": 48321
+          },
+          {
+            "month": "2026-02",
+            "label": "February 2026",
+            "sessions": 150353,
+            "prior_year_sessions": 35833
+          },
+          {
+            "month": "2026-03",
+            "label": "March 2026",
+            "sessions": 94926,
+            "prior_year_sessions": 38388
+          }
+        ],
+        "ytd_current": 379248,
+        "ytd_prior": 122542,
+        "ytd_change_pct": 209.5
+      }
+    }
+  ]
+}

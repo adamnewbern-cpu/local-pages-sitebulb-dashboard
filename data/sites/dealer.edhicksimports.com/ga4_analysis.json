@@ -1,0 +1,699 @@
+{
+  "site_url": "https://dealer.edhicksimports.com/",
+  "display_name": "Ed Hicks Imports - Dealer",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 2544,
+        "engaged_sessions": 892,
+        "engagement_rate": 0.3506
+      },
+      "mom": {
+        "sessions": 2339,
+        "engaged_sessions": 850,
+        "engagement_rate": 0.3634
+      },
+      "yoy": {
+        "sessions": 55,
+        "engaged_sessions": 32,
+        "engagement_rate": 0.5818
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": 8.8,
+      "yoy_sessions_change_pct": 4525.5,
+      "mom_engaged_sessions_change_pct": 4.9,
+      "yoy_engaged_sessions_change_pct": 2687.5,
+      "mom_engagement_rate_change_pts": -0.0128,
+      "yoy_engagement_rate_change_pts": -0.2312
+    },
+    "events": [
+      {
+        "event_name": "blog_views",
+        "current": 1936,
+        "mom": 1636,
+        "yoy": 41,
+        "mom_change_pct": 18.3,
+        "yoy_change_pct": 4622.0
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 73,
+        "mom": 53,
+        "yoy": 4,
+        "mom_change_pct": 37.7,
+        "yoy_change_pct": 1725.0
+      },
+      {
+        "event_name": "dealer_site_clicks",
+        "current": 71,
+        "mom": 51,
+        "yoy": 4,
+        "mom_change_pct": 39.2,
+        "yoy_change_pct": 1675.0
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 26,
+        "mom": 13,
+        "yoy": 6,
+        "mom_change_pct": 100.0,
+        "yoy_change_pct": 333.3
+      },
+      {
+        "event_name": "view_new_inventory",
+        "current": 22,
+        "mom": 22,
+        "yoy": 1,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": 2100.0
+      },
+      {
+        "event_name": "get_directions",
+        "current": 3,
+        "mom": 0,
+        "yoy": 0,
+        "mom_change_pct": null,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "schedule_service",
+        "current": 1,
+        "mom": 1,
+        "yoy": 1,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": 0.0
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 1656,
+        "current_pct": 65.1,
+        "mom_sessions": 1472,
+        "yoy_sessions": 21,
+        "mom_sessions_change_pct": 12.5,
+        "yoy_sessions_change_pct": 7785.7
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 865,
+        "current_pct": 34.0,
+        "mom_sessions": 820,
+        "yoy_sessions": 29,
+        "mom_sessions_change_pct": 5.5,
+        "yoy_sessions_change_pct": 2882.8
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 20,
+        "current_pct": 0.8,
+        "mom_sessions": 43,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -53.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 4,
+        "current_pct": 0.2,
+        "mom_sessions": 8,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -50.0,
+        "yoy_sessions_change_pct": 100.0
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 2,
+        "current_pct": 0.1,
+        "mom_sessions": 0,
+        "yoy_sessions": 3,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": -33.3
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/vehicles/gle-350-v-450",
+        "current_sessions": 323,
+        "current_engaged_sessions": 169,
+        "current_engagement_rate": 0.5232,
+        "mom_sessions": 345,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -6.4,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/maintenance-repair/why-does-mercedes-benz-beep",
+        "current_sessions": 311,
+        "current_engaged_sessions": 134,
+        "current_engagement_rate": 0.4309,
+        "mom_sessions": 231,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 34.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/vehicles/mercedes-classes-explained",
+        "current_sessions": 267,
+        "current_engaged_sessions": 122,
+        "current_engagement_rate": 0.4569,
+        "mom_sessions": 56,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 376.8,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/",
+        "current_sessions": 161,
+        "current_engaged_sessions": 14,
+        "current_engagement_rate": 0.087,
+        "mom_sessions": 240,
+        "yoy_sessions": 21,
+        "mom_sessions_change_pct": -32.9,
+        "yoy_sessions_change_pct": 666.7
+      },
+      {
+        "landing_page": "/driving/mercedes-benz-lighting-guide",
+        "current_sessions": 139,
+        "current_engaged_sessions": 54,
+        "current_engagement_rate": 0.3885,
+        "mom_sessions": 127,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": 9.4,
+        "yoy_sessions_change_pct": 13800.0
+      },
+      {
+        "landing_page": "/maintenance-repair/brake-rotor-replacement",
+        "current_sessions": 139,
+        "current_engaged_sessions": 59,
+        "current_engagement_rate": 0.4245,
+        "mom_sessions": 84,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 65.5,
+        "yoy_sessions_change_pct": 6850.0
+      },
+      {
+        "landing_page": "/maintenance-repair/mercedes-check-engine-light-flashing",
+        "current_sessions": 118,
+        "current_engaged_sessions": 41,
+        "current_engagement_rate": 0.3475,
+        "mom_sessions": 95,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": 24.2,
+        "yoy_sessions_change_pct": 11700.0
+      },
+      {
+        "landing_page": "/mercedes-benz/mercedes-benz-eqe",
+        "current_sessions": 103,
+        "current_engaged_sessions": 53,
+        "current_engagement_rate": 0.5146,
+        "mom_sessions": 102,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 1.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/vehicles/e-class-vs-s-class",
+        "current_sessions": 98,
+        "current_engaged_sessions": 45,
+        "current_engagement_rate": 0.4592,
+        "mom_sessions": 110,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -10.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/maintenance-repair/can-you-get-a-mercedes-benz-oil-change-anywhere-heres-why-you-should-consider-an-authorized-dealer",
+        "current_sessions": 89,
+        "current_engaged_sessions": 39,
+        "current_engagement_rate": 0.4382,
+        "mom_sessions": 73,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 21.9,
+        "yoy_sessions_change_pct": 4350.0
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 2189,
+          "prior_year_sessions": 179
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 2204,
+          "prior_year_sessions": 136
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 2607,
+          "prior_year_sessions": 62
+        }
+      ],
+      "ytd_current": 7000,
+      "ytd_prior": 377,
+      "ytd_change_pct": 1756.8
+    },
+    "summary": "Ed Hicks Imports experienced strong organic growth this period, with sessions up 8.8% MoM and an extraordinary 4525.5% YoY, driven almost entirely by organic search (65.1% of traffic, +12.5% MoM, +7785.7% YoY). Engaged sessions grew 4.9% MoM but engagement rate declined 1.3 pp MoM and 23.1 pp YoY, indicating that while traffic volume is robust, content resonance per visitor is weakening. Blog views dominate custom events at 1,936 (up 18.3% MoM), but high-intent conversion events remain sparse: dealer_site_clicks total only 71 events (+39.2% MoM), outbound_clicks 73 (+37.7% MoM), and critical actions like schedule_service (1 event) and get_directions (3 events) are negligible. YTD 2026 shows explosive growth at 7,000 sessions versus 377 in 2025 (+1756.8%), with Q1 2026 alone exceeding all of 2025. Top performers include /maintenance-repair/why-does-mercedes-benz-beep (311 sessions, +34.6% MoM) and /vehicles/mercedes-classes-explained (267 sessions, +376.8% MoM), suggesting educational content is driving awareness but not converting to dealer actions.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Capitalize on maintenance content momentum",
+          "detail": "/maintenance-repair/why-does-mercedes-benz-beep (+34.6% MoM, 311 sessions) and brake-rotor-replacement (+65.5% MoM) are trending upward with strong engagement (43.1% and 42.4% respectively). Add inline CTAs to service scheduling or dealer contact forms on these pages to convert educational interest into appointment bookings.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Double down on organic search optimization",
+          "detail": "Organic search accounts for 65.1% of traffic and is growing +12.5% MoM (+7785.7% YoY). Identify top-performing keywords from /vehicles/mercedes-classes-explained and maintenance pages, then expand similar content clusters to capture additional long-tail search volume.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Strengthen dealer_site_clicks call-to-action",
+          "detail": "Dealer_site_clicks (71 events, +39.2% MoM) show momentum but remain low relative to blog_views (1,936 events). Place more prominent 'View Inventory' or 'Contact Dealer' buttons on blog posts and comparison pages to drive traffic to the main dealer site.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Engagement rate declining despite traffic growth",
+          "detail": "Engagement rate dropped 1.3 pp MoM and 23.1 pp YoY despite session growth, signaling that new traffic (likely from SEO) is less engaged than historical users. Content quality, relevance, or UX friction may be diluting intent.",
+          "severity": "medium"
+        },
+        {
+          "title": "Critical conversion events are virtually absent",
+          "detail": "schedule_service logged only 1 event and get_directions 3 events in the last 30 days. With 2,544 sessions and 892 engaged sessions, the conversion funnel is severely broken\u2014most traffic is not progressing to high-intent dealer actions.",
+          "severity": "high"
+        },
+        {
+          "title": "Home page engagement is weak",
+          "detail": "The homepage (/) shows only 8.7% engagement rate despite 161 sessions, a 32.9% MoM decline. This is likely cannibalizing users who should be directed to conversion pages; consider homepage redesign or improved internal linking.",
+          "severity": "medium"
+        },
+        {
+          "title": "Direct traffic growth is slowing",
+          "detail": "Direct traffic (+5.5% MoM) is growing at half the rate of organic (+12.5% MoM), suggesting brand recall or repeat visit momentum may be stalling. Monitor branded search trends and consider email/loyalty initiatives to re-engage returning users.",
+          "severity": "low"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Convert blog traffic into dealer appointments",
+          "detail": "Blog_views represent 76% of all custom events (1,936) but only 1 schedule_service event was logged. Install exit-intent CTAs, sticky service booking widgets, or retargeting campaigns on high-traffic maintenance pages to capture appointment intent before users leave.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize top landing pages for service scheduling",
+          "detail": "/maintenance-repair/why-does-mercedes-benz-beep (311 sessions, 43.1% engaged) and /maintenance-repair/brake-rotor-replacement (139 sessions, 42.4% engaged) are pre-qualified service-intent audiences. Add prominent 'Schedule Service Now' buttons and streamline the booking funnel on these pages.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Expand vehicle comparison content and inventory linking",
+          "detail": "/vehicles/mercedes-classes-explained (+376.8% MoM, 267 sessions) is a breakout success. Create similar comparison pages (e.g., GLE vs GLC, C-Class vs E-Class) and link each to new/used inventory filters on the dealer site to drive view_new_inventory events (currently only 22 YTD).",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Implement local intent tracking and location-based CTAs",
+          "detail": "get_directions has only 3 events despite strong organic growth. Add location finder widgets, store locator CTAs, and geotargeted ads to capture local dealership intent, especially on comparison and maintenance pages where service buyers may be ready to visit.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 2607,
+        "engaged_sessions": 915,
+        "engagement_rate": 0.351
+      },
+      "mom": {
+        "sessions": 2204,
+        "engaged_sessions": 802,
+        "engagement_rate": 0.3639
+      },
+      "yoy": {
+        "sessions": 62,
+        "engaged_sessions": 34,
+        "engagement_rate": 0.5484
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": 18.3,
+      "yoy_sessions_change_pct": 4104.8,
+      "mom_engaged_sessions_change_pct": 14.1,
+      "yoy_engaged_sessions_change_pct": 2591.2,
+      "mom_engagement_rate_change_pts": -0.0129,
+      "yoy_engagement_rate_change_pts": -0.1974
+    },
+    "events": [
+      {
+        "event_name": "blog_views",
+        "current": 1980,
+        "mom": 1541,
+        "yoy": 47,
+        "mom_change_pct": 28.5,
+        "yoy_change_pct": 4112.8
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 77,
+        "mom": 48,
+        "yoy": 4,
+        "mom_change_pct": 60.4,
+        "yoy_change_pct": 1825.0
+      },
+      {
+        "event_name": "dealer_site_clicks",
+        "current": 75,
+        "mom": 46,
+        "yoy": 4,
+        "mom_change_pct": 63.0,
+        "yoy_change_pct": 1775.0
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 26,
+        "mom": 13,
+        "yoy": 10,
+        "mom_change_pct": 100.0,
+        "yoy_change_pct": 160.0
+      },
+      {
+        "event_name": "view_new_inventory",
+        "current": 25,
+        "mom": 19,
+        "yoy": 1,
+        "mom_change_pct": 31.6,
+        "yoy_change_pct": 2400.0
+      },
+      {
+        "event_name": "get_directions",
+        "current": 3,
+        "mom": 0,
+        "yoy": 0,
+        "mom_change_pct": null,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "schedule_service",
+        "current": 1,
+        "mom": 1,
+        "yoy": 1,
+        "mom_change_pct": 0.0,
+        "yoy_change_pct": 0.0
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 1682,
+        "current_pct": 64.5,
+        "mom_sessions": 1393,
+        "yoy_sessions": 22,
+        "mom_sessions_change_pct": 20.7,
+        "yoy_sessions_change_pct": 7545.5
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 900,
+        "current_pct": 34.5,
+        "mom_sessions": 767,
+        "yoy_sessions": 35,
+        "mom_sessions_change_pct": 17.3,
+        "yoy_sessions_change_pct": 2471.4
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 22,
+        "current_pct": 0.8,
+        "mom_sessions": 41,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -46.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 5,
+        "current_pct": 0.2,
+        "mom_sessions": 7,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -28.6,
+        "yoy_sessions_change_pct": 150.0
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 2,
+        "current_pct": 0.1,
+        "mom_sessions": 0,
+        "yoy_sessions": 3,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": -33.3
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/vehicles/gle-350-v-450",
+        "current_sessions": 321,
+        "current_engaged_sessions": 166,
+        "current_engagement_rate": 0.5171,
+        "mom_sessions": 330,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -2.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/maintenance-repair/why-does-mercedes-benz-beep",
+        "current_sessions": 313,
+        "current_engaged_sessions": 139,
+        "current_engagement_rate": 0.4441,
+        "mom_sessions": 220,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 42.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/vehicles/mercedes-classes-explained",
+        "current_sessions": 270,
+        "current_engaged_sessions": 124,
+        "current_engagement_rate": 0.4593,
+        "mom_sessions": 50,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 440.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/",
+        "current_sessions": 170,
+        "current_engaged_sessions": 17,
+        "current_engagement_rate": 0.1,
+        "mom_sessions": 227,
+        "yoy_sessions": 24,
+        "mom_sessions_change_pct": -25.1,
+        "yoy_sessions_change_pct": 608.3
+      },
+      {
+        "landing_page": "/maintenance-repair/brake-rotor-replacement",
+        "current_sessions": 146,
+        "current_engaged_sessions": 61,
+        "current_engagement_rate": 0.4178,
+        "mom_sessions": 75,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 94.7,
+        "yoy_sessions_change_pct": 7200.0
+      },
+      {
+        "landing_page": "/driving/mercedes-benz-lighting-guide",
+        "current_sessions": 143,
+        "current_engaged_sessions": 58,
+        "current_engagement_rate": 0.4056,
+        "mom_sessions": 119,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": 20.2,
+        "yoy_sessions_change_pct": 14200.0
+      },
+      {
+        "landing_page": "/maintenance-repair/mercedes-check-engine-light-flashing",
+        "current_sessions": 125,
+        "current_engaged_sessions": 45,
+        "current_engagement_rate": 0.36,
+        "mom_sessions": 85,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": 47.1,
+        "yoy_sessions_change_pct": 12400.0
+      },
+      {
+        "landing_page": "/mercedes-benz/mercedes-benz-eqe",
+        "current_sessions": 102,
+        "current_engaged_sessions": 52,
+        "current_engagement_rate": 0.5098,
+        "mom_sessions": 98,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 4.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/vehicles/e-class-vs-s-class",
+        "current_sessions": 99,
+        "current_engaged_sessions": 43,
+        "current_engagement_rate": 0.4343,
+        "mom_sessions": 105,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -5.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/maintenance-repair/can-you-get-a-mercedes-benz-oil-change-anywhere-heres-why-you-should-consider-an-authorized-dealer",
+        "current_sessions": 89,
+        "current_engaged_sessions": 40,
+        "current_engagement_rate": 0.4494,
+        "mom_sessions": 72,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 23.6,
+        "yoy_sessions_change_pct": 4350.0
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 2189,
+          "prior_year_sessions": 179
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 2204,
+          "prior_year_sessions": 136
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 2607,
+          "prior_year_sessions": 62
+        }
+      ],
+      "ytd_current": 7000,
+      "ytd_prior": 377,
+      "ytd_change_pct": 1756.8
+    },
+    "summary": "Ed Hicks Imports experienced exceptional growth in March 2026, with sessions climbing 18.3% MoM and 4104.8% YoY to 2,607 total sessions. Organic Search drove 64.5% of traffic (1,682 sessions, +20.7% MoM), while Direct contributed 34.5% (900 sessions, +17.3% MoM), indicating strong brand awareness and SEO performance. Engaged sessions grew 14.1% MoM to 915, though engagement rate declined 1.3 percentage points MoM and 19.7 percentage points YoY to 35.1%, suggesting that traffic growth is outpacing conversion quality. Blog views dominated custom events with 1,980 events (+28.5% MoM, +4112.8% YoY), positioning content as the primary engagement driver, while dealer_site_clicks (75 events, +63.0% MoM) and outbound_clicks (77 events, +60.4% MoM) show moderate momentum toward deeper funnel actions. High-intent conversion events remain weak: schedule_service registered only 1 event, get_directions just 3 events, and no calls were tracked, representing significant untapped opportunity. YTD 2026 stands at 7,000 sessions (+1756.8% vs. 2025), with March marking the strongest month and suggesting sustained growth trajectory through Q1.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Content-Driven Traffic Acceleration",
+          "detail": "/maintenance-repair/mercedes-classes-explained surged 440% MoM with 270 sessions and 45.9% engagement; /maintenance-repair/brake-rotor-replacement jumped 94.7% MoM and 7200% YoY. Maintenance and educational content is resonating across the funnel.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Organic Search Dominance",
+          "detail": "Organic Search delivered 1,682 sessions (64.5% of traffic) with 20.7% MoM growth and 7545.5% YoY growth, demonstrating strong SEO performance and reducing reliance on paid channels.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Dealer Site Navigation Lift",
+          "detail": "dealer_site_clicks grew 63% MoM and 1775% YoY to 75 events, indicating improved cross-linking and user intent to explore deeper dealer resources.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Engagement Rate Deterioration",
+          "detail": "Despite 18.3% MoM session growth, engagement rate fell 1.3 pp MoM and 19.7 pp YoY to 35.1%. Traffic growth is outpacing engaged behavior, suggesting poor quality traffic or weak conversion paths from initial landing.",
+          "severity": "high"
+        },
+        {
+          "title": "Critical Conversion Event Gaps",
+          "detail": "schedule_service generated only 1 event, get_directions 3 events, and zero calls were tracked in March. These high-value conversion signals are nearly absent, indicating poor funnel visibility or conversion bottlenecks.",
+          "severity": "high"
+        },
+        {
+          "title": "Homepage Engagement Collapse",
+          "detail": "The homepage (/) shows only 10% engagement rate on 170 sessions, down 25.1% MoM. Users are landing and bouncing rather than exploring inventory or dealer information.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Activate High-Intent Conversion Events",
+          "detail": "Zero phone calls and minimal scheduling/directions events represent massive missed revenue. Implement click-to-call buttons on top landing pages (/vehicles/gle-350-v-450, /maintenance-repair/why-does-mercedes-benz-beep) and add prominent 'Schedule Service' CTAs on maintenance content.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize Landing Page-to-Dealer-Site Flow",
+          "detail": "dealer_site_clicks are strong (+63% MoM) but represent only 75 events across 2,607 sessions (2.9% conversion rate). Add contextual internal links from blog content to vehicle inventory pages and dealer contact information to improve the content-to-conversion bridge.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Revive Homepage Engagement",
+          "detail": "The homepage's 10% engagement rate is a significant leak in the funnel. Redesign the homepage to highlight best-performing content (/vehicles/gle-350-v-450, /maintenance-repair/why-does-mercedes-benz-beep) and add prominent dealer contact/CTA elements to recapture the 170 monthly sessions.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Expand Vehicle Comparison Content",
+          "detail": "/vehicles/e-class-vs-s-class and /vehicles/gle-350-v-450 show strong engagement (43\u201352%). Produce additional comparison content (e.g., A-Class vs. C-Class, GLA vs. GLC) to capitalize on this intent pattern and drive higher-value inventory exploration.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  }
+}

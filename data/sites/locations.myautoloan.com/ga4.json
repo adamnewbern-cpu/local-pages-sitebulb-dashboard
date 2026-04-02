@@ -1,0 +1,671 @@
+{
+  "site_url": "https://locations.myautoloan.com/",
+  "display_name": "myAutoLoan",
+  "property_id": "350222354",
+  "meta": {
+    "last_updated": "2026-04-02",
+    "next_refresh": "2026-04-06"
+  },
+  "daily": [
+    {
+      "date": "2026-03-01",
+      "sessions": 900,
+      "engaged_sessions": 66,
+      "engagement_rate": 0.0733
+    },
+    {
+      "date": "2026-03-02",
+      "sessions": 1056,
+      "engaged_sessions": 75,
+      "engagement_rate": 0.071
+    },
+    {
+      "date": "2026-03-03",
+      "sessions": 716,
+      "engaged_sessions": 70,
+      "engagement_rate": 0.0978
+    },
+    {
+      "date": "2026-03-04",
+      "sessions": 535,
+      "engaged_sessions": 54,
+      "engagement_rate": 0.1009
+    },
+    {
+      "date": "2026-03-05",
+      "sessions": 515,
+      "engaged_sessions": 51,
+      "engagement_rate": 0.099
+    },
+    {
+      "date": "2026-03-06",
+      "sessions": 405,
+      "engaged_sessions": 43,
+      "engagement_rate": 0.1062
+    },
+    {
+      "date": "2026-03-07",
+      "sessions": 406,
+      "engaged_sessions": 46,
+      "engagement_rate": 0.1133
+    },
+    {
+      "date": "2026-03-08",
+      "sessions": 468,
+      "engaged_sessions": 35,
+      "engagement_rate": 0.0748
+    },
+    {
+      "date": "2026-03-09",
+      "sessions": 501,
+      "engaged_sessions": 21,
+      "engagement_rate": 0.0419
+    },
+    {
+      "date": "2026-03-10",
+      "sessions": 272,
+      "engaged_sessions": 22,
+      "engagement_rate": 0.0809
+    },
+    {
+      "date": "2026-03-11",
+      "sessions": 251,
+      "engaged_sessions": 24,
+      "engagement_rate": 0.0956
+    },
+    {
+      "date": "2026-03-12",
+      "sessions": 274,
+      "engaged_sessions": 20,
+      "engagement_rate": 0.073
+    },
+    {
+      "date": "2026-03-13",
+      "sessions": 254,
+      "engaged_sessions": 22,
+      "engagement_rate": 0.0866
+    },
+    {
+      "date": "2026-03-14",
+      "sessions": 200,
+      "engaged_sessions": 18,
+      "engagement_rate": 0.09
+    },
+    {
+      "date": "2026-03-15",
+      "sessions": 411,
+      "engaged_sessions": 25,
+      "engagement_rate": 0.0608
+    },
+    {
+      "date": "2026-03-16",
+      "sessions": 392,
+      "engaged_sessions": 20,
+      "engagement_rate": 0.051
+    },
+    {
+      "date": "2026-03-17",
+      "sessions": 389,
+      "engaged_sessions": 16,
+      "engagement_rate": 0.0411
+    },
+    {
+      "date": "2026-03-18",
+      "sessions": 449,
+      "engaged_sessions": 16,
+      "engagement_rate": 0.0356
+    },
+    {
+      "date": "2026-03-19",
+      "sessions": 417,
+      "engaged_sessions": 30,
+      "engagement_rate": 0.0719
+    },
+    {
+      "date": "2026-03-20",
+      "sessions": 321,
+      "engaged_sessions": 18,
+      "engagement_rate": 0.0561
+    },
+    {
+      "date": "2026-03-21",
+      "sessions": 306,
+      "engaged_sessions": 17,
+      "engagement_rate": 0.0556
+    },
+    {
+      "date": "2026-03-22",
+      "sessions": 340,
+      "engaged_sessions": 15,
+      "engagement_rate": 0.0441
+    },
+    {
+      "date": "2026-03-23",
+      "sessions": 236,
+      "engaged_sessions": 16,
+      "engagement_rate": 0.0678
+    },
+    {
+      "date": "2026-03-24",
+      "sessions": 221,
+      "engaged_sessions": 19,
+      "engagement_rate": 0.086
+    },
+    {
+      "date": "2026-03-25",
+      "sessions": 357,
+      "engaged_sessions": 19,
+      "engagement_rate": 0.0532
+    },
+    {
+      "date": "2026-03-26",
+      "sessions": 510,
+      "engaged_sessions": 93,
+      "engagement_rate": 0.1824
+    },
+    {
+      "date": "2026-03-27",
+      "sessions": 453,
+      "engaged_sessions": 27,
+      "engagement_rate": 0.0596
+    },
+    {
+      "date": "2026-03-28",
+      "sessions": 462,
+      "engaged_sessions": 17,
+      "engagement_rate": 0.0368
+    },
+    {
+      "date": "2026-03-29",
+      "sessions": 320,
+      "engaged_sessions": 27,
+      "engagement_rate": 0.0844
+    },
+    {
+      "date": "2026-03-30",
+      "sessions": 260,
+      "engaged_sessions": 11,
+      "engagement_rate": 0.0423
+    },
+    {
+      "date": "2026-03-31",
+      "sessions": 221,
+      "engaged_sessions": 20,
+      "engagement_rate": 0.0905
+    },
+    {
+      "date": "2026-04-01",
+      "sessions": 213,
+      "engaged_sessions": 32,
+      "engagement_rate": 0.1502
+    }
+  ],
+  "weekly_snapshots": [
+    {
+      "snapshot_date": "2026-04-02",
+      "rolling_30d": {
+        "window": {
+          "current": {
+            "start": "2026-03-03",
+            "end": "2026-04-01",
+            "label": "Last 30 Days"
+          },
+          "mom": {
+            "start": "2026-02-01",
+            "end": "2026-03-02",
+            "label": "Prior 30 Days"
+          },
+          "yoy": {
+            "start": "2025-03-03",
+            "end": "2025-04-01",
+            "label": "Same Period LY"
+          }
+        },
+        "yoy_available": true,
+        "totals": {
+          "current": {
+            "sessions": 10994,
+            "engaged_sessions": 865,
+            "engagement_rate": 0.0787
+          },
+          "mom": {
+            "sessions": 34804,
+            "engaged_sessions": 2160,
+            "engagement_rate": 0.0621
+          },
+          "yoy": {
+            "sessions": 665,
+            "engaged_sessions": 366,
+            "engagement_rate": 0.5504
+          },
+          "yoy_available": true,
+          "mom_sessions_change_pct": -68.4,
+          "yoy_sessions_change_pct": 1553.2,
+          "mom_engaged_sessions_change_pct": -60.0,
+          "yoy_engaged_sessions_change_pct": 136.3,
+          "mom_engagement_rate_change_pts": 0.0166,
+          "yoy_engagement_rate_change_pts": -0.4717
+        },
+        "events": [
+          {
+            "event_name": "outbound_clicks",
+            "current": 254,
+            "mom": 260,
+            "yoy": 561,
+            "mom_change_pct": -2.3,
+            "yoy_change_pct": -54.7
+          },
+          {
+            "event_name": "navigational_clicks",
+            "current": 129,
+            "mom": 68,
+            "yoy": 69,
+            "mom_change_pct": 89.7,
+            "yoy_change_pct": 87.0
+          },
+          {
+            "event_name": "apply_now",
+            "current": 91,
+            "mom": 122,
+            "yoy": 81,
+            "mom_change_pct": -25.4,
+            "yoy_change_pct": 12.3
+          },
+          {
+            "event_name": "calls",
+            "current": 2,
+            "mom": 3,
+            "yoy": 2,
+            "mom_change_pct": -33.3,
+            "yoy_change_pct": 0.0
+          }
+        ],
+        "channels": [
+          {
+            "channel": "Direct",
+            "current_sessions": 10656,
+            "current_pct": 96.9,
+            "mom_sessions": 34255,
+            "yoy_sessions": 367,
+            "mom_sessions_change_pct": -68.9,
+            "yoy_sessions_change_pct": 2803.5
+          },
+          {
+            "channel": "Organic Search",
+            "current_sessions": 246,
+            "current_pct": 2.2,
+            "mom_sessions": 278,
+            "yoy_sessions": 272,
+            "mom_sessions_change_pct": -11.5,
+            "yoy_sessions_change_pct": -9.6
+          },
+          {
+            "channel": "Unassigned",
+            "current_sessions": 79,
+            "current_pct": 0.7,
+            "mom_sessions": 98,
+            "yoy_sessions": 17,
+            "mom_sessions_change_pct": -19.4,
+            "yoy_sessions_change_pct": 364.7
+          },
+          {
+            "channel": "Referral",
+            "current_sessions": 21,
+            "current_pct": 0.2,
+            "mom_sessions": 35,
+            "yoy_sessions": 12,
+            "mom_sessions_change_pct": -40.0,
+            "yoy_sessions_change_pct": 75.0
+          }
+        ],
+        "top_pages": [
+          {
+            "landing_page": "/",
+            "current_sessions": 389,
+            "current_engaged_sessions": 153,
+            "current_engagement_rate": 0.3933,
+            "mom_sessions": 409,
+            "yoy_sessions": 335,
+            "mom_sessions_change_pct": -4.9,
+            "yoy_sessions_change_pct": 16.1
+          },
+          {
+            "landing_page": "(not set)",
+            "current_sessions": 59,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 46,
+            "yoy_sessions": 13,
+            "mom_sessions_change_pct": 28.3,
+            "yoy_sessions_change_pct": 353.8
+          },
+          {
+            "landing_page": "/massachusetts/greenfield",
+            "current_sessions": 8,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/new-york",
+            "current_sessions": 8,
+            "current_engaged_sessions": 2,
+            "current_engagement_rate": 0.25,
+            "mom_sessions": 0,
+            "yoy_sessions": 2,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": 300.0
+          },
+          {
+            "landing_page": "/north-carolina/durham/1001-southpoint-auto-park-blvd",
+            "current_sessions": 8,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/maryland/easton/car-dealerships",
+            "current_sessions": 7,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/massachusetts/pittsfield",
+            "current_sessions": 7,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/michigan/dundee/4402-n-ann-arbor-rd",
+            "current_sessions": 7,
+            "current_engaged_sessions": 2,
+            "current_engagement_rate": 0.2857,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/michigan/ypsilanti/refinance-auto-loans",
+            "current_sessions": 7,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/minnesota/litchfield",
+            "current_sessions": 7,
+            "current_engaged_sessions": 1,
+            "current_engagement_rate": 0.1429,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          }
+        ]
+      },
+      "last_calendar_month": {
+        "window": {
+          "current": {
+            "start": "2026-03-01",
+            "end": "2026-03-31",
+            "label": "March 2026"
+          },
+          "mom": {
+            "start": "2026-02-01",
+            "end": "2026-02-28",
+            "label": "February 2026"
+          },
+          "yoy": {
+            "start": "2025-03-01",
+            "end": "2025-03-31",
+            "label": "March 2025"
+          }
+        },
+        "yoy_available": true,
+        "totals": {
+          "current": {
+            "sessions": 12833,
+            "engaged_sessions": 973,
+            "engagement_rate": 0.0758
+          },
+          "mom": {
+            "sessions": 32897,
+            "engaged_sessions": 2018,
+            "engagement_rate": 0.0613
+          },
+          "yoy": {
+            "sessions": 667,
+            "engaged_sessions": 369,
+            "engagement_rate": 0.5532
+          },
+          "yoy_available": true,
+          "mom_sessions_change_pct": -61.0,
+          "yoy_sessions_change_pct": 1824.0,
+          "mom_engaged_sessions_change_pct": -51.8,
+          "yoy_engaged_sessions_change_pct": 163.7,
+          "mom_engagement_rate_change_pts": 0.0145,
+          "yoy_engagement_rate_change_pts": -0.4774
+        },
+        "events": [
+          {
+            "event_name": "outbound_clicks",
+            "current": 252,
+            "mom": 248,
+            "yoy": 573,
+            "mom_change_pct": 1.6,
+            "yoy_change_pct": -56.0
+          },
+          {
+            "event_name": "navigational_clicks",
+            "current": 136,
+            "mom": 59,
+            "yoy": 80,
+            "mom_change_pct": 130.5,
+            "yoy_change_pct": 70.0
+          },
+          {
+            "event_name": "apply_now",
+            "current": 93,
+            "mom": 115,
+            "yoy": 82,
+            "mom_change_pct": -19.1,
+            "yoy_change_pct": 13.4
+          },
+          {
+            "event_name": "calls",
+            "current": 2,
+            "mom": 3,
+            "yoy": 2,
+            "mom_change_pct": -33.3,
+            "yoy_change_pct": 0.0
+          }
+        ],
+        "channels": [
+          {
+            "channel": "Direct",
+            "current_sessions": 12473,
+            "current_pct": 97.2,
+            "mom_sessions": 32461,
+            "yoy_sessions": 364,
+            "mom_sessions_change_pct": -61.6,
+            "yoy_sessions_change_pct": 3326.6
+          },
+          {
+            "channel": "Organic Search",
+            "current_sessions": 252,
+            "current_pct": 2.0,
+            "mom_sessions": 259,
+            "yoy_sessions": 278,
+            "mom_sessions_change_pct": -2.7,
+            "yoy_sessions_change_pct": -9.4
+          },
+          {
+            "channel": "Unassigned",
+            "current_sessions": 85,
+            "current_pct": 0.7,
+            "mom_sessions": 90,
+            "yoy_sessions": 17,
+            "mom_sessions_change_pct": -5.6,
+            "yoy_sessions_change_pct": 400.0
+          },
+          {
+            "channel": "Referral",
+            "current_sessions": 21,
+            "current_pct": 0.2,
+            "mom_sessions": 34,
+            "yoy_sessions": 11,
+            "mom_sessions_change_pct": -38.2,
+            "yoy_sessions_change_pct": 90.9
+          }
+        ],
+        "top_pages": [
+          {
+            "landing_page": "/",
+            "current_sessions": 407,
+            "current_engaged_sessions": 157,
+            "current_engagement_rate": 0.3857,
+            "mom_sessions": 383,
+            "yoy_sessions": 332,
+            "mom_sessions_change_pct": 6.3,
+            "yoy_sessions_change_pct": 22.6
+          },
+          {
+            "landing_page": "(not set)",
+            "current_sessions": 61,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 42,
+            "yoy_sessions": 12,
+            "mom_sessions_change_pct": 45.2,
+            "yoy_sessions_change_pct": 408.3
+          },
+          {
+            "landing_page": "/north-carolina/durham/1001-southpoint-auto-park-blvd",
+            "current_sessions": 9,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/massachusetts/greenfield",
+            "current_sessions": 8,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/missouri/willow-springs/auto-loan-interest-rates",
+            "current_sessions": 8,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/new-york",
+            "current_sessions": 8,
+            "current_engaged_sessions": 2,
+            "current_engagement_rate": 0.25,
+            "mom_sessions": 0,
+            "yoy_sessions": 2,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": 300.0
+          },
+          {
+            "landing_page": "/north-carolina/raleigh/3910-capital-hills-dr",
+            "current_sessions": 8,
+            "current_engaged_sessions": 1,
+            "current_engagement_rate": 0.125,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/florida",
+            "current_sessions": 7,
+            "current_engaged_sessions": 3,
+            "current_engagement_rate": 0.4286,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/illinois/aurora/auto-loans",
+            "current_sessions": 7,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          },
+          {
+            "landing_page": "/maryland/clarksville/21029",
+            "current_sessions": 7,
+            "current_engaged_sessions": 0,
+            "current_engagement_rate": 0.0,
+            "mom_sessions": 0,
+            "yoy_sessions": 0,
+            "mom_sessions_change_pct": null,
+            "yoy_sessions_change_pct": null
+          }
+        ]
+      },
+      "ytd": {
+        "current_year": 2026,
+        "prior_year": 2025,
+        "months": [
+          {
+            "month": "2026-01",
+            "label": "January 2026",
+            "sessions": 36484,
+            "prior_year_sessions": 674
+          },
+          {
+            "month": "2026-02",
+            "label": "February 2026",
+            "sessions": 32897,
+            "prior_year_sessions": 858
+          },
+          {
+            "month": "2026-03",
+            "label": "March 2026",
+            "sessions": 12833,
+            "prior_year_sessions": 667
+          }
+        ],
+        "ytd_current": 82214,
+        "ytd_prior": 2199,
+        "ytd_change_pct": 3638.7
+      }
+    }
+  ]
+}

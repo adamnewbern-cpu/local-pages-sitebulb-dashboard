@@ -1,0 +1,715 @@
+{
+  "site_url": "https://dealer.hicksfamilysubaru.com/",
+  "display_name": "Hicks Family Subaru - Dealer",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 1850,
+        "engaged_sessions": 723,
+        "engagement_rate": 0.3908
+      },
+      "mom": {
+        "sessions": 2143,
+        "engaged_sessions": 857,
+        "engagement_rate": 0.3999
+      },
+      "yoy": {
+        "sessions": 308,
+        "engaged_sessions": 181,
+        "engagement_rate": 0.5877
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -13.7,
+      "yoy_sessions_change_pct": 500.6,
+      "mom_engaged_sessions_change_pct": -15.6,
+      "yoy_engaged_sessions_change_pct": 299.4,
+      "mom_engagement_rate_change_pts": -0.0091,
+      "yoy_engagement_rate_change_pts": -0.1969
+    },
+    "events": [
+      {
+        "event_name": "blog_views",
+        "current": 1372,
+        "mom": 1629,
+        "yoy": 227,
+        "mom_change_pct": -15.8,
+        "yoy_change_pct": 504.4
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 89,
+        "mom": 86,
+        "yoy": 32,
+        "mom_change_pct": 3.5,
+        "yoy_change_pct": 178.1
+      },
+      {
+        "event_name": "dealer_site_clicks",
+        "current": 86,
+        "mom": 82,
+        "yoy": 32,
+        "mom_change_pct": 4.9,
+        "yoy_change_pct": 168.8
+      },
+      {
+        "event_name": "view_new_inventory",
+        "current": 52,
+        "mom": 49,
+        "yoy": 22,
+        "mom_change_pct": 6.1,
+        "yoy_change_pct": 136.4
+      },
+      {
+        "event_name": "internal_clicks",
+        "current": 11,
+        "mom": 12,
+        "yoy": 28,
+        "mom_change_pct": -8.3,
+        "yoy_change_pct": -60.7
+      },
+      {
+        "event_name": "contact_us",
+        "current": 1,
+        "mom": 0,
+        "yoy": 1,
+        "mom_change_pct": null,
+        "yoy_change_pct": 0.0
+      },
+      {
+        "event_name": "schedule_service",
+        "current": 1,
+        "mom": 0,
+        "yoy": 1,
+        "mom_change_pct": null,
+        "yoy_change_pct": 0.0
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 1266,
+        "current_pct": 68.4,
+        "mom_sessions": 1493,
+        "yoy_sessions": 218,
+        "mom_sessions_change_pct": -15.2,
+        "yoy_sessions_change_pct": 480.7
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 556,
+        "current_pct": 30.1,
+        "mom_sessions": 612,
+        "yoy_sessions": 87,
+        "mom_sessions_change_pct": -9.2,
+        "yoy_sessions_change_pct": 539.1
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 15,
+        "current_pct": 0.8,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 8,
+        "current_pct": 0.4,
+        "mom_sessions": 11,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -27.3,
+        "yoy_sessions_change_pct": 300.0
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 3,
+        "current_pct": 0.2,
+        "mom_sessions": 27,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": -88.9,
+        "yoy_sessions_change_pct": 200.0
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 267,
+        "current_engaged_sessions": 7,
+        "current_engagement_rate": 0.0262,
+        "mom_sessions": 235,
+        "yoy_sessions": 35,
+        "mom_sessions_change_pct": 13.6,
+        "yoy_sessions_change_pct": 662.9
+      },
+      {
+        "landing_page": "/vehicles/crosstrek-vs-outback-vs-forester",
+        "current_sessions": 264,
+        "current_engaged_sessions": 154,
+        "current_engagement_rate": 0.5833,
+        "mom_sessions": 351,
+        "yoy_sessions": 6,
+        "mom_sessions_change_pct": -24.8,
+        "yoy_sessions_change_pct": 4300.0
+      },
+      {
+        "landing_page": "/maintenance-repair/wiper-fluid-not-spraying",
+        "current_sessions": 158,
+        "current_engaged_sessions": 70,
+        "current_engagement_rate": 0.443,
+        "mom_sessions": 269,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -41.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/maintenance-repair/warm-ac-air",
+        "current_sessions": 142,
+        "current_engaged_sessions": 74,
+        "current_engagement_rate": 0.5211,
+        "mom_sessions": 56,
+        "yoy_sessions": 46,
+        "mom_sessions_change_pct": 153.6,
+        "yoy_sessions_change_pct": 208.7
+      },
+      {
+        "landing_page": "/vehicles/best-subaru-for-seniors",
+        "current_sessions": 123,
+        "current_engaged_sessions": 62,
+        "current_engagement_rate": 0.5041,
+        "mom_sessions": 120,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 2.5,
+        "yoy_sessions_change_pct": 6050.0
+      },
+      {
+        "landing_page": "/maintenance-repair/check-engine-light-blinking",
+        "current_sessions": 97,
+        "current_engaged_sessions": 47,
+        "current_engagement_rate": 0.4845,
+        "mom_sessions": 69,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": 40.6,
+        "yoy_sessions_change_pct": 9600.0
+      },
+      {
+        "landing_page": "/driving/fog-lights-guide",
+        "current_sessions": 85,
+        "current_engaged_sessions": 50,
+        "current_engagement_rate": 0.5882,
+        "mom_sessions": 119,
+        "yoy_sessions": 14,
+        "mom_sessions_change_pct": -28.6,
+        "yoy_sessions_change_pct": 507.1
+      },
+      {
+        "landing_page": "/vehicles/subaru-longevity",
+        "current_sessions": 58,
+        "current_engaged_sessions": 25,
+        "current_engagement_rate": 0.431,
+        "mom_sessions": 54,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 7.4,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 45,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 70,
+        "yoy_sessions": 8,
+        "mom_sessions_change_pct": -35.7,
+        "yoy_sessions_change_pct": 462.5
+      },
+      {
+        "landing_page": "/driving/remove-salt-stains",
+        "current_sessions": 42,
+        "current_engaged_sessions": 17,
+        "current_engagement_rate": 0.4048,
+        "mom_sessions": 99,
+        "yoy_sessions": 11,
+        "mom_sessions_change_pct": -57.6,
+        "yoy_sessions_change_pct": 281.8
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 2493,
+          "prior_year_sessions": 207
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 2032,
+          "prior_year_sessions": 193
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 1918,
+          "prior_year_sessions": 315
+        }
+      ],
+      "ytd_current": 6443,
+      "ytd_prior": 715,
+      "ytd_change_pct": 801.1
+    },
+    "summary": "Hicks Family Subaru's local pages site generated 1,850 sessions over the last 30 days, representing robust YoY growth of +500.6% but a notable MoM decline of -13.7%. Engagement rate of 39.1% is down 19.7 pp YoY, suggesting that while traffic volume has exploded, visitor quality per session has softened. Organic Search dominates at 68.4% of traffic (1,266 sessions, +480.7% YoY) with strong Direct traffic (556 sessions, +539.1% YoY), indicating solid brand awareness and SEO momentum. Blog content continues to drive the majority of event volume (1,372 blog_views), though this is down 15.8% MoM despite YoY strength of +504.4%. High-intent events remain a concern: only 1 contact_us and 1 schedule_service event were logged in the period, representing minimal conversion activity despite heavy traffic. The Crosstrek vs. Outback vs. Forester comparison page (264 sessions, 58.3% engagement) and maintenance/repair articles (wiper fluid, AC, check engine light) are performing exceptionally well with engagement rates above 40%, signaling strong product research and troubleshooting intent. YTD 2026 shows explosive growth at 6,443 sessions vs. 715 in 2025 (+801.1%), with January 2026 leading at 2,493 sessions (+1104.3% YoY), though momentum is moderating monthly (March dropped to 1,918 sessions).",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Leverage Top-Performing Comparison & Maintenance Content",
+          "detail": "The /vehicles/crosstrek-vs-outback-vs-forester page (264 sessions, 58.3% engagement) and maintenance-repair articles (wiper fluid, AC, check engine light) are converting well above site average. Double down on this content vertical with CTAs linking to dealer_site_clicks and schedule_service.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Capitalize on Organic Search Momentum",
+          "detail": "Organic Search drives 68.4% of sessions with +480.7% YoY growth. Expand keyword targeting around vehicle comparisons, maintenance guides, and Subaru longevity topics to sustain this channel's performance.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Strengthen Direct Traffic Retention",
+          "detail": "Direct traffic (556 sessions, +539.1% YoY) indicates brand strength. Implement email nurture campaigns and retargeting to convert returning visitors into high-value events (calls, scheduling).",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Engagement Rate Decline Despite Traffic Growth",
+          "detail": "Engagement rate dropped 19.7 pp YoY to 39.1%, suggesting visitors are less likely to interact deeply even as session volume surges. This decoupling indicates potential quality-of-traffic or content-relevance issues that warrant investigation.",
+          "severity": "high"
+        },
+        {
+          "title": "Severe Conversion Bottleneck at Bottom of Funnel",
+          "detail": "Only 1 contact_us event and 1 schedule_service event logged in 30 days despite 1,850 sessions and 723 engaged sessions. This massive gap between content engagement and conversion actions signals critical friction in the path to dealership contact.",
+          "severity": "high"
+        },
+        {
+          "title": "Monthly Traffic Deceleration",
+          "detail": "MoM decline of -13.7% follows three consecutive months of 1,900+ sessions. If this downward trajectory continues, YoY comparisons will normalize and reveal whether the initial YoY surge reflects sustainable growth or seasonal/campaign-driven spikes.",
+          "severity": "medium"
+        },
+        {
+          "title": "Homepage Engagement Collapse",
+          "detail": "The homepage (/) shows only 2.6% engagement despite 267 sessions (+13.6% MoM). This suggests poor entry-point relevance or unclear navigation to high-intent pages; visitors are not converting homepage traffic into deeper engagement.",
+          "severity": "medium"
+        },
+        {
+          "title": "Blog-to-Dealer-Site Conversion Leakage",
+          "detail": "Blog views (1,372 events) vastly outpace dealer_site_clicks (86 events), a 16:1 ratio. Only 6.3% of blog engagement translates to clicks toward the main dealership site, indicating missed opportunity to funnel content readers toward inventory and contact.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Install Bottom-of-Funnel CTAs on High-Traffic Content Pages",
+          "detail": "Pages like /vehicles/crosstrek-vs-outback-vs-forester (264 sessions, 58.3% engaged), /maintenance-repair/warm-ac-air (142 sessions, 52.1% engaged), and /vehicles/best-subaru-for-seniors (123 sessions, 50.4% engaged) attract engaged visitors but lack clear paths to calls, schedule_service, or dealer_site_clicks. Adding prominent 'Schedule Service,' 'Get Inventory Quote,' or 'Call Dealership' buttons could unlock significant conversion uplift.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Optimize Homepage UX and Internal Navigation",
+          "detail": "The homepage (/) has only 2.6% engagement and is effectively a traffic sink. Redesign to feature top-converting content pages (vehicle comparisons, maintenance guides) and add clear CTAs to dealer_site_clicks and calls to improve flow from entry point to conversion.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Create Dealer-Site Exit Intent & Interstitial Funnels",
+          "detail": "Blog-to-dealer-site click-through is only 6.3% (86 out of 1,372 blog views). Implement exit-intent overlays, in-content CTAs, and related-content widgets linking to main dealership inventory pages and scheduling tools to bridge this gap.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Expand 'Best Subaru for Seniors' & Vehicle Selector Content",
+          "detail": "/vehicles/best-subaru-for-seniors saw YoY growth of +6050% (123 sessions, 50.4% engagement), indicating strong niche intent. Develop follow-up content around vehicle models, financing options, and trade-in processes to serve this high-intent segment and capture downstream conversions.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Investigate & Reverse MoM Traffic Decline",
+          "detail": "The -13.7% MoM drop suggests a recent campaign or keyword ranking loss. Audit organic search performance, paid campaigns (if any), and content freshness to identify root cause and re-accelerate traffic momentum before the trend deepens.",
+          "impact": "medium",
+          "effort": "high"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": true,
+    "totals": {
+      "current": {
+        "sessions": 1918,
+        "engaged_sessions": 735,
+        "engagement_rate": 0.3832
+      },
+      "mom": {
+        "sessions": 2032,
+        "engaged_sessions": 823,
+        "engagement_rate": 0.405
+      },
+      "yoy": {
+        "sessions": 315,
+        "engaged_sessions": 186,
+        "engagement_rate": 0.5905
+      },
+      "yoy_available": true,
+      "mom_sessions_change_pct": -5.6,
+      "yoy_sessions_change_pct": 508.9,
+      "mom_engaged_sessions_change_pct": -10.7,
+      "yoy_engaged_sessions_change_pct": 295.2,
+      "mom_engagement_rate_change_pts": -0.0218,
+      "yoy_engagement_rate_change_pts": -0.2073
+    },
+    "events": [
+      {
+        "event_name": "blog_views",
+        "current": 1421,
+        "mom": 1543,
+        "yoy": 231,
+        "mom_change_pct": -7.9,
+        "yoy_change_pct": 515.2
+      },
+      {
+        "event_name": "outbound_clicks",
+        "current": 90,
+        "mom": 81,
+        "yoy": 32,
+        "mom_change_pct": 11.1,
+        "yoy_change_pct": 181.2
+      },
+      {
+        "event_name": "dealer_site_clicks",
+        "current": 87,
+        "mom": 77,
+        "yoy": 32,
+        "mom_change_pct": 13.0,
+        "yoy_change_pct": 171.9
+      },
+      {
+        "event_name": "view_new_inventory",
+        "current": 49,
+        "mom": 48,
+        "yoy": 23,
+        "mom_change_pct": 2.1,
+        "yoy_change_pct": 113.0
+      },
+      {
+        "event_name": "internal_clicks",
+        "current": 11,
+        "mom": 12,
+        "yoy": 28,
+        "mom_change_pct": -8.3,
+        "yoy_change_pct": -60.7
+      },
+      {
+        "event_name": "contact_us",
+        "current": 1,
+        "mom": 0,
+        "yoy": 1,
+        "mom_change_pct": null,
+        "yoy_change_pct": 0.0
+      },
+      {
+        "event_name": "schedule_service",
+        "current": 1,
+        "mom": 0,
+        "yoy": 1,
+        "mom_change_pct": null,
+        "yoy_change_pct": 0.0
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 1307,
+        "current_pct": 68.1,
+        "mom_sessions": 1422,
+        "yoy_sessions": 218,
+        "mom_sessions_change_pct": -8.1,
+        "yoy_sessions_change_pct": 499.5
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 580,
+        "current_pct": 30.2,
+        "mom_sessions": 575,
+        "yoy_sessions": 94,
+        "mom_sessions_change_pct": 0.9,
+        "yoy_sessions_change_pct": 517.0
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 15,
+        "current_pct": 0.8,
+        "mom_sessions": 0,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 8,
+        "current_pct": 0.4,
+        "mom_sessions": 10,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": -20.0,
+        "yoy_sessions_change_pct": 300.0
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 5,
+        "current_pct": 0.3,
+        "mom_sessions": 25,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": -80.0,
+        "yoy_sessions_change_pct": 400.0
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 280,
+        "current_engaged_sessions": 8,
+        "current_engagement_rate": 0.0286,
+        "mom_sessions": 217,
+        "yoy_sessions": 39,
+        "mom_sessions_change_pct": 29.0,
+        "yoy_sessions_change_pct": 617.9
+      },
+      {
+        "landing_page": "/vehicles/crosstrek-vs-outback-vs-forester",
+        "current_sessions": 273,
+        "current_engaged_sessions": 158,
+        "current_engagement_rate": 0.5788,
+        "mom_sessions": 327,
+        "yoy_sessions": 9,
+        "mom_sessions_change_pct": -16.5,
+        "yoy_sessions_change_pct": 2933.3
+      },
+      {
+        "landing_page": "/maintenance-repair/wiper-fluid-not-spraying",
+        "current_sessions": 166,
+        "current_engaged_sessions": 74,
+        "current_engagement_rate": 0.4458,
+        "mom_sessions": 258,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": -35.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/maintenance-repair/warm-ac-air",
+        "current_sessions": 145,
+        "current_engaged_sessions": 76,
+        "current_engagement_rate": 0.5241,
+        "mom_sessions": 52,
+        "yoy_sessions": 46,
+        "mom_sessions_change_pct": 178.8,
+        "yoy_sessions_change_pct": 215.2
+      },
+      {
+        "landing_page": "/vehicles/best-subaru-for-seniors",
+        "current_sessions": 128,
+        "current_engaged_sessions": 63,
+        "current_engagement_rate": 0.4922,
+        "mom_sessions": 113,
+        "yoy_sessions": 2,
+        "mom_sessions_change_pct": 13.3,
+        "yoy_sessions_change_pct": 6300.0
+      },
+      {
+        "landing_page": "/maintenance-repair/check-engine-light-blinking",
+        "current_sessions": 97,
+        "current_engaged_sessions": 46,
+        "current_engagement_rate": 0.4742,
+        "mom_sessions": 67,
+        "yoy_sessions": 1,
+        "mom_sessions_change_pct": 44.8,
+        "yoy_sessions_change_pct": 9600.0
+      },
+      {
+        "landing_page": "/driving/fog-lights-guide",
+        "current_sessions": 92,
+        "current_engaged_sessions": 52,
+        "current_engagement_rate": 0.5652,
+        "mom_sessions": 112,
+        "yoy_sessions": 14,
+        "mom_sessions_change_pct": -17.9,
+        "yoy_sessions_change_pct": 557.1
+      },
+      {
+        "landing_page": "/vehicles/subaru-longevity",
+        "current_sessions": 58,
+        "current_engaged_sessions": 23,
+        "current_engagement_rate": 0.3966,
+        "mom_sessions": 52,
+        "yoy_sessions": 0,
+        "mom_sessions_change_pct": 11.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 47,
+        "current_engaged_sessions": 0,
+        "current_engagement_rate": 0.0,
+        "mom_sessions": 68,
+        "yoy_sessions": 7,
+        "mom_sessions_change_pct": -30.9,
+        "yoy_sessions_change_pct": 571.4
+      },
+      {
+        "landing_page": "/driving/remove-salt-stains",
+        "current_sessions": 45,
+        "current_engaged_sessions": 16,
+        "current_engagement_rate": 0.3556,
+        "mom_sessions": 95,
+        "yoy_sessions": 8,
+        "mom_sessions_change_pct": -52.6,
+        "yoy_sessions_change_pct": 462.5
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 2493,
+          "prior_year_sessions": 207
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 2032,
+          "prior_year_sessions": 193
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 1918,
+          "prior_year_sessions": 315
+        }
+      ],
+      "ytd_current": 6443,
+      "ytd_prior": 715,
+      "ytd_change_pct": 801.1
+    },
+    "summary": "Hicks Family Subaru's local pages site delivered explosive YoY growth (+508.9% sessions, +801.1% YTD) driven primarily by organic search (68.1% mix, +499.5% YoY), but MoM momentum is cooling with a -5.6% session decline and -10.7% engaged session drop in March. Content engagement remains strong overall (38.3% engagement rate), with blog_views dominating at 1,421 events (+515.2% YoY) and high-intent pages like /vehicles/crosstrek-vs-outback-vs-forester (57.9% engagement) and /maintenance-repair/warm-ac-air (52.4% engagement, +178.8% MoM) driving deep interaction. However, conversion signals are critically weak: only 2 high-value events (1 contact_us, 1 schedule_service) were logged in March, and dealer_site_clicks (87 events, the closest proxy to mainsite traffic) account for just 4.5% of all custom events, signaling poor funnel transition from content to dealership actions. The YTD deceleration from +1104.3% (January) to +508.9% (March) suggests the initial surge may be plateauing, requiring urgent focus on conversion optimization and call-to-action effectiveness.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Capitalize on warm AC air maintenance content momentum",
+          "detail": "/maintenance-repair/warm-ac-air surged +178.8% MoM with 52.4% engagement and 76 engaged sessions\u2014this seasonal topic is resonating and has proven CTA potential.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Expand outbound clicks strategy",
+          "detail": "outbound_clicks grew +11.1% MoM and +181.2% YoY (90 events), indicating users are ready to leave site; redirect this intent toward dealer actions (calls, inventory views, service scheduling).",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Leverage organic search dominance for dealer attribution",
+          "detail": "Organic search delivers 1,307 sessions (68.1%) with massive YoY growth (+499.5%), yet only 87 dealer_site_clicks occur; add strategic CTAs and tracking to capture this high-intent traffic.",
+          "impact": "high",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Conversion funnel collapse\u2014minimal high-value events",
+          "detail": "Only 1 contact_us and 1 schedule_service event in March despite 1,918 sessions and 735 engaged sessions; this represents a critical gap between content engagement and dealership action.",
+          "severity": "high"
+        },
+        {
+          "title": "Month-over-month traffic deceleration amid YoY strength",
+          "detail": "Sessions declined -5.6% MoM and engaged sessions fell -10.7% MoM while engagement rate dropped -2.2 percentage points, signaling the initial viral growth from early 2026 is waning.",
+          "severity": "medium"
+        },
+        {
+          "title": "Internal site navigation failing to drive dealer engagement",
+          "detail": "internal_clicks fell -8.3% MoM and -60.7% YoY (only 11 events), while dealer_site_clicks remain low at 87; users are not self-navigating to inventory or service booking.",
+          "severity": "medium"
+        },
+        {
+          "title": "Homepage engagement severely underperforming",
+          "detail": "/ received 280 sessions but only 2.9% engagement rate (8 engaged sessions)\u2014the lowest of top pages\u2014indicating poor conversion of entry traffic to deeper funnel.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Implement conversion-optimized CTAs on high-engagement content pages",
+          "detail": "Pages like /vehicles/crosstrek-vs-outback-vs-forester (273 sessions, 57.9% engagement) and /maintenance-repair/warm-ac-air (145 sessions, 52.4% engagement) have strong audience attention but minimal downstream dealer actions; add prominent 'Schedule Service,' 'View Inventory,' or 'Call Dealer' buttons.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize homepage UX and CTA hierarchy",
+          "detail": "/ is the top landing page (280 sessions) but has the worst engagement rate (2.9%); restructure messaging and CTAs to direct users toward either vehicle comparison, service booking, or inventory discovery.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Amplify organic search traffic with dealership-specific landing pages",
+          "detail": "Organic search drives 1,307 sessions (+499.5% YoY) but dealer_site_clicks remain flat; create high-intent landing pages for top organic queries (e.g., 'Subaru near me,' 'Subaru service,' 'Buy Subaru online') to bridge content to dealer actions.",
+          "impact": "high",
+          "effort": "high"
+        },
+        {
+          "title": "Expand vehicle comparison content as lead generation tool",
+          "detail": "/vehicles/crosstrek-vs-outback-vs-forester is the second-most visited page (+2933.3% YoY, 57.9% engagement) and drives significant intent; add comparison quiz, financing calculator, or trade-in tool to convert engagement into scheduling or calls.",
+          "impact": "medium",
+          "effort": "high"
+        }
+      ]
+    }
+  }
+}

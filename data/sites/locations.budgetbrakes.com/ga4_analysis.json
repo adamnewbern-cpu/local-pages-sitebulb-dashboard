@@ -1,0 +1,738 @@
+{
+  "site_url": "https://locations.budgetbrakes.com/",
+  "display_name": "Budget Brakes",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 5119,
+        "engaged_sessions": 2843,
+        "engagement_rate": 0.5554
+      },
+      "mom": {
+        "sessions": 4795,
+        "engaged_sessions": 2740,
+        "engagement_rate": 0.5714
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": 6.8,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": 3.8,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": -0.016,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 4591,
+        "mom": 4594,
+        "yoy": null,
+        "mom_change_pct": -0.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 2262,
+        "mom": 2257,
+        "yoy": null,
+        "mom_change_pct": 0.2,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "make_an_appointment",
+        "current": 918,
+        "mom": 745,
+        "yoy": null,
+        "mom_change_pct": 23.2,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "internal_clicks",
+        "current": 580,
+        "mom": 630,
+        "yoy": null,
+        "mom_change_pct": -7.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "calls",
+        "current": 416,
+        "mom": 393,
+        "yoy": null,
+        "mom_change_pct": 5.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "store_locate",
+        "current": 382,
+        "mom": 596,
+        "yoy": null,
+        "mom_change_pct": -35.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "locate_me",
+        "current": 317,
+        "mom": 299,
+        "yoy": null,
+        "mom_change_pct": 6.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "get_directions",
+        "current": 2,
+        "mom": 16,
+        "yoy": null,
+        "mom_change_pct": -87.5,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 3053,
+        "current_pct": 59.6,
+        "mom_sessions": 2725,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 12.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 1795,
+        "current_pct": 35.1,
+        "mom_sessions": 1830,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -1.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 209,
+        "current_pct": 4.1,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 38,
+        "current_pct": 0.7,
+        "mom_sessions": 52,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -26.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 20,
+        "current_pct": 0.4,
+        "mom_sessions": 29,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -31.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 16,
+        "current_pct": 0.3,
+        "mom_sessions": 27,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -40.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Cross-network",
+        "current_sessions": 3,
+        "current_pct": 0.1,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 1156,
+        "current_engaged_sessions": 672,
+        "current_engagement_rate": 0.5813,
+        "mom_sessions": 1231,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -6.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/clarksville/823-n-2nd-st",
+        "current_sessions": 390,
+        "current_engaged_sessions": 225,
+        "current_engagement_rate": 0.5769,
+        "mom_sessions": 325,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 20.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/knoxville/8033-kingston-pike",
+        "current_sessions": 348,
+        "current_engaged_sessions": 168,
+        "current_engagement_rate": 0.4828,
+        "mom_sessions": 284,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 22.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/murfreesboro/2012-s-church-st",
+        "current_sessions": 333,
+        "current_engaged_sessions": 202,
+        "current_engagement_rate": 0.6066,
+        "mom_sessions": 338,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -1.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/nashville/5345-charlotte-ave",
+        "current_sessions": 303,
+        "current_engaged_sessions": 178,
+        "current_engagement_rate": 0.5875,
+        "mom_sessions": 231,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 31.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/knoxville/2504-n-broadway",
+        "current_sessions": 300,
+        "current_engaged_sessions": 159,
+        "current_engagement_rate": 0.53,
+        "mom_sessions": 250,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 20.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/alabama/huntsville/4703-university-dr",
+        "current_sessions": 290,
+        "current_engaged_sessions": 158,
+        "current_engagement_rate": 0.5448,
+        "mom_sessions": 218,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 33.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/nashville/4700-gallatin-pike",
+        "current_sessions": 241,
+        "current_engaged_sessions": 131,
+        "current_engagement_rate": 0.5436,
+        "mom_sessions": 207,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 16.4,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/florida/pensacola/4709-mobile-hwy",
+        "current_sessions": 226,
+        "current_engaged_sessions": 135,
+        "current_engagement_rate": 0.5973,
+        "mom_sessions": 270,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -16.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/nashville/4537-nolensville-pike",
+        "current_sessions": 206,
+        "current_engaged_sessions": 122,
+        "current_engagement_rate": 0.5922,
+        "mom_sessions": 191,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 7.9,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 3011,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 4512,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 5262,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 12785,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "Budget Brakes' local GA4 property is showing modest but steady growth MoM, with sessions up 6.8% and engaged sessions up 3.8%, though overall engagement rate declined slightly (-1.6 pp), suggesting traffic growth is outpacing quality gains. Organic Search is the dominant and fastest-growing channel at +12.0% MoM (59.6% of traffic), while Direct traffic remains stable but shows minor decline (-1.9%). High-value conversion events are mixed: make_an_appointment surged 23.2% MoM (918 events) and calls grew 5.9%, but the critical store_locate metric collapsed 35.9% MoM, signaling potential friction in location discovery. Location-specific landing pages show strong momentum\u2014Nashville and Knoxville locations are driving +16\u201333% MoM growth\u2014while the homepage declined 6.1%, indicating users are landing deeper in the funnel. YTD trajectory shows consistent monthly growth (Jan: 3,011 \u2192 Feb: 4,512 \u2192 Mar: 5,262 sessions), establishing a positive upward trend through Q1 2026.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Capitalize on appointment booking momentum",
+          "detail": "make_an_appointment events grew 23.2% MoM to 918 conversions\u2014the strongest high-value event performance. Ensure booking flow is optimized and messaging is consistent across all landing pages to sustain this trend.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Expand Organic Search investment",
+          "detail": "Organic Search is driving 59.6% of traffic with 12.0% MoM growth (3,053 sessions), vastly outperforming Paid Search (4.1% share). Reallocate budget or content strategy toward organic SEO to capitalize on this high-ROI channel.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Leverage high-performing location pages",
+          "detail": "Nashville (Charlotte Ave +31.2%, Gallatin Pike +16.4%) and Knoxville (Kingston Pike +22.5%, Broadway +20.0%) locations show double-digit MoM growth in engagement. Replicate their content/UX patterns to other underperforming location pages.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "store_locate metric in free fall",
+          "detail": "store_locate events dropped 35.9% MoM to just 382 events, a sharp decline in location-finding intent. This high-intent signal loss could indicate broken functionality, poor discoverability, or users abandoning the location finder for alternatives like locate_me (which grew 6.0%).",
+          "severity": "high"
+        },
+        {
+          "title": "Homepage engagement declining while traffic grows",
+          "detail": "Homepage sessions fell 6.1% MoM despite overall traffic growth, suggesting users are bypassing it or it's losing search visibility. Engagement rate is also declining property-wide (-1.6 pp), indicating quality may not be keeping pace with volume gains.",
+          "severity": "medium"
+        },
+        {
+          "title": "Social channels underperforming dramatically",
+          "detail": "Organic Social dropped 31.0% MoM and now represents just 0.4% of traffic (20 sessions); Referral fell 26.9% to 0.7% share. These channels are marginal but trending worse, suggesting either poor social strategy or limited social reach.",
+          "severity": "low"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Investigate and repair store_locate functionality",
+          "detail": "The 35.9% MoM decline is the largest red flag in the data. Audit the store locator tool for UX issues, broken links, or slow load times; users are migrating to locate_me instead. Fixing this could recover hundreds of high-intent interactions monthly.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Scale location-specific landing page strategy",
+          "detail": "Seven of the top nine landing pages are location-specific, with Nashville and Knoxville pages showing 16\u201333% MoM growth. Expand this hyper-local content model to underperforming regions (e.g., Florida, Alabama) to unlock new traffic and appointment volume.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Unlock mainsite_clicks conversion path",
+          "detail": "mainsite_clicks (2,262 events, high-value) grew only 0.2% MoM\u2014nearly flat. These represent deeper funnel intent; optimizing the journey from local pages to main website could accelerate form completions and lead quality.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Revive Direct and Paid Search channels",
+          "detail": "Direct is stable but declining slightly (-1.9%); Paid Search is only 4.1% of traffic. Test Paid Search expansion or branded Direct campaigns to diversify traffic sources and reduce reliance on Organic Search (59.6%).",
+          "impact": "medium",
+          "effort": "high"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 5262,
+        "engaged_sessions": 2910,
+        "engagement_rate": 0.553
+      },
+      "mom": {
+        "sessions": 4512,
+        "engaged_sessions": 2571,
+        "engagement_rate": 0.5698
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": 16.6,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": 13.2,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": -0.0168,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 4683,
+        "mom": 4340,
+        "yoy": null,
+        "mom_change_pct": 7.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 2351,
+        "mom": 2102,
+        "yoy": null,
+        "mom_change_pct": 11.8,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "make_an_appointment",
+        "current": 926,
+        "mom": 707,
+        "yoy": null,
+        "mom_change_pct": 31.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "internal_clicks",
+        "current": 597,
+        "mom": 594,
+        "yoy": null,
+        "mom_change_pct": 0.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "calls",
+        "current": 420,
+        "mom": 376,
+        "yoy": null,
+        "mom_change_pct": 11.7,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "store_locate",
+        "current": 403,
+        "mom": 572,
+        "yoy": null,
+        "mom_change_pct": -29.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "locate_me",
+        "current": 302,
+        "mom": 293,
+        "yoy": null,
+        "mom_change_pct": 3.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "get_directions",
+        "current": 2,
+        "mom": 16,
+        "yoy": null,
+        "mom_change_pct": -87.5,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 3136,
+        "current_pct": 59.6,
+        "mom_sessions": 2550,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 23.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 1834,
+        "current_pct": 34.9,
+        "mom_sessions": 1727,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 6.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 209,
+        "current_pct": 4.0,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 43,
+        "current_pct": 0.8,
+        "mom_sessions": 47,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -8.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 20,
+        "current_pct": 0.4,
+        "mom_sessions": 29,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -31.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 17,
+        "current_pct": 0.3,
+        "mom_sessions": 26,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -34.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Cross-network",
+        "current_sessions": 3,
+        "current_pct": 0.1,
+        "mom_sessions": 0,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": null,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/",
+        "current_sessions": 1147,
+        "current_engaged_sessions": 663,
+        "current_engagement_rate": 0.578,
+        "mom_sessions": 1190,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -3.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/clarksville/823-n-2nd-st",
+        "current_sessions": 409,
+        "current_engaged_sessions": 233,
+        "current_engagement_rate": 0.5697,
+        "mom_sessions": 298,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 37.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/murfreesboro/2012-s-church-st",
+        "current_sessions": 359,
+        "current_engaged_sessions": 212,
+        "current_engagement_rate": 0.5905,
+        "mom_sessions": 300,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 19.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/knoxville/8033-kingston-pike",
+        "current_sessions": 350,
+        "current_engaged_sessions": 174,
+        "current_engagement_rate": 0.4971,
+        "mom_sessions": 268,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 30.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/knoxville/2504-n-broadway",
+        "current_sessions": 317,
+        "current_engaged_sessions": 170,
+        "current_engagement_rate": 0.5363,
+        "mom_sessions": 227,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 39.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/nashville/5345-charlotte-ave",
+        "current_sessions": 306,
+        "current_engaged_sessions": 180,
+        "current_engagement_rate": 0.5882,
+        "mom_sessions": 216,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 41.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/alabama/huntsville/4703-university-dr",
+        "current_sessions": 301,
+        "current_engaged_sessions": 167,
+        "current_engagement_rate": 0.5548,
+        "mom_sessions": 203,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 48.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/nashville/4700-gallatin-pike",
+        "current_sessions": 242,
+        "current_engaged_sessions": 131,
+        "current_engagement_rate": 0.5413,
+        "mom_sessions": 195,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 24.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/florida/pensacola/4709-mobile-hwy",
+        "current_sessions": 234,
+        "current_engaged_sessions": 143,
+        "current_engagement_rate": 0.6111,
+        "mom_sessions": 258,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -9.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/tennessee/nashville/4537-nolensville-pike",
+        "current_sessions": 215,
+        "current_engaged_sessions": 128,
+        "current_engagement_rate": 0.5953,
+        "mom_sessions": 177,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 21.5,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 3011,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 4512,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 5262,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 12785,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "Budget Brakes' GA4 property delivered strong MoM momentum in March 2026, with sessions climbing 16.6% to 5,262 and engaged sessions rising 13.2% to 2,910. Organic Search was the primary growth driver, surging 23.0% MoM and now representing 59.6% of all traffic, signaling robust SEO performance. High-value conversions showed mixed but largely positive signals: make_an_appointment events jumped 31.0% MoM to 926 (the strongest conversion lift), mainsite_clicks grew 11.8% to 2,351, and calls increased 11.7% to 420. However, engagement rate dipped 1.7 percentage points despite session growth, suggesting traffic quality may be slightly diluting. Location pages\u2014particularly Clarksville, Knoxville, and Huntsville branches\u2014drove outsized growth, with most landing pages posting 20\u201348% MoM increases. YTD 2026 stands at 12,785 sessions with consistent month-over-month acceleration (Jan: 3,011 \u2192 Feb: 4,512 \u2192 Mar: 5,262), establishing a positive trajectory. One concern: store_locate events collapsed 29.5% MoM while get_directions fell 87.5%, suggesting potential friction in the location discovery funnel despite strong branch-level traffic.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Appointment Booking Momentum",
+          "detail": "make_an_appointment events surged 31.0% MoM to 926\u2014the largest conversion lift across all custom events and a direct indicator of sales-ready intent.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Organic Search Dominance",
+          "detail": "Organic Search grew 23.0% MoM and now owns 59.6% of traffic (3,136 sessions), outpacing all other channels and indicating strong SEO health and local search visibility.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Branch Landing Page Performance",
+          "detail": "Location pages like /tennessee/clarksville/823-n-2nd-st (+37.2%), /tennessee/nashville/5345-charlotte-ave (+41.7%), and /alabama/huntsville/4703-university-dr (+48.3%) delivered exceptional MoM gains with engagement rates 49\u201361%.",
+          "impact": "high",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Engagement Rate Decline",
+          "detail": "Despite session growth of 16.6% MoM, overall engagement rate dropped 1.7 percentage points to 55.3%, suggesting incoming traffic quality may be softening or user intent is becoming more mixed.",
+          "severity": "medium"
+        },
+        {
+          "title": "Location Discovery Friction",
+          "detail": "store_locate events fell 29.5% MoM to 403 and get_directions collapsed 87.5% to just 2 events, while branch landing pages thrived\u2014indicating users may be finding location info via organic search rather than interactive tools.",
+          "severity": "medium"
+        },
+        {
+          "title": "Homepage Stagnation",
+          "detail": "The homepage (/) saw sessions decline 3.6% MoM despite overall traffic growth, suggesting it is becoming less of a primary entry point and may need content or UX refresh to recapture organic visitors.",
+          "severity": "low"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Capitalize on Branch-Level Organic Search Wins",
+          "detail": "Clarksville, Knoxville, and Huntsville location pages are driving 30\u201348% MoM growth; double down on local SEO optimization, schema markup, and location-specific content to accelerate this trend across remaining underperforming branches.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize Location Discovery Funnel",
+          "detail": "Rebuild or promote store_locate and get_directions interactions; users are finding branch pages organically but abandoning location tools, so streamlining the path from discovery to appointment or call can recover the 29.5% MoM drop.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Leverage Direct Traffic Retention",
+          "detail": "Direct traffic grew a solid 6.2% MoM (1,834 sessions); implement retargeting and email nurture campaigns to convert repeat visitors and reduce reliance on organic search for recurring engagement.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Expand Paid Search Investment",
+          "detail": "Paid Search currently represents only 4.0% of traffic (209 sessions) with no MoM history; test local keyword bids for high-intent terms on branch pages to supplement organic gains and capture search volume that organic may miss.",
+          "impact": "medium",
+          "effort": "high"
+        }
+      ]
+    }
+  }
+}

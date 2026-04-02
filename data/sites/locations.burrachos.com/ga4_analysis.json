@@ -1,0 +1,822 @@
+{
+  "site_url": "https://locations.burrachos.com/",
+  "display_name": "Burrachos",
+  "generated_at": "2026-04-02",
+  "model": "claude-haiku-4-5-20251001",
+  "rolling_30d": {
+    "window": {
+      "current": {
+        "start": "2026-03-03",
+        "end": "2026-04-01",
+        "label": "Last 30 Days"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-03-02",
+        "label": "Prior 30 Days"
+      },
+      "yoy": {
+        "start": "2025-03-03",
+        "end": "2025-04-01",
+        "label": "Same Period LY"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 3649,
+        "engaged_sessions": 1652,
+        "engagement_rate": 0.4527
+      },
+      "mom": {
+        "sessions": 3877,
+        "engaged_sessions": 1894,
+        "engagement_rate": 0.4885
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": -5.9,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": -12.8,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": -0.0358,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 3465,
+        "mom": 3766,
+        "yoy": null,
+        "mom_change_pct": -8.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 1670,
+        "mom": 2044,
+        "yoy": null,
+        "mom_change_pct": -18.3,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "view_menu",
+        "current": 1348,
+        "mom": 1684,
+        "yoy": null,
+        "mom_change_pct": -20.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "order_pickup",
+        "current": 1292,
+        "mom": 1122,
+        "yoy": null,
+        "mom_change_pct": 15.2,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 186,
+        "mom": 245,
+        "yoy": null,
+        "mom_change_pct": -24.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "order_delivery",
+        "current": 172,
+        "mom": 209,
+        "yoy": null,
+        "mom_change_pct": -17.7,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "locate_me",
+        "current": 29,
+        "mom": 23,
+        "yoy": null,
+        "mom_change_pct": 26.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "store_locate",
+        "current": 22,
+        "mom": 51,
+        "yoy": null,
+        "mom_change_pct": -56.9,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "apply_online",
+        "current": 15,
+        "mom": 9,
+        "yoy": null,
+        "mom_change_pct": 66.7,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 2662,
+        "current_pct": 73.0,
+        "mom_sessions": 2644,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 0.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 663,
+        "current_pct": 18.2,
+        "mom_sessions": 656,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 1.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 250,
+        "current_pct": 6.9,
+        "mom_sessions": 395,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -36.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 44,
+        "current_pct": 1.2,
+        "mom_sessions": 113,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -61.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Cross-network",
+        "current_sessions": 12,
+        "current_pct": 0.3,
+        "mom_sessions": 12,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 0.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 10,
+        "current_pct": 0.3,
+        "mom_sessions": 13,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -23.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Social",
+        "current_sessions": 8,
+        "current_pct": 0.2,
+        "mom_sessions": 72,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -88.9,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 5,
+        "current_pct": 0.1,
+        "mom_sessions": 29,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -82.8,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Other",
+        "current_sessions": 2,
+        "current_pct": 0.1,
+        "mom_sessions": 1,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 100.0,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/wisconsin/sun-prairie/2691-windsor-st",
+        "current_sessions": 1020,
+        "current_engaged_sessions": 432,
+        "current_engagement_rate": 0.4235,
+        "mom_sessions": 976,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 4.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/onalaska/9432-wisconsin-16",
+        "current_sessions": 848,
+        "current_engaged_sessions": 364,
+        "current_engagement_rate": 0.4292,
+        "mom_sessions": 674,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 25.8,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/brookfield/17530-w-bluemound-rd",
+        "current_sessions": 711,
+        "current_engaged_sessions": 370,
+        "current_engagement_rate": 0.5204,
+        "mom_sessions": 1035,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -31.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/eau-claire/5314-prill-road-1",
+        "current_sessions": 436,
+        "current_engaged_sessions": 189,
+        "current_engagement_rate": 0.4335,
+        "mom_sessions": 446,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -2.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/",
+        "current_sessions": 258,
+        "current_engaged_sessions": 155,
+        "current_engagement_rate": 0.6008,
+        "mom_sessions": 365,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -29.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/eau-claire",
+        "current_sessions": 123,
+        "current_engaged_sessions": 50,
+        "current_engagement_rate": 0.4065,
+        "mom_sessions": 95,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 29.5,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/onalaska",
+        "current_sessions": 65,
+        "current_engaged_sessions": 33,
+        "current_engagement_rate": 0.5077,
+        "mom_sessions": 49,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 32.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 55,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.0364,
+        "mom_sessions": 66,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -16.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/sun-prairie",
+        "current_sessions": 49,
+        "current_engaged_sessions": 22,
+        "current_engagement_rate": 0.449,
+        "mom_sessions": 86,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -43.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/brookfield",
+        "current_sessions": 41,
+        "current_engaged_sessions": 14,
+        "current_engagement_rate": 0.3415,
+        "mom_sessions": 71,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -42.3,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 3636,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 3657,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 3712,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 11005,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "Burrachos' local pages property recorded 3,649 sessions in the last 30 days, declining 5.9% MoM as overall engagement rate fell 3.6 percentage points to 45.3%. While organic search remains the dominant and stable channel (73.0% of traffic, +0.7% MoM), paid channels are experiencing significant headwinds: Paid Search dropped 36.7% MoM and Paid Social collapsed 88.9%, suggesting either budget cuts or underperformance requiring audit. High-value conversion events are mixed\u2014mainsite_clicks declined 18.3% MoM to 1,670 events, but order_pickup surged 15.2% to 1,292 events and apply_online jumped 66.7%, indicating some funnel diversification away from site-to-site navigation. The Sun Prairie location (/wisconsin/sun-prairie/2691-windsor-st) remains the traffic engine with 1,020 sessions and stable 42.4% engagement, while Brookfield's flagship page dropped 31.3% MoM despite strong 52.0% engagement\u2014a volume problem, not a quality issue. YTD 2026 shows steady monthly performance (3.6K\u20133.7K sessions Jan\u2013Mar), suggesting consistent baseline traffic but no meaningful growth trajectory.",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Capitalize on order_pickup momentum",
+          "detail": "order_pickup events grew 15.2% MoM to 1,292\u2014significantly outpacing the overall traffic decline. Double down on pickup-focused CTAs and landing page optimization for /wisconsin/onalaska/9432-wisconsin-16 (which drove +25.8% traffic) to sustain this trend.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Apply_online showing early traction",
+          "detail": "apply_online events jumped 66.7% MoM to 15\u2014a small absolute number but strong directional signal. Promote and streamline this funnel on high-traffic location pages to capture job applicants and build recruiting pipeline.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Organic Search stability is a foundation",
+          "detail": "Organic search sessions grew +0.7% MoM despite overall -5.9% decline, maintaining 73% of traffic. Protect and expand this channel through continued local SEO and location page optimization\u2014it's your most reliable driver.",
+          "impact": "high",
+          "effort": "medium"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Paid channels are in freefall",
+          "detail": "Paid Search dropped 36.7% MoM (250 sessions) and Paid Social collapsed 88.9% (8 sessions). Without YoY context, this suggests budget reallocation, campaign pauses, or poor ROAS\u2014urgent audit needed to determine root cause.",
+          "severity": "high"
+        },
+        {
+          "title": "High-value mainsite_clicks declining sharply",
+          "detail": "mainsite_clicks fell 18.3% MoM to 1,670 events, the largest decline among high-intent actions. This suggests fewer users are following through to the main website from location pages\u2014may indicate funnel friction or lost cross-property visibility.",
+          "severity": "high"
+        },
+        {
+          "title": "View_menu engagement down 20% MoM",
+          "detail": "view_menu events dropped 20.0% MoM to 1,348, a steeper decline than overall traffic (-5.9%). Users are less motivated to browse menus, which could signal reduced menu interest, mobile UX friction, or shift toward delivery/pickup intent.",
+          "severity": "medium"
+        },
+        {
+          "title": "Brookfield flagship page traffic collapsed",
+          "detail": "/wisconsin/brookfield/17530-w-bluemound-rd dropped 31.3% MoM despite a healthy 52.0% engagement rate. This is a volume problem\u2014investigate whether organic rankings or paid visibility declined for this high-performing location.",
+          "severity": "medium"
+        },
+        {
+          "title": "Store_locate events down 56.9% MoM",
+          "detail": "store_locate fell 56.9% MoM to just 22 events, indicating sharply declining location-finder interest. If users can't find or navigate to locations easily, foot traffic and order pickup conversions could suffer downstream.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Resurrect Paid Search and Social strategy",
+          "detail": "Paid Search (36.7% decline) and Paid Social (88.9% decline) are severely underutilized. Reactivate or restructure campaigns targeting high-intent location keywords (e.g., 'Burrachos Sun Prairie order online') to recapture paid traffic and offset organic saturation.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Optimize Brookfield location page to recover volume",
+          "detail": "/wisconsin/brookfield/17530-w-bluemound-rd has excellent 52.0% engagement but fell 31.3% MoM in sessions. Audit SERP visibility, paid visibility, and internal linking\u2014this page has proven conversion quality and deserves traffic recovery investment.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Expand Onalaska location momentum",
+          "detail": "/wisconsin/onalaska/9432-wisconsin-16 drove 25.8% traffic growth MoM (848 sessions) with 42.9% engagement. Replicate this page's structure, keyword strategy, and CTAs across underperforming locations to drive compounding gains.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Fix store_locate funnel to support location discovery",
+          "detail": "store_locate dropped 56.9% MoM to 22 events, but locate_me grew 26.1%\u2014suggesting users prefer one interaction type. Consolidate or simplify location-finding UX and measure if improvement lifts order_pickup and calls.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Investigate mainsite_clicks decline to strengthen cross-property funnel",
+          "detail": "mainsite_clicks fell 18.3% MoM despite stable organic traffic. Test whether homepage CTAs, internal navigation clarity, or main-site landing page relevance are blocking the path\u2014recovery here could unlock upsell and brand-building opportunities.",
+          "impact": "medium",
+          "effort": "medium"
+        }
+      ]
+    }
+  },
+  "last_calendar_month": {
+    "window": {
+      "current": {
+        "start": "2026-03-01",
+        "end": "2026-03-31",
+        "label": "March 2026"
+      },
+      "mom": {
+        "start": "2026-02-01",
+        "end": "2026-02-28",
+        "label": "February 2026"
+      },
+      "yoy": {
+        "start": "2025-03-01",
+        "end": "2025-03-31",
+        "label": "March 2025"
+      }
+    },
+    "yoy_available": false,
+    "totals": {
+      "current": {
+        "sessions": 3712,
+        "engaged_sessions": 1693,
+        "engagement_rate": 0.4561
+      },
+      "mom": {
+        "sessions": 3657,
+        "engaged_sessions": 1804,
+        "engagement_rate": 0.4933
+      },
+      "yoy": null,
+      "yoy_available": false,
+      "mom_sessions_change_pct": 1.5,
+      "yoy_sessions_change_pct": null,
+      "mom_engaged_sessions_change_pct": -6.2,
+      "yoy_engaged_sessions_change_pct": null,
+      "mom_engagement_rate_change_pts": -0.0372,
+      "yoy_engagement_rate_change_pts": null
+    },
+    "events": [
+      {
+        "event_name": "outbound_clicks",
+        "current": 3551,
+        "mom": 3559,
+        "yoy": null,
+        "mom_change_pct": -0.2,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "mainsite_clicks",
+        "current": 1730,
+        "mom": 1917,
+        "yoy": null,
+        "mom_change_pct": -9.8,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "view_menu",
+        "current": 1387,
+        "mom": 1589,
+        "yoy": null,
+        "mom_change_pct": -12.7,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "order_pickup",
+        "current": 1305,
+        "mom": 1069,
+        "yoy": null,
+        "mom_change_pct": 22.1,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "navigational_clicks",
+        "current": 186,
+        "mom": 240,
+        "yoy": null,
+        "mom_change_pct": -22.5,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "order_delivery",
+        "current": 175,
+        "mom": 198,
+        "yoy": null,
+        "mom_change_pct": -11.6,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "locate_me",
+        "current": 30,
+        "mom": 22,
+        "yoy": null,
+        "mom_change_pct": 36.4,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "store_locate",
+        "current": 23,
+        "mom": 50,
+        "yoy": null,
+        "mom_change_pct": -54.0,
+        "yoy_change_pct": null
+      },
+      {
+        "event_name": "apply_online",
+        "current": 15,
+        "mom": 9,
+        "yoy": null,
+        "mom_change_pct": 66.7,
+        "yoy_change_pct": null
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Organic Search",
+        "current_sessions": 2717,
+        "current_pct": 73.2,
+        "mom_sessions": 2483,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 9.4,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Direct",
+        "current_sessions": 698,
+        "current_pct": 18.8,
+        "mom_sessions": 608,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 14.8,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Search",
+        "current_sessions": 251,
+        "current_pct": 6.8,
+        "mom_sessions": 384,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -34.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Organic Social",
+        "current_sessions": 47,
+        "current_pct": 1.3,
+        "mom_sessions": 110,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -57.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Cross-network",
+        "current_sessions": 15,
+        "current_pct": 0.4,
+        "mom_sessions": 9,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 66.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Unassigned",
+        "current_sessions": 11,
+        "current_pct": 0.3,
+        "mom_sessions": 12,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -8.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Social",
+        "current_sessions": 10,
+        "current_pct": 0.3,
+        "mom_sessions": 70,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -85.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Referral",
+        "current_sessions": 4,
+        "current_pct": 0.1,
+        "mom_sessions": 29,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -86.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "channel": "Paid Other",
+        "current_sessions": 2,
+        "current_pct": 0.1,
+        "mom_sessions": 1,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 100.0,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "top_pages": [
+      {
+        "landing_page": "/wisconsin/sun-prairie/2691-windsor-st",
+        "current_sessions": 1018,
+        "current_engaged_sessions": 433,
+        "current_engagement_rate": 0.4253,
+        "mom_sessions": 925,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 10.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/onalaska/9432-wisconsin-16",
+        "current_sessions": 868,
+        "current_engaged_sessions": 366,
+        "current_engagement_rate": 0.4217,
+        "mom_sessions": 632,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 37.3,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/brookfield/17530-w-bluemound-rd",
+        "current_sessions": 744,
+        "current_engaged_sessions": 388,
+        "current_engagement_rate": 0.5215,
+        "mom_sessions": 981,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -24.2,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/eau-claire/5314-prill-road-1",
+        "current_sessions": 462,
+        "current_engaged_sessions": 199,
+        "current_engagement_rate": 0.4307,
+        "mom_sessions": 410,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 12.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/",
+        "current_sessions": 273,
+        "current_engaged_sessions": 164,
+        "current_engagement_rate": 0.6007,
+        "mom_sessions": 346,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -21.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/eau-claire",
+        "current_sessions": 117,
+        "current_engaged_sessions": 49,
+        "current_engagement_rate": 0.4188,
+        "mom_sessions": 90,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 30.0,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/onalaska",
+        "current_sessions": 70,
+        "current_engaged_sessions": 35,
+        "current_engagement_rate": 0.5,
+        "mom_sessions": 42,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": 66.7,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "(not set)",
+        "current_sessions": 56,
+        "current_engaged_sessions": 2,
+        "current_engagement_rate": 0.0357,
+        "mom_sessions": 63,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -11.1,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/sun-prairie",
+        "current_sessions": 52,
+        "current_engaged_sessions": 22,
+        "current_engagement_rate": 0.4231,
+        "mom_sessions": 82,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -36.6,
+        "yoy_sessions_change_pct": null
+      },
+      {
+        "landing_page": "/wisconsin/brookfield",
+        "current_sessions": 43,
+        "current_engaged_sessions": 14,
+        "current_engagement_rate": 0.3256,
+        "mom_sessions": 69,
+        "yoy_sessions": null,
+        "mom_sessions_change_pct": -37.7,
+        "yoy_sessions_change_pct": null
+      }
+    ],
+    "ytd": {
+      "current_year": 2026,
+      "prior_year": 2025,
+      "months": [
+        {
+          "month": "2026-01",
+          "label": "January 2026",
+          "sessions": 3636,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-02",
+          "label": "February 2026",
+          "sessions": 3657,
+          "prior_year_sessions": 0
+        },
+        {
+          "month": "2026-03",
+          "label": "March 2026",
+          "sessions": 3712,
+          "prior_year_sessions": 0
+        }
+      ],
+      "ytd_current": 11005,
+      "ytd_prior": 0,
+      "ytd_change_pct": null
+    },
+    "summary": "March 2026 traffic grew modestly to 3,712 sessions (+1.5% MoM), driven by strong organic search momentum (+9.4%) and direct traffic (+14.8%), but engagement quality declined measurably with engaged sessions down 6.2% and engagement rate dropping 3.7 percentage points to 45.6%. High-value conversion signals are mixed: mainsite_clicks fell 9.8% to 1,730 events, while order_pickup surged 22.1% to 1,305 events, suggesting users are converting to actionable takeaway/delivery intents rather than exploring deeper funnel content. View_menu declined sharply (-12.7%), indicating reduced browsing behavior, though locate_me and apply_online showed strong growth (+36.4% and +66.7% respectively). Paid search investment appears to be underperforming, dropping 34.6% MoM while paid social collapsed 85.7%, raising questions about channel efficiency. Location-level performance is uneven: the Onalaska location (/wisconsin/onalaska/9432-wisconsin-16) accelerated 37.3% MoM and now ranks second in traffic, while the flagship Brookfield and Sun Prairie pages experienced double-digit engagement declines. YTD 2026 stands at 11,005 sessions across Q1 with a flat trajectory (Jan: 3,636, Feb: 3,657, Mar: 3,712).",
+    "recommendations": {
+      "quick_wins": [
+        {
+          "title": "Capitalize on Organic Search Momentum",
+          "detail": "Organic search grew 9.4% MoM to 2,717 sessions (73.2% of total traffic). Reinforce SEO for high-performing location pages like Onalaska (+37.3%) and Eau-Claire (+30.0% for regional hub) to sustain this channel's dominance.",
+          "impact": "high",
+          "effort": "low"
+        },
+        {
+          "title": "Amplify Order Pickup Conversion Signal",
+          "detail": "Order_pickup events jumped 22.1% MoM to 1,305\u2014the strongest custom event growth. Optimize post-pickup prompts (e.g., loyalty signups, feedback requests) and ensure mobile UX for this intent is frictionless.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Scale Direct Traffic Channel",
+          "detail": "Direct traffic grew 14.8% MoM to 698 sessions. Strengthen brand recall and retention via email campaigns and SMS to sustain and grow this high-intent channel.",
+          "impact": "medium",
+          "effort": "low"
+        }
+      ],
+      "potential_warnings": [
+        {
+          "title": "Engagement Quality Deteriorating Despite Traffic Growth",
+          "detail": "Sessions grew 1.5% MoM but engaged sessions fell 6.2%, and engagement rate declined 3.7 pp to 45.6%. This disconnect suggests traffic quality is declining or user intent is narrowing\u2014investigate landing page bounce behavior and session flow on underperformers.",
+          "severity": "high"
+        },
+        {
+          "title": "Mainsite Clicks Declining (High-Value Funnel Signal at Risk)",
+          "detail": "Mainsite_clicks dropped 9.8% MoM to 1,730 events\u2014the highest-value conversion indicator beyond immediate order actions. This suggests reduced cross-site navigation and deeper funnel exploration, potentially signaling lower purchase intent or abandoned browsing.",
+          "severity": "high"
+        },
+        {
+          "title": "Paid Search ROI Questionable; Paid Channels Underperforming",
+          "detail": "Paid search fell 34.6% MoM (251 sessions) and paid social collapsed 85.7% (10 sessions). Combined paid channels now represent <7% of traffic; audit spend allocation and keyword/audience targeting immediately to justify continued investment.",
+          "severity": "high"
+        },
+        {
+          "title": "View_Menu Engagement Down 12.7%\u2014Browsing Intent Weakening",
+          "detail": "Menu views dropped from ~1,587 to 1,387 events MoM, a 12.7% decline. This suggests users are arriving with narrow intent (order pickup/delivery) rather than exploring full offerings, limiting upsell opportunities.",
+          "severity": "medium"
+        },
+        {
+          "title": "Store Locate Conversions Collapsed 54%",
+          "detail": "Store_locate events plummeted from ~50 to 23 MoM, a 54% drop\u2014a high-intent, high-value signal. Audit location finder UX, ensure store information is fresh, and investigate whether navigation to this feature is visible on key landing pages.",
+          "severity": "medium"
+        }
+      ],
+      "biggest_opportunities": [
+        {
+          "title": "Reverse Engagement Decline on High-Traffic Location Pages",
+          "detail": "Brookfield (/wisconsin/brookfield/17530-w-bluemound-rd) and Sun Prairie (/wisconsin/sun-prairie/2691-windsor-st) locations are top traffic generators (744 and 1,018 sessions respectively) but show engagement rate volatility\u2014Brookfield declined 24.2% MoM. Test landing page messaging, CTA clarity, and menu discoverability to re-engage these high-volume audiences.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Rebuild Mainsite_Clicks Funnel (Deeper Conversion Path)",
+          "detail": "High-value mainsite_clicks declined 9.8% while order_pickup surged. Create prominent, contextual calls-to-action linking order pickup/delivery flows to broader menu exploration, promotions, or loyalty sign-up on the main site to reattach users to deeper funnel.",
+          "impact": "high",
+          "effort": "medium"
+        },
+        {
+          "title": "Reactivate or Redirect Paid Search Spend",
+          "detail": "Paid search yielded only 251 sessions in March (-34.6% MoM) and likely has unfavorable ROAS. Reallocate budget to organic amplification or test performance max campaigns targeting high-intent keywords (e.g., 'order pickup + location') to improve efficiency.",
+          "impact": "medium",
+          "effort": "medium"
+        },
+        {
+          "title": "Double Down on Locate_Me Growth (Mobile-First)",
+          "detail": "Locate_me events grew 36.4% MoM to 30\u2014a small absolute base but fastest-growing location-related signal. Promote this feature in paid and organic channels (especially mobile SERPs) to capture high-intent local searches and drive traffic to nearby locations.",
+          "impact": "medium",
+          "effort": "low"
+        },
+        {
+          "title": "Investigate and Fix Store_Locate Regression",
+          "detail": "Store_locate collapsed 54% MoM to 23 events despite overall traffic growth. Audit technical implementation (map load speed, search accuracy), ensure feature is prominently discoverable from /wisconsin/* hub pages, and A/B test placement to reverse this trend.",
+          "impact": "medium",
+          "effort": "high"
+        }
+      ]
+    }
+  }
+}
